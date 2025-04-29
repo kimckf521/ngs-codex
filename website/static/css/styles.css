@@ -1005,3 +1005,55 @@ img {
   color: var(--text-color);
   font-size: 0.9rem;
 }
+
+/* Privacy Policy and Terms of Service */
+/* Ensures modal is hidden initially */
+.modal {
+    display: none;
+}
+
+/* For small screens, ensure the modal is wide enough */
+@media (max-width: 640px) {
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* For medium and large screens, adjust the width as needed */
+@media (min-width: 640px) {
+    .modal-content {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal-content {
+        width: 40%;
+    }
+}
+
+/* Privacy Policy and Terms of Service */
+/* Ensures modal is hidden initially */
+.modal {
+    display: none;
+}
+
+/* For small screens, ensure the modal is wide enough */
+@media (max-width: 640px) {
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* For medium and large screens, adjust the width as needed */
+@media (min-width: 640px) {
+    .modal-content {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal-content {
+        width: 40%;
+    }
+}

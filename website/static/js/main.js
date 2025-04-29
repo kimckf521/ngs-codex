@@ -251,5 +251,6 @@ document.addEventListener("DOMContentLoaded", function () {
         link.classList.add("active");
       }
     });
-  }
+  };
 
+  // Privacy Policy | Terms of Service:

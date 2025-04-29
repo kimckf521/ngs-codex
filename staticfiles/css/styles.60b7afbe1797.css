@@ -1033,27 +1033,26 @@ img {
 }
 
 /* Privacy Policy and Terms of Service */
-/* Ensures modal is hidden initially */
-.modal {
-    display: none;
-}
+document.getElementById('privacy-policy-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('privacy-policy-modal').classList.remove('hidden');
+});
 
-/* For small screens, ensure the modal is wide enough */
-@media (max-width: 640px) {
-    .modal-content {
-        width: 90%;
-    }
-}
+document.getElementById('terms-of-service-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('terms-of-service-modal').classList.remove('hidden');
+});
 
-/* For medium and large screens, adjust the width as needed */
-@media (min-width: 640px) {
-    .modal-content {
-        width: 60%;
-    }
-}
+document.getElementById('close-privacy-policy').addEventListener('click', function() {
+    document.getElementById('privacy-policy-modal').classList.add('hidden');
+});
 
-@media (min-width: 1024px) {
-    .modal-content {
-        width: 40%;
+document.getElementById('close-terms-of-service').addEventListener('click', function() {
+    document.getElementById('terms-of-service-modal').classList.add('hidden');
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.classList.add('hidden');
     }
-}
+});

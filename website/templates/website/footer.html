@@ -1,5 +1,7 @@
 {% load static %}   
 
+<script src="{% static 'js/main.js' %}"></script>
+
 <div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -11,41 +13,10 @@
         About NGS
     </h3>
     <p class="mb-4 text-white/80">
-        NGS is a leading educational institution dedicated to providing
-        exceptional learning experiences for students of all ages. Our
-        mission is to empower the next generation through quality
-        education.
+        At NexGenScholars, we believe that everyone deserves an equal opportunity to excel through high-quality, college-preparatory education and globally recognized qualifications.
+        <br /><br />
+        Whether you're a public school student, an international school learner, or pursuing independent, self-paced studies, NGS is here to support your journey.
     </p>
-    <div class="flex space-x-4">
-        <a
-        href="#"
-        aria-label="Facebook"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
-        >
-        <i class="fab fa-facebook-f"></i>
-        </a>
-        <a
-        href="#"
-        aria-label="Twitter"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
-        >
-        <i class="fab fa-twitter"></i>
-        </a>
-        <a
-        href="#"
-        aria-label="Instagram"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
-        >
-        <i class="fab fa-instagram"></i>
-        </a>
-        <a
-        href="#"
-        aria-label="LinkedIn"
-        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
-        >
-        <i class="fab fa-linkedin-in"></i>
-        </a>
-    </div>
     </div>
 
     <!-- Quick Links -->
@@ -57,32 +28,32 @@
     </h3>
     <div class="grid grid-cols-2 gap-2">
         <a
-        href="index.html"
+        href="{% url 'index' %}"
         class="text-white/80 hover:text-secondary hover:translate-x-1 block py-2 transition-all duration-300"
         >Home</a
         >
         <a
-        href="tutor.html"
+        href="{% url 'tutor' %}"
         class="text-white/80 hover:text-secondary hover:translate-x-1 block py-2 transition-all duration-300"
         >Tutors</a
         >
         <a
-        href="price.html"
+        href="{% url 'price' %}"
         class="text-white/80 hover:text-secondary hover:translate-x-1 block py-2 transition-all duration-300"
         >Pricing</a
         >
         <a
-        href="why-ngs.html"
+        href="{% url 'why-ngs' %}"
         class="text-white/80 hover:text-secondary hover:translate-x-1 block py-2 transition-all duration-300"
         >Why NGS</a
         >
         <a
-        href="#features"
+        href=""{% url 'index' %}""
         class="text-white/80 hover:text-secondary hover:translate-x-1 block py-2 transition-all duration-300"
         >Services</a
         >
         <a
-        href="#testimonials"
+        href=""{% url 'index' %}""
         class="text-white/80 hover:text-secondary hover:translate-x-1 block py-2 transition-all duration-300"
         >Reviews</a
         >
@@ -98,38 +69,103 @@
     </h3>
     <div class="space-y-3">
         <p class="flex items-center text-white/80">
-        <i class="fas fa-map-marker-alt text-secondary w-6"></i>
-        123 Education St, City, State 10001
-        </p>
-        <p class="flex items-center text-white/80">
         <i class="fas fa-phone text-secondary w-6"></i>
-        (123) 456-7890
+        (86) 180-2201-5138
         </p>
         <p class="flex items-center text-white/80">
         <i class="fas fa-envelope text-secondary w-6"></i>
-        info@ngs.com
+        admission@nextgenschools.asia
         </p>
         <p class="flex items-center text-white/80">
         <i class="fas fa-clock text-secondary w-6"></i>
-        Mon-Fri: 9AM-6PM
+        Mon-Sun: 9AM-6PM
         </p>
+    </div>
+    <div class="flex space-x-4" style="margin-top: 20px;">
+    <!-- WeChat -->
+    <a
+        href="https://work.weixin.qq.com/kfid/kfc235ffdef67d899a5"
+        aria-label="WeChat"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+    >
+        <i class="fab fa-weixin"></i> <!-- WeChat icon -->
+    </a>
+
+    <!-- LinkedIn -->
+    <a
+        href="https://www.linkedin.com/company/nextgenscholarsasia/"
+        aria-label="LinkedIn"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+    >
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <!-- Rednote (小红书) -->
+    <a
+        href="https://www.xiaohongshu.com/user/profile/6657345b0000000003032bd1?xsec_token=YB-P5JxgeG-wFoMO4TtG08oEezAXyZ-tH07T843ZHwW6U=&xsec_source=app_share&xhsshare=CopyLink&appuid=63d156a70000000026006584&apptime=1745909731&share_id=a4cb6cfc470e488aa8c42b8979750b4d"
+        aria-label="Rednote"
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-secondary transition-all duration-300 hover:-translate-y-1"
+    >
+        <img src="{% static 'img/rednote-icon.png' %}" alt="Rednote" class="w-10 h-10" />
+    </a>
     </div>
     </div>
 </div>
 
 <!-- Footer Bottom -->
-<div
-    class="mt-12 pt-4 border-t border-white/10 text-center text-white/60 text-sm"
->
-    <p>
-    &copy; 2025 NextGen Scholars. All rights reserved. |
-    <a href="#" class="text-secondary hover:underline"
-        >Privacy Policy</a
-    >
-    |
-    <a href="#" class="text-secondary hover:underline"
-        >Terms of Service</a
-    >
-    </p>
-</div>
-</div>
+<!-- Footer Trigger -->
+<footer class="bg-gradient-to-r from-primary to-accent text-white py-4">
+    <div class="container mx-auto text-center">
+        <p>© 2025 NextGen Scholars. All rights reserved.</p>
+        <div>
+            <a href="#" class="text-red-500 hover:underline" id="privacy-policy-link">Privacy Policy</a> |
+            <a href="#" class="text-red-500 hover:underline" id="terms-of-service-link">Terms of Service</a>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-policy-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-white p-8 rounded-lg w-11/12 sm:w-1/2 lg:w-1/3 text-black">
+            <div class="text-base space-y-4">
+                {% include "website/privacy_policy.html" %}
+            </div>
+            <button id="close-privacy-policy" class="mt-6 bg-blue-500 text-white px-4 py-2 rounded">Close</button>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="terms-of-service-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div class="bg-white p-8 rounded-lg w-11/12 sm:w-1/2 lg:w-1/3 text-black">
+            <div class="text-base space-y-4">
+                {% include "website/terms_of_service.html" %}
+            </div>
+            <button id="close-terms-of-service" class="mt-6 bg-blue-500 text-white px-4 py-2 rounded">Close</button>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.getElementById('privacy-policy-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('privacy-policy-modal').classList.remove('hidden');
+});
+
+document.getElementById('terms-of-service-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('terms-of-service-modal').classList.remove('hidden');
+});
+
+document.getElementById('close-privacy-policy').addEventListener('click', function() {
+    document.getElementById('privacy-policy-modal').classList.add('hidden');
+});
+
+document.getElementById('close-terms-of-service').addEventListener('click', function() {
+    document.getElementById('terms-of-service-modal').classList.add('hidden');
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.classList.add('hidden');
+    }
+});
+</script>

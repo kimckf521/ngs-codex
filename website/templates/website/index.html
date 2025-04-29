@@ -3,40 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NGS - Home</title>
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configure Tailwind -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#2c3e50",
-              secondary: "#e74c3c",
-              accent: "#3498db",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-    <!-- Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <!-- Custom CSS - We'll keep some custom styles for specific components -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    {% include "website/head.html" %}
   </head>
 
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
@@ -51,7 +18,11 @@
       <section
         class="relative bg-gradient-to-r from-primary to-accent pt-32 pb-24 px-4 sm:px-6 lg:px-8 text-center text-white min-h-screen flex items-center justify-center"
       >
-        <div class="absolute inset-0 bg-black opacity-10 pattern-dots"></div>
+        <div 
+            class="absolute inset-0 bg-cover bg-center"
+            style="background-image: url('{% static 'img/home-bg.jpg' %}');"
+        >
+        </div>
         <div class="relative max-w-3xl mx-auto">
           <h1
             class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
@@ -221,43 +192,8 @@
       {% include "website/footer.html" %}
     </footer>
 
-    <script src="{% static 'js/main.js' %}"></script>
     <!-- JavaScript -->
-    <script>
-      // Mobile menu functionality
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const closeMenuButton = document.getElementById("close-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const body = document.body;
+     <script src="{% static 'js/main.js' %}"></script>
 
-      mobileMenuButton.addEventListener("click", function () {
-        mobileMenu.classList.toggle("hidden");
-        body.classList.toggle("overflow-hidden");
-      });
-
-      closeMenuButton.addEventListener("click", function () {
-        mobileMenu.classList.add("hidden");
-        body.classList.remove("overflow-hidden");
-      });
-
-      // Close menu when clicking on links
-      const mobileLinks = mobileMenu.querySelectorAll("a");
-      mobileLinks.forEach((link) => {
-        link.addEventListener("click", function () {
-          mobileMenu.classList.add("hidden");
-          body.classList.remove("overflow-hidden");
-        });
-      });
-
-      // Scroll behavior
-      window.addEventListener("scroll", function () {
-        const navbar = document.querySelector("nav");
-        if (window.scrollY > 10) {
-          navbar.classList.add("shadow-lg", "bg-primary/95");
-        } else {
-          navbar.classList.remove("shadow-lg", "bg-primary/95");
-        }
-      });
-    </script>
   </body>
 </html>

@@ -251,6 +251,46 @@ document.addEventListener("DOMContentLoaded", function () {
         link.classList.add("active");
       }
     });
-  };
+  }
 
   // Privacy Policy | Terms of Service:
+  document.addEventListener('DOMContentLoaded', function () {
+    const privacyBtn = document.getElementById('privacy-policy-link');
+    const termsBtn = document.getElementById('terms-of-service-link');
+    const privacyModal = document.getElementById('privacy-policy-modal');
+    const termsModal = document.getElementById('terms-of-service-modal');
+    const closePrivacyBtn = document.getElementById('close-privacy-policy');
+    const closeTermsBtn = document.getElementById('close-terms-of-service');
+
+    if (privacyBtn && privacyModal && closePrivacyBtn) {
+        privacyBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            privacyModal.classList.remove('hidden');
+        });
+
+        closePrivacyBtn.addEventListener('click', function () {
+            privacyModal.classList.add('hidden');
+        });
+    }
+
+    if (termsBtn && termsModal && closeTermsBtn) {
+        termsBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            termsModal.classList.remove('hidden');
+        });
+
+        closeTermsBtn.addEventListener('click', function () {
+            termsModal.classList.add('hidden');
+        });
+    }
+
+    // Optional: click outside modal content to close
+    document.addEventListener('click', function (e) {
+        if (e.target === privacyModal) {
+            privacyModal.classList.add('hidden');
+        }
+        if (e.target === termsModal) {
+            termsModal.classList.add('hidden');
+        }
+    });
+});

@@ -17,24 +17,31 @@ class="fixed top-0 left-0 w-full bg-gradient-to-r from-primary to-accent shadow-
             <div class="flex space-x-8">
             <a
                 href="{% url 'index' %}"
-                class="text-white hover:bg-white/10 hover:text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 border-b-2 border-secondary"
-                >Home</a
+                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'index' %}border-b-4 border-white{% endif %}"
             >
+                Home
+            </a>
+
             <a
                 href="{% url 'tutor' %}"
-                class="text-white hover:bg-white/10 hover:text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1"
-                >Tutor</a
+                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'tutor' %}border-b-4 border-white{% endif %}"
             >
+                Tutor
+            </a>
+
             <a
                 href="{% url 'price' %}"
-                class="text-white hover:bg-white/10 hover:text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1"
-                >Price</a
+                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'price' %}border-b-4 border-white{% endif %}"
             >
+                Price
+            </a>
+
             <a
                 href="{% url 'why-ngs' %}"
-                class="text-white hover:bg-white/10 hover:text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1"
-                >Why NGS</a
+                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'why-ngs' %}border-b-4 border-white{% endif %}"
             >
+                Why NGS
+            </a>
             </div>
         </div>
 
@@ -90,3 +97,40 @@ class="fixed top-0 left-0 w-full bg-gradient-to-r from-primary to-accent shadow-
 </nav>
 
 <script src="{% static 'js/main.js' %}"></script>
+
+<script>
+    // Mobile menu functionality
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const closeMenuButton = document.getElementById("close-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const body = document.body;
+
+    mobileMenuButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+    body.classList.toggle("overflow-hidden");
+    });
+
+    closeMenuButton.addEventListener("click", function () {
+    mobileMenu.classList.add("hidden");
+    body.classList.remove("overflow-hidden");
+    });
+
+    // Close menu when clicking on links
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+    mobileLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+        mobileMenu.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
+    });
+    });
+
+    // Scroll behavior
+    window.addEventListener("scroll", function () {
+    const navbar = document.querySelector("nav");
+    if (window.scrollY > 10) {
+        navbar.classList.add("shadow-lg", "bg-primary/95");
+    } else {
+        navbar.classList.remove("shadow-lg", "bg-primary/95");
+    }
+    });
+</script>
