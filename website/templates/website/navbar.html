@@ -1,100 +1,54 @@
 {% load static %}      
       
-<nav
-class="fixed top-0 left-0 w-full bg-gradient-to-r from-primary to-accent shadow-md z-50"
->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16 items-center">
-        <!-- Logo -->
-        <div class="flex-shrink-0">
-            <a href="{% url 'index' %}" class="text-white text-2xl font-bold">
-                <img src="{% static 'img/logo.png' %}" alt="NGS Logo" width="150">
-            </a>
-        </div>
+<header style="background:#000;">
+    <div class="navwrap" style="display:flex;align-items:center;justify-content:space-between;">
+        
+        <!-- Logo on far left -->
+        <a class="logo" href="home.html" id="logo" style="margin-right:auto">
+        <img src= "{% static 'img/newlogo.png' %}" alt="logo" style="height:50px">
+        </a>
 
-        <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center justify-center flex-1">
-            <div class="flex space-x-8">
-            <a
-                href="{% url 'index' %}"
-                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'index' %}border-b-4 border-white{% endif %}"
-            >
-                Home
-            </a>
+        <!-- Nav links in the middle -->
+        <nav id="site-nav" style="margin-left:auto;margin-right:auto">
+        <ul style="display:flex;gap:20px;list-style:none;margin:0;padding:0;align-items:center">
+            <li>
+            <a href="home.html" style="color:#fff;text-decoration:none">Partner With NGS ▾</a>
+            <ul>
+                <li><a href="cclr.html">CCLR Program</a></li>
+                <li><a href="hybrid.html">Hybrid Learning</a></li>
+                <li><a href="dual.html">Dual-track Learning</a></li>
+                <li><a href="diploma.html">Online Diploma Program</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="home.html" style="color:#fff;text-decoration:none">Study With Us ▾</a>
+            <ul>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="college.html">College Mentorship</a></li>
+                <li><a href="highschool.html">Highschool Mapping</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+            </ul>
+            </li>
+            <li><a href="admissions.html" style="color:#fff;text-decoration:none">Admissions</a></li>
+            <li>
+            <a href="home.html" style="color:#fff;text-decoration:none">Join NGS Community ▾</a>
+            <ul>
+                <li><a href="inspires.html">NGS Inspires</a></li>
+                <li><a href="connects.html">NGS Connects</a></li>
+                <li><a href="#">Membership SignIn</a></li>
+            </ul>
+            </li>
+        </ul>
+        </nav>
 
-            <a
-                href="{% url 'tutor' %}"
-                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'tutor' %}border-b-4 border-white{% endif %}"
-            >
-                Tutors
-            </a>
-
-            <a
-                href="{% url 'price' %}"
-                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'price' %}border-b-4 border-white{% endif %}"
-            >
-                Price
-            </a>
-
-            <a
-                href="{% url 'why-ngs' %}"
-                class="text-white px-5 py-2 rounded-md text-lg font-medium transition transform hover:-translate-y-1 hover:bg-white/10 {% if request.resolver_match.url_name == 'why-ngs' %}border-b-4 border-white{% endif %}"
-            >
-                Why NGS
-            </a>
-            </div>
-        </div>
-
-        <!-- Mobile menu button -->
-        <div class="md:hidden flex items-center">
-            <button
-            id="mobile-menu-button"
-            type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none"
-            >
-            <i class="fas fa-bars text-xl"></i>
-            </button>
-        </div>
+        <!-- Log In on far right -->
+        <div style="margin-left:auto">
+        <a href="login.html" style="color:#fff;font-weight:700;text-decoration:none;padding:9px 14px;border-radius:6px;border:1px solid #fff">
+            Log In
+        </a>
         </div>
     </div>
-
-    <!-- Mobile Navigation Menu -->
-    <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-gradient-to-r from-primary to-accent fixed inset-0 z-50 pt-16 overflow-y-auto"
-    >
-        <div
-        class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center"
-        >
-        <a
-            href="{% url 'index' %}"
-            class="text-white hover:bg-white/10 block px-3 py-4 rounded-md text-xl font-medium w-full text-center"
-            >Home</a
-        >
-        <a
-            href="{% url 'tutor' %}"
-            class="text-white hover:bg-white/10 block px-3 py-4 rounded-md text-xl font-medium w-full text-center"
-            >Tutor</a
-        >
-        <a
-            href="{% url 'price' %}"
-            class="text-white hover:bg-white/10 block px-3 py-4 rounded-md text-xl font-medium w-full text-center"
-            >Price</a
-        >
-        <a
-            href="{% url 'why-ngs' %}"
-            class="text-white hover:bg-white/10 block px-3 py-4 rounded-md text-xl font-medium w-full text-center"
-            >Why NGS</a
-        >
-        </div>
-        <button
-        id="close-menu-button"
-        class="absolute top-4 right-4 text-white text-2xl"
-        >
-        <i class="fas fa-times"></i>
-        </button>
-    </div>
-</nav>
+</header>
 
 <script src="{% static 'js/main.js' %}"></script>
 
