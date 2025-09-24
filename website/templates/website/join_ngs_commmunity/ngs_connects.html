@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "website/sections/head.html" %}
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    
+    <!-- Header with Navigation -->
+    {% include "website/sections/navbar.html" %}
+
+    <!-- Social Media-->
+    {% include "website/sections/media.html" %}
+
+    <!-- Customer Service Button -->
+    {% include "website/sections/customer_service.html" %}
+
+    <!-- Footer -->
+    {% include "website/sections/footer.html" %}
+
+    <!-- JavaScript -->
+     <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>

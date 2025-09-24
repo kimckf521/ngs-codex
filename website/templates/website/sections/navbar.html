@@ -4,7 +4,7 @@
     <div class="navwrap" style="display:flex;align-items:center;justify-content:space-between;">
         
         <!-- Logo on far left -->
-        <a class="logo" href="home.html" id="logo" style="margin-right:auto">
+        <a class="logo" href="{% url 'index' %}" id="logo" style="margin-right:auto">
         <img src= "{% static 'img/newlogo.png' %}" alt="logo" style="height:50px">
         </a>
 
@@ -12,21 +12,21 @@
         <nav id="site-nav" style="margin-left:auto;margin-right:auto">
         <ul style="display:flex;gap:20px;list-style:none;margin:0;padding:0;align-items:center">
             <li>
-            <a href="home.html" style="color:#fff;text-decoration:none">Partner With NGS ▾</a>
+            <a href="" style="color:#fff;text-decoration:none">Partner With NGS ▾</a>
             <ul>
-                <li><a href="cclr.html">CCLR Program</a></li>
-                <li><a href="hybrid.html">Hybrid Learning</a></li>
-                <li><a href="dual.html">Dual-track Learning</a></li>
-                <li><a href="diploma.html">Online Diploma Program</a></li>
+                <li><a href="{% url 'cclr_programs' %}">CCLR Program</a></li>
+                <li><a href="{% url 'hybrid_learning' %}">Hybrid Learning</a></li>
+                <li><a href="{% url 'dual_track_learning' %}">Dual-track Learning</a></li>
+                <li><a href="{% url 'online_diploma_program' %}">Online Diploma Program</a></li>
             </ul>
             </li>
             <li>
             <a href="home.html" style="color:#fff;text-decoration:none">Study With Us ▾</a>
             <ul>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="college.html">College Mentorship</a></li>
-                <li><a href="highschool.html">Highschool Mapping</a></li>
-                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="{% url 'programs' %}">Programs</a></li>
+                <li><a href="{% url 'college_mentorship' %}">College Mentorship</a></li>
+                <li><a href="{% url 'highschool_mapping' %}">Highschool Mapping</a></li>
+                <li><a href="{% url 'faculty' %}">Faculty</a></li>
             </ul>
             </li>
             <li><a href="admissions.html" style="color:#fff;text-decoration:none">Admissions</a></li>
@@ -43,7 +43,7 @@
 
         <!-- Log In on far right -->
         <div style="margin-left:auto">
-        <a href="login.html" style="color:#fff;font-weight:700;text-decoration:none;padding:9px 14px;border-radius:6px;border:1px solid #fff">
+        <a href="https://www.classin.com/login/" style="color:#fff;font-weight:700;text-decoration:none;padding:9px 14px;border-radius:6px;border:1px solid #fff">
             Log In
         </a>
         </div>

@@ -1,0 +1,30 @@
+{% load static %}
+
+<section style="padding:60px 20px;
+background:linear-gradient(135deg,#7f4dff 0%,#4cc3ff 40%,#3ad19f 100%);
+width:100%">
+    <div style="max-width:1280px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center">
+
+        <!-- Left: Map + Text -->
+        <div style="text-align:center;color:#000000">
+        <h2 style="font-size:40px;font-weight:900;margin-bottom:20px">
+            NextGen Global<br>Community
+        </h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png"
+            alt="World Map" 
+            style="max-width:100%;height:auto;margin-bottom:20px;filter:brightness(0) invert(1)">
+        <p style="font-size:16px;font-weight:600;color:#000">
+            San Francisco, Melbourne<br>
+            Hong Kong, Taiwan, Greater Bay Area China
+        </p>
+        </div>
+
+        <!-- Right: Group Image -->
+        <div style="text-align:center">
+        <img src="{% static 'img/Harvard.jpg' %}" 
+            alt="NGS Global Community" 
+            style="width:90%;border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.25)">
+        </div>
+
+    </div>
+</section>
