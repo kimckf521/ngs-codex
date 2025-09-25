@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url("/static/fonts/GlacialIndifference-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url("/static/fonts/GlacialIndifference-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+
 /* ===== In-Progress Section (matches mock) ===== */
 .inprog {
   --ink:#1f2a44;
