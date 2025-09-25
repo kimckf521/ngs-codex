@@ -43,5 +43,19 @@ def faculty(request):
 
 # Admissions
 
+def admissions(request):
+    return render(request, 'website/admissions/admissions.html')
+
 
 # Join Ngs Commmunity
+
+def ngs_inspires(request):
+    return render(request, 'website/join_ngs_commmunity/ngs_inspires.html')
+
+
+def ngs_connects(request):
+    return render(request, 'website/join_ngs_commmunity/ngs_connects.html')
+
+
+def membership_signin(request):
+    return render(request, 'website/join_ngs_commmunity/membership_signin.html')

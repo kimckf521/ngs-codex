@@ -11,6 +11,259 @@
     <!-- Header with Navigation -->
     {% include "website/sections/navbar.html" %}
 
+    <!-- HERO -->
+    <section class="hero">
+    <img src="{% static 'img/Graduation.jpg' %}">
+    </section>
+
+    <!-- NEXTGEN INSPIRES (overview) -->
+    <section style="padding:60px 20px;background:#fff;width:100%">
+      <div style="max-width:1180px;margin:auto">
+        <!-- Title -->
+        <h2 style="text-align:center;font-size:36px;font-weight:900;margin-bottom:34px">
+          NextGen Inspires
+        </h2>
+
+        <!-- Two-column layout -->
+        <div style="display:grid;grid-template-columns:1fr 2fr;gap:36px;align-items:start">
+          
+          <!-- Left: Card -->
+          <div style="border:1px solid #cfcfcf;border-radius:18px;padding:26px;background:#fff">
+            <h3 style="margin:0 0 14px;font-size:18px;font-weight:900;line-height:1.3">
+              NextGen Global<br>Community
+            </h3>
+            <ul style="margin:0;padding-left:18px;line-height:1.8">
+              <li>CCLR Program</li>
+              <li>Partnership Programs</li>
+              <li>NextGen Inspires</li>
+              <li>NextGen Connects</li>
+            </ul>
+          </div>
+
+          <!-- Right: Copy -->
+          <div style="font-size:15px;line-height:1.8;color:#222">
+            <p style="margin-top:0">
+              <strong>NextGen Inspires</strong> is an Exclusive Subscription Service for NGS Partner Schools &amp; Students – designed
+              to connect students and educators with a world of opportunities.
+            </p>
+            <p>
+              Through collaborations with Global Industry Leaders, Global Universities, the innovative SPARK LAB, and a thriving
+              network of Global Alumni, <strong>NextGen Inspires</strong> provides access to unparalleled resources, mentorship, and
+              inspiration to empower the next generation of achievers.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INSPIRES -->
+    {% include "website/sections/inspires.html" %}
+
+    <!-- GLOBAL INDUSTRY LEADERS -->
+    <section style="padding:60px 20px;background:#fff;width:100%">
+      <div style="max-width:1180px;margin:auto">
+        <!-- Title -->
+        <h2 style="text-align:center;font-size:32px;font-weight:900;margin-bottom:30px">
+          Global Industry Leaders
+        </h2>
+
+        <!-- Two-column layout -->
+        <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center">
+          
+          <!-- Left: Video / Image -->
+          <div id="carouselexperts" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'img/inspires/leader1.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/leader2.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/leader3.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/leader4.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/leader5.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/leader6.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/leader7.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/leader8.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselexperts" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselexperts" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Right: Text -->
+          <div style="background:linear-gradient(135deg,#ff512f,#f09819);color:#fff;
+                      padding:28px;border-radius:12px;font-size:15px;line-height:1.7">
+            <p style="margin:0">
+              <strong>Empower</strong> students and schools to achieve greater heights by fostering 
+              connections, offering bespoke learning opportunities, and cultivating a global perspective.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPARK LAB -->
+    <section style="padding:60px 20px;
+          background:linear-gradient(135deg,#f857a6,#ffcc70);
+          width:100%">
+      <div style="max-width:1180px;margin:auto;text-align:center">
+
+        <!-- Title -->
+        <h2 style="font-size:32px;font-weight:900;margin-bottom:30px;color:#000">
+          SPARK LAB
+        </h2>
+
+        <!-- Video + Text Layout -->
+        <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center">
+
+          <!-- Left: Video Placeholder -->
+          <div id="carousellab" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'img/inspires/lab1.png' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/lab2.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/lab3.png' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/lab4.png' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/lab5.png' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/lab6.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/lab7.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'img/inspires/lab8.jpg' %}" alt="" style="width: 100%; height: 500px;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousellab" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousellab" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Right: Text -->
+          <div style="text-align:left;color:#000;font-size:16px;line-height:1.7">
+            <p><strong>NGS Global Network of Young Minds</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GLOBAL UNIVERSITIES -->
+    <section style="padding:60px 20px;background:#fff;width:100%">
+      <div style="max-width:980px;margin:auto;text-align:center">
+
+        <!-- Title -->
+        <h2 style="font-size:32px;font-weight:900;margin-bottom:30px">
+          Global Universities
+        </h2>
+
+        <!-- Video Placeholder -->
+        <div id="carouseluni" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'img/inspires/uni1.jpg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni2.jpeg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni3.jpg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni4.jpg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni5.jpeg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni6.jpg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni7.jpg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni8.jpg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'img/inspires/uni9.jpg' %}" alt="" style="width: 100%; height: 500px;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouseluni" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouseluni" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SUBSCRIBE TODAY -->
+    <section style="padding:80px 20px;background:#fff;width:100%;text-align:center">
+      <div style="max-width:900px;margin:auto">
+        
+        <!-- Button -->
+        <a href="subscribe.html"
+          style="display:inline-block;
+                  background:linear-gradient(90deg,#00c6ff,#1de9b6);
+                  color:#fff;
+                  font-size:24px;
+                  font-weight:900;
+                  padding:14px 36px;
+                  border-radius:40px;
+                  text-decoration:none;
+                  box-shadow:0 6px 16px rgba(0,0,0,.15)">
+          Subscribe Today!
+        </a>
+
+        <!-- Tagline -->
+        <p style="margin-top:16px;font-size:15px;color:#333">
+          Subscribe today and become a part of the NextGen Global Network!
+        </p>
+
+      </div>
+    </section>
+
+    <!-- GLOBAL COMMUNITY -->
+    {% include "website/sections/global_community.html" %}
+
     <!-- Social Media-->
     {% include "website/sections/media.html" %}
 
@@ -22,6 +275,7 @@
 
     <!-- JavaScript -->
      <script src="{% static 'js/main.js' %}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
 
   </body>
 </html>
