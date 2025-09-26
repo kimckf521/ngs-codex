@@ -1,24 +1,36 @@
 {% load static %}
 
-<section style="padding:60px 20px;background:#fff;width:100%;text-align:center">
-  <div style="max-width:980px;margin:auto">
+<section style="
+  height:66vh;
+  width:100%;
+  background:#fff;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 20px;
+  box-sizing:border-box;">
+  
+  <div style="max-width:980px; margin:auto; width:100%;">
     
     <!-- Title -->
-    <h2 style="font-size:32px;font-weight:900;margin-bottom:30px">
+    <h2 style="font-size:32px; font-weight:900; margin-bottom:24px;">
       Take charge of Your Own Learning
     </h2>
 
-    <!-- Image (centered) -->
+    <!-- Image -->
     <img src="{% static 'img/takecharge.jpg' %}" 
          alt="Online Learning" 
-         style="display:block;margin:0 auto 30px auto;max-width:700px;width:100%;
-                box-shadow:0 6px 18px rgba(0,0,0,.1);border-radius:10px">
-    
+         style="display:block; margin:0 auto 24px auto; max-width:700px; width:100%;
+                border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.1);">
+
     <!-- Button -->
     <a href="admissions.html" 
-       style="display:inline-block;background:linear-gradient(90deg,#2ecc71,#27ae60);color:#000;
-              font-weight:700;padding:14px 28px;border-radius:40px;font-size:16px;text-decoration:none">
+       style="display:inline-block; background:linear-gradient(90deg,#2ecc71,#27ae60);
+              color:#000; font-weight:700; padding:14px 28px;
+              border-radius:40px; font-size:16px; text-decoration:none;">
       Book a Trial Class
     </a>
+    
   </div>
 </section>

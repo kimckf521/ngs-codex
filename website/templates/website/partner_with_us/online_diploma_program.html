@@ -16,72 +16,80 @@
     <img src="{% static 'img/classroom.jpg' %}" alt="Graduates throwing caps">
     </section>
 
-    <!-- NGS DUAL-TRACK PROGRAM -->
-    <section style="padding:50px 20px;background:#e8eef0;width:100%">
-      <div style="max-width:1180px;margin:auto">
-        <h2 style="text-align:center;font-size:32px;font-weight:900;letter-spacing:.5px;margin:0 0 24px">
-          NGS DUAL-TRACK PROGRAM
+    <!-- NGS ONLINE DIPLOMA PROGRAM (fixed to 66vh) -->
+    <section style="
+      height:66vh;                  /* exact height */
+      width:100%;
+      background:#d9e3e6;
+      padding:20px;
+      box-sizing:border-box;
+      display:flex;
+      align-items:center;">
+      
+      <div style="
+        max-width:1280px; margin:auto; width:100%; height:100%;
+        display:flex; flex-direction:column;">
+
+        <!-- Title -->
+        <h2 style="
+          margin:0 0 12px;
+          text-align:center;
+          font-size:36px; font-weight:900; color:#111;">
+          NGS ONLINE DIPLOMA PROGRAM
         </h2>
 
-        <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:28px;align-items:stretch">
-          
-          <!-- Left: photo + tagline -->
-          <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center">
-            <img src="{% static 'img/smilegirl.jpg' %}"
-                alt="Student learning" 
-                style="max-width:300px;width:100%;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.15);margin-bottom:14px">
-            <p style="margin:0;color:#333;line-height:1.6;font-size:15px;font-weight:600">
+        <!-- Content grid -->
+        <div style="
+          flex:1; display:grid;
+          grid-template-columns:1fr 1.6fr;
+          gap:24px; height:100%;">
+
+          <!-- Left: student + caption -->
+          <div style="
+            display:flex; flex-direction:column;
+            justify-content:center; align-items:center;
+            text-align:center; height:100%;">
+            
+            <img src="{% static 'img/smilegirl.jpg' %}" alt="Student"
+                style="max-height:70%; max-width:90%;
+                        border-radius:12px;
+                        object-fit:contain;">
+            
+            <p style="
+              margin:10px 0 0;
+              font-size:16px; line-height:1.4; font-weight:600; color:#111;">
               Enjoy the Flexibility of Learning Anywhere<br>at Your Own Pace
             </p>
           </div>
 
-          <!-- Right: table card -->
-          <div style="background:#fff;border:1px solid #e6e6e6;border-radius:20px;padding:22px 26px;
-                      box-shadow:0 6px 18px rgba(0,0,0,.08);display:flex;flex-direction:column;justify-content:center">
-            <table style="width:100%;border-collapse:collapse;font-size:15px;color:#222">
+          <!-- Right: Table card -->
+          <div style="
+            background:#fff;
+            border-radius:20px;
+            box-shadow:0 8px 20px rgba(0,0,0,.08);
+            padding:16px;
+            display:flex; align-items:center; justify-content:center;
+            height:100%; box-sizing:border-box;">
+
+            <table style="
+              width:100%; border-collapse:collapse;
+              font-size:14px; color:#111;">
               <thead>
                 <tr>
-                  <th style="text-align:left;padding:12px;border-bottom:1px solid #ddd;width:50%">Items</th>
-                  <th style="text-align:left;padding:12px;border-bottom:1px solid #ddd;width:50%">Dual-Track Model</th>
+                  <th style="text-align:left; padding:10px; border-bottom:1px solid #ccc;">Items</th>
+                  <th style="text-align:left; padding:10px; border-bottom:1px solid #ccc;">Dual-Track Model</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Course Options</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Chinese Public + ALevel / HKDSE / AP</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Entry Assessment</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Online or On Campus</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Subject Learning</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Online</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Learning Platform</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">ClassIn</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Learning Community</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">SPARK LAB + School Community</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Formative Assessment</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Online</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Official Assessment</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">On Campus</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Official Transcripts</td>
-                  <td style="padding:12px;border-bottom:1px solid #eee">Issued by School</td>
-                </tr>
-                <tr>
-                  <td style="padding:12px">Enrollment</td>
-                  <td style="padding:12px">NGS Online + School</td>
-                </tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Course Options</td><td style="padding:8px; border-bottom:1px solid #eee;">ALevel / HKDSE / AP</td></tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Entry Assessment</td><td style="padding:8px; border-bottom:1px solid #eee;">Online</td></tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Subject Learning</td><td style="padding:8px; border-bottom:1px solid #eee;">Online</td></tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Learning Platform</td><td style="padding:8px; border-bottom:1px solid #eee;">ClassIn</td></tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Learning Community</td><td style="padding:8px; border-bottom:1px solid #eee;">SPARK LAB</td></tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Formative Assessment</td><td style="padding:8px; border-bottom:1px solid #eee;">Online</td></tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Official Assessment</td><td style="padding:8px; border-bottom:1px solid #eee;">On Campus</td></tr>
+                <tr><td style="padding:8px; border-bottom:1px solid #eee;">Official Transcripts</td><td style="padding:8px; border-bottom:1px solid #eee;">Issued by School</td></tr>
+                <tr><td style="padding:8px;">Enrollment</td><td style="padding:8px;">NGS Online +School</td></tr>
               </tbody>
             </table>
           </div>
@@ -89,44 +97,86 @@
       </div>
     </section>
 
-    <!-- NGS DUAL-TRACK PROGRAM 2 -->
-  <section style="padding:60px 20px;width:100%;background:#fff">
-    <div style="max-width:1180px;margin:auto">
-        
+    <!-- NGS ONLINE DIPLOMA PROGRAM (exact 66vh) -->
+    <section style="
+      height:66vh;                      /* exact height */
+      box-sizing:border-box;
+      padding:30px 20px;
+      background:#ffffff;
+      width:100%;
+      display:flex; align-items:center;">
+      
+      <div style="
+        max-width:1180px; margin:0 auto; width:100%;
+        height:100%; display:flex; flex-direction:column;">
+
         <!-- Title -->
-        <h2 style="font-size:32px;font-weight:900;margin-bottom:30px;text-align:center">
-        DUAL-TRACK PROGRAM
+        <h2 style="
+          margin:0 0 18px;
+          text-align:center;
+          font-size:36px; font-weight:900; letter-spacing:.5px; color:#111;">
+          NGS ONLINE DIPLOMA PROGRAM
         </h2>
-        
-        <!-- Two Column Layout -->
-        <div style="display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:start">
-        
-        <!-- Left: Card -->
-        <div style="border:1px solid #ccc;border-radius:16px;padding:24px;line-height:1.6;background:#fafafa">
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:12px">
-            Dual-track Transition Program
+
+        <!-- Content: two columns -->
+        <div style="
+          flex:1; height:100%;
+          display:grid; grid-template-columns:1fr 1.6fr;
+          gap:48px; align-items:center;">
+
+          <!-- Left: rounded info card -->
+          <div style="
+            justify-self:start;
+            display:flex; align-items:center; justify-content:center;">
+
+            <div style="
+              border:1px solid #d7d7d7;
+              border-radius:26px;
+              padding:30px 34px;
+              width:420px; max-width:100%;
+              box-sizing:border-box;">
+              
+              <h3 style="margin:0 0 18px; font-size:26px; font-weight:900; color:#111;">
+                Online Diploma<br>Program
+              </h3>
+
+              <ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.8;">
+                <li>Flexible Learning at your own pace</li>
+                <li>Flexible Locations</li>
+                <li>Accredited School Enrollment &amp; Transcript</li>
+                <li>High-school Diploma after completion</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right: description -->
+          <div style="
+            color:#111; font-size:18px; line-height:1.9;">
+
+            <h3 style="margin:0 0 12px; font-size:22px; font-weight:900;">
+              What is Online Diploma Program?
             </h3>
-            <ul style="margin:0;padding-left:18px;color:#222">
-            <li>Future-Proofing Education</li>
-            <li>Gaokao+International Pathways</li>
-            <li>Flexible Integration</li>
-            </ul>
-        </div>
 
-        <!-- Right: Text -->
-        <div style="color:#222;font-size:15px;line-height:1.7">
-            <h3>What is Dual-track Transition Program?</h3>
-            <p>
-            A customised support system to help Chinese local schools transition into international education models (IB, A-Level, AP) - without disrupting their current learning.
+            <p style="margin:0 0 14px;">
+              The Online Diploma Program is designed to meet the need of students who are not able commit to
+              fix location study but still requires a high-school diploma at the end of the full-course study.
             </p>
-        </div>
+
+            <p style="margin:0;">
+              The student opted this route will be enrolled in an accredited school and completed all subject
+              learning and formative assessment at NGS Online School. Upon meeting the course completion
+              requirement, the student will take the official assessments at the physical location of the
+              school. Those who meet the graduation assessment criteria of the school will then be issued a
+              credible high-school diploma and full school transcript.
+            </p>
+          </div>
 
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <!-- ADMISSIONS REQUIREMENT -->
-    <section style="padding:60px 20px;background:#fff;width:100%">
+    <section style="padding:60px 20px;background:#fff;width:100%; height:66vh">
       <div style="max-width:1180px;margin:auto">
         <h2 style="text-align:center;font-size:32px;font-weight:900;margin-bottom:40px">
           ADMISSIONS REQUIREMENT

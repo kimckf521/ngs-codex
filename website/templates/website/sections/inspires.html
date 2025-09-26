@@ -1,9 +1,94 @@
 {% load static %}
 
-<section class="inspires" style="
+<!-- NEXTGEN INSPIRES -->
+<section class="inspires"
+         style="padding:60px 20px;
+                background:linear-gradient(135deg,#dce9ff 0%,#f7f4ff 30%,#f8fff2 70%,#fffbdc 100%);
+                border-radius:16px;
+                height:66vh;
+                display:flex;
+                align-items:center;">
+  <div class="wrap" style="max-width:1180px;margin:auto;width:100%">
+
+    <!-- Title -->
+    <h2 style="text-align:center;
+               font-size:34px;
+               font-weight:900;
+               margin-bottom:40px;
+               color:#111;">
+      NextGen Inspires
+    </h2>
+
+    <!-- Simple grid -->
+    <div style="display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+                gap:40px;
+                text-align:center;">
+
+      <!-- Global Industry Leaders -->
+      <div>
+        <img src="{% static 'img/globalindustry.jpg' %}" alt="Industry Leaders"
+             style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:0 auto 16px;">
+        <h3 style="font-size:18px;font-weight:800;margin:0 0 12px;color:#222;">
+          Global Industry Leaders
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#444;text-align:left;">
+          Connect with leaders at the forefront of innovation and excellence across diverse industries. 
+          Through expert-led webinars, mentorship programs, and career-focused workshops, 
+          students gain first-hand insights into emerging trends, career pathways, and the real-world 
+          skills required to succeed in a competitive global market.
+        </p>
+      </div>
+
+      <!-- Global Universities -->
+      <div>
+        <img src="{% static 'img/globaluniversities.png' %}" alt="Global Universities"
+             style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:0 auto 16px;">
+        <h3 style="font-size:18px;font-weight:800;margin:0 0 12px;color:#222;">
+          Global Universities
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#444;text-align:left;">
+          Explore partnerships with renowned universities worldwide, offering students exclusive access 
+          to admissions guidance, campus tours, and networking opportunities.
+        </p>
+      </div>
+
+      <!-- SPARK LAB -->
+      <div>
+        <img src="{% static 'img/sparklab.jpg' %}" alt="SPARK LAB"
+             style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:0 auto 16px;">
+        <h3 style="font-size:18px;font-weight:800;margin:0 0 12px;color:#222;">
+          SPARK LAB
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#444;text-align:left;">
+          The SPARK LAB is an interactive platform connecting Global K-12 students to collaborate, 
+          innovate, and create. By fostering a global network of young minds, the SPARK LAB inspires 
+          students to think boldly, develop a global perspective, and take the lead in shaping the future.
+        </p>
+      </div>
+
+      <!-- Global Alumni -->
+      <div>
+        <img src="{% static 'img/globalalumni.png' %}" alt="Global Alumni"
+             style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:0 auto 16px;">
+        <h3 style="font-size:18px;font-weight:800;margin:0 0 12px;color:#222;">
+          Global Alumni
+        </h3>
+        <p style="font-size:15px;line-height:1.7;color:#444;text-align:left;">
+          Leverage a thriving network of international alumni who have successfully pursued their academic 
+          and professional goals. This domain offers students opportunities to learn from the experiences 
+          of those who have walked similar paths, providing mentorship, guidance, and inspiration.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% comment %} <section class="inspires" style="
     padding:60px 20px;
     background:linear-gradient(135deg,#dce9ff 0%,#f7f4ff 30%,#f8fff2 70%,#fffbdc 100%);
-    border-radius:16px;margin:40px 0">
+    border-radius:16px;margin:40px 0; min-height:66vh;">
     
     <div class="wrap">
         <h2 style="text-align:center;font-size:32px;font-weight:900;margin-bottom:40px">
@@ -62,4 +147,4 @@
         
         </div>
     </div>
-</section>
+</section> {% endcomment %}

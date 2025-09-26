@@ -17,32 +17,50 @@
     </section>
 
     <!-- PROGRAMMES -->
-    <section style="padding:60px 20px;background:#fff;width:100%">
-      <div style="max-width:1180px;margin:auto;text-align:center">
-        <h2 style="font-size:32px;font-weight:900;margin-bottom:20px">PROGRAMMES</h2>
-        <p style="max-width:780px;margin:0 auto 40px;line-height:1.6;color:#444;font-size:15px">
+    <section style="
+      height:66vh; 
+      padding:40px 20px; 
+      background:#fff; 
+      width:100%; 
+      box-sizing:border-box;
+      display:flex; align-items:center; justify-content:center;">
+      
+      <div style="
+        max-width:1180px; margin:auto; width:100%; 
+        height:100%; 
+        display:flex; flex-direction:column; justify-content:space-between; align-items:center; text-align:center;">
+
+        <!-- Title -->
+        <h2 style="font-size:32px; font-weight:900; margin:0;">
+          PROGRAMMES
+        </h2>
+
+        <!-- Description -->
+        <p style="max-width:780px; margin:0 auto; line-height:1.6; color:#444; font-size:15px; flex:0;">
           The class contents are closely aligned with the exam syllabus, systematically covering 90% of the key knowledge points. 
           It ensures that students can understand, learn effectively, and improve quickly.
         </p>
 
-        <!-- Image (centered) -->
-        <img src="{% static 'img/studying.jpg' %}" 
-            alt="Online class" 
-            style="display:block;margin:0 auto 30px auto;max-width:720px;width:100%;
-                    border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.1)">
+        <!-- Image -->
+        <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+          <img src="{% static 'img/studying.jpg' %}" 
+              alt="Online class"
+              style="max-width:60%; max-height:100%; width:auto; height:auto;
+                      border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,.1); object-fit:cover;">
+        </div>
 
         <!-- Buttons -->
-        <div style="display:flex;justify-content:center;gap:18px;flex-wrap:wrap">
-          <span style="background:linear-gradient(90deg,#2ecc71,#27ae60);color:#000;font-weight:700;padding:12px 22px;border-radius:40px;font-size:15px">
+        <div style="display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-top:10px;">
+          <span style="background:linear-gradient(90deg,#2ecc71,#27ae60); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
             Foundation
           </span>
-          <span style="background:linear-gradient(90deg,#56ccf2,#2f80ed);color:#000;font-weight:700;padding:12px 22px;border-radius:40px;font-size:15px">
+          <span style="background:linear-gradient(90deg,#56ccf2,#2f80ed); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
             Synchronization
           </span>
-          <span style="background:linear-gradient(90deg,#f2994a,#f2c94c);color:#000;font-weight:700;padding:12px 22px;border-radius:40px;font-size:15px">
+          <span style="background:linear-gradient(90deg,#f2994a,#f2c94c); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
             Acceleration
           </span>
-          <span style="background:linear-gradient(90deg,#eb5757,#ff0080);color:#000;font-weight:700;padding:12px 22px;border-radius:40px;font-size:15px">
+          <span style="background:linear-gradient(90deg,#eb5757,#ff0080); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
             Exam Prep
           </span>
         </div>
@@ -50,63 +68,106 @@
     </section>
 
     <!-- PROGRAM OPTIONS: IB / A-LEVEL IGCSE / AP -->
-    <section style="padding:60px 20px;background:#fff;width:100%">
-      <div style="max-width:1180px;margin:auto">
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px">
-
+    <section style="
+      height:66vh;
+      padding:40px 20px;
+      background:#fff;
+      width:100%;
+      box-sizing:border-box;
+      display:flex; align-items:center;">
+      
+      <div style="max-width:1180px; margin:auto; width:100%; height:100%;">
+        <div style="
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+          gap:30px;
+          height:100%;">
+          
           <!-- IB Card -->
-          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:24px;line-height:1.6;box-shadow:0 4px 12px rgba(0,0,0,.08)">
-            <h3 style="font-size:20px;font-weight:800;margin-bottom:12px">IB</h3>
-            <p style="margin:0 0 12px">
-              English<br>
-              Math<br>
-              Physics | Biology | Chemistry | CS<br>
-              Economy | Business | Geography | History<br>
-              Visual Art | Theatre<br>
-              HL | SL
-            </p><br><br><br><br><br>
-            <ul style="margin:0;padding-left:18px;color:#222">
-              <li>Comprehensive tutoring across all subjects</li>
-              <li>Tutors with average IB score of 42+</li>
-              <li>Over 1000+ hours of teaching experience</li>
-              <li>Mock exams and past papers practice</li>
-              <li>Tailored to diverse learning needs</li>
-            </ul>
+          <div style="
+            background:#fff; border:1px solid #ccc; border-radius:20px;
+            padding:28px; line-height:1.6;
+            box-shadow:0 4px 12px rgba(0,0,0,.08);
+            display:flex; flex-direction:column; justify-content:space-between;">
+            
+            <div>
+              <h3 style="font-size:22px; font-weight:800; margin-bottom:14px; text-align:center;">IB</h3>
+              <p style="margin:0 0 18px; font-size:14px; line-height:1.5; color:#444; text-align:center;">
+                English · Math<br>
+                Physics · Biology · Chemistry · CS<br>
+                Economy · Business · Geography · History<br>
+                Visual Art · Theatre<br>
+                HL & SL
+              </p>
+            </div>
+            
+            <div>
+              <h4 style="margin:0 0 8px; font-size:15px; font-weight:700; color:#111;text-align:center;">Highlights</h4>
+              <ul style="margin:0; padding-left:18px; font-size:14px; color:#333; line-height:1.5;">
+                <li>Comprehensive tutoring across all subjects</li>
+                <li>Tutors with average IB score of 42+</li>
+                <li>Over 1000+ hours of teaching experience</li>
+                <li>Mock exams and past papers practice</li>
+                <li>Tailored to diverse learning needs</li>
+              </ul>
+            </div>
           </div>
 
           <!-- A-LEVEL IGCSE Card -->
-          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:24px;line-height:1.6;box-shadow:0 4px 12px rgba(0,0,0,.08)">
-            <h3 style="font-size:20px;font-weight:800;margin-bottom:12px">A-LEVEL<br>IGCSE</h3>
-            <p style="margin:0 0 12px">
-              English | English Literature<br>
-              Math | Further Math | Computer Science<br>
-              Physics | Biology | Chemistry<br>
-              Economy | Business | Accounting<br>
-              Geography | History | Art History
-            </p><br><br><br><br><br>
-            <ul style="margin:0;padding-left:18px;color:#222">
-              <li>Excellent homeschool options</li>
-              <li>Expert tutoring for all A-Level subjects</li>
-              <li>Covering major exam boards such as AQA, CIE and Edexcel</li>
-              <li>Fast-track and personalised learning</li>
-              <li>Strong track record of helping students achieve A/A* grades</li>
-            </ul>
+          <div style="
+            background:#fff; border:1px solid #ccc; border-radius:20px;
+            padding:28px; line-height:1.6;
+            box-shadow:0 4px 12px rgba(0,0,0,.08);
+            display:flex; flex-direction:column; justify-content:space-between;">
+            
+            <div>
+              <h3 style="font-size:22px; font-weight:800; margin-bottom:14px; text-align:center;">A-LEVEL · IGCSE</h3>
+              <p style="margin:0 0 18px; font-size:14px; line-height:1.5; color:#444; text-align:center;">
+                English · English Literature<br>
+                Math · Further Math · Computer Science<br>
+                Physics · Biology · Chemistry<br>
+                Economy · Business · Accounting<br>
+                Geography · History · Art History
+              </p>
+            </div>
+            
+            <div>
+              <h4 style="margin:0 0 8px; font-size:15px; font-weight:700; color:#111;text-align:center;">Highlights</h4>
+              <ul style="margin:0; padding-left:18px; font-size:14px; color:#333; line-height:1.5;">
+                <li>Excellent homeschool options</li>
+                <li>Expert tutoring for all A-Level subjects</li>
+                <li>Covers AQA, CIE, and Edexcel exam boards</li>
+                <li>Fast-track and personalised learning</li>
+                <li>Strong track record with A/A* grades</li>
+              </ul>
+            </div>
           </div>
 
           <!-- AP Card -->
-          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:24px;line-height:1.6;box-shadow:0 4px 12px rgba(0,0,0,.08)">
-            <h3 style="font-size:20px;font-weight:800;margin-bottom:12px">AP</h3>
-            <p style="margin:0 0 12px">
-              English Language | English Literature<br>
-              Math | Calculus | Statistics<br>
-              Micro Economy | Biology | Chemistry<br>
-              Human Geography | World History | Art History
-            </p><br><br><br><br><br><br>
-            <ul style="margin:0;padding-left:18px;color:#222">
-              <li>Tutors from Top 50 universities worldwide</li>
-              <li>Focusing on helping students achieve top scores (4s and 5s) in their AP exams</li>
-              <li>Practice with College Board–style questions to enhance exam readiness</li>
-            </ul>
+          <div style="
+            background:#fff; border:1px solid #ccc; border-radius:20px;
+            padding:28px; line-height:1.6;
+            box-shadow:0 4px 12px rgba(0,0,0,.08);
+            display:flex; flex-direction:column; justify-content:space-between;">
+            
+            <div>
+              <h3 style="font-size:22px; font-weight:800; margin-bottom:14px; text-align:center;">AP</h3>
+              <p style="margin:0 0 18px; font-size:14px; line-height:1.5; color:#444; text-align:center;">
+                English Language · English Literature<br>
+                Math · Calculus · Statistics<br>
+                Micro Economy · Biology · Chemistry<br>
+                Human Geography · World History · Art History
+              </p>
+            </div>
+            
+            <div>
+              <h4 style="margin:0 0 8px; font-size:15px; font-weight:700; color:#111;text-align:center;">Highlights</h4>
+              <ul style="margin:0; padding-left:18px; font-size:14px; color:#333; line-height:1.5;">
+                <li>Tutors from Top 50 global universities</li>
+                <li>Focused on achieving 4s and 5s in AP exams</li>
+                <li>College Board–style practice for readiness</li>
+              </ul>
+            </div>
           </div>
 
         </div>
@@ -117,53 +178,70 @@
     {% include "website/sections/take_charge.html" %}
 
     <!-- A COMPREHENSIVE AND TAILORED CURRICULUM -->
-    <section style="padding:60px 20px;background:linear-gradient(135deg,#a1c4fd,#c2e9fb,#d4fc79,#96e6a1);width:100%">
-      <div style="max-width:1180px;margin:auto">
-        <h2 style="text-align:center;font-size:32px;font-weight:900;margin-bottom:30px">
-          A Comprehensive and Tailored Curriculum
-        </h2>
+<section style="
+  height:66vh;
+  width:100%;
+  background:linear-gradient(135deg,#a1c4fd,#c2e9fb,#d4fc79,#96e6a1);
+  padding:40px 20px;
+  box-sizing:border-box;
+  display:flex; align-items:center; justify-content:center;">
+  
+  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column;">
+    
+    <!-- Title -->
+    <h2 style="text-align:center; font-size:32px; font-weight:900; margin:0 0 24px;">
+      A Comprehensive and Tailored Curriculum
+    </h2>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center">
-          
-          <!-- Left: Student image -->
-          <div style="text-align:center">
-            <img src="{% static 'img/smilegirl.jpg' %}"
-                alt="Student"
-                style="max-width:320px;width:100%;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.15)">
-          </div>
+    <!-- Content -->
+    <div style="
+      flex:1; display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:stretch; height:100%;">
+      
+      <!-- Left: Student image -->
+      <div style="display:flex; align-items:center; justify-content:center;">
+        <img src="{% static 'img/smilegirl.jpg' %}"
+             alt="Student"
+             style="max-height:100%; max-width:320px; width:100%; object-fit:cover;
+                    border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,.15);">
+      </div>
 
-          <!-- Right: Text Content -->
-          <div style="background:#27ae60;color:#fff;padding:30px;border-radius:12px">
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:10px">Personalize Tutoring</h3>
-            <p style="margin-bottom:18px;font-size:14px;line-height:1.6">
-              No cookie-cutter teaching or one-size-fits-all courses. Every student is a unique learner. 
-              At NGS, we provide an entry assessment, design a personalized study plan, offer real-time tracking, 
-              and give periodic feedback to support your growth every step of the way.
-            </p>
+      <!-- Right: Text Content -->
+      <div style="
+        background:#27ae60; color:#fff; border-radius:12px;
+        padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
+        
+        <div style="flex:1; overflow:hidden;">
+          <h3 style="font-size:18px; font-weight:800; margin:0 0 8px;">Personalize Tutoring</h3>
+          <p style="margin:0 0 12px; font-size:14px; line-height:1.6;">
+            No cookie-cutter teaching or one-size-fits-all courses. Every student is a unique learner. 
+            At NGS, we provide an entry assessment, design a personalized study plan, offer real-time tracking, 
+            and give periodic feedback to support your growth every step of the way.
+          </p>
 
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:10px">Clear Learning Goals</h3>
-            <p style="margin-bottom:18px;font-size:14px;line-height:1.6">
-              Whether you aim to prepare in advance, achieve a short-term score boost, or excel in exam preparation, 
-              NGS tutors will create a study plan tailored to your specific goals.
-            </p>
+          <h3 style="font-size:18px; font-weight:800; margin:0 0 8px;">Clear Learning Goals</h3>
+          <p style="margin:0 0 12px; font-size:14px; line-height:1.6;">
+            Whether you aim to prepare in advance, achieve a short-term score boost, or excel in exam preparation, 
+            NGS tutors will create a study plan tailored to your specific goals.
+          </p>
 
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:10px">Popular-Subjects Covered</h3>
-            <p style="margin-bottom:24px;font-size:14px;line-height:1.6">
-              NGS offers 1-on-1 tutoring for most subjects across IB, A-Level, AP, and IGCSE curriculums.
-            </p>
+          <h3 style="font-size:18px; font-weight:800; margin:0 0 8px;">Popular Subjects Covered</h3>
+          <p style="margin:0; font-size:14px; line-height:1.6;">
+            NGS offers 1-on-1 tutoring for most subjects across IB, A-Level, AP, and IGCSE curriculums.
+          </p>
+        </div>
 
-            <div style="text-align:center">
-              <a href="admissions.html"
-                style="display:inline-block;background:#000;color:#fff;
-                        font-weight:700;padding:12px 28px;border-radius:40px;
-                        font-size:15px;text-decoration:none">
-                Book a Trial Class
-              </a>
-            </div>
-          </div>
+        <div style="text-align:center; margin-top:16px;">
+          <a href="admissions.html"
+             style="display:inline-block; background:#000; color:#fff;
+                    font-weight:700; padding:12px 28px; border-radius:40px;
+                    font-size:15px; text-decoration:none;">
+            Book a Trial Class
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- Student Reviews -->
     {% include "website/sections/student_reviews.html" %}

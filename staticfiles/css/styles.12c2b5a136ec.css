@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Glacial Indifference";
-  src: url("/static/fonts/GlacialIndifference-Regular.otf") format("opentype");
+  src: url("/static/fonts/GlacialIndifference-Regular.008080d5594f.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "Glacial Indifference";
-  src: url("/static/fonts/GlacialIndifference-Bold.otf") format("opentype");
+  src: url("/static/fonts/GlacialIndifference-Bold.070a92690824.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -164,9 +164,11 @@ nav li:hover > ul { display: block; }
 
 .hero {
   position: relative;
+  height: 70vh;
+  min-height: 420px;
   border-radius: 0 0 24px 24px;
   overflow: hidden;
-  height:66vh;
+  min-height:66vh;
 }
 
 .hero img {
@@ -215,7 +217,7 @@ nav li:hover > ul { display: block; }
 .meet {
   grid-template-columns: 1.1fr .9fr;
   align-items: center;
-  height:66vh;
+  min-height:66vh;
 }
 
 .meet img { border-radius: 16px; }
@@ -264,7 +266,7 @@ textarea { min-height: 110px; }
   padding: 28px;
   border: 1px solid var(--line);
   text-align: center;
-  height:66vh;
+  min-height:66vh;
 }
 
 .world img {
