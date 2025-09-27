@@ -1,0 +1,86 @@
+{% load static %}
+
+<section style="
+    width:100%;
+    height:66vh;
+    background:#fff;
+    padding:60px 20px;
+    box-sizing:border-box;">
+    
+    <div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+
+    <!-- Title -->
+    <h2 style="text-align:center; font-size:36px; font-weight:900; margin:0 0 28px;">
+        NextGen Connects
+    </h2>
+
+    <!-- Two-column layout (50/50 split) -->
+    <div style="
+        flex:1; 
+        display:grid; 
+        grid-template-columns:1fr 1fr;  /* 50% left, 50% right */
+        gap:36px; 
+        align-items:stretch; 
+        height:100%;">
+
+        <!-- Left: Card with bullets at bottom -->
+        <div style="
+        background:#fff;
+        border:1.5px solid #1a1a1a;
+        border-radius:26px;
+        padding:34px 28px;
+        width:80%;
+        height:100%;                 /* fills parent column/section */
+        box-sizing:border-box;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;">
+
+        <!-- Title -->
+        <h3 style="
+            margin:6px 0 0;
+            font-size:28px;
+            font-weight:900;
+            line-height:1.15;
+            letter-spacing:.2px;
+            color:#111;">
+            NextGen Global<br>Community
+        </h3>
+
+        <!-- Spacer pushes list down -->
+        <div style="flex:1"></div>
+
+        <!-- Bullets (anchored at bottom) -->
+        <ul style="
+            margin:0;
+            padding-left:22px;
+            list-style:disc;
+            font-size:16px;
+            line-height:1.9;
+            color:#111;">
+            <li>CCLR Program</li>
+            <li>Partnership Programs</li>
+            <li>NextGen Inspires</li>
+            <li><strong>NextGen Connects</strong></li>
+        </ul>
+        </div>
+
+        <!-- Right: Copy -->
+        <div style="
+        font-size:15px; 
+        line-height:1.8; 
+        color:#222; 
+        display:flex; 
+        flex-direction:column; 
+        justify-content:center;">
+        
+        <p style="margin-top:0; margin-bottom:16px;">
+            <strong>NextGen Connects</strong> is an in-depth program designed to support families and students in navigating the intricate process of selecting and transitioning into the perfect educational environment.
+
+            By integrating expert insights, tailored guidance, and practical preparation, the program delivers a smooth, informed, and confident decision-making experience.
+        </p>
+        </div>
+
+    </div>
+    </div>
+</section>

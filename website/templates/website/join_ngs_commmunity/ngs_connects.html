@@ -17,142 +17,155 @@
     </section>
 
     <!-- NEXTGEN CONNECTS -->
-    <section style="padding:60px 20px;
+    <section style="
+      width:100%;
+      height:66vh;
       background:linear-gradient(135deg,#d7b6ff 0%,#a9f1ff 35%,#b8ffcf 65%,#ffb3e6 100%);
-      width:100%">
-      <div style="max-width:1180px;margin:auto;text-align:center">
+      padding:40px 20px;
+      box-sizing:border-box;
+      display:flex; align-items:center;">
+      
+      <div style="max-width:1180px;margin:auto;width:100%;height:100%;
+                  display:flex;flex-direction:column;text-align:center;">
 
         <!-- Title -->
-        <h2 style="font-size:36px;font-weight:900;margin-bottom:40px">
+        <h2 style="font-size:34px;font-weight:900;margin:0 0 16px;color:#111;letter-spacing:.3px;">
           NextGen Connects
         </h2>
 
-        <!-- 4 Columns -->
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin-bottom:40px">
-          
-          <!-- School Visits -->
-          <div>
+        <!-- Subtle tagline (optional polish; remove if not needed) -->
+        <p style="margin:0 0 18px;color:#333;font-size:15px;opacity:.85;">
+          School insights • Growth mapping • Academic readiness • Family decisions
+        </p>
+
+        <!-- Cards grid (fills remaining height) -->
+        <div style="
+          flex:1; min-height:0;
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+          gap:22px; align-items:stretch;">
+
+          <!-- Card -->
+          <div style="
+            background:rgba(255,255,255,.75);
+            border:1px solid rgba(0,0,0,.12);
+            border-radius:18px;
+            padding:18px;
+            box-shadow:0 6px 18px rgba(0,0,0,.08);
+            backdrop-filter:blur(6px);
+            display:flex; flex-direction:column; align-items:center; text-align:center;">
             <img src="{% static 'img/connects/vanke.JPG' %}" alt="School Visits"
-                style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin-bottom:16px">
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:10px">School Visits</h3>
-            <p style="font-size:14px;line-height:1.6;color:#333">
-              Offering curated, advisor-led tours to help families experience each school’s environment,
-              pedagogy, and values firsthand, enabling informed enrollment decisions.
+                style="width:150px;height:150px;object-fit:cover;border-radius:50%;margin-bottom:12px;border:3px solid #fff;margin-bottom:10vh">
+            <h3 style="font-size:18px;font-weight:800;margin:0 0 8px;color:#111;">School Visits</h3>
+            <p style="font-size:14px;line-height:1.6;color:#333;margin:0;">
+              Advisor-led campus tours so families can experience culture, pedagogy, and values first-hand.
             </p>
           </div>
 
-          <!-- School Reports -->
-          <div>
+          <!-- Card -->
+          <div style="
+            background:rgba(255,255,255,.75);
+            border:1px solid rgba(0,0,0,.12);
+            border-radius:18px;
+            padding:18px;
+            box-shadow:0 6px 18px rgba(0,0,0,.08);
+            backdrop-filter:blur(6px);
+            display:flex; flex-direction:column; align-items:center; text-align:center;">
             <img src="{% static 'img/connects/schoolreports.png' %}" alt="School Reports"
-                style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin-bottom:16px">
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:10px">School Reports</h3>
-            <p style="font-size:14px;line-height:1.6;color:#333">
-              Providing expert-driven, qualitative analyses of schools, uncovering their systems,
-              strengths, and track records beyond public-facing narratives.
+                style="width:150px;height:150px;object-fit:cover;border-radius:50%;margin-bottom:12px;border:3px solid #fff;margin-bottom:10vh">
+            <h3 style="font-size:18px;font-weight:800;margin:0 0 8px;color:#111;">School Reports</h3>
+            <p style="font-size:14px;line-height:1.6;color:#333;margin:0;">
+              Expert qualitative analyses of systems, leadership, faculty, and track records beyond brochures.
             </p>
           </div>
 
-          <!-- Growth Mapping -->
-          <div>
+          <!-- Card -->
+          <div style="
+            background:rgba(255,255,255,.75);
+            border:1px solid rgba(0,0,0,.12);
+            border-radius:18px;
+            padding:18px;
+            box-shadow:0 6px 18px rgba(0,0,0,.08);
+            backdrop-filter:blur(6px);
+            display:flex; flex-direction:column; align-items:center; text-align:center;">
             <img src="{% static 'img/connects/growth.jpg' %}" alt="Growth Mapping"
-                style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin-bottom:16px">
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:10px">Growth Mapping</h3>
-            <p style="font-size:14px;line-height:1.6;color:#333">
-              Matching students with institutions that align with their academic, social,
-              and aspirational growth profiles for a truly personalized fit.
+                style="width:150px;height:150px;object-fit:cover;border-radius:50%;margin-bottom:12px;border:3px solid #fff;margin-bottom:10vh">
+            <h3 style="font-size:18px;font-weight:800;margin:0 0 8px;color:#111;">Growth Mapping</h3>
+            <p style="font-size:14px;line-height:1.6;color:#333;margin:0;">
+              Match students to schools aligned with academic, social, and aspirational growth profiles.
             </p>
           </div>
 
-          <!-- Academic Clinics -->
-          <div>
+          <!-- Card -->
+          <div style="
+            background:rgba(255,255,255,.75);
+            border:1px solid rgba(0,0,0,.12);
+            border-radius:18px;
+            padding:18px;
+            box-shadow:0 6px 18px rgba(0,0,0,.08);
+            backdrop-filter:blur(6px);
+            display:flex; flex-direction:column; align-items:center; text-align:center;">
             <img src="{% static 'img/connects/academic.png' %}" alt="Academic Clinics"
-                style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin-bottom:16px">
-            <h3 style="font-size:18px;font-weight:800;margin-bottom:10px">Academic Clinics</h3>
-            <p style="font-size:14px;line-height:1.6;color:#333">
-              Preparing students for smooth transitions into international school environments
-              by equipping them with essential academic and social readiness.
+                style="width:150px;height:150px;object-fit:cover;border-radius:50%;margin-bottom:12px;border:3px solid #fff;margin-bottom:10vh">
+            <h3 style="font-size:18px;font-weight:800;margin:0 0 8px;color:#111;">Academic Clinics</h3>
+            <p style="font-size:14px;line-height:1.6;color:#333;margin:0;">
+              Ready students for international curricula with core skills and smooth environment transitions.
             </p>
           </div>
-
         </div>
 
-        <!-- Subscribe Button -->
-        <a href="subscribe.html"
-          style="display:inline-block;background:linear-gradient(90deg,#6a11cb,#2575fc);
-                  color:#fff;font-weight:700;padding:12px 28px;border-radius:40px;
-                  font-size:16px;text-decoration:none">
-          Subscribe
-        </a>
+        <!-- CTA -->
+        <div style="margin-top:18px;">
+          <a href="subscribe.html"
+            style="display:inline-block;background:linear-gradient(90deg,#6a11cb,#2575fc);
+                    color:#fff;font-weight:800;padding:12px 28px;border-radius:40px;
+                    font-size:16px;text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.15);">
+            Subscribe
+          </a>
+        </div>
+
       </div>
     </section>
 
     <!-- NEXTGEN CONNECTS (overview) -->
-    <section style="padding:60px 20px;background:#fff;width:100%">
-      <div style="max-width:1180px;margin:auto">
-        <!-- Title -->
-        <h2 style="text-align:center;font-size:36px;font-weight:900;margin-bottom:34px">
-          NextGen Connects
-        </h2>
-
-        <!-- Two-column layout -->
-        <div style="display:grid;grid-template-columns:1fr 2fr;gap:36px;align-items:start">
-          
-          <!-- Left: Card -->
-          <div style="border:1px solid #cfcfcf;border-radius:18px;padding:26px;background:#fff">
-            <h3 style="margin:0 0 14px;font-size:18px;font-weight:900;line-height:1.3">
-              NextGen Global<br>Community
-            </h3>
-            <ul style="margin:0;padding-left:18px;line-height:1.8">
-              <li>CCLR Program</li>
-              <li>Partnership Programs</li>
-              <li>NextGen Inspires</li>
-              <li><strong>NextGen Connects</strong></li>
-            </ul>
-          </div>
-
-          <!-- Right: Copy -->
-          <div style="font-size:15px;line-height:1.8;color:#222">
-            <p style="margin-top:0">
-              <strong>NextGen Connects</strong> is an in-depth program designed to support families and students
-              in navigating the intricate process of selecting and transitioning into the perfect educational
-              environment.
-            </p>
-            <p>
-              By integrating expert insights, tailored guidance, and practical preparation, the program delivers
-              a smooth, informed, and confident decision-making experience.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>    
+    {% include "website/sections/intro_connects.html" %}
 
     <!-- HIGH-SCHOOL MAPPING -->
-    <section style="padding:60px 20px;
+    <section style="
+      width:100%;
+      height:66vh;
+      padding:60px 20px;
       background:linear-gradient(135deg,#d7b6ff 0%,#a9f1ff 35%,#b8ffcf 65%,#ffb3e6 100%);
-      width:100%">
-      <div style="max-width:1180px;margin:auto;text-align:center">
-
+      box-sizing:border-box;">
+      
+      <div style="max-width:1180px;margin:auto;text-align:center;height:100%;display:flex;flex-direction:column;">
+        
         <!-- Title -->
-        <h2 style="font-size:36px;font-weight:900;margin-bottom:14px">
+        <h2 style="font-size:36px;font-weight:900;margin:0 0 14px;">
           High-School Mapping
         </h2>
 
         <!-- Program Tags -->
-        <div style="margin-bottom:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <div style="margin-bottom:24px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
           <span style="background:#eb5757;color:#fff;font-weight:700;padding:8px 18px;border-radius:30px">A-Level</span>
           <span style="background:#2f80ed;color:#fff;font-weight:700;padding:8px 18px;border-radius:30px">IB</span>
           <span style="background:#9b51e0;color:#fff;font-weight:700;padding:8px 18px;border-radius:30px">AP</span>
           <span style="background:#27ae60;color:#fff;font-weight:700;padding:8px 18px;border-radius:30px">HKDSE</span>
         </div>
 
-        <!-- 4 cards -->
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;text-align:left">
-
+        <!-- Cards Grid -->
+        <div style="
+          flex:1;
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+          gap:20px;
+          text-align:left;
+          align-items:stretch;">
+          
           <!-- Card 1 -->
-          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:24px">
-            <h3 style="margin:0 0 14px;font-size:18px;font-weight:900">School Visits</h3>
-            <ul style="margin:0;padding-left:18px;line-height:1.8">
+          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:20px;display:flex;flex-direction:column;">
+            <h3 style="margin:0 0 12px;font-size:18px;font-weight:900;">School Visits</h3>
+            <ul style="margin:0;padding-left:18px;line-height:1.8;flex:1;">
               <li>Growth Mapping</li>
               <li>School List</li>
               <li>School Visits</li>
@@ -161,9 +174,9 @@
           </div>
 
           <!-- Card 2 -->
-          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:24px">
-            <h3 style="margin:0 0 14px;font-size:18px;font-weight:900">School Reports</h3>
-            <ul style="margin:0;padding-left:18px;line-height:1.8">
+          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:20px;display:flex;flex-direction:column;">
+            <h3 style="margin:0 0 12px;font-size:18px;font-weight:900;">School Reports</h3>
+            <ul style="margin:0;padding-left:18px;line-height:1.8;flex:1;">
               <li>School Profile</li>
               <li>School Systems</li>
               <li>School Board</li>
@@ -175,9 +188,9 @@
           </div>
 
           <!-- Card 3 -->
-          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:24px">
-            <h3 style="margin:0 0 14px;font-size:18px;font-weight:900">Entrance-Exam Preparation</h3>
-            <ul style="margin:0;padding-left:18px;line-height:1.8">
+          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:20px;display:flex;flex-direction:column;">
+            <h3 style="margin:0 0 12px;font-size:18px;font-weight:900;">Entrance-Exam Preparation</h3>
+            <ul style="margin:0;padding-left:18px;line-height:1.8;flex:1;">
               <li>General Assessment</li>
               <li>English Exam</li>
               <li>Math Exam</li>
@@ -186,9 +199,9 @@
           </div>
 
           <!-- Card 4 -->
-          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:24px">
-            <h3 style="margin:0 0 14px;font-size:18px;font-weight:900">Academic Planning</h3>
-            <ul style="margin:0;padding-left:18px;line-height:1.8">
+          <div style="background:#fff;border:1px solid #ccc;border-radius:20px;padding:20px;display:flex;flex-direction:column;">
+            <h3 style="margin:0 0 12px;font-size:18px;font-weight:900;">Academic Planning</h3>
+            <ul style="margin:0;padding-left:18px;line-height:1.8;flex:1;">
               <li>Distant Learning</li>
               <li>Hybrid Learning</li>
               <li>Dual-track Learning</li>
@@ -200,192 +213,27 @@
         </div>
 
         <!-- CTA -->
-        <div style="margin-top:36px">
+        <div style="margin-top:20px;">
           <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983"
             style="display:inline-block;background:#311b92;color:#fff;text-decoration:none;
-                    font-weight:800;border-radius:28px;padding:12px 28px">
+                    font-weight:800;border-radius:28px;padding:12px 28px;font-size:15px;">
             Book a Free Call
           </a>
         </div>
-
       </div>
     </section>
 
     <!-- CONNECT TO SCHOOLS -->
-    <section style="padding:60px 20px;background:#fff;width:100%">
-      <div style="max-width:1180px;margin:auto">
-        
-        <!-- Title -->
-        <h2 style="text-align:center;font-size:32px;font-weight:900;margin-bottom:30px">
-          Connect to Schools
-        </h2>
-
-        <!-- Two-column layout -->
-        <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center">
-          
-          <!-- Left: Video Placeholder -->
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{% static 'img/connects/school.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/school2.png' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/school3.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <!-- Right: Text Card -->
-          <div style="background:linear-gradient(135deg,#ff512f,#f09819);color:#fff;
-                      padding:28px;border-radius:12px;font-size:15px;line-height:1.7">
-            <p style="margin:0">
-              <strong>Empower</strong> students and schools to achieve greater heights by fostering 
-              connections, offering bespoke learning opportunities, and cultivating a global perspective.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    {% include "website/sections/connect_to_schools.html" %}
 
     <!-- CONNECT TO PARENTS -->
-    <section style="padding:60px 20px;
-      background:linear-gradient(135deg,#f857a6,#ffcc70);
-      width:100%">
-      <div style="max-width:1180px;margin:auto;text-align:center">
-
-        <!-- Title -->
-        <h2 style="font-size:32px;font-weight:900;margin-bottom:30px;color:#000">
-          Connect to Parents
-        </h2>
-
-        <!-- Two-column layout -->
-        <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center">
-
-          <!-- Left: Video placeholder -->
-          <div id="carouselparents" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{% static 'img/connects/parent.jpeg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/parent1.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/parent2.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/parent3.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselparents" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselparents" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <!-- Right: Copy -->
-          <div style="text-align:left;color:#000;font-size:16px;line-height:1.8">
-            <p><strong>NGS Global Network of Parents</strong></p>
-            <p style="margin-top:8px">
-              Connect families across regions, share insights, and build supportive communities
-              that amplify student success and school partnerships.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    {% include "website/sections/connect_to_parents.html" %}
     
     <!-- CONNECT TO EDUCATIONAL EXPERTS -->
-    <section style="padding:60px 20px;background:#fff;width:100%">
-      <div style="max-width:1180px;margin:auto">
-
-        <!-- Title -->
-        <h2 style="text-align:center;font-size:32px;font-weight:900;margin-bottom:30px">
-          Connect to Educational Experts
-        </h2>
-
-        <!-- Two-column layout -->
-        <div style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center">
-          
-          <!-- Left: Video Placeholder -->
-          <div id="carouselexperts" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{% static 'img/connects/vanke.JPG' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/expert1.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/expert2.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'img/connects/expert3.jpg' %}" alt="" style="width: 100%; height: 500px; object-fit:cover;">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselexperts" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselexperts" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <!-- Right: Description -->
-          <div style="font-size:16px;line-height:1.7;color:#000">
-            <p><strong>NGS Global Network of Educational Experts and Industry Leaders.</strong></p>
-            <p>
-              Through our network, students and educators connect with thought leaders and practitioners
-              in education and industry, enabling access to cutting-edge insights, mentorship, and global perspectives.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    {% include "website/sections/connect_to_experts.html" %}
 
     <!-- SUBSCRIBE TODAY -->
-    <section style="padding:80px 20px;background:#fff;width:100%;text-align:center">
-      <div style="max-width:900px;margin:auto">
-        
-        <!-- Button -->
-        <a href="subscribe.html"
-          style="display:inline-block;
-                  background:linear-gradient(90deg,#00c6ff,#1de9b6);
-                  color:#fff;
-                  font-size:24px;
-                  font-weight:900;
-                  padding:14px 36px;
-                  border-radius:40px;
-                  text-decoration:none;
-                  box-shadow:0 6px 16px rgba(0,0,0,.15)">
-          Subscribe Today!
-        </a>
-
-        <!-- Tagline -->
-        <p style="margin-top:16px;font-size:15px;color:#333">
-          Subscribe today and become a part of the NextGen Global Network!
-        </p>
-
-      </div>
-    </section>
+    {% include "website/sections/subscribe.html" %}
 
 
     <!-- Social Media-->

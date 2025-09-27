@@ -1,6 +1,6 @@
 {% load static %}
 
-<section class="inprog">
+{% comment %} <section class="inprog">
   <div class="ip-card">
     <div class="ip-grid" 
          style="grid-template-columns:1.2fr 1fr;place-items:center;gap:40px;text-align:center">
@@ -45,4 +45,92 @@
 
     </div>
   </div>
+</section> {% endcomment %}
+
+<!-- IN PROGRESS (66vh, polished) -->
+<section class="inprog" style="
+  width:100%;
+  height:66vh;                 /* exact height */
+  background:#fff;
+  padding:40px 20px;
+  box-sizing:border-box;
+  display:flex; align-items:center; justify-content:center;">
+
+  <div class="ip-card" style="width:100%; max-width:1180px; height:100%; display:flex; flex-direction:column;">
+    <div class="ip-grid"
+         style="
+           display:grid;
+           grid-template-columns:1.2fr 1fr;
+           gap:40px;
+           place-items:center;
+           text-align:center;
+           height:100%;           /* fill 66vh */
+           min-height:0;">        <!-- allow children to shrink within 66vh -->
+
+      <!-- Left: Copy -->
+      <div class="ip-copy"
+           style="font-size:1.1em; max-width:600px; margin:0 auto;
+                  display:flex; flex-direction:column; justify-content:center;">
+        <span class="ip-badge" style="display:inline-block; font-weight:800; color:#fff; background:#111; padding:6px 12px; border-radius:999px; margin-bottom:12px;">
+          IN PROGRESS
+        </span>
+        <h1 class="ip-title" style="font-size:42px; margin:0 0 10px;">
+          We’re working on this page
+        </h1>
+        <p class="ip-lead" style="font-size:18px; line-height:1.7; margin:0 0 12px;">
+          Thanks for stopping by — this section is under active construction.
+          We’re polishing content and wiring things up so it’s useful for you.
+        </p>
+
+        <!-- progress row -->
+        <div class="ip-row" style="margin:12px auto; display:flex; gap:12px; justify-content:center;">
+          <span class="ip-spinner" aria-hidden="true" style="width:16px; height:16px; border:3px solid #ddd; border-top-color:#111; border-radius:50%; display:inline-block; animation:spin 0.9s linear infinite;"></span>
+          <div class="ip-bar" aria-hidden="true" style="width:180px; height:8px; background:#eee; border-radius:6px; overflow:hidden;">
+            <span style="display:block; width:40%; height:100%; background:#111; animation:load 1.8s ease-in-out infinite;"></span>
+          </div>
+        </div>
+
+        <div class="ip-row" style="color:#6b7280; font-size:16px; margin:0 0 16px; display:flex; justify-content:center;">
+          Live updates deploying soon
+        </div>
+
+        <!-- actions -->
+        <div class="ip-row" style="margin-top:8px; display:flex; gap:16px; justify-content:center;">
+          <a class="btn btn-primary" href="{% url 'index' %}" 
+             style="display:inline-block; background:#111; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700;">
+            Go to Home
+          </a>
+          <a class="btn btn-outline" 
+             href="mailto:info@nextgenscholars.asia?subject=NGS%20Page%20Inquiry&body=Hello%20NGS%20team,"
+             onclick="window.location.href=this.href;return false;"
+             style="display:inline-block; background:#fff; color:#111; border:2px solid #111; padding:8px 16px; border-radius:8px; text-decoration:none; font-weight:700;">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Illustration -->
+      <div class="ip-illust" aria-hidden="true"
+           style="
+             max-width:420px; width:100%;
+             height:100%;
+             display:flex; align-items:center; justify-content:center;
+             position:relative; overflow:hidden;">   <!-- prevents overflow beyond 66vh -->
+        <img src="{% static 'img/work_in_progress.jpg' %}" alt=""
+             style="display:block; width:100%; height:80%; object-fit:contain; margin:auto;">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- tiny keyframes for the local spinner/bar (optional, safe inline) -->
+  <style>
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes load {
+      0%, 100% { transform: translateX(-100%); }
+      50% { transform: translateX(0%); }
+    }
+  </style>
 </section>
