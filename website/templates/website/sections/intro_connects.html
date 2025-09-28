@@ -58,11 +58,32 @@
             font-size:16px;
             line-height:1.9;
             color:#111;">
-            <li>CCLR Program</li>
-            <li>Partnership Programs</li>
-            <li>NextGen Inspires</li>
-            <li><strong>NextGen Connects</strong></li>
+
+            <li>
+                <a href="{% url 'cclr_programs' %}" class="bullet-link">
+                    CCLR Program
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    Partnership Programs
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'ngs_inspires' %}" class="bullet-link">
+                    NextGen Inspires
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'ngs_connects' %}" class="bullet-link active">
+                    NextGen Connects
+                </a>
+            </li>
         </ul>
+        
         </div>
 
         <!-- Right: Copy -->
@@ -75,7 +96,7 @@
         justify-content:center;">
         
         <p style="margin-top:0; margin-bottom:16px;">
-            <strong>NextGen Connects</strong> is an in-depth program designed to support families and students in navigating the intricate process of selecting and transitioning into the perfect educational environment.
+            <strong>NextGen Connects</strong> is an in-depth program designed to support families and students in navigating the intricate process of selecting and transitioning into the perfect educational environment.<br><br>
 
             By integrating expert insights, tailored guidance, and practical preparation, the program delivers a smooth, informed, and confident decision-making experience.
         </p>

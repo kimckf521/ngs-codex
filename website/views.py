@@ -59,3 +59,11 @@ def ngs_connects(request):
 
 def membership_signin(request):
     return render(request, 'website/join_ngs_commmunity/membership_signin.html')
+
+# CHINESE PAGES
+
+# index.html
+
+
+def index_zh(request):
+    return render(request, 'website/language/zh/index_zh.html')

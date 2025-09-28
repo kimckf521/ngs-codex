@@ -30,4 +30,7 @@ urlpatterns = [
     path('membership_signin/', views.membership_signin,
          name='membership_signin'),
 
+    # CHINESE PAGES
+    path('index_zh/', views.index_zh, name='index_zh'),
+
 ]

@@ -1,53 +1,57 @@
 {% load static %}      
       
 <header style="background:#000;">
-    <div class="navwrap" style="display:flex;align-items:center;justify-content:space-between;">
-        
-        <!-- Logo on far left -->
-        <a class="logo" href="{% url 'index' %}" id="logo" style="margin-right:auto">
-        <img src= "{% static 'img/newlogo.png' %}" alt="logo" style="height:50px">
-        </a>
+  <div class="navwrap" style="display:flex;align-items:center;justify-content:space-between;">
+      
+      <!-- Logo on far left -->
+      <a class="logo" href="{% url 'index' %}" id="logo" style="margin-right:auto">
+        <img src="{% static 'img/newlogo.png' %}" alt="logo" style="height:50px">
+      </a>
 
-        <!-- Nav links in the middle -->
-        <nav id="site-nav" style="margin-left:auto;margin-right:auto">
+      <!-- Nav links in the middle -->
+      <nav id="site-nav" style="margin-left:auto;margin-right:auto">
         <ul style="display:flex;gap:20px;list-style:none;margin:0;padding:0;align-items:center">
-            <li>
+          <li>
             <a href="{% url 'index' %}" style="color:#fff;text-decoration:none">Partner With NGS ▾</a>
             <ul>
-                <li><a href="{% url 'cclr_programs' %}">CCLR Program</a></li>
-                <li><a href="{% url 'hybrid_learning' %}">Hybrid Learning</a></li>
-                <li><a href="{% url 'dual_track_learning' %}">Dual-track Learning</a></li>
-                <li><a href="{% url 'online_diploma_program' %}">Online Diploma Program</a></li>
+                <li><a href="{% url 'index' %}#founder">Founder Story</a></li>
+              <li><a href="{% url 'cclr_programs' %}">CCLR Program</a></li>
+              <li><a href="{% url 'hybrid_learning' %}">Hybrid Learning</a></li>
+              <li><a href="{% url 'dual_track_learning' %}">Dual-track Learning</a></li>
+              <li><a href="{% url 'online_diploma_program' %}">Online Diploma Program</a></li>
             </ul>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="{% url 'index' %}" style="color:#fff;text-decoration:none">Study With Us ▾</a>
             <ul>
-                <li><a href="{% url 'programs' %}">Programs</a></li>
-                <li><a href="{% url 'college_mentorship' %}">College Mentorship</a></li>
-                <li><a href="{% url 'highschool_mapping' %}">Highschool Mapping</a></li>
-                <li><a href="{% url 'faculty' %}">Faculty</a></li>
+              <li><a href="{% url 'programs' %}">Programs</a></li>
+              <li><a href="{% url 'college_mentorship' %}">College Mentorship</a></li>
+              <li><a href="{% url 'highschool_mapping' %}">Highschool Mapping</a></li>
+              <li><a href="{% url 'faculty' %}">Faculty</a></li>
             </ul>
-            </li>
-            <li><a href="{% url 'admissions' %}" style="color:#fff;text-decoration:none">Admissions</a></li>
-            <li>
+          </li>
+          <li><a href="{% url 'admissions' %}" style="color:#fff;text-decoration:none">Admissions</a></li>
+          <li>
             <a href="{% url 'index' %}" style="color:#fff;text-decoration:none">Join NGS Community ▾</a>
             <ul>
-                <li><a href="{% url 'ngs_inspires' %}">NGS Inspires</a></li>
-                <li><a href="{% url 'ngs_connects' %}">NGS Connects</a></li>
-                <li><a href="{% url 'membership_signin' %}">Membership SignIn</a></li>
+              <li><a href="{% url 'ngs_inspires' %}">NGS Inspires</a></li>
+              <li><a href="{% url 'ngs_connects' %}">NGS Connects</a></li>
+              <li><a href="{% url 'membership_signin' %}">Membership SignIn</a></li>
             </ul>
-            </li>
+          </li>
         </ul>
-        </nav>
+      </nav>
 
-        <!-- Log In on far right -->
-        <div style="margin-left:auto">
-        <a href="https://www.classin.com/login/" style="color:#fff;font-weight:700;text-decoration:none;padding:9px 14px;border-radius:6px;border:1px solid #fff">
-            Log In
-        </a>
+
+        <!-- Log In -->
+        <div style="margin-left:auto; display:flex; align-items:center; gap:12px;">
+            <a href="{% url 'index_zh' %}" class="lang-btn">中</a>
+            <a href="https://www.classin.com/login/" class="login-btn">
+                Log In
+            </a>
         </div>
-    </div>
+        
+  </div>
 </header>
 
 <script src="{% static 'js/main.js' %}"></script>
