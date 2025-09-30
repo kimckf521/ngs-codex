@@ -67,3 +67,59 @@ def membership_signin(request):
 
 def index_zh(request):
     return render(request, 'website/language/zh/index_zh.html')
+
+# Partner With Us
+
+
+def cclr_programs_zh(request):
+    return render(request, 'website/language/zh/partner_with_us/cclr_programs_zh.html')
+
+
+def hybrid_learning_zh(request):
+    return render(request, 'website/language/zh/partner_with_us/hybrid_learning_zh.html')
+
+
+def dual_track_learning_zh(request):
+    return render(request, 'website/language/zh/partner_with_us/dual_track_learning_zh.html')
+
+
+def online_diploma_program_zh(request):
+    return render(request, 'website/language/zh/partner_with_us/online_diploma_program_zh.html')
+
+
+# Study With Us
+
+def programs_zh(request):
+    return render(request, 'website/language/zh/study_with_us/programs_zh.html')
+
+
+def college_mentorship_zh(request):
+    return render(request, 'website/language/zh/study_with_us/college_mentorship_zh.html')
+
+
+def highschool_mapping_zh(request):
+    return render(request, 'website/language/zh/study_with_us/highschool_mapping_zh.html')
+
+
+def faculty_zh(request):
+    return render(request, 'website/language/zh/study_with_us/faculty_zh.html')
+
+
+# Admissions
+
+def admissions_zh(request):
+    return render(request, 'website/language/zh/admissions/admissions_zh.html')
+
+
+# Join Ngs Community
+
+def ngs_inspires_zh(request):
+    return render(request, 'website/language/zh/join_ngs_commmunity/ngs_inspires_zh.html')
+
+
+def ngs_connects_zh(request):
+    return render(request, 'website/language/zh/join_ngs_commmunity/ngs_connects_zh.html')
+
+
+def membership_signin_zh(request):
+    return render(request, 'website/language/zh/join_ngs_commmunity/membership_signin_zh.html')

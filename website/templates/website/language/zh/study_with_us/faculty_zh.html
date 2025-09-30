@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "website/language/zh/sections/head_zh.html" %}
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    
+    <!-- Header with Navigation -->
+    {% include "website/language/zh/sections/navbar_zh.html" %}
+
+    <!-- HERO -->
+    <section class="hero">
+    <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
+    </section>
+
+    <!-- FACULTY -->
+    {% include "website/language/zh/sections/faculties_zh.html" %}
+
+    <!-- A COMPREHENSIVE AND TAILORED CURRICULUM -->
+    {% include "website/language/zh/sections/comprehensive_zh.html" %}
+
+    <!-- Student Reviews -->
+    {% include "website/language/zh/sections/student_reviews_zh.html" %}
+
+    <!-- GLOBAL COMMUNITY -->
+    {% include "website/language/zh/sections/global_community_zh.html" %}
+
+    <!-- Partner With US -->
+    {% include "website/language/zh/sections/partner_with_ngs_zh.html" %}
+
+    <!-- Social Media-->
+    {% include "website/language/zh/sections/media_zh.html" %}
+
+    <!-- Customer Service Button -->
+    {% include "website/language/zh/sections/customer_service_zh.html" %}
+
+    <!-- Footer -->
+    {% include "website/language/zh/sections/footer_zh.html" %}
+
+    <!-- JavaScript -->
+     <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>

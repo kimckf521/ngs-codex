@@ -1,0 +1,71 @@
+{% load static %}
+
+<section class="programs" style="background:#f0f0f0; margin:0; padding:60px 40px;">
+  <!-- Title -->
+  <h2 class="section_title" style="text-align:center; letter-spacing:.5px; margin:0 0 48px; color:#111;">
+      未来教育联盟
+  </h2>
+
+  <!-- Grid -->
+  <div style="
+        max-width:1200px; margin:0 auto;
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:44px;">
+
+    <!-- Item 1 -->
+    <a href="#founder" style="text-decoration:none; color:inherit;">
+      <div style="transition:transform .25s ease, box-shadow .25s ease;">
+        <div style="
+              width:100%; aspect-ratio:1/1;      /* square */
+              max-width:350px; margin:0 auto;
+              background:#ddd;
+              overflow:hidden;">
+          <img alt="Partner With Us" src="{% static 'img/partnerwithus.jpg' %}" style="width:100%; height:100%; object-fit:cover; display:block;"/>
+        </div>
+        <h3 class="section_subtitle" style="margin:18px auto 10px; max-width:350px; font-weight:900; letter-spacing:.8px; color:#3c21a1; text-transform:uppercase; text-align:center;">
+          成为NGS伙伴
+        </h3>
+        <p class="section_paragraph" style="margin:0 auto; max-width:350px; line-height:1.8; color:#333; text-align:left;">
+          我们提供专业的线上国际课程、升学辅导以及个性化家教服务，旨在帮助教育者与学生实现学术卓越，释放他们的全部潜能。
+        </p>
+      </div>
+    </a>
+
+    <!-- Item 2 -->
+    <a href="#our-programs" style="text-decoration:none; color:inherit;">
+      <div style="transition:transform .25s ease, box-shadow .25s ease;">
+        <div style="
+              width:100%; aspect-ratio:1/1;
+              max-width:350px; margin:0 auto;
+              background:#ddd; overflow:hidden;">
+          <img alt="Study With Us" src="{% static 'img/Studywithus.png' %}" style="width:100%; height:100%; object-fit:cover; display:block;"/>
+        </div>
+        <h3 class="section_subtitle" style="margin:18px auto 10px; max-width:350px; font-weight:900; letter-spacing:.8px; color:#c2185b; text-transform:uppercase; text-align:center;">
+          成为NGS学生
+        </h3>
+        <p class="section_paragraph" style="margin:0 auto; max-width:350px; line-height:1.8; color:#333; text-align:left;">
+          或许你梦想进入理想的大学，但不确定如何实现。我们的个性化辅导服务将全程为你指引方向。
+        </p>
+      </div>
+    </a>
+
+    <!-- Item 3 -->
+    <a href="{% url 'ngs_inspires' %}" style="text-decoration:none; color:inherit;">
+      <div style="transition:transform .25s ease, box-shadow .25s ease;">
+        <div style="
+              width:100%; aspect-ratio:1/1;
+              max-width:350px; margin:0 auto;
+              background:#ddd; overflow:hidden;">
+          <img alt="Join Us" src="{% static 'img/Joinus.jpg' %}" style="width:100%; height:100%; object-fit:cover; display:block;"/>
+        </div>
+        <h3 class="section_subtitle" style="margin:18px auto 10px; max-width:350px; font-weight:900; letter-spacing:.8px; color:#2e7d32; text-transform:uppercase; text-align:center;">
+          加入NGS全球社区
+        </h3>
+        <p class="section_paragraph" style="margin:0 auto; max-width:350px; line-height:1.8; color:#333; text-align:left;">
+          在 NextGen Scholars，连接全球产业领袖、全球大学与全球学习者！
+        </p>
+      </div>
+    </a>
+  </div>
+</section>

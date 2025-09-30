@@ -33,19 +33,29 @@ body {
 
 /* Headings */
 h1 {
-  font-family: "Cal Sans", sans-serif;
-  font-weight: 700;
+
 }
 
-h2 {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
-}
 
 /* Optional: fallback styles for h3–h6 */
 h3, h4, h5, h6 {
+
+}
+
+.section_title {
+  font-family: "Cal Sans", sans-serif;
+  font-weight:900; 
+  font-size: 45px;
+}
+
+.section_subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+}
+
+.section_paragraph {
   font-family: "Albert Sans", sans-serif;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 
@@ -340,19 +350,40 @@ textarea { min-height: 110px; }
   position: fixed;
   right: 20px;
   bottom: 20px;
-  z-index: 9999;
-  background: #e84545;
-  color: #fff;
-  padding: 14px 20px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-size: 14px;
-  text-decoration: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  z-index: 9999;
+  cursor: grab;
+  transition: background 0.25s ease;
+  user-select: none;
 }
 
+.customer-service-btn img {
+  width: 50px;
+  height: 50px;
+  pointer-events: none;
+}
+
+/* Hover shake effect */
 .customer-service-btn:hover {
-  background: #c23434; /* darker hover */
+  background: #ffffff;
+  animation: shake 0.6s infinite;
+}
+
+/* Keyframes for shake */
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0); }
+  20% { transform: translate(-2px, 0) rotate(-5deg); }
+  40% { transform: translate(2px, 0) rotate(5deg); }
+  60% { transform: translate(-2px, 0) rotate(-5deg); }
+  80% { transform: translate(2px, 0) rotate(5deg); }
+  100% { transform: translate(0, 0) rotate(0); }
 }
 
 /* --------------------------------------------------

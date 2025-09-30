@@ -1,63 +1,67 @@
 {% load static %}
 
-<section class="programs" style="margin:0 50px; min-height:66vh; padding:40px 0;">
-  <h2 style="text-align:center; font-size:60px; font-weight:900; margin-bottom:50px; color:#111;">
+<section class="programs" style="background:#f0f0f0; margin:0; padding:60px 40px;">
+<!-- Title -->
+<h2 class="section_title" style="text-align:center; letter-spacing:.5px; margin:0 0 48px; color:#111;">
     Our Programs
   </h2>
-
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:36px;
-    align-items:stretch;
-    padding:0 50px;
-  ">
-    <!-- Card 1 -->
-    <a href="#founder" style="text-decoration:none; color:inherit;">
-      <div style="background:#fff; border-radius:16px; box-shadow:0 8px 18px rgba(0,0,0,0.08); overflow:hidden; transition:transform 0.25s ease, box-shadow 0.25s ease; text-align:center; cursor:pointer;">
-        <img src="{% static 'img/partnerwithus.jpg' %}" alt="Partner With Us"
-             style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:20px;">
-          <h3 style="font-size:18px; font-weight:900; color:#3c21a1; margin-bottom:12px; letter-spacing:1px;">
-            PARTNER WITH US
-          </h3>
-          <p style="font-size:15px; line-height:1.7; color:#444; margin:0;">
-            We offer expert online international programs, admissions coaching, and personalized tutoring services designed to empower educators and students to achieve academic excellence and unlock their full potential.
-          </p>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 2 -->
-    <a href="#our-programs" style="text-decoration:none; color:inherit;">
-      <div style="background:#fff; border-radius:16px; box-shadow:0 8px 18px rgba(0,0,0,0.08); overflow:hidden; transition:transform 0.25s ease, box-shadow 0.25s ease; text-align:center; cursor:pointer;">
-        <img src="{% static 'img/Studywithus.png' %}" alt="Study With Us"
-             style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:20px;">
-          <h3 style="font-size:18px; font-weight:900; color:#c2185b; margin-bottom:12px; letter-spacing:1px;">
-            STUDY WITH US
-          </h3>
-          <p style="font-size:15px; line-height:1.7; color:#444; margin:0;">
-            Perhaps you’re dreaming of gaining admission to your dream university but unsure how to get there. Our personalized mentoring services are here to guide you every step of the way.
-          </p>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 3 -->
-    <a href="{% url 'ngs_inspires' %}" style="text-decoration:none; color:inherit;">
-      <div style="background:#fff; border-radius:16px; box-shadow:0 8px 18px rgba(0,0,0,0.08); overflow:hidden; transition:transform 0.25s ease, box-shadow 0.25s ease; text-align:center; cursor:pointer;">
-        <img src="{% static 'img/Joinus.jpg' %}" alt="Join Us"
-             style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:20px;">
-          <h3 style="font-size:18px; font-weight:900; color:#2e7d32; margin-bottom:12px; letter-spacing:1px;">
-            JOIN US
-          </h3>
-          <p style="font-size:15px; line-height:1.7; color:#444; margin:0;">
-            Connect global industry leaders, global universities, and global learners at NextGen Scholars!
-          </p><br>
-        </div>
-      </div>
-    </a>
-  </div>
+<!-- Grid -->
+<div style="
+      max-width:1200px; margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:44px;">
+<!-- Item 1 -->
+<a href="#founder" style="text-decoration:none; color:inherit;">
+<div style="transition:transform .25s ease, box-shadow .25s ease;">
+<div style="
+            width:100%; aspect-ratio:1/1;      /* square */
+            max-width:350px; margin:0 auto;
+            background:#ddd;
+            overflow:hidden;">
+<img alt="Partner With Us" src="{% static 'img/partnerwithus.jpg' %}" style="width:100%; height:100%; object-fit:cover; display:block;"/>
+</div>
+<h3 class="section_subtitle" style="margin:18px auto 10px; max-width:350px; font-weight:900; letter-spacing:.8px; color:#3c21a1; text-transform:uppercase; text-align:center;">
+          Partner With Us
+        </h3>
+<p class="section_paragraph" style="margin:0 auto; max-width:350px; line-height:1.8; color:#333; text-align:left;">
+          We offer expert online international programs, admissions coaching, and personalized tutoring services designed to empower educators and students to achieve academic excellence and unlock their full potential.
+        </p>
+</div>
+</a>
+<!-- Item 2 -->
+<a href="#our-programs" style="text-decoration:none; color:inherit;">
+<div style="transition:transform .25s ease, box-shadow .25s ease;">
+<div style="
+            width:100%; aspect-ratio:1/1;
+            max-width:350px; margin:0 auto;
+            background:#ddd; overflow:hidden;">
+<img alt="Study With Us" src="{% static 'img/Studywithus.png' %}" style="width:100%; height:100%; object-fit:cover; display:block;"/>
+</div>
+<h3 class="section_subtitle" style="margin:18px auto 10px; max-width:350px; font-weight:900; letter-spacing:.8px; color:#c2185b; text-transform:uppercase; text-align:center;">
+          Study With Us
+        </h3>
+<p class="section_paragraph" style="margin:0 auto; max-width:350px; line-height:1.8; color:#333; text-align:left;">
+          Perhaps you’re dreaming of gaining admission to your dream university but unsure how to get there. Our personalized mentoring services are here to guide you every step of the way.
+        </p>
+</div>
+</a>
+<!-- Item 3 -->
+<a href="{% url 'ngs_inspires' %}" style="text-decoration:none; color:inherit;">
+<div style="transition:transform .25s ease, box-shadow .25s ease;">
+<div style="
+            width:100%; aspect-ratio:1/1;
+            max-width:350px; margin:0 auto;
+            background:#ddd; overflow:hidden;">
+<img alt="Join Us" src="{% static 'img/Joinus.jpg' %}" style="width:100%; height:100%; object-fit:cover; display:block;"/>
+</div>
+<h3 class="section_subtitle" style="margin:18px auto 10px; max-width:350px; font-weight:900; letter-spacing:.8px; color:#2e7d32; text-transform:uppercase; text-align:center;">
+          Join Us
+        </h3>
+<p class="section_paragraph" style="margin:0 auto; max-width:350px; line-height:1.8; color:#333; text-align:left;">
+          Connect global industry leaders, global universities, and global learners at NextGen Scholars!
+        </p>
+</div>
+</a>
+</div>
 </section>

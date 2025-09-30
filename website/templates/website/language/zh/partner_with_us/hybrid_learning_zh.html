@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "website/language/zh/sections/head_zh.html" %}
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    
+    <!-- Header with Navigation -->
+    {% include "website/language/zh/sections/navbar_zh.html" %}
+
+    <!-- HERO -->
+    <section class="hero">
+    <img src="{% static 'img/classroom.jpg' %}" alt="Graduates throwing caps">
+    </section>
+
+    <!-- NGS HYBRID PROGRAM -->
+    {% include "website/language/zh/sections/form_hybrid_zh.html" %}
+
+    <!-- NGS HYBRID PROGRAM (balanced, centered content, exact 66vh) -->
+    {% include "website/language/zh/sections/intro_hybrid_zh.html" %}
+
+    <!-- ADMISSIONS REQUIREMENT -->
+    {% include "website/language/zh/sections/addmissions_requirement_zh.html" %}
+
+    <!-- GLOBAL COMMUNITY -->
+    {% include "website/language/zh/sections/global_community_zh.html" %}
+
+    <!-- NGS Global Community -->
+    {% include "website/language/zh/sections/ngs_global_zh.html" %}
+
+    <!-- Social Media-->
+    {% include "website/language/zh/sections/media_zh.html" %}
+
+    <!-- Customer Service Button -->
+    {% include "website/language/zh/sections/customer_service_zh.html" %}
+
+    <!-- Footer -->
+    {% include "website/language/zh/sections/footer_zh.html" %}
+
+    <!-- JavaScript -->
+     <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>

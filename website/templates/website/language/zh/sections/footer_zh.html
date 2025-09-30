@@ -1,0 +1,89 @@
+{% load static %}   
+
+<script src="{% static 'js/main.js' %}"></script>
+
+{% comment %} {% include "website/sections/language_button.html" %} {% endcomment %}
+
+<footer style="border-top:2px solid #333; background:#000;color:#fff;padding:40px 20px;font-family:Arial, sans-serif;">
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:30px">
+        
+        <!-- Column 1: Menu -->
+
+        <ul style="list-style:none;padding:0;font-size: larger;margin:0">
+            <li style="margin-bottom:5px">
+                <a href="{% url 'cclr_programs_zh' %}" 
+                style="color:#fff;font-size:larger;text-decoration:none" 
+                onmouseover="this.style.color='limegreen'" 
+                onmouseout="this.style.color='#fff'">
+                成为NGS伙伴
+                </a>
+            </li>
+            <li style="margin-bottom:5px">
+                <a href="{% url 'programs_zh' %}" 
+                style="color:#fff;font-size:larger;text-decoration:none" 
+                onmouseover="this.style.color='limegreen'" 
+                onmouseout="this.style.color='#fff'">
+                成为NGS学生
+                </a>
+            </li>
+            <li style="margin-bottom:5px">
+                <a href="{% url 'admissions_zh' %}" 
+                style="color:#fff;font-size:larger;text-decoration:none" 
+                onmouseover="this.style.color='limegreen'" 
+                onmouseout="this.style.color='#fff'">
+                课程与招生
+                </a>
+            </li>
+            <li style="margin-bottom:5px">
+                <a href="{% url 'ngs_inspires_zh' %}" 
+                style="color:#fff;font-size:larger;text-decoration:none" 
+                onmouseover="this.style.color='limegreen'" 
+                onmouseout="this.style.color='#fff'">
+                加入NGS全球社区
+                </a>
+            </li>
+        </ul>
+
+
+        <!-- Column 2: Locations 1 -->
+        <div>
+        <p style="margin:0 0 10px;font-weight:600">美国三藩市</p>
+        <p style="margin:0 0 20px">600 California St 11th floor, San Francisco, CA 94108</p>
+
+        <p style="margin:0 0 10px;font-weight:600">澳大利亚墨尔本</p>
+        <p style="margin:0">262 Queen St, Melbourne VIC 3000</p>
+        </div>
+
+        <!-- Column 3: Locations 2 -->
+        <div>
+        <p style="margin:0 0 10px;font-weight:600">中国香港</p>
+        <p style="margin:0 0 20px">27/F China Resources Bldg 26, Harbour RD Wanchai</p>
+
+        <p style="margin:0 0 10px;font-weight:600">中国深圳</p>
+        <p style="margin:0">深圳市南山区望海路南<br>海玫瑰花园二期4栋4C</p>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div style="text-align:right">
+        <p style="margin:0;font-weight:600">info@nextgenscholars.org</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div style="border-top:0px solid #333;margin-top:30px;padding-top:20px;font-size:13px;line-height:1.6;color:#aaa; display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px">
+        <div><a href="#" style="color:#aaa;text-decoration:none">隐私政策</a> | 
+        <a href="#" style="color:#aaa;text-decoration:none">服务协议</a></div>
+        
+        <div style="text-align:center">
+            <p style="margin:0 0 4px">深圳市千瞳空间文化艺术有限公司版权所有 © 2025</p>
+        </div>
+        
+        <div style="text-align:right">
+            <p style="margin:0">粤ICP备2025400078号 粤公网安备 4403002025xxx</p>
+        </div>
+        
+    </div>
+
+</footer>

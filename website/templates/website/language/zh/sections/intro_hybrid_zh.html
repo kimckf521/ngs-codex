@@ -1,0 +1,66 @@
+{% load static %}
+
+<section style="
+  height:66vh;                      /* exact height */
+  box-sizing:border-box;
+  padding:30px 20px;
+  background:#ffffff;
+  width:100%;
+  display:flex; align-items:center;">
+<div style="
+    max-width:1180px; margin:0 auto; width:100%;
+    height:100%; display:flex; flex-direction:column;">
+<!-- Title -->
+<h2 class="section_title" style="margin:0 0 18px; text-align:center; font-weight:900; letter-spacing:.5px; color:#111;">
+      NGS HYBRID PROGRAM
+    </h2>
+<!-- Content: two columns -->
+<div style="
+      flex:1; height:100%;
+      display:grid; grid-template-columns:1fr 1.6fr;
+      gap:48px; align-items:stretch;"> <!-- ✅ stretch both columns -->
+<!-- Left: rounded info card -->
+<div style="display:flex; align-items:center; justify-content:center;">
+<div style="
+          border:1px solid #d7d7d7;
+          border-radius:26px;
+          padding:30px 34px;
+          width:420px; max-width:100%;
+          box-sizing:border-box;
+          height:100%;
+          display:flex;
+          flex-direction:column;"> <!-- ✅ flex for title + bottom list -->
+<h3 class="section_subtitle" style="margin:0; font-weight:900; color:#111;">
+            混合课程
+          </h3>
+<!-- Spacer pushes list to bottom -->
+<div style="flex:1;"></div>
+<!-- List anchored at bottom -->
+<ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.8; list-style:disc;">
+<li>灵活的学习架构</li>
+<li>扩展的课程目录</li>
+<li>增强的教育创新</li>
+</ul>
+</div>
+</div>
+<!-- Right: description -->
+<div style="
+        color:#111; font-size:18px; line-height:1.9;
+        background:#f9f9f9; padding:30px;
+        border-radius:20px;
+        height:100%;              /* ✅ forces equal height */
+        box-sizing:border-box;
+        display:flex; flex-direction:column; justify-content:center;"> <!-- ✅ vertically centered -->
+<h3 class="section_subtitle" style="margin:0 0 16px; font-weight:900;">
+  什么是混合课程？
+</h3>
+<p class="section_paragraph" style="margin:0 0 16px;">
+  混合课程是一种灵活的教育模式，将线下授课与线上教学无缝结合。
+</p>
+<p class="section_paragraph" style="margin:0;">
+  学生部分课程在校园内实体课堂上课，另一部分课程则通过 NGS 的先进线上平台完成，从而形成个性化的学习安排，以满足他们的个人需求、兴趣和实际情况。
+</p>
+</div>
+</div>
+</div>
+</section>

@@ -1,0 +1,94 @@
+{% load static %}      
+      
+<header style="background:#000;">
+  <div class="navwrap" style="display:flex;align-items:center;justify-content:space-between;">
+      
+      <!-- Logo on far left -->
+      <a class="logo" href="{% url 'index' %}" id="logo" style="margin-right:auto">
+        <img src="{% static 'img/newlogo.png' %}" alt="logo" style="height:50px">
+      </a>
+
+      <!-- Nav links in the middle -->
+      <nav id="site-nav" style="margin-left:auto;margin-right:auto">
+        <ul style="display:flex;gap:20px;list-style:none;margin:0;padding:0;align-items:center">
+          <li>
+            <a href="{% url 'index' %}" style="color:#fff;text-decoration:none">Partner With NGS ▾</a>
+            <ul>
+                <li><a href="{% url 'index' %}#founder">Founder Story</a></li>
+              <li><a href="{% url 'cclr_programs' %}">CCLR Program</a></li>
+              <li><a href="{% url 'hybrid_learning' %}">Hybrid Learning</a></li>
+              <li><a href="{% url 'dual_track_learning' %}">Dual-track Learning</a></li>
+              <li><a href="{% url 'online_diploma_program' %}">Online Diploma Program</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="{% url 'index' %}" style="color:#fff;text-decoration:none">Study With Us ▾</a>
+            <ul>
+              <li><a href="{% url 'programs' %}">Programs</a></li>
+              <li><a href="{% url 'college_mentorship' %}">College Mentorship</a></li>
+              <li><a href="{% url 'highschool_mapping' %}">Highschool Mapping</a></li>
+              <li><a href="{% url 'faculty' %}">Faculty</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'admissions' %}" style="color:#fff;text-decoration:none">Admissions</a></li>
+          <li>
+            <a href="{% url 'index' %}" style="color:#fff;text-decoration:none">Join NGS Community ▾</a>
+            <ul>
+              <li><a href="{% url 'ngs_inspires' %}">NGS Inspires</a></li>
+              <li><a href="{% url 'ngs_connects' %}">NGS Connects</a></li>
+              <li><a href="{% url 'membership_signin' %}">Membership SignIn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+        <!-- Log In -->
+        <div style="margin-left:auto; display:flex; align-items:center; gap:12px;">
+            <a href="{% url 'index_zh' %}" class="lang-btn">中</a>
+            <a href="https://www.classin.com/login/" class="login-btn">
+                Log In
+            </a>
+        </div>
+        
+  </div>
+</header>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+<script>
+    // Mobile menu functionality
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const closeMenuButton = document.getElementById("close-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const body = document.body;
+
+    mobileMenuButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+    body.classList.toggle("overflow-hidden");
+    });
+
+    closeMenuButton.addEventListener("click", function () {
+    mobileMenu.classList.add("hidden");
+    body.classList.remove("overflow-hidden");
+    });
+
+    // Close menu when clicking on links
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+    mobileLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+        mobileMenu.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
+    });
+    });
+
+    // Scroll behavior
+    window.addEventListener("scroll", function () {
+    const navbar = document.querySelector("nav");
+    if (window.scrollY > 10) {
+        navbar.classList.add("shadow-lg", "bg-primary/95");
+    } else {
+        navbar.classList.remove("shadow-lg", "bg-primary/95");
+    }
+    });
+</script>

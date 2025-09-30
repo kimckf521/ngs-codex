@@ -1,0 +1,395 @@
+{% load static %}
+
+<!-- 选择辅导计划 -->
+<section style="
+    width:100%; height:66vh; background:#fff;
+    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
+  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column; text-align:center;">
+
+    <!-- Title -->
+    <h2 class="section_title" style="font-weight:900; margin:0 0 16px;">选择辅导计划</h2>
+
+    <!-- Category chips -->
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:0 0 20px;">
+      <span style="background:linear-gradient(90deg,#7ee8a2,#34c759);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">基础班</span>
+      <span style="background:linear-gradient(90deg,#56ccf2,#2f80ed);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">同步班</span>
+      <span style="background:linear-gradient(90deg,#f2994a,#f2c94c);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">强化班</span>
+      <span style="background:linear-gradient(90deg,#eb5757,#ff0080);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">考前冲刺</span>
+    </div>
+
+    <!-- Plans grid -->
+    <div style="
+        flex:1; min-height:0;
+        display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:24px; text-align:left; align-items:stretch;">
+
+      <!-- Trial Lesson -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 6px; font-weight:900;">体验课</h3>
+          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">$40/节</p>
+          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+            <li>1 小时一对一授课</li>
+            <li>全球前 50 名校导师授课</li>
+            <li>熟悉 IB / A-Level / AP / HKDSE</li>
+            <li>定制学习计划与学习建议</li>
+          </ul>
+        </div>
+        <div style="margin-top:auto">
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" style="text-decoration:none" target="_blank">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+              购买
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Lesson Packages -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 6px; font-weight:900;">课时套餐</h3>
+          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">按套餐购买</p>
+          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+            <li>个性化学习计划</li>
+            <li>4v1 全面导师支持</li>
+            <li>优质学习资料</li>
+            <li>目标设定与阶段报告</li>
+            <li>全球前 50 名校导师授课</li>
+            <li>覆盖 IB / A-Level / AP / HKDSE</li>
+          </ul>
+
+          <label for="package-order" style="font-weight:700;display:block;margin-bottom:6px">购买选项：</label>
+          <select id="package-order" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
+            <option value="10">体验：10 小时</option>
+            <option value="20">基础班：20 小时</option>
+            <option value="30-sync">同步班：30 小时</option>
+            <option value="30-acc">强化班：30 小时</option>
+            <option value="40">课程组合：40 小时</option>
+          </select>
+        </div>
+        <div style="margin-top:auto">
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" style="text-decoration:none" target="_blank">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+              购买
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Exam Preparation -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 6px; font-weight:900;">考试冲刺</h3>
+          <p class="section_paragraph" style="margin:0 0 8px; color:#666;">
+            套餐：<strong>10 节（每节 1.5 小时）</strong>
+          </p>
+          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+            <li>对应学科资深导师指导</li>
+            <li>覆盖 IB / A-Level / AP / HKDSE 学术科目</li>
+            <li>标准化考试：IELTS / TOEFL / SAT</li>
+            <li>大学入学笔面试（常春藤 / G5）</li>
+          </ul>
+        </div>
+        <div style="margin-top:auto">
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" style="text-decoration:none" target="_blank">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+              购买
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 选择升学辅导项目 -->
+<section style="
+    width:100%; min-height:66vh; background:#fff;
+    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
+  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column;">
+    <h2 class="section_title" style="font-weight:900; margin:0 0 12px; text-align:center;">选择升学辅导项目</h2>
+    <div style="text-align:center; margin:0 0 20px; font-size:48px;">🇺🇸 🇬🇧 🇨🇦 🇦🇺 🇭🇰 🇸🇬</div>
+
+    <div style="
+        flex:1; min-height:0;
+        display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:24px; align-items:stretch;">
+
+      <!-- Free Consultation -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column;">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">免费咨询</h3>
+          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+            <li>与 NGS 导师在线免费交流</li>
+            <li>个性化生涯路线图</li>
+            <li>预约适合你的时间档</li>
+            <li>欢迎家长一同参与</li>
+          </ul>
+        </div>
+        <div style="margin-top:auto; text-align:left;">
+          <label for="order-consult" style="font-weight:700;display:block;margin-bottom:6px">购买选项</label>
+          <select id="order-consult" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
+            <option value="1">1 次（免费）</option>
+          </select>
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+              购买
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- College Counseling -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column;">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">升学辅导</h3>
+          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">年度方案 &amp; 全面方案</p>
+          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+            <li>学业规划</li><li>选校清单</li><li>个人陈述写作</li>
+            <li>活动清单与简历</li><li>推荐信</li><li>面试辅导</li><li>作品集准备</li>
+          </ul>
+        </div>
+        <div style="margin-top:auto; text-align:left;">
+          <label for="order-college" style="font-weight:700;display:block;margin-bottom:6px">购买选项</label>
+          <select id="order-college" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
+            <option value="annual">年度方案</option>
+            <option value="3yr">三年规划</option>
+            <option value="4yr">四年规划</option>
+          </select>
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+              购买
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <!-- K12 Placement Service -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column;">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">K12 入学安置服务</h3>
+          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">按个案收费</p>
+          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+            <li>学生评估与策略制定</li>
+            <li>目标学校清单</li>
+            <li>预约校园参访</li>
+            <li>学校报告</li>
+            <li>申请材料支持</li>
+            <li>入学考试与面试</li>
+          </ul>
+        </div>
+        <div style="margin-top:auto; text-align:left;">
+          <label for="order-k12" style="font-weight:700;display:block;margin-bottom:6px">购买选项</label>
+          <select id="order-k12" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
+            <option value="1">1 个案</option>
+          </select>
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+              购买
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 选择文凭课程 -->
+<section style="
+    width:100%; min-height:66vh; background:#fff;
+    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
+  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column; text-align:center;">
+
+    <!-- Title -->
+    <h2 class="section_title" style="font-weight:900; margin:0 0 14px;">选择文凭课程</h2>
+
+    <!-- Program Tags -->
+    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:0 0 20px;">
+      <span style="background:linear-gradient(90deg,#42e695,#3bb2b8);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">IGCSE</span>
+      <span style="background:linear-gradient(90deg,#56ccf2,#2f80ed);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">A-Level</span>
+      <span style="background:linear-gradient(90deg,#f7971e,#ffd200);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">AP</span>
+      <span style="background:linear-gradient(90deg,#eb3349,#f45c43);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">HKDSE</span>
+    </div>
+
+    <!-- Cards -->
+    <div style="
+        flex:1; min-height:0;
+        display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:24px; align-items:stretch; text-align:left;">
+
+      <!-- Hybrid Program -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">未来全域学习计划</h3>
+          <ul style="margin:0; line-height:1.7; color:#333; padding-left:18px;">
+            <li>学习进度灵活</li>
+            <li>上课地点灵活：线上 + 校园</li>
+            <li>课程选择更丰富</li>
+            <li>量身定制课程体系</li>
+          </ul>
+        </div>
+        <div style="flex:1"></div>
+        <div>
+          <label style="font-weight:700;display:block;margin:0 0 6px">选择课程体系</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+            <option>IGCSE</option><option>A-Level</option><option>AP</option><option>HKDSE</option>
+          </select>
+          <label style="font-weight:700;display:block;margin:6px 0">选择计划</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+            <option>SY2025-2026</option><option>2025-26 上学期</option><option>2025-26 下学期</option><option>单科</option>
+          </select>
+        </div>
+        <div style="margin-top:auto">
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Dual-Track Program -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">未来教育双轨计划</h3>
+          <ul style="margin:0; line-height:1.7; color:#333; padding-left:18px;">
+            <li>高考 + 国际课程双通道</li>
+            <li>双轨注册就读</li>
+            <li>学习进度可个性化</li>
+            <li>完成后可获双文凭</li>
+          </ul>
+        </div>
+        <div style="flex:1"></div>
+        <div>
+          <label style="font-weight:700;display:block;margin:0 0 6px">选择课程体系</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+            <option>IGCSE</option><option>A-Level</option><option>AP</option><option>HKDSE</option>
+          </select>
+          <label style="font-weight:700;display:block;margin:6px 0">选择计划</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+            <option>SY2025-2026</option><option>2025-26 上学期</option><option>2025-26 下学期</option><option>单科</option>
+          </select>
+        </div>
+        <div style="margin-top:auto">
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Online Diploma Program -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">未来无界文凭课程</h3>
+          <ul style="margin:0; line-height:1.7; color:#333; padding-left:18px;">
+            <li>按自己的节奏灵活学习</li>
+            <li>远程学习，地点灵活</li>
+            <li>学校注册与官方成绩单</li>
+            <li>完成后获得高中毕业文凭</li>
+          </ul>
+        </div>
+        <div style="flex:1"></div>
+        <div>
+          <label style="font-weight:700;display:block;margin:0 0 6px">选择课程体系</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+            <option>IGCSE</option><option>A-Level</option><option>AP</option><option>HKDSE</option>
+          </select>
+          <label style="font-weight:700;display:block;margin:6px 0">选择计划</label>
+          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+            <option>SY2025-2026</option><option>2025-26 上学期</option><option>2025-26 下学期</option><option>单科</option>
+          </select>
+        </div>
+        <div style="margin-top:auto">
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 订阅方案 -->
+<section style="
+    width:100%; height:66vh; background:#fff;
+    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
+  <div style="max-width:1180px; margin:auto; width:100%; height:100%; text-align:center; display:flex; flex-direction:column;">
+    <h2 class="section_title" style="font-weight:900; margin:0 0 14px;">订阅方案</h2>
+
+    <!-- Product tags -->
+    <div style="display:flex;gap:16px;justify-content:center;margin:0 0 20px;flex-wrap:wrap">
+      <span style="display:inline-block;background:linear-gradient(90deg,#9b5cff,#ff7f66);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">NextGen Inspires</span>
+      <span style="display:inline-block;background:linear-gradient(90deg,#42e695,#3bb2b8);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">NextGen Connects</span>
+    </div>
+
+    <!-- Cards grid -->
+    <div style="
+        flex:1; min-height:0;
+        display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+        gap:24px; text-align:left; align-items:stretch;">
+
+      <!-- Family Plan -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">家庭方案</h3>
+          <p class="section_paragraph" style="margin:0 0 10px; color:#444; line-height:1.6;">包含 <strong>NextGen Connects</strong> 权益</p>
+        </div>
+        <div style="margin-top:auto">
+          <label for="family-plan" style="font-size:14px;color:#111;font-weight:700;display:block;margin:0 0 6px">选择付费方式</label>
+          <select id="family-plan" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 10px">
+            <option value="monthly">月付</option>
+            <option value="halfyear">半年付</option>
+            <option value="annual">年付</option>
+          </select>
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Premium Plan -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">高级方案</h3>
+          <p class="section_paragraph" style="margin:0 0 10px; color:#444; line-height:1.6;">包含 <strong>NextGen Inspires</strong> 权益</p>
+        </div>
+        <div style="margin-top:auto">
+          <label for="premium-plan" style="font-size:14px;color:#111;font-weight:700;display:block;margin:0 0 6px">选择付费方式</label>
+          <select id="premium-plan" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 10px">
+            <option value="monthly">月付</option>
+            <option value="halfyear">半年付</option>
+            <option value="annual">年付</option>
+          </select>
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Elite Membership -->
+      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+        <div>
+          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">精英会员</h3>
+          <p class="section_paragraph" style="margin:0 0 8px; color:#444; line-height:1.6;">包含以下权益</p>
+          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+            <li>NextGen Inspires</li>
+            <li>NextGen Connects</li>
+          </ul>
+        </div>
+        <div style="margin-top:auto">
+          <label for="elite-plan" style="font-size:14px;color:#111;font-weight:700;display:block;margin:0 0 6px">选择付费方式</label>
+          <select id="elite-plan" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 10px">
+            <option value="monthly">月付</option>
+            <option value="halfyear">半年付</option>
+            <option value="annual">年付</option>
+          </select>
+          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+{% load static %}
+
+<section style="
+  height:66vh;
+  width:100%;
+  background:#fff;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 20px;
+  box-sizing:border-box;">
+<div style="max-width:980px; margin:auto; width:100%;">
+<!-- Title -->
+<h2 class="section_title" style="font-weight:900; margin-bottom:24px;">
+      掌握你自己的学习节奏
+    </h2>
+<!-- Image -->
+<img alt="Online Learning" src="{% static 'img/takecharge.jpg' %}" style="display:block; margin:0 auto 24px auto; max-width:700px; width:100%;
+                border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.1);"/>
+<!-- Button -->
+<a href="{% url 'admissions' %}" style="display:inline-block; background:linear-gradient(90deg,#2ecc71,#27ae60);
+              color:#000; font-weight:700; padding:14px 28px;
+              border-radius:40px; font-size:16px; text-decoration:none;">
+      预约试听课
+    </a>
+</div>
+</section>

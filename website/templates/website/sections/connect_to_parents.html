@@ -4,69 +4,55 @@
 
 
 <section style="padding:60px 20px;background:linear-gradient(135deg,#f857a6,#ffcc70);width:100%;height:66vh;box-sizing:border-box;">
-    <div style="max-width:1180px;margin:auto;height:100%;display:flex;flex-direction:column;">
-
-    <!-- Title -->
-    <h2 style="text-align:center;font-size:32px;font-weight:900;margin:0 0 16px;">
+<div style="max-width:1180px;margin:auto;height:100%;display:flex;flex-direction:column;">
+<!-- Title -->
+<h2 class="section_title" style="text-align:center; font-weight:900; margin:0 0 16px;">
         Connect to Parents
     </h2>
-
-    <!-- Two-column layout -->
-    <div style="
+<!-- Two-column layout -->
+<div style="
         flex:1;                     /* fill remaining height */
         min-height:0;               /* allow children to shrink inside 66vh */
         display:grid;
         grid-template-columns:1.2fr 0.8fr;
         gap:20px; align-items:stretch;">
-
-        <!-- Left: Carousel (image resized to fit) -->
-        <div id="carouselparents" class="carousel slide" style="position:relative;height:100%;overflow:hidden;">
-        <div class="carousel-inner" style="height:100%;">
-            <div class="carousel-item active" style="height:100%;">
-            <img src="{% static 'img/connects/parent1.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/connects/parent2.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'iimg/connects/parent3.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'iimg/connects/parent4.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-        </div>
-
-        <!-- Controls overlay (don’t affect height) -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselparents" data-bs-slide="prev"
-                style="position:absolute;top:50%;transform:translateY(-50%);">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselparents" data-bs-slide="next"
-                style="position:absolute;top:50%;transform:translateY(-50%);">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div>
-
-        <!-- Right: Text (centered in column) -->
-        <div style="
+<!-- Left: Carousel (image resized to fit) -->
+<div class="carousel slide" id="carouselparents" style="position:relative;height:100%;overflow:hidden;">
+<div class="carousel-inner" style="height:100%;">
+<div class="carousel-item active" style="height:100%;">
+<img alt="" src="{% static 'img/connects/parent1.jpg' %}" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;"/>
+</div>
+<div class="carousel-item" style="height:100%;">
+<img alt="" src="{% static 'img/connects/parent2.jpg' %}" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;"/>
+</div>
+<div class="carousel-item" style="height:100%;">
+<img alt="" src="{% static 'iimg/connects/parent3.jpg' %}" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;"/>
+</div>
+<div class="carousel-item" style="height:100%;">
+<img alt="" src="{% static 'iimg/connects/parent4.jpg' %}" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;"/>
+</div>
+</div>
+<!-- Controls overlay (don’t affect height) -->
+<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselparents" style="position:absolute;top:50%;transform:translateY(-50%);" type="button">
+<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselparents" style="position:absolute;top:50%;transform:translateY(-50%);" type="button">
+<span aria-hidden="true" class="carousel-control-next-icon"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+<!-- Right: Text (centered in column) -->
+<div style="
         display:flex; 
         align-items:center; 
         justify-content:center; 
         height:100%;"> <!-- parent column is full height -->
-
-        <div style="text-align:left; color:#000; font-size:16px; line-height:1.7; background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.1);">
-            
-            <p style="margin:0;"><strong>NGS Global Network of Parents</strong></p>
-              <p style="margin:10px 0 0;">Connect families across regions, share insights, and build supportive communities that amplify student success and school partnerships.</p>
-        </div>
-        </div>
-
-    </div>
-    </div>
+<div style="text-align:left; color:#000; font-size:16px; line-height:1.7; background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.1);">
+<p class="section_paragraph" style="margin:0;"><strong>NGS Global Network of Parents</strong></p>
+<p class="section_paragraph" style="margin:10px 0 0;">Connect families across regions, share insights, and build supportive communities that amplify student success and school partnerships.</p>
+</div>
+</div>
+</div>
+</div>
 </section>

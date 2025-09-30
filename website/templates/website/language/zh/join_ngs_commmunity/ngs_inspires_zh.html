@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "website/language/zh/sections/head_zh.html" %}
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    
+    <!-- Header with Navigation -->
+    {% include "website/language/zh/sections/navbar_zh.html" %}
+
+    <!-- HERO -->
+    <section class="hero">
+      <img src="{% static 'img/Graduation.jpg' %}">
+    </section>
+
+    <!-- NEXTGEN INSPIRES -->
+    {% include "website/language/zh/sections/intro_inspires_zh.html" %}
+
+    <!-- INSPIRES -->
+    {% include "website/language/zh/sections/inspires_zh.html" %}
+
+    <!-- GLOBAL INDUSTRY LEADERS -->
+    {% include "website/language/zh/sections/global_industry_leaders_zh.html" %}
+
+    <!-- SPARK LAB -->
+    {% include "website/language/zh/sections/spark_lab_zh.html" %}
+
+    <!-- GLOBAL UNIVERSITIES --> 
+    {% include "website/language/zh/sections/global_universities_zh.html" %}
+
+    <!-- SUBSCRIBE TODAY -->
+    {% include "website/language/zh/sections/subscribe_zh.html" %}
+
+    <!-- GLOBAL COMMUNITY -->
+    {% include "website/language/zh/sections/global_community_zh.html" %}
+
+    <!-- Social Media-->
+    {% include "website/language/zh/sections/media_zh.html" %}
+
+    <!-- Customer Service Button -->
+    {% include "website/language/zh/sections/customer_service_zh.html" %}
+
+    <!-- Footer -->
+    {% include "website/language/zh/sections/footer_zh.html" %}
+
+    <!-- JavaScript -->
+     <script src="{% static 'js/main.js' %}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+
+  </body>
+</html>

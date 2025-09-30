@@ -1,0 +1,67 @@
+{% load static %}
+
+<section style="
+  height:66vh;                      /* exact height */
+  box-sizing:border-box;
+  padding:30px 20px;
+  background:#ffffff;
+  width:100%;
+  display:flex; align-items:center;">
+<div style="
+    max-width:1180px; margin:0 auto; width:100%;
+    height:100%; display:flex; flex-direction:column;">
+<!-- Title -->
+<h2 class="section_title" style="margin:0 0 18px; text-align:center; font-weight:900; letter-spacing:.5px; color:#111;">
+      NGS 线上文凭课程
+    </h2>
+<!-- Content: two columns -->
+<div style="
+      flex:1; height:100%;
+      display:grid; grid-template-columns:1fr 1.6fr;
+      gap:48px; align-items:stretch;"> <!-- ✅ stretch both columns -->
+<!-- Left: rounded info card -->
+<div style="display:flex; align-items:center; justify-content:center;">
+<div style="
+          border:1px solid #d7d7d7;
+          border-radius:26px;
+          padding:30px 34px;
+          width:420px; max-width:100%;
+          box-sizing:border-box;
+          height:100%;
+          display:flex;
+          flex-direction:column;"> <!-- ✅ flex for title + bottom list -->
+<h3 class="section_subtitle" style="margin:0; font-weight:900; color:#111;">
+            线上文凭课程
+          </h3>
+<!-- Spacer pushes list to bottom -->
+<div style="flex:1;"></div>
+<!-- List anchored at bottom -->
+<ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.8; list-style:disc;">
+<li>按照自己的节奏灵活学习</li>
+<li>灵活的学习地点</li>
+<li>认证学校注册与成绩单</li>
+<li>完成后获得高中毕业文凭</li>
+</ul>
+</div>
+</div>
+<!-- Right: description -->
+<div style="
+        color:#111; font-size:18px; line-height:1.9;
+        background:#f9f9f9; padding:30px;
+        border-radius:20px;
+        height:100%;              /* ✅ forces equal height */
+        box-sizing:border-box;
+        display:flex; flex-direction:column; justify-content:center;"> <!-- ✅ vertically centered -->
+<h3 class="section_subtitle" style="margin:0 0 16px; font-weight:900;">
+  什么是线上文凭课程？
+</h3>
+<p class="section_paragraph" style="margin:0 0 16px;">
+  线上文凭课程旨在满足那些无法长期在固定地点学习，但仍希望在完成全程学习后获得高中毕业文凭的学生需求。
+</p>
+<p class="section_paragraph" style="margin:0;">
+  选择该路径的学生将注册于认证学校，并在 NGS 在线学校完成所有学科学习与形成性评估。达到课程完成要求后，学生需在学校指定的实体校区参加官方考试。符合毕业标准的学生将获颁可信的高中毕业文凭及完整的成绩单。
+</p>
+</div>
+</div>
+</div>
+</section>

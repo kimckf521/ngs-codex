@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "website/language/zh/sections/head_zh.html" %}
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    
+    <!-- Header with Navigation -->
+    {% include "website/language/zh/sections/navbar_zh.html" %}
+
+    <!-- HERO -->
+    <section class="hero">
+    <img src="{% static 'img/painting.jpg' %}" alt="Graduates throwing caps">
+    </section>
+
+    <!-- NEXTGEN CONNECTS CARDS-->
+    {% include "website/language/zh/sections/connects_cards_zh.html" %}
+
+    <!-- NEXTGEN CONNECTS (overview) -->
+    {% include "website/language/zh/sections/intro_connects_zh.html" %}
+
+    <!-- HIGH-SCHOOL MAPPING -->
+    {% include "website/language/zh/sections/highschool_mapping_sections_zh.html" %}
+
+    <!-- CONNECT TO SCHOOLS -->
+    {% include "website/language/zh/sections/connect_to_schools_zh.html" %}
+
+    <!-- CONNECT TO PARENTS -->
+    {% include "website/language/zh/sections/connect_to_parents_zh.html" %}
+    
+    <!-- CONNECT TO EDUCATIONAL EXPERTS -->
+    {% include "website/language/zh/sections/connect_to_experts_zh.html" %}
+
+    <!-- SUBSCRIBE TODAY -->
+    {% include "website/language/zh/sections/subscribe_zh.html" %}
+
+    <!-- Social Media-->
+    {% include "website/language/zh/sections/media_zh.html" %}
+
+    <!-- Customer Service Button -->
+    {% include "website/language/zh/sections/customer_service_zh.html" %}
+
+    <!-- Footer -->
+    {% include "website/language/zh/sections/footer_zh.html" %}
+
+    <!-- JavaScript -->
+     <script src="{% static 'js/main.js' %}"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+
+  </body>
+</html>

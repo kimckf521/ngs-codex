@@ -6,25 +6,21 @@
     background:#fff;
     padding:60px 20px;
     box-sizing:border-box;">
-    
-    <div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
-
-    <!-- Title -->
-    <h2 style="text-align:center; font-size:36px; font-weight:900; margin:0 0 28px;">
+<div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+<!-- Title -->
+<h2 class="section_title" style="text-align:center; font-weight:900; margin:0 0 28px;">
         NextGen Inspires
     </h2>
-
-    <!-- Two-column layout (50/50 split) -->
-    <div style="
+<!-- Two-column layout (50/50 split) -->
+<div style="
         flex:1; 
         display:grid; 
         grid-template-columns:1fr 1fr;  /* 50% left, 50% right */
         gap:36px; 
         align-items:stretch; 
         height:100%;">
-
-        <!-- Left: Card with bullets at bottom -->
-        <div style="
+<!-- Left: Card with bullets at bottom -->
+<div style="
         background:#fff;
         border:1.5px solid #1a1a1a;
         border-radius:26px;
@@ -35,77 +31,60 @@
         display:flex;
         flex-direction:column;
         justify-content:flex-start;">
-
-        <!-- Title -->
-        <h3 style="
-            margin:6px 0 0;
-            font-size:28px;
-            font-weight:900;
-            line-height:1.15;
-            letter-spacing:.2px;
-            color:#111;">
-            NextGen Global<br>Community
+<!-- Title -->
+<h3 class="section_subtitle" style="margin:6px 0 0; font-weight:900; line-height:1.15; letter-spacing:.2px; color:#111;">
+            NextGen Global<br/>Community
         </h3>
-
-        <!-- Spacer pushes list down -->
-        <div style="flex:1"></div>
-
-        <!-- Bullets (anchored at bottom) -->
-        <ul style="
+<!-- Spacer pushes list down -->
+<div style="flex:1"></div>
+<!-- Bullets (anchored at bottom) -->
+<ul style="
             margin:0;
             padding-left:22px;
             list-style:disc;
             font-size:16px;
             line-height:1.9;
             color:#111;">
-
-            <li>
-                <a href="{% url 'cclr_programs' %}" class="bullet-link">
+<li>
+<a class="bullet-link" href="{% url 'cclr_programs' %}">
                     CCLR Program
                 </a>
-            </li>
-
-            <li>
-                <a>
+</li>
+<li>
+<a>
                     Partnership Programs
                 </a>
-            </li>
-
-            <li>
-                <a href="{% url 'ngs_inspires' %}" class="bullet-link active">
+</li>
+<li>
+<a class="bullet-link active" href="{% url 'ngs_inspires' %}">
                     NextGen Inspires
                 </a>
-            </li>
-
-            <li>
-                <a href="{% url 'ngs_connects' %}" class="bullet-link">
+</li>
+<li>
+<a class="bullet-link" href="{% url 'ngs_connects' %}">
                     NextGen Connects
                 </a>
-            </li>
-        </ul>
-
-        </div>
-
-        <!-- Right: Copy -->
-        <div style="
+</li>
+</ul>
+</div>
+<!-- Right: Copy -->
+<div style="
         font-size:15px; 
         line-height:1.8; 
         color:#222; 
         display:flex; 
         flex-direction:column; 
         justify-content:center;">
-        
-        <p style="margin-top:0; margin-bottom:16px;">
-            <strong>NextGen Inspires</strong> is an Exclusive Subscription Service for NGS Partner Schools &amp; Students – designed
+<p class="section_paragraph" style="margin-top:0; margin-bottom:16px;">
+<strong>NextGen Inspires</strong> is an Exclusive Subscription Service for NGS Partner Schools &amp; Students – designed
             to connect students and educators with a world of opportunities.
         </p>
-        <p style="margin:0;">
+<p class="section_paragraph" style="margin:0;">
             Through collaborations with Global Industry Leaders, Global Universities, the innovative SPARK LAB, and a thriving
             network of Global Alumni, <strong>NextGen Inspires</strong> provides access to unparalleled resources, mentorship, and
             inspiration to empower the next generation of achievers.
         </p>
-        </div>
-
-    </div>
-    </div>
+</div>
+</div>
+</div>
 </section>

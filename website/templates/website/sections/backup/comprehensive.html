@@ -1,0 +1,66 @@
+{% load static %}
+
+<section style="
+  height:66vh;
+  width:100%;
+  background:linear-gradient(135deg,#a1c4fd,#c2e9fb,#d4fc79,#96e6a1);
+  padding:40px 20px;
+  box-sizing:border-box;
+  display:flex; align-items:center; justify-content:center;">
+  
+  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column;">
+    
+    <!-- Title -->
+    <h2 style="text-align:center; font-size:32px; font-weight:900; margin:0 0 24px;">
+      A Comprehensive and Tailored Curriculum
+    </h2>
+
+    <!-- Content -->
+    <div style="
+      flex:1; display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:stretch; height:100%;">
+      
+      <!-- Left: Student image -->
+      <div style="display:flex; align-items:center; justify-content:center;">
+        <img src="{% static 'img/smilegirl.jpg' %}"
+             alt="Student"
+             style="max-height:100%; max-width:320px; width:100%; object-fit:cover;
+                    border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,.15);">
+      </div>
+
+      <!-- Right: Text Content -->
+      <div style="
+        background:#27ae60; color:#fff; border-radius:12px;
+        padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
+        
+        <div style="flex:1; overflow:hidden;">
+          <h3 style="font-size:18px; font-weight:800; margin:0 0 8px;">Personalize Tutoring</h3>
+          <p style="margin:0 0 12px; font-size:14px; line-height:1.6;">
+            No cookie-cutter teaching or one-size-fits-all courses. Every student is a unique learner. 
+            At NGS, we provide an entry assessment, design a personalized study plan, offer real-time tracking, 
+            and give periodic feedback to support your growth every step of the way.
+          </p>
+
+          <h3 style="font-size:18px; font-weight:800; margin:0 0 8px;">Clear Learning Goals</h3>
+          <p style="margin:0 0 12px; font-size:14px; line-height:1.6;">
+            Whether you aim to prepare in advance, achieve a short-term score boost, or excel in exam preparation, 
+            NGS tutors will create a study plan tailored to your specific goals.
+          </p>
+
+          <h3 style="font-size:18px; font-weight:800; margin:0 0 8px;">Popular Subjects Covered</h3>
+          <p style="margin:0; font-size:14px; line-height:1.6;">
+            NGS offers 1-on-1 tutoring for most subjects across IB, A-Level, AP, and IGCSE curriculums.
+          </p>
+        </div>
+
+        <div style="text-align:center; margin-top:16px;">
+          <a href="{% url 'admissions' %}"
+             style="display:inline-block; background:#000; color:#fff;
+                    font-weight:700; padding:12px 28px; border-radius:40px;
+                    font-size:15px; text-decoration:none;">
+            Book a Trial Class
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

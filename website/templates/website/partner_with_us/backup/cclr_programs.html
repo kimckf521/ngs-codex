@@ -1,0 +1,264 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "website/sections/head.html" %}
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    
+    <!-- Header with Navigation -->
+    {% include "website/sections/navbar.html" %}
+
+    <!-- HERO -->
+    <section class="hero">
+    <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
+    </section>
+
+    <!-- PARTNER WITH NEXTGEN SCHOLARS (exact 66vh) -->
+<section style="
+    width:100%;
+    height:66vh;
+    background:#fff;
+    padding:60px 20px;
+    box-sizing:border-box;">
+    
+    <div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+
+    <!-- Title -->
+    <h2 style="text-align:center; font-size:36px; font-weight:900; margin:0 0 28px;">
+        PARTNER WITH NEXTGEN SCHOLARS
+    </h2>
+
+    <!-- Two-column layout (50/50 split) -->
+    <div style="
+        flex:1; 
+        display:grid; 
+        grid-template-columns:1fr 1fr;  /* 50% left, 50% right */
+        gap:36px; 
+        align-items:stretch; 
+        height:100%;">
+
+        <!-- Left: Card with bullets at bottom -->
+        <div style="
+        background:#fff;
+        border:1.5px solid #1a1a1a;
+        border-radius:26px;
+        padding:34px 28px;
+        width:80%;
+        height:100%;                 /* fills parent column/section */
+        box-sizing:border-box;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;">
+
+        <!-- Title -->
+        <h3 style="
+            margin:6px 0 0;
+            font-size:28px;
+            font-weight:900;
+            line-height:1.15;
+            letter-spacing:.2px;
+            color:#111;">
+            Career College<br>Life Readiness Programme
+        </h3>
+
+        <!-- Spacer pushes list down -->
+        <div style="flex:1"></div>
+
+        <!-- Bullets (anchored at bottom) -->
+        <ul style="
+            margin:0;
+            padding-left:22px;
+            list-style:disc;
+            font-size:16px;
+            line-height:1.9;
+            color:#111;">
+
+            <li>
+                <a href="{% url 'cclr_programs' %}" class="bullet-link active">
+                    Career Readiness
+                </a>
+            </li>
+
+            <li>
+                <a>
+                    College Readiness
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'ngs_inspires' %}" class="bullet-link">
+                    Life Readiness
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'ngs_connects' %}" class="bullet-link">
+                    Global Competency
+                </a>
+            </li>
+        </ul>
+
+        </div>
+
+        <!-- Right: Copy -->
+        <div style="
+        font-size:15px; 
+        line-height:1.8; 
+        color:#222; 
+        display:flex; 
+        flex-direction:column; 
+        justify-content:center;">
+        
+        <p style="margin-top:0; margin-bottom:16px;">
+            The NGS CCLR (College, Career, and Life Readiness) course is designed to provide a comprehensive framework for defining, guiding, and assessing students' critical competencies essential for academic success, career development, and social engagement.
+        </p>
+        <p style="margin:0; margin-bottom:16px;">
+            Beyond academic achievements, the CCLR curriculum equips students with the skills and knowledge necessary to navigate university admissions, achieve career goals, and thrive in society. By empowering students, families, educators, and schools with reliable insights, CCLR ensures that every decision made for the student is well-informed, fostering success at every stage of their educational and professional journey.
+        </p>
+        <p style="margin:0;">
+            Through its focus on college readiness, career competencies, and life skills, the CCLR course prepares students to seamlessly transition into higher education, the workforce, and society with confidence and capability.
+        </p>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+    <!-- CCLR Diagram — centered and fixed height -->
+    <section style="width:100%; height:66vh; background:#fff; display:flex; justify-content:center; align-items:center; padding:40px 16px; box-sizing:border-box;">
+    <div style="max-width:980px; width:100%; text-align:center;">
+        
+        <!-- Title -->
+        <h2 style="font-weight:900; font-size:36px; line-height:1.15; margin-bottom:30px;">
+        CAREER COLLEGE LIFE READINESS<br>PROGRAMME
+        </h2>
+
+        <!-- Image -->
+        <div style="display:flex; justify-content:center; align-items:center; height:calc(66vh - 120px);">
+        <img src="{% static 'img/circles.jpg' %}" alt="CCLR Diagram"
+            style="max-width:100%; max-height:100%; object-fit:contain;">
+        </div>
+
+    </div>
+    </section>
+
+    <!-- PARTNER WITH US -->
+    {% include "website/sections/partner_with_us.html" %}
+
+    <!-- PARTNER WITH NEXTGEN SCHOLARS -->
+     {% include "website/sections/intro_cclr.html" %}
+
+    <!-- OUR PROGRAMS -->
+    {% include "website/sections/our_programs.html" %}
+
+    <!-- MEETING + FORM -->
+    <section style="padding:40px 50px 10px; margin-bottom:40px; height:66vh;">
+      <div class="ngs-enquiry"
+          style="display:grid;
+                grid-template-columns:1.1fr .9fr;
+                gap:20px;
+                align-items:stretch;
+                height:100%;
+                padding:0 50px"> <!-- ✅ grid fills 66vh -->
+
+        <!-- Left: Image -->
+        <div style="height:100%;">
+          <img src="{% static 'img/studying.jpg' %}"
+              alt="Online meeting"
+              style="width:100%; height:100%;
+                    object-fit:cover;
+                    border-radius:12px;
+                    box-shadow:0 6px 18px rgba(0,0,0,.08);">
+        </div>
+
+        <!-- Right: Form -->
+        <form class="ngs-form"
+              onsubmit="event.preventDefault(); alert('Thanks! We will contact you shortly.');"
+              style="border:1px solid #e4e4e4;
+                    border-radius:6px;
+                    overflow:hidden;
+                    background:#fff;
+                    display:flex;
+                    flex-direction:column;
+                    height:100%;"> <!-- ✅ form fills 66vh -->
+
+          <!-- Title bar -->
+          <div style="background:#000;
+                      color:#fff;
+                      font-weight:900;
+                      padding:12px 16px;
+                      letter-spacing:.3px;">
+            Looking to Partner with NGS
+          </div>
+
+          <!-- Fields -->
+          <div style="display:grid; gap:12px; padding:16px; flex:1; overflow:auto;">
+            <div>
+              <label style="display:block; font-size:14px; color:#444;">Your Full Name</label>
+              <input type="text" required placeholder="Your name"
+                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
+                            border-radius:4px; background:#f5f5f5;">
+            </div>
+
+            <div>
+              <label style="display:block; font-size:14px; color:#444;">Name of Your School</label>
+              <input type="text" required placeholder="School / Organization"
+                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
+                            border-radius:4px; background:#f5f5f5;">
+            </div>
+
+            <div>
+              <label style="display:block; font-size:14px; color:#444;">Email</label>
+              <input type="email" required placeholder="you@example.com"
+                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
+                            border-radius:4px; background:#f5f5f5;">
+            </div>
+
+            <div>
+              <label style="display:block; font-size:14px; color:#444;">Mobile / WeChat</label>
+              <input type="text" placeholder="+61 … / your WeChat ID"
+                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
+                            border-radius:4px; background:#f5f5f5;">
+            </div>
+
+            <div style="flex:1; display:flex; flex-direction:column;">
+              <label style="display:block; font-size:14px; color:#444;">How Can We Help You?</label>
+              <textarea rows="5" placeholder="Tell us a bit about your goals…"
+                        style="flex:1; width:100%; padding:11px; border:1px solid #e0e0e0;
+                              border-radius:4px; background:#f5f5f5; resize:none;"></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div style="padding:16px; border-top:1px solid #eee;">
+            <button type="submit"
+                    style="width:100%; background:#111; color:#fff;
+                          padding:14px 16px; border:0; border-radius:8px;
+                          font-weight:800; font-size:16px; cursor:pointer;">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- GLOBAL COMMUNITY -->
+    {% include "website/sections/global_community.html" %}
+
+    <!-- Social Media-->
+    {% include "website/sections/media.html" %}
+
+    <!-- Customer Service Button -->
+    {% include "website/sections/customer_service.html" %}
+
+    <!-- Footer -->
+    {% include "website/sections/footer.html" %}
+
+    <!-- JavaScript -->
+     <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>

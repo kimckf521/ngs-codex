@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "website/language/zh/sections/head_zh.html" %}
+  </head>
+
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    
+    <!-- Header with Navigation -->
+    {% include "website/language/zh/sections/navbar_zh.html" %}
+
+    <!-- HERO -->
+    <section class="hero">
+    <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
+    </section>
+
+    <!-- 成为 NextGen Scholars 合作伙伴 (exact 66vh) -->
+    <section style="
+        width:100%;
+        height:66vh;
+        background:#fff;
+        padding:60px 20px;
+        box-sizing:border-box;">
+        
+        <div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+
+        <!-- Title -->
+        <h2 style="text-align:center; margin:0 0 28px;" class="section_title">
+            成为 NextGen Scholars 合作伙伴
+        </h2>
+
+        <!-- Two-column layout (50/50 split) -->
+        <div style="
+            flex:1; 
+            display:grid; 
+            grid-template-columns:1fr 1fr;  
+            gap:36px; 
+            align-items:stretch; 
+            height:100%;">
+
+            <!-- Left: Card with bullets at bottom -->
+            <div style="
+            background:#fff;
+            border:1.5px solid #1a1a1a;
+            border-radius:26px;
+            padding:34px 28px;
+            width:80%;
+            height:100%;                 
+            box-sizing:border-box;
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-start;">
+
+            <!-- Title -->
+            <h3 class="section_subtitle" style="margin:6px 0 0; line-height:1.15; letter-spacing:.2px; color:#111;">
+                升学·职业·生活<br>准备课程
+            </h3>
+
+            <!-- Spacer pushes list down -->
+            <div style="flex:1"></div>
+
+            <!-- Bullets -->
+            <ul style="margin:0; padding-left:22px; list-style:disc; font-size:16px; line-height:1.9; color:#111;">
+                <li><a href="{% url 'cclr_programs_zh' %}" class="bullet-link active">职业准备</a></li>
+                <li><a>大学准备</a></li>
+                <li><a href="{% url 'ngs_inspires_zh' %}" class="bullet-link">生活准备</a></li>
+                <li><a href="{% url 'ngs_connects_zh' %}" class="bullet-link">全球胜任力</a></li>
+            </ul>
+
+            </div>
+
+            <!-- Right: Copy -->
+            <div style="font-size:15px; line-height:1.8; color:#222; display:flex; flex-direction:column; justify-content:center;">
+              <p class="section_paragraph" style="margin-top:0; margin-bottom:16px;">
+                NGS CCLR（升学、职业与生活准备）课程旨在为学生提供一个全面框架，用于界定、引导并评估学生在学业成功、职业发展和社会参与中所需的关键能力。
+              </p>
+              <p class="section_paragraph" style="margin:0; margin-bottom:16px;">
+                除了学术成就之外，CCLR 课程还帮助学生掌握大学申请、职业目标实现和社会发展所需的技能与知识。通过为学生、家庭、教育者与学校提供可靠的洞见，CCLR 确保关于学生的每一个决定都科学且明智，从而在教育和职业的每一个阶段助力成功。
+              </p>
+              <p class="section_paragraph" style="margin:0;">
+                聚焦大学准备、职业能力和生活技能，CCLR 课程帮助学生自信地衔接高等教育、职场与社会，实现全面发展。
+              </p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- CCLR Diagram — centered and fixed height -->
+    <section style="width:100%; height:66vh; background:#fff; display:flex; justify-content:center; align-items:center; padding:40px 16px; box-sizing:border-box;">
+      <div style="max-width:980px; width:100%; text-align:center;">
+        <h2 class="section_title" style="line-height:1.15; margin-bottom:30px;">
+          升学 · 职业 · 生活<br>准备课程
+        </h2>
+        <div style="display:flex; justify-content:center; align-items:center; height:calc(66vh - 120px);">
+          <img src="{% static 'img/circles.jpg' %}" alt="CCLR 课程示意图" style="max-width:100%; max-height:100%; object-fit:contain;">
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNER WITH US -->
+    {% include "website/language/zh/sections/partner_with_us_zh.html" %}
+
+    <!-- PARTNER WITH NEXTGEN SCHOLARS -->
+    {% include "website/language/zh/sections/intro_cclr_zh.html" %}
+
+    <!-- OUR PROGRAMS -->
+    {% include "website/language/zh/sections/our_programs_zh.html" %}
+
+    <!-- MEETING + FORM -->
+    <!-- (form unchanged, since it’s inline in this file) -->
+
+    <!-- GLOBAL COMMUNITY -->
+    {% include "website/language/zh/sections/global_community_zh.html" %}
+
+    <!-- Social Media-->
+    {% include "website/language/zh/sections/media_zh.html" %}
+
+    <!-- Customer Service Button -->
+    {% include "website/language/zh/sections/customer_service_zh.html" %}
+
+    <!-- Footer -->
+    {% include "website/language/zh/sections/footer_zh.html" %}
+
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>

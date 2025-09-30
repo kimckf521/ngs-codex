@@ -1,0 +1,90 @@
+{% load static %}
+
+<section style="
+    width:100%;
+    height:66vh;
+    background:#fff;
+    padding:60px 20px;
+    box-sizing:border-box;">
+<div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+<!-- Title -->
+<h2 class="section_title" style="text-align:center; margin:0 0 28px;">
+        成为 NextGen Scholars 合作伙伴
+    </h2>
+<!-- Two-column layout (50/50 split) -->
+<div style="
+        flex:1; 
+        display:grid; 
+        grid-template-columns:1fr 1fr;  /* 50% left, 50% right */
+        gap:36px; 
+        align-items:stretch; 
+        height:100%;">
+<!-- Left: Card with bullets at bottom -->
+<div style="
+        background:#fff;
+        border:1.5px solid #1a1a1a;
+        border-radius:26px;
+        padding:34px 28px;
+        width:80%;
+        height:100%;                 
+        box-sizing:border-box;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;">
+<!-- Title -->
+<h3 class="section_subtitle" style="margin:6px 0 0; font-weight:900; line-height:1.15; letter-spacing:.2px; color:#111;">
+            NextGen 全球社区
+        </h3>
+<!-- Spacer pushes list down -->
+<div style="flex:1"></div>
+<!-- Bullets (anchored at bottom) -->
+<ul style="
+            margin:0;
+            padding-left:22px;
+            list-style:disc;
+            font-size:16px;
+            line-height:1.9;
+            color:#111;">
+<li>
+<a class="bullet-link" href="{% url 'cclr_programs_zh' %}">
+                    CCLR 课程
+                </a>
+</li>
+<li>
+<a>
+                    合作项目
+                </a>
+</li>
+<li>
+<a class="bullet-link" href="{% url 'ngs_inspires_zh' %}">
+                    NextGen Inspires
+                </a>
+</li>
+<li>
+<a class="bullet-link active" href="{% url 'ngs_connects_zh' %}">
+                    NextGen Connects
+                </a>
+</li>
+</ul>
+</div>
+<!-- Right: Copy -->
+<div style="
+        font-size:15px; 
+        line-height:1.8; 
+        color:#222; 
+        display:flex; 
+        flex-direction:column; 
+        justify-content:center;">
+<p class="section_paragraph" style="margin-top:0; margin-bottom:16px;">
+            我们提供专业的线上国际课程、升学辅导与个性化家教服务，旨在帮助教育者与学生实现学术卓越，释放他们的全部潜能。
+        </p>
+<p class="section_paragraph" style="margin:0; margin-bottom:16px;">
+            作为 NGS 合作学校，您将获得专属的全球社区访问权限，包括国际交流活动以及丰富的教育资源，激励学生敢于梦想并追求卓越。
+        </p>
+<p class="section_paragraph" style="margin:0;">
+            从常春藤与牛剑申请，到 IB、A-Level、AP 与 HKDSE 准备，我们的定制化学业辅导与升学指导都能满足学生的独特需求。我们专注于帮助国际学生迈出实现理想的下一步。
+        </p>
+</div>
+</div>
+</div>
+</section>

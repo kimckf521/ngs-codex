@@ -1,0 +1,63 @@
+{% load static %}
+
+<section style="
+    width:100%;
+    height:66vh; 
+    background:#ffffff;
+    padding:40px 20px;
+    box-sizing:border-box;
+    display:flex; 
+    align-items:center; 
+    justify-content:center;">
+<div style="
+    max-width:1180px; 
+    margin:0 auto; 
+    width:100%; 
+    height:100%;
+    display:grid; 
+    grid-template-columns:1fr 1fr; 
+    gap:36px; 
+    align-items:center;">
+<!-- Left: Blue content panel -->
+<div style="
+        background:#2f77ff; 
+        color:#fff; 
+        padding:40px; 
+        border-radius:10px; 
+        height:100%; 
+        display:flex; 
+        flex-direction:column; 
+        justify-content:center;">
+<h2 class="section_title" style="margin:0 0 18px; line-height:1.2; font-weight:900;">
+        NGS High-School<br/>Mapping Program
+        </h2>
+<p class="section_paragraph" style="margin:0 0 16px; line-height:1.7;">
+        The <strong>NGS High-School Mapping Program</strong> provides students with a clear, structured roadmap to align their
+        high school journey with their future academic and career aspirations.
+        </p>
+<p class="section_paragraph" style="margin:0 0 16px; line-height:1.7;">
+        By mapping out key milestones, including curriculum and course selection, extracurricular activities, and skill
+        development, the program ensures students are well-prepared for college readiness and beyond.
+        </p>
+<p class="section_paragraph" style="margin:0; line-height:1.7;">
+        This initiative empowers students to set meaningful goals, manage their progress effectively, and make informed decisions
+        throughout high school, creating a strong foundation for success in higher education and life.
+        </p>
+</div>
+<!-- Right: image + CTA -->
+<div style="
+        text-align:center; 
+        display:flex; 
+        flex-direction:column; 
+        align-items:center; 
+        justify-content:center; 
+        height:100%;">
+<img alt="High-school mapping visit" src="{% static 'img/vanke.JPG' %}" style="width:100%; max-width:520px; max-height:70%; object-fit:cover;
+                    border-radius:10px; box-shadow:0 10px 24px rgba(0,0,0,.12); margin-bottom:18px;"/>
+<a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" style="display:inline-block; background:#311b92; color:#fff; text-decoration:none;
+                font-weight:800; border-radius:28px; padding:12px 28px; font-size:15px;">
+        Book a Free Call
+        </a>
+</div>
+</div>
+</section>

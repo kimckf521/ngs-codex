@@ -1,0 +1,62 @@
+{% load static %}
+
+<section style="
+  height:66vh;
+  width:100%;
+  background:linear-gradient(135deg,#a1c4fd,#c2e9fb,#d4fc79,#96e6a1);
+  padding:40px 20px;
+  box-sizing:border-box;
+  display:flex; align-items:center; justify-content:center;">
+  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column;">
+    <!-- Title -->
+    <h2 class="section_title" style="text-align:center; font-weight:900; margin:0 0 24px;">
+      全面且个性化的课程
+    </h2>
+
+    <!-- Content -->
+    <div style="
+      flex:1; display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:stretch; height:100%;">
+
+      <!-- Left: Student image -->
+      <div style="display:flex; align-items:center; justify-content:center;">
+        <img alt="学生" src="{% static 'img/smilegirl.jpg' %}" style="max-height:100%; max-width:320px; width:100%; object-fit:cover;
+                    border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,.15);"/>
+      </div>
+
+      <!-- Right: Text Content -->
+      <div style="
+        background:#27ae60; color:#fff; border-radius:12px;
+        padding:20px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div style="flex:1; overflow:hidden;">
+
+          <h3 class="section_subtitle" style="font-weight:800; margin:0 0 8px;">个性化辅导</h3>
+          <p class="section_paragraph" style="margin:0 0 12px; line-height:1.6;">
+            拒绝千篇一律与“一刀切”课程。每位学生都是独一无二的学习者。<br>
+            在 NGS，我们会进行入学测评、制定个性化学习计划、提供实时学习追踪，
+            并定期反馈，帮助你在每一步都稳定进步。
+          </p>
+
+          <h3 class="section_subtitle" style="font-weight:800; margin:0 0 8px;">明确的学习目标</h3>
+          <p class="section_paragraph" style="margin:0 0 12px; line-height:1.6;">
+            不论你的目标是提前预习、短期提分，还是冲刺备考，NGS 导师都会依据你的具体目标
+            制定对应的学习方案。
+          </p>
+
+          <h3 class="section_subtitle" style="font-weight:800; margin:0 0 8px;">覆盖热门学科</h3>
+          <p class="section_paragraph" style="margin:0; line-height:1.6;">
+            NGS 提供 IB、A-Level、AP 与 IGCSE 多数学科的一对一辅导。
+          </p>
+
+        </div>
+
+        <div style="text-align:center; margin-top:16px;">
+          <a href="{% url 'admissions' %}" style="display:inline-block; background:#000; color:#fff;
+                    font-weight:700; padding:12px 28px; border-radius:40px;
+                    font-size:15px; text-decoration:none;">
+            预约试听课
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
