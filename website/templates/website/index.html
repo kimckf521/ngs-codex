@@ -32,68 +32,91 @@
     <!-- OUR PROGRAMS -->
     {% include "website/sections/our_programs.html" %}
 
-    <!-- FOUNDER STORY -->
-    <section id="founder" class="founder-story"
-            style="background:#fff; padding:60px 20px; min-height:66vh; display:flex; align-items:center;">
-        <div class="wrap"
-            style="max-width:1180px; margin:auto; display:grid; grid-template-columns:1fr 1.5fr; gap:48px; align-items:center;">
+<!-- FOUNDER STORY -->
+<section id="founder"
+  style="background:#fff;
+         padding:40px 20px;
+         height:66vh;              /* fixed height */
+         display:flex;
+         flex-direction:column;
+         justify-content:center;
+         box-sizing:border-box;">
 
-            <!-- Left: Founders in a 2x2 grid -->
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; justify-items:center;">
-            <!-- Valerie -->
-            <div style="text-align:center">
-                <img src="{% static 'img/founders/HailanReal.jpg' %}" alt="Valerie Zhou"
-                    style="width:160px; height:160px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
-                <div style="font-weight:700; color:#111;">Valerie Zhou</div>
-            </div>
-            <!-- Paul -->
-            <div style="text-align:center">
-                <img src="{% static 'img/founders/PaulReal.jpg' %}" alt="Paul Chiu"
-                    style="width:160px; height:160px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
-                <div style="font-weight:700; color:#111;">Paul Chiu</div>
-            </div>
-            <!-- Scarlett -->
-            <div style="text-align:center">
-                <img src="{% static 'img/founders/WeixinReal.png' %}" alt="Scarlett Sampson"
-                    style="width:160px; height:160px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
-                <div style="font-weight:700; color:#111;">Scarlett Sampson</div>
-            </div>
-            <!-- Nancy -->
-            <div style="text-align:center">
-                <img src="{% static 'img/founders/NancyReal.jpeg' %}" alt="Nancy Wu"
-                    style="width:160px; height:160px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
-                <div style="font-weight:700; color:#111;">Nancy Wu</div>
-            </div>
-            </div>
+  <!-- Title -->
+  <h2 style="text-align:center;
+             font-size:48px;
+             font-weight:900;
+             margin:0 0 24px;
+             color:#111;">
+    Founder Story
+  </h2>
+  
+  <!-- Content Grid -->
+  <div class="wrap"
+       style="max-width:1180px;
+              margin:auto;
+              display:grid;
+              grid-template-columns:1fr 1.5fr;
+              gap:40px;
+              align-items:center;
+              height:100%;">
 
-            <!-- Right: Story -->
-            <div>
-            <h2 style="font-size:34px; font-weight:900; margin:0 0 18px; line-height:1.25; color:#111;">
-                Founder Story
-            </h2>
-            <p style="margin:0 0 16px; color:#555; line-height:1.7; font-size:18px;">
-                NextGen Scholars is a forward-thinking organization dedicated to transforming education by equipping
-                both educators and students with the tools and support needed for success in a rapidly evolving,
-                globalized world.
-            </p>
-            <p style="margin:0 0 16px; color:#555; line-height:1.7; font-size:18px;">
-                Based in key cities around the globe—San Francisco, Melbourne, Hong Kong, Taiwan, and the Greater Bay
-                Area of China—NextGen Scholars was founded by a passionate group of educators, tech leaders, and
-                industry professionals who share a vision to redefine education for the future.
-            </p>
-            <p style="margin:0 0 16px; color:#555; line-height:1.7; font-size:18px;">
-                Our founders bring decades of expertise in technology, business, creative arts, STEM and global
-                education, empowering educators and students alike to succeed and thrive in an ever-changing world.
-            </p>
-            <p style="margin:0; color:#555; line-height:1.7; font-size:18px;">
-                By reaching out to global industry leaders, educators and students worldwide, we aim to create a
-                collaborative and supportive community that equips the next generation with the knowledge, skills,
-                and confidence to thrive in a rapidly evolving world.
-            </p>
-            </div>
+    <!-- Left: Founders 2x2 -->
+    <div style="display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:24px;
+                justify-items:center;">
+      
+      <!-- Valerie -->
+      <div style="text-align:center">
+        <img src="{% static 'img/founders/HailanReal.jpg' %}" alt="Valerie Zhou"
+             style="width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:8px;">
+        <div style="font-weight:700;color:#111;">Valerie Zhou</div>
+      </div>
+      <!-- Paul -->
+      <div style="text-align:center">
+        <img src="{% static 'img/founders/PaulReal.jpg' %}" alt="Paul Chiu"
+             style="width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:8px;">
+        <div style="font-weight:700;color:#111;">Paul Chiu</div>
+      </div>
+      <!-- Scarlett -->
+      <div style="text-align:center">
+        <img src="{% static 'img/founders/WeixinReal.png' %}" alt="Scarlett Sampson"
+             style="width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:8px;">
+        <div style="font-weight:700;color:#111;">Scarlett Sampson</div>
+      </div>
+      <!-- Nancy -->
+      <div style="text-align:center">
+        <img src="{% static 'img/founders/NancyReal.jpeg' %}" alt="Nancy Wu"
+             style="width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:8px;">
+        <div style="font-weight:700;color:#111;">Nancy Wu</div>
+      </div>
+    </div>
 
-        </div>
-    </section>
+    <!-- Right: Story -->
+    <div style="overflow:auto; padding-right:10px;">
+      <p style="margin:0 0 12px;color:#555;line-height:1.6;font-size:16px;">
+        NextGen Scholars is a forward-thinking organization dedicated to transforming education by equipping
+        both educators and students with the tools and support needed for success in a rapidly evolving,
+        globalized world.
+      </p>
+      <p style="margin:0 0 12px;color:#555;line-height:1.6;font-size:16px;">
+        Based in key cities around the globe—San Francisco, Melbourne, Hong Kong, Taiwan, and the Greater Bay
+        Area of China—NextGen Scholars was founded by a passionate group of educators, tech leaders, and
+        industry professionals who share a vision to redefine education for the future.
+      </p>
+      <p style="margin:0 0 12px;color:#555;line-height:1.6;font-size:16px;">
+        Our founders bring decades of expertise in technology, business, creative arts, STEM and global
+        education, empowering educators and students alike to succeed and thrive in an ever-changing world.
+      </p>
+      <p style="margin:0;color:#555;line-height:1.6;font-size:16px;">
+        By reaching out to global industry leaders, educators and students worldwide, we aim to create a
+        collaborative and supportive community that equips the next generation with the knowledge, skills,
+        and confidence to thrive in a rapidly evolving world.
+      </p>
+    </div>
+  </div>
+</section>
 
     <!-- HERO -->
     <section class="hero">

@@ -1,0 +1,77 @@
+{% load static %}
+
+<section style="
+  height:66vh;                      /* exact height */
+  box-sizing:border-box;
+  padding:30px 20px;
+  background:#ffffff;
+  width:100%;
+  display:flex; align-items:center;">
+
+  <div style="
+    max-width:1180px; margin:0 auto; width:100%;
+    height:100%; display:flex; flex-direction:column;">
+
+    <!-- Title -->
+    <h2 style="
+      margin:0 0 18px;
+      text-align:center;
+      font-size:36px; font-weight:900; letter-spacing:.5px; color:#111;">
+     DUAL-TRACK PROGRAM
+    </h2>
+
+    <!-- Content: two columns -->
+    <div style="
+      flex:1; height:100%;
+      display:grid; grid-template-columns:1fr 1.6fr;
+      gap:48px; align-items:stretch;">   <!-- ✅ stretch both columns -->
+
+      <!-- Left: rounded info card -->
+      <div style="display:flex; align-items:center; justify-content:center;">
+        <div style="
+          border:1px solid #d7d7d7;
+          border-radius:26px;
+          padding:30px 34px;
+          width:420px; max-width:100%;
+          box-sizing:border-box;
+          height:100%;
+          display:flex;
+          flex-direction:column;">   <!-- ✅ flex for title + bottom list -->
+
+          <h3 style="margin:0; font-size:26px; font-weight:900; color:#111;">
+            Dual-Track Transition Program
+          </h3>
+
+          <!-- Spacer pushes list to bottom -->
+          <div style="flex:1;"></div>
+
+          <!-- List anchored at bottom -->
+          <ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.8; list-style:disc;">
+            <li>Future-Proofing Education</li>
+            <li>Gaokao+International Pathways</li>
+            <li>Flexible Integration</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right: description -->
+      <div style="
+        color:#111; font-size:18px; line-height:1.9;
+        background:#f9f9f9; padding:30px;
+        border-radius:20px;
+        height:100%;              /* ✅ forces equal height */
+        box-sizing:border-box;
+        display:flex; flex-direction:column; justify-content:center;">  <!-- ✅ vertically centered -->
+
+        <h3 style="margin:0 0 16px; font-size:22px; font-weight:900;">
+          What is Dual-track Transition Program?
+        </h3>
+
+        <p style="margin:0 0 16px;">
+          A customised support system to help Chinese local schools transition into international education models (IB, A-Level, AP) – without disrupting their current learning.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
