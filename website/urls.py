@@ -3,6 +3,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('privacy/', views.privacy, name='privacy'),
+    path('termsofservice/', views.terms, name='terms'),
     # Partner With Us
     path('cclr_programs/', views.cclr_programs, name='cclr_programs'),
     path('dual_track_learning/', views.dual_track_learning,
@@ -32,6 +34,8 @@ urlpatterns = [
 
     # CHINESE PAGES
     path('index_zh/', views.index_zh, name='index_zh'),
+    path('privacy_zh/', views.privacy_zh, name='privacy_zh'),
+    path('termsofservice_zh/', views.terms_zh, name='terms_zh'),
     # Partner With Us
     path('cclr_programs_zh/', views.cclr_programs_zh, name='cclr_programs_zh'),
     path('dual_track_learning_zh/', views.dual_track_learning_zh,

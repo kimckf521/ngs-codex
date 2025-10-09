@@ -4,6 +4,14 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'website/index.html')
 
+
+def privacy(request):
+    return render(request, 'website/privacy_policy.html')
+
+
+def terms(request):
+    return render(request, 'website/terms_of_service.html')
+
 # Partner With Us
 
 
@@ -67,6 +75,14 @@ def membership_signin(request):
 
 def index_zh(request):
     return render(request, 'website/language/zh/index_zh.html')
+
+
+def privacy_zh(request):
+    return render(request, 'website/language/zh/privacy_policy_zh.html')
+
+
+def terms_zh(request):
+    return render(request, 'website/language/zh/terms_of_service_zh.html')
 
 # Partner With Us
 
