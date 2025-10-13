@@ -136,10 +136,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.exmail.qq.com'
 EMAIL_PORT = 465
-EMAIL_USE_SSL = True     # use SSL since port 465 requires it
+EMAIL_USE_SSL = True    # use SSL since port 465 requires it
 EMAIL_USE_TLS = False
-
-# your email address or username
-EMAIL_HOST_USER = 'didihaha@nextgenscholars.asia'
-EMAIL_HOST_PASSWORD = 'DVgzYwBA7raSwWk3'
+EMAIL_HOST_USER = 'didihaha@nextgenscholars.asia'  # your email address or username
+EMAIL_HOST_PASSWORD = 'DVgzYwBA7raSwVk3'
 EMAIL_RECEIVER = 'info@nextgenscholars.asia'

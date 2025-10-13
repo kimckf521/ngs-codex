@@ -1,11 +1,9 @@
-from django.shortcuts import render
-# Email imports
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
-from django.contrib import messages
-from django.views.decorators.csrf import csrf_protect
 from django.conf import settings
 from .forms import PartnerForm
+from django.views.decorators.csrf import csrf_protect
+from django.contrib import messages
 
 
 def index(request):
@@ -177,13 +175,13 @@ def partner_with_us(request):
                     subject,
                     message,
                     settings.EMAIL_HOST_USER,     # from
-                    [settings.EMAIL_RECEIVER],    # to
+                    [settings.EMAIL_RECEIVER],   # to (your inbox)
                     fail_silently=False,
                 )
+
                 messages.success(
                     request, 'Thanks! We will contact you shortly.')
                 return redirect('index')
-
             except Exception as e:
                 print(f"error {e}")
                 messages.error(request, f"Unable to send message: {e}")
