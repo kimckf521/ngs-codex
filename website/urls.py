@@ -67,4 +67,7 @@ urlpatterns = [
     path('membership_signin_zh/', views.membership_signin_zh,
          name='membership_signin_zh'),
 
+    # Partner Form Submission (Email)
+    path('partner_with_us/', views.partner_with_us, name='partner_with_us'),
+
 ]

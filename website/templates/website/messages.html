@@ -1,0 +1,9 @@
+{% if messages %}
+<script>
+  setTimeout(function() {
+    {% for message in messages %}
+      alert("{{ message|escapejs }}");
+    {% endfor %}
+  }, 100); // 0.1s delay
+</script>
+{% endif %}

@@ -1,4 +1,6 @@
 {% load static %}
+{% include "website/messages.html" %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,6 +12,10 @@
     
     <!-- Header with Navigation -->
     {% include "website/sections/navbar.html" %}
+
+
+
+  
 
     <!-- HERO -->
     <section class="hero">
@@ -145,8 +151,7 @@
         </div>
 
         <!-- Right: Form -->
-        <form class="ngs-form"
-              onsubmit="event.preventDefault(); alert('Thanks! We will contact you shortly.');"
+        <form class="ngs-form" method="POST" action="{% url 'partner_with_us' %}"
               style="border:1px solid #e4e4e4;
                     border-radius:6px;
                     overflow:hidden;
@@ -154,6 +159,7 @@
                     display:flex;
                     flex-direction:column;
                     height:100%;"> <!-- ✅ form fills 66vh -->
+          {% csrf_token %}
 
           <!-- Title bar -->
           <div style="background:#000;
@@ -212,6 +218,7 @@
             </button>
           </div>
         </form>
+
       </div>
     </section>
     

@@ -1,4 +1,11 @@
 from django.shortcuts import render
+# Email imports
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+from django.contrib import messages
+from django.views.decorators.csrf import csrf_protect
+from django.conf import settings
+from .forms import PartnerForm
 
 
 def index(request):
@@ -139,3 +146,53 @@ def ngs_connects_zh(request):
 
 def membership_signin_zh(request):
     return render(request, 'website/language/zh/join_ngs_commmunity/membership_signin_zh.html')
+
+# Email views
+
+
+@csrf_protect
+def partner_with_us(request):
+    if request.method == 'POST':
+        form = PartnerForm(request.POST)
+
+        # ✅ Validate the form before using cleaned_data
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            school_name = form.cleaned_data['school_name']
+            email = form.cleaned_data['email']
+            mobile_or_wechat = form.cleaned_data.get('mobile_or_wechat', '')
+            help_description = form.cleaned_data['help_description']
+
+            subject = f"New Partner Request from {name}"
+            message = (
+                f"Name: {name}\n"
+                f"School: {school_name}\n"
+                f"Email: {email}\n"
+                f"Mobile/WeChat: {mobile_or_wechat}\n\n"
+                f"How can we help:\n{help_description}"
+            )
+
+            try:
+                send_mail(
+                    subject,
+                    message,
+                    settings.EMAIL_HOST_USER,     # from
+                    [settings.EMAIL_RECEIVER],    # to
+                    fail_silently=False,
+                )
+                messages.success(
+                    request, 'Thanks! We will contact you shortly.')
+                return redirect('index')
+
+            except Exception as e:
+                print(f"error {e}")
+                messages.error(request, f"Unable to send message: {e}")
+
+        else:
+            # Form not valid → redisplay with errors
+            messages.error(request, 'Please correct the errors below.')
+
+    else:
+        form = PartnerForm()
+
+    return render(request, 'website/index.html', {'form': form})
