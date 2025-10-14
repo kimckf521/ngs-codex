@@ -174,8 +174,9 @@
         </div>
 
         <!-- Right: Form -->
-        <form class="ngs-form"
-              onsubmit="event.preventDefault(); alert('Thanks! We will contact you shortly.');"
+        {% include "website/messages.html" %}
+
+        <form class="ngs-form" method="POST" action="{% url 'partner_with_us' %}"
               style="border:1px solid #e4e4e4;
                     border-radius:6px;
                     overflow:hidden;
@@ -183,6 +184,7 @@
                     display:flex;
                     flex-direction:column;
                     height:100%;"> <!-- ✅ form fills 66vh -->
+          {% csrf_token %}
 
           <!-- Title bar -->
           <div style="background:#000;
@@ -197,35 +199,35 @@
           <div style="display:grid; gap:12px; padding:16px; flex:1; overflow:auto;">
             <div>
               <label style="display:block; font-size:14px; color:#444;">Your Full Name</label>
-              <input type="text" required placeholder="Your name"
+              <input type="text" name="name" id="id_name" required placeholder="Your name"
                     style="width:100%; padding:11px; border:1px solid #e0e0e0;
                             border-radius:4px; background:#f5f5f5;">
             </div>
 
             <div>
               <label style="display:block; font-size:14px; color:#444;">Name of Your School</label>
-              <input type="text" required placeholder="School / Organization"
+              <input type="text" name="school_name" id="id_school" required placeholder="School / Organization"
                     style="width:100%; padding:11px; border:1px solid #e0e0e0;
                             border-radius:4px; background:#f5f5f5;">
             </div>
 
             <div>
               <label style="display:block; font-size:14px; color:#444;">Email</label>
-              <input type="email" required placeholder="you@example.com"
+              <input type="email" name="email" id="id_email" required placeholder="you@example.com"
                     style="width:100%; padding:11px; border:1px solid #e0e0e0;
                             border-radius:4px; background:#f5f5f5;">
             </div>
 
             <div>
               <label style="display:block; font-size:14px; color:#444;">Mobile / WeChat</label>
-              <input type="text" placeholder="+61 … / your WeChat ID"
+              <input type="text"  name="mobile_or_wechat" id="id_mobile_or_wechat" placeholder="+61 … / your WeChat ID"
                     style="width:100%; padding:11px; border:1px solid #e0e0e0;
                             border-radius:4px; background:#f5f5f5;">
             </div>
 
             <div style="flex:1; display:flex; flex-direction:column;">
               <label style="display:block; font-size:14px; color:#444;">How Can We Help You?</label>
-              <textarea rows="5" placeholder="Tell us a bit about your goals…"
+              <textarea rows="5" name="help_description" id="id_help_description" placeholder="Tell us a bit about your goals…"
                         style="flex:1; width:100%; padding:11px; border:1px solid #e0e0e0;
                               border-radius:4px; background:#f5f5f5; resize:none;"></textarea>
             </div>
