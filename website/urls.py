@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('index', views.index, name='index'),
     path('privacy/', views.privacy, name='privacy'),
     path('termsofservice/', views.terms, name='terms'),
     # Partner With Us
@@ -33,7 +33,7 @@ urlpatterns = [
          name='membership_signin'),
 
     # CHINESE PAGES
-    path('index_zh/', views.index_zh, name='index_zh'),
+    path('', views.index_zh, name='index_zh'),
     path('privacy_zh/', views.privacy_zh, name='privacy_zh'),
     path('termsofservice_zh/', views.terms_zh, name='terms_zh'),
     # Partner With Us
