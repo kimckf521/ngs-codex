@@ -1,197 +1,495 @@
 {% load static %}
 
-<!-- 选择辅导计划 -->
-<section style="
-    width:100%; height:66vh; background:#fff;
-    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
-  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column; text-align:center;">
+<!-- 选择辅导方案 -->
+<section
+  style="
+    width: 100%;
+    height: 66vh;
+    background: #fff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  "
+>
+  <div
+    style="
+      max-width: 1180px;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    "
+  >
+    <!-- 标题 -->
+    <h2 class="section_title" style="font-weight: 900; margin: 0 0 16px;">
+      选择辅导方案
+    </h2>
 
-    <!-- Title -->
-    <h2 class="section_title" style="font-weight:900; margin:0 0 16px;">选择辅导计划</h2>
-
-    <!-- Category chips -->
-    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:0 0 20px;">
-      <span style="background:linear-gradient(90deg,#7ee8a2,#34c759);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">基础班</span>
-      <span style="background:linear-gradient(90deg,#56ccf2,#2f80ed);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">同步班</span>
-      <span style="background:linear-gradient(90deg,#f2994a,#f2c94c);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">强化班</span>
-      <span style="background:linear-gradient(90deg,#eb5757,#ff0080);color:#fff;font-weight:800;padding:8px 18px;border-radius:999px">考前冲刺</span>
+    <!-- 分类标签 -->
+    <div
+      style="
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 0 20px;
+      "
+    >
+      <span
+        style="
+          background: linear-gradient(90deg, #7ee8a2, #34c759);
+          color: #fff;
+          font-weight: 800;
+          padding: 8px 18px;
+          border-radius: 999px;
+        "
+        >基础</span
+      >
+      <span
+        style="
+          background: linear-gradient(90deg, #56ccf2, #2f80ed);
+          color: #fff;
+          font-weight: 800;
+          padding: 8px 18px;
+          border-radius: 999px;
+        "
+        >同步</span
+      >
+      <span
+        style="
+          background: linear-gradient(90deg, #f2994a, #f2c94c);
+          color: #fff;
+          font-weight: 800;
+          padding: 8px 18px;
+          border-radius: 999px;
+        "
+        >加速</span
+      >
+      <span
+        style="
+          background: linear-gradient(90deg, #eb5757, #ff0080);
+          color: #fff;
+          font-weight: 800;
+          padding: 8px 18px;
+          border-radius: 999px;
+        "
+        >考试冲刺</span
+      >
     </div>
 
-    <!-- Plans grid -->
-    <div style="
-        flex:1; min-height:0;
-        display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-        gap:24px; text-align:left; align-items:stretch;">
-
-      <!-- Trial Lesson -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+    <!-- 方案网格 -->
+    <div
+      style="
+        flex: 1;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        text-align: left;
+        align-items: stretch;
+      "
+    >
+      <!-- 试听课 -->
+      <div
+        style="
+          border: 1px solid #dcdcdc;
+          border-radius: 18px;
+          padding: 18px;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+        "
+      >
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 6px; font-weight:900;">体验课</h3>
-          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">$285/节</p>
-          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
-            <li>1 小时一对一授课</li>
-            <li>全球前 50 名校导师授课</li>
-            <li>熟悉 IB / A-Level / AP / HKDSE</li>
-            <li>定制学习计划与学习建议</li>
+          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+            试听课
+          </h3>
+          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+            ￥285/节
+          </p>
+          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+            <li>1小时一对一课程</li>
+            <li>全球前50名校精英导师</li>
+            <li>熟悉 IB/A-Level/AP/HKDSE</li>
+            <li>定制学习规划与建议</li>
           </ul>
         </div>
-        <div style="margin-top:auto">
-          <a href="https://buy.stripe.com/14A7sLglTffM03y45n6EU0C" style="text-decoration:none" target="_blank">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
-              购买
-            </button>
-          </a>
+        <div style="margin-top: auto;">
+          <button
+            id="trial-purchase-btn"
+            style="
+              width: 100%;
+              padding: 10px 16px;
+              background: #007bff;
+              color: #fff;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+              font-weight: 700;
+            "
+            type="button"
+          >
+            购买
+          </button>
         </div>
       </div>
 
-      <!-- Lesson Packages -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <!-- 课时套餐 -->
+      <div
+        style="
+          border: 1px solid #dcdcdc;
+          border-radius: 18px;
+          padding: 18px;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+        "
+      >
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 6px; font-weight:900;">课时套餐</h3>
-          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">按套餐购买</p>
-          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
-            <li>个性化学习计划</li>
-            <li>4v1 全面导师支持</li>
+          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+            课时套餐
+          </h3>
+          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+            按套餐
+          </p>
+          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+            <li>个性化学习规划</li>
+            <li>4对1全方位导师支持</li>
             <li>优质学习资料</li>
-            <li>目标设定与阶段报告</li>
-            <li>全球前 50 名校导师授课</li>
-            <li>覆盖 IB / A-Level / AP / HKDSE</li>
+            <li>目标设定与学习报告</li>
+            <li>全球前50名校精英导师</li>
+            <li>覆盖 IB/A-Level/AP/HKDSE</li>
           </ul>
 
-          <label for="package-order" style="font-weight:700;display:block;margin-bottom:6px">购买选项：</label>
-          <select id="package-order" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
-            <option value="10">体验：10 小时</option>
-            <option value="20">基础班：20 小时</option>
-            <option value="30-sync">同步班：30 小时</option>
-            <option value="30-acc">强化班：30 小时</option>
-            <option value="40">课程组合：40 小时</option>
+          <label
+            for="package-order"
+            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            >购买选项：</label
+          >
+          <select
+            id="package-order"
+            style="
+              width: 100%;
+              padding: 8px;
+              border-radius: 6px;
+              border: 1px solid #ccc;
+              margin-bottom: 10px;
+            "
+          >
+            <option value="10">尝鲜：10小时</option>
+            <option value="20">学科先修：20小时</option>
+            <option value="30-sync">学科同步：30小时</option>
+            <option value="30-acc">学科加速：30小时</option>
+            <option value="40">跨科组合：40小时</option>
           </select>
         </div>
-        <div style="margin-top:auto">
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" style="text-decoration:none" target="_blank">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
-              购买
-            </button>
-          </a>
+        <div style="margin-top: auto;">
+          <button
+            id="packages-purchase-btn"
+            style="
+              width: 100%;
+              padding: 10px 16px;
+              background: #007bff;
+              color: #fff;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+              font-weight: 700;
+            "
+            type="button"
+          >
+            购买
+          </button>
         </div>
       </div>
 
-      <!-- Exam Preparation -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <!-- 考试备考 -->
+      <div
+        style="
+          border: 1px solid #dcdcdc;
+          border-radius: 18px;
+          padding: 18px;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+        "
+      >
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 6px; font-weight:900;">考试冲刺</h3>
-          <p class="section_paragraph" style="margin:0 0 8px; color:#666;">
-            套餐：<strong>10 节（每节 1.5 小时）</strong>
+          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+            考试备考
+          </h3>
+          <p class="section_paragraph" style="margin: 0 0 8px; color: #666;">
+            套餐：<strong>10节课（每节1.5小时）</strong>
           </p>
-          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
-            <li>对应学科资深导师指导</li>
-            <li>覆盖 IB / A-Level / AP / HKDSE 学术科目</li>
-            <li>标准化考试：IELTS / TOEFL / SAT</li>
-            <li>大学入学笔面试（常春藤 / G5）</li>
+          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+            <li>相关学科资深导师</li>
+            <li>覆盖 IB/A-Level/AP/HKDSE 科目</li>
+            <li>标准化考试：IELTS/TOEFL/SAT</li>
+            <li>大学入学考试（常春藤/G5）</li>
           </ul>
         </div>
-        <div style="margin-top:auto">
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" style="text-decoration:none" target="_blank">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
-              购买
-            </button>
-          </a>
+        <div style="margin-top: auto;">
+          <button
+            id="exam-purchase-btn"
+            style="
+              width: 100%;
+              padding: 10px 16px;
+              background: #007bff;
+              color: #fff;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+              font-weight: 700;
+            "
+            type="button"
+          >
+            购买
+          </button>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- 选择升学辅导项目 -->
-<section style="
-    width:100%; min-height:66vh; background:#fff;
-    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
-  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column;">
-    <h2 class="section_title" style="font-weight:900; margin:0 0 12px; text-align:center;">选择升学辅导项目</h2>
-    <div style="text-align:center; margin:0 0 20px; font-size:48px;">🇺🇸 🇬🇧 🇨🇦 🇦🇺 🇭🇰 🇸🇬</div>
+<!-- 选择导师计划 -->
+<section
+  style="
+    width: 100%;
+    height: 66vh;
+    background: #fff;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  "
+>
+  <div
+    style="
+      max-width: 1180px;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    "
+  >
+    <h2
+      class="section_title"
+      style="font-weight: 900; margin: 0 0 12px; text-align: center;"
+    >
+      选择导师计划
+    </h2>
 
-    <div style="
-        flex:1; min-height:0;
-        display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-        gap:24px; align-items:stretch;">
+    <div style="text-align: center; margin: 0 0 20px; font-size: 48px;">
+      🇺🇸 🇬🇧 🇨🇦 🇦🇺 🇭🇰 🇸🇬
+    </div>
 
-      <!-- Free Consultation -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column;">
+    <div
+      style="
+        flex: 1;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        align-items: stretch;
+      "
+    >
+      <!-- 免费咨询 -->
+      <div
+        style="
+          border: 1px solid #dcdcdc;
+          border-radius: 18px;
+          padding: 18px;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+        "
+      >
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">免费咨询</h3>
-          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
-            <li>与 NGS 导师在线免费交流</li>
-            <li>个性化生涯路线图</li>
-            <li>预约适合你的时间档</li>
-            <li>欢迎家长一同参与</li>
+          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+            免费咨询
+          </h3>
+          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+            <li>与 NGS 导师免费线上沟通</li>
+            <li>个性化职业路线图</li>
+            <li>预约合适的时间段</li>
+            <li>欢迎家长参与</li>
           </ul>
         </div>
-        <div style="margin-top:auto; text-align:left;">
-          <label for="order-consult" style="font-weight:700;display:block;margin-bottom:6px">购买选项</label>
-          <select id="order-consult" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
-            <option value="1">1 次（免费）</option>
+        <div style="margin-top: auto; text-align: left;">
+          <label
+            for="order-consult"
+            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            >购买选项</label
+          >
+          <select
+            id="order-consult"
+            style="
+              width: 100%;
+              padding: 8px;
+              border-radius: 6px;
+              border: 1px solid #ccc;
+              margin-bottom: 10px;
+            "
+          >
+            <option value="free">1次（免费）</option>
+            <option value="trial">试听课</option>
           </select>
-          <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+          <a id="consult-link" href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" target="_blank" rel="noopener">
+            <button
+              style="
+                width: 100%;
+                padding: 10px 16px;
+                background: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-weight: 700;
+              "
+              type="button"
+            >
               购买
             </button>
           </a>
         </div>
       </div>
 
-      <!-- College Counseling -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column;">
+      <!-- 升学规划（College Counseling） -->
+      <div
+        style="
+          border: 1px solid #dcdcdc;
+          border-radius: 18px;
+          padding: 18px;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+        "
+      >
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">升学辅导</h3>
-          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">年度方案 &amp; 全面方案</p>
-          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
-            <li>学业规划</li><li>选校清单</li><li>个人陈述写作</li>
-            <li>活动清单与简历</li><li>推荐信</li><li>面试辅导</li><li>作品集准备</li>
+          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+            升学规划
+          </h3>
+          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+            年度计划与综合计划
+          </p>
+          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+            <li>学术规划</li>
+            <li>选校名单</li>
+            <li>个人陈述写作</li>
+            <li>活动清单与简历</li>
+            <li>推荐信</li>
+            <li>面试辅导</li>
+            <li>作品集准备</li>
           </ul>
         </div>
-        <div style="margin-top:auto; text-align:left;">
-          <label for="order-college" style="font-weight:700;display:block;margin-bottom:6px">购买选项</label>
-          <select id="order-college" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
-            <option value="annual">年度方案</option>
-            <option value="3yr">三年规划</option>
-            <option value="4yr">四年规划</option>
+        <div style="margin-top: auto; text-align: left;">
+          <label
+            for="order-college"
+            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            >购买选项</label
+          >
+          <select
+            id="order-college"
+            style="
+              width: 100%;
+              padding: 8px;
+              border-radius: 6px;
+              border: 1px solid #ccc;
+              margin-bottom: 10px;
+            "
+          >
+            <option value="annual">年度计划</option>
+            <option value="3yr">三年计划</option>
+            <option value="4yr">四年计划</option>
           </select>
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+          <a id="college-link" href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" target="_blank" rel="noopener">
+            <button
+              style="
+                width: 100%;
+                padding: 10px 16px;
+                background: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-weight: 700;
+              "
+              type="button"
+            >
               购买
             </button>
           </a>
         </div>
       </div>
 
-      <!-- K12 Placement Service -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column;">
+      <!-- K12 升学安置服务 -->
+      <div
+        style="
+          border: 1px solid #dcdcdc;
+          border-radius: 18px;
+          padding: 18px;
+          background: #fff;
+          display: flex;
+          flex-direction: column;
+        "
+      >
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">K12 入学安置服务</h3>
-          <p class="section_paragraph" style="margin:0 0 6px; color:#666;">按个案收费</p>
-          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
-            <li>学生评估与策略制定</li>
-            <li>目标学校清单</li>
-            <li>预约校园参访</li>
-            <li>学校报告</li>
-            <li>申请材料支持</li>
+          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+            K12 升学安置服务
+          </h3>
+          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+            按个案
+          </p>
+          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+            <li>学生评估与策略</li>
+            <li>学校名单</li>
+            <li>学校参观预约</li>
+            <li>学校调研报告</li>
+            <li>申请支持</li>
             <li>入学考试与面试</li>
           </ul>
         </div>
-        <div style="margin-top:auto; text-align:left;">
-          <label for="order-k12" style="font-weight:700;display:block;margin-bottom:6px">购买选项</label>
-          <select id="order-k12" style="width:100%;padding:8px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px">
-            <option value="1">1 个案</option>
+        <div style="margin-top: auto; text-align: left;">
+          <label
+            for="order-k12"
+            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            >购买选项</label
+          >
+          <select
+            id="order-k12"
+            style="
+              width: 100%;
+              padding: 8px;
+              border-radius: 6px;
+              border: 1px solid #ccc;
+              margin-bottom: 10px;
+            "
+          >
+            <option value="1">1个案</option>
           </select>
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">
+          <a id="k12-link" href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" target="_blank" rel="noopener">
+            <button
+              style="
+                width: 100%;
+                padding: 10px 16px;
+                background: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-weight: 700;
+              "
+              type="button"
+            >
               购买
             </button>
           </a>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -242,7 +540,7 @@
           </select>
         </div>
         <div style="margin-top:auto">
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+          <a href="{% url 'in_progress_zh' %}">
             <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
           </a>
         </div>
@@ -271,7 +569,7 @@
           </select>
         </div>
         <div style="margin-top:auto">
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+          <a href="{% url 'in_progress_zh' %}">
             <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
           </a>
         </div>
@@ -300,7 +598,7 @@
           </select>
         </div>
         <div style="margin-top:auto">
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+          <a href="{% url 'in_progress_zh' %}">
             <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
           </a>
         </div>
@@ -342,7 +640,7 @@
             <option value="halfyear">半年付</option>
             <option value="annual">年付</option>
           </select>
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+          <a href="{% url 'in_progress_zh' %}">
             <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
           </a>
         </div>
@@ -361,7 +659,7 @@
             <option value="halfyear">半年付</option>
             <option value="annual">年付</option>
           </select>
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+          <a href="{% url 'in_progress_zh' %}">
             <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
           </a>
         </div>
@@ -384,7 +682,7 @@
             <option value="halfyear">半年付</option>
             <option value="annual">年付</option>
           </select>
-          <a href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv">
+          <a href="{% url 'in_progress_zh' %}">
             <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
           </a>
         </div>
@@ -393,3 +691,115 @@
     </div>
   </div>
 </section>
+
+<!-- 选择辅导方案 JS -->
+<script>
+  // --- URL mappings (EDIT THESE) ---
+  // Trial lesson:
+  const TRIAL_URL = "https://buy.stripe.com/3cIbJ10mVaZw03y0Tb6EU0K"; // existing
+
+  // Packages: each option -> its own URL
+  const PACKAGE_LINKS = {
+    "10": "https://buy.stripe.com/7sYcN5c5Dc3A9E831j6EU0L",           // TODO replace
+    "20": "https://buy.stripe.com/4gM4gz0mVc3AcQkfO56EU0N",       // TODO replace
+    "30-sync": "https://buy.stripe.com/4gM4gz0mVc3AcQkfO56EU0N",        // TODO replace
+    "30-acc": "https://buy.stripe.com/fZufZhb1z2t0g2wbxP6EU0O",          // TODO replace
+    "40": "https://buy.stripe.com/7sY3cvd9H6Jg4jOgS96EU0P"            // TODO replace
+  };
+
+  // Exam prep:
+  const EXAM_PREP_URL = "https://buy.stripe.com/3cI9AT4Db3x48A49pH6EU0Q"; // existing
+
+  // --- Elements ---
+  const trialBtn = document.getElementById("trial-purchase-btn");
+  const packagesBtn = document.getElementById("packages-purchase-btn");
+  const examBtn = document.getElementById("exam-purchase-btn");
+  const packageSelect = document.getElementById("package-order");
+
+  // --- Handlers ---
+  trialBtn.addEventListener("click", () => {
+    window.open(TRIAL_URL, "_blank");
+  });
+
+  packagesBtn.addEventListener("click", () => {
+    const selected = packageSelect.value;
+    const url = PACKAGE_LINKS[selected];
+    if (!url) {
+      alert("This option does not have a checkout link yet. Please contact support.");
+      return;
+    }
+    window.open(url, "_blank");
+  });
+
+  examBtn.addEventListener("click", () => {
+    window.open(EXAM_PREP_URL, "_blank");
+  });
+</script>
+
+<!-- 选择导师计划 JS -->
+ <script>
+  // ---- Mapping tables (edit these URLs) ----
+  const CONSULT_LINKS = {
+    free:  "https://work.weixin.qq.com/kfid/kfc86f854c023857983",
+    trial: "https://buy.stripe.com/bJefZh3z75Fc7w0cBT6EU0R" // TODO: replace
+  };
+
+  const COLLEGE_LINKS = {
+    annual: "https://example.com/checkout/college-annual", // TODO: replace
+    "3yr":  "https://example.com/checkout/college-3yr",    // TODO: replace
+    "4yr":  "https://example.com/checkout/college-4yr"     // TODO: replace
+  };
+
+  const K12_LINKS = {
+    1: "https://buy.stripe.com/7sI6pH8Pc4U013O3cv" // single case (existing)
+  };
+
+  // ---- Elements ----
+  const consultSelect = document.getElementById("order-consult");
+  const collegeSelect = document.getElementById("order-college");
+  const k12Select     = document.getElementById("order-k12");
+
+  const consultAnchor = document.getElementById("consult-link");
+  const collegeAnchor = document.getElementById("college-link");
+  const k12Anchor     = document.getElementById("k12-link");
+
+  // ---- Helper to set href or warn if missing ----
+  function applyHref(selectEl, anchorEl, map) {
+    const v = selectEl.value;
+    const url = map[v];
+    if (url) {
+      anchorEl.href = url;
+      anchorEl.removeAttribute("data-disabled");
+    } else {
+      anchorEl.href = "javascript:void(0)";
+      anchorEl.setAttribute("data-disabled", "true");
+    }
+  }
+
+  // ---- Init + listeners ----
+  document.addEventListener("DOMContentLoaded", () => {
+    applyHref(consultSelect, consultAnchor, CONSULT_LINKS);
+    applyHref(collegeSelect, collegeAnchor, COLLEGE_LINKS);
+    applyHref(k12Select,     k12Anchor,     K12_LINKS);
+  });
+
+  consultSelect.addEventListener("change", () =>
+    applyHref(consultSelect, consultAnchor, CONSULT_LINKS)
+  );
+  collegeSelect.addEventListener("change", () =>
+    applyHref(collegeSelect, collegeAnchor, COLLEGE_LINKS)
+  );
+  k12Select.addEventListener("change", () =>
+    applyHref(k12Select, k12Anchor, K12_LINKS)
+  );
+
+  // Optional: block click if no URL mapped yet
+  [consultAnchor, collegeAnchor, k12Anchor].forEach(a => {
+    a.addEventListener("click", (e) => {
+      if (a.getAttribute("data-disabled") === "true") {
+        e.preventDefault();
+        alert("This option does not have a checkout link yet. Please contact support.");
+      }
+    });
+  });
+</script>

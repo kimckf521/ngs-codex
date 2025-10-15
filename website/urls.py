@@ -29,8 +29,10 @@ urlpatterns = [
          name='ngs_inspires'),
     path('ngs_connects/', views.ngs_connects,
          name='ngs_connects'),
-    path('membership_signin/', views.membership_signin,
-         name='membership_signin'),
+
+    # In Progress
+    path('in_progress/', views.in_progress,
+         name='in_progress'),
 
     # CHINESE PAGES
     path('', views.index_zh, name='index_zh'),
@@ -64,8 +66,10 @@ urlpatterns = [
          name='ngs_inspires_zh'),
     path('ngs_connects_zh/', views.ngs_connects_zh,
          name='ngs_connects_zh'),
-    path('membership_signin_zh/', views.membership_signin_zh,
-         name='membership_signin_zh'),
+
+    # In Progress
+    path('in_progress_zh/', views.in_progress_zh,
+         name='in_progress_zh'),
 
     # Partner Form Submission (Email)
     path('partner_with_us/', views.partner_with_us, name='partner_with_us'),

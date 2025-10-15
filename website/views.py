@@ -69,9 +69,11 @@ def ngs_inspires(request):
 def ngs_connects(request):
     return render(request, 'website/join_ngs_commmunity/ngs_connects.html')
 
+# In Progress
 
-def membership_signin(request):
-    return render(request, 'website/join_ngs_commmunity/membership_signin.html')
+
+def in_progress(request):
+    return render(request, 'website/in_progress.html')
 
 # CHINESE PAGES
 
@@ -142,8 +144,10 @@ def ngs_connects_zh(request):
     return render(request, 'website/language/zh/join_ngs_commmunity/ngs_connects_zh.html')
 
 
-def membership_signin_zh(request):
-    return render(request, 'website/language/zh/join_ngs_commmunity/membership_signin_zh.html')
+# In Progress
+
+def in_progress_zh(request):
+    return render(request, 'website/language/zh/in_progress_zh.html')
 
 # Email views
 
