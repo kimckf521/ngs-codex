@@ -1,50 +1,23 @@
 {% load static %}
 
-<section style="
-    width:100%;
-    height:66vh;
-    background:#fff;
-    padding:60px 20px;
-    box-sizing:border-box;">
-<div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+<section class="intro-connects__bg-white">
+<div class="intro-connects__flex-col">
 <!-- Title -->
-<h2 class="section_title" style="text-align:center; font-weight:900; margin:0 0 28px;">
+<h2 class="section_title intro-connects__text-center">
         PARTNER WITH NEXTGEN SCHOLARS
     </h2>
 <!-- Two-column layout (50/50 split) -->
-<div style="
-        flex:1; 
-        display:grid; 
-        grid-template-columns:1fr 1fr;  /* 50% left, 50% right */
-        gap:36px; 
-        align-items:stretch; 
-        height:100%;">
+<div class="intro-connects__grid-cols">
 <!-- Left: Card with bullets at bottom -->
-<div style="
-        background:#fff;
-        border:1.5px solid #1a1a1a;
-        border-radius:26px;
-        padding:34px 28px;
-        width:80%;
-        height:100%;                 /* fills parent column/section */
-        box-sizing:border-box;
-        display:flex;
-        flex-direction:column;
-        justify-content:flex-start;">
+<div class="intro-connects__flex-col-3f57">
 <!-- Title -->
-<h3 class="section_subtitle" style="margin:6px 0 0; font-weight:900; line-height:1.15; letter-spacing:.2px; color:#111;">
+<h3 class="section_subtitle intro-connects__style-1">
             Career College<br/>Life Readiness Programme
         </h3>
 <!-- Spacer pushes list down -->
-<div style="flex:1"></div>
+<div class="intro-hybrid__style-2"></div>
 <!-- Bullets (anchored at bottom) -->
-<ul style="
-            margin:0;
-            padding-left:22px;
-            list-style:disc;
-            font-size:16px;
-            line-height:1.9;
-            color:#111;">
+<ul class="intro-connects__style-2">
 <li>
 <a class="bullet-link active" href="{% url 'cclr_programs' %}">
                     Career Readiness
@@ -68,20 +41,14 @@
 </ul>
 </div>
 <!-- Right: Copy -->
-<div style="
-        font-size:15px; 
-        line-height:1.8; 
-        color:#222; 
-        display:flex; 
-        flex-direction:column; 
-        justify-content:center;">
-<p class="section_paragraph" style="margin-top:0; margin-bottom:16px;">
+<div class="intro-connects__flex-col-34c8">
+<p class="section_paragraph intro-connects__style-3">
             The NGS CCLR (College, Career, and Life Readiness) course is designed to provide a comprehensive framework for defining, guiding, and assessing students' critical competencies essential for academic success, career development, and social engagement.
         </p>
-<p class="section_paragraph" style="margin:0; margin-bottom:16px;">
+<p class="section_paragraph head-cclr__style-1">
             Beyond academic achievements, the CCLR curriculum equips students with the skills and knowledge necessary to navigate university admissions, achieve career goals, and thrive in society. By empowering students, families, educators, and schools with reliable insights, CCLR ensures that every decision made for the student is well-informed, fostering success at every stage of their educational and professional journey.
         </p>
-<p class="section_paragraph" style="margin:0;">
+<p class="section_paragraph connect-to-parents__style-1">
             Through its focus on college readiness, career competencies, and life skills, the CCLR course prepares students to seamlessly transition into higher education, the workforce, and society with confidence and capability.
         </p>
 </div>

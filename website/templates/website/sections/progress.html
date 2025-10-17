@@ -2,25 +2,25 @@
 
 {% comment %} <section class="inprog">
 <div class="ip-card">
-<div class="ip-grid" style="grid-template-columns:1.2fr 1fr;place-items:center;gap:40px;text-align:center">
+<div class="ip-grid progress__text-center">
 <!-- Left: Copy -->
-<div class="ip-copy" style="font-size:1.1em;max-width:600px;margin:auto">
+<div class="ip-copy progress__style-1">
 <span class="ip-badge">IN PROGRESS</span>
-<h1 class="ip-title" style="font-size:42px">We’re working on this page</h1>
-<p class="ip-lead section_paragraph" style="line-height:1.7;">
+<h1 class="ip-title progress__style-2">We’re working on this page</h1>
+<p class="ip-lead section_paragraph progress__style-3">
           Thanks for stopping by — this section is under active construction.
           We’re polishing content and wiring things up so it’s useful for you.
         </p>
 <!-- progress row -->
-<div class="ip-row" style="margin:12px auto;justify-content:center">
+<div class="ip-row progress__style-4">
 <span aria-hidden="true" class="ip-spinner"></span>
 <div aria-hidden="true" class="ip-bar"><span></span></div>
 </div>
-<div class="ip-row" style="color:#6b7280;font-size:16px;margin-bottom:20px;justify-content:center">
+<div class="ip-row progress__style-5">
           Live updates deploying soon
         </div>
 <!-- actions -->
-<div class="ip-row" style="margin-top:8px;gap:16px;justify-content:center">
+<div class="ip-row progress__style-6">
 <a class="btn btn-primary" href="{% url 'index' %}">Go to Home</a>
 <!-- Contact Us as mailto -->
 <a class="btn btn-outline" href="mailto:info@nextgenscholars.asia?subject=NGS%20Page%20Inquiry&amp;body=Hello%20NGS%20team," onclick="window.location.href=this.href;return false;">
@@ -29,8 +29,8 @@
 </div>
 </div>
 <!-- Right: Illustration -->
-<div aria-hidden="true" class="ip-illust" style="max-width:420px;margin:auto">
-<img alt="" src="{% static 'img/work_in_progress.jpg' %}" style="width:100%;height:auto;display:block;margin:auto"/>
+<div aria-hidden="true" class="ip-illust progress__style-7">
+<img alt="" src="{% static 'img/work_in_progress.jpg' %}" class="progress__style-8"/>
 <span class="blob b1"></span>
 <span class="blob b2"></span>
 </div>
@@ -39,62 +39,44 @@
 </section> {% endcomment %}
 
 <!-- IN PROGRESS (66vh, polished) -->
-<section class="inprog" style="
-  width:100%;
-  height:66vh;                 /* exact height */
-  background:#fff;
-  padding:40px 20px;
-  box-sizing:border-box;
-  display:flex; align-items:center; justify-content:center;">
-<div class="ip-card" style="width:100%; max-width:1180px; height:100%; display:flex; flex-direction:column;">
-<div class="ip-grid" style="
-           display:grid;
-           grid-template-columns:1.2fr 1fr;
-           gap:40px;
-           place-items:center;
-           text-align:center;
-           height:100%;           /* fill 66vh */
-           min-height:0;"> <!-- allow children to shrink within 66vh -->
+<section class="inprog progress__flex-center">
+<div class="ip-card progress__flex-col">
+<div class="ip-grid progress__grid-cols"> <!-- allow children to shrink within 66vh -->
 <!-- Left: Copy -->
-<div class="ip-copy" style="font-size:1.1em; max-width:600px; margin:0 auto;
-                  display:flex; flex-direction:column; justify-content:center;">
-<span class="ip-badge" style="display:inline-block; font-weight:800; color:#fff; background:#111; padding:6px 12px; border-radius:999px; margin-bottom:12px;">
+<div class="ip-copy progress__flex-col-aba9">
+<span class="ip-badge progress__bg-dark">
           IN PROGRESS
         </span>
-<h1 class="ip-title" style="font-size:42px; margin:0 0 10px;">
+<h1 class="ip-title progress__style-9">
           We’re working on this page
         </h1>
-<p class="ip-lead section_paragraph" style="line-height:1.7; margin:0 0 12px;">
+<p class="ip-lead section_paragraph progress__style-10">
           Thanks for stopping by — this section is under active construction.
           We’re polishing content and wiring things up so it’s useful for you.
         </p>
 <!-- progress row -->
-<div class="ip-row" style="margin:12px auto; display:flex; gap:12px; justify-content:center;">
-<span aria-hidden="true" class="ip-spinner" style="width:16px; height:16px; border:3px solid #ddd; border-top-color:#111; border-radius:50%; display:inline-block; animation:spin 0.9s linear infinite;"></span>
-<div aria-hidden="true" class="ip-bar" style="width:180px; height:8px; background:#eee; border-radius:6px; overflow:hidden;">
-<span style="display:block; width:40%; height:100%; background:#111; animation:load 1.8s ease-in-out infinite;"></span>
+<div class="ip-row progress__flex-gap">
+<span aria-hidden="true" class="ip-spinner progress__circle"></span>
+<div aria-hidden="true" class="ip-bar progress__rounded">
+<span class="progress__bg-dark-1ca4"></span>
 </div>
 </div>
-<div class="ip-row" style="color:#6b7280; font-size:16px; margin:0 0 16px; display:flex; justify-content:center;">
+<div class="ip-row progress__flex-center-a53f">
           Live updates deploying soon
         </div>
 <!-- actions -->
-<div class="ip-row" style="margin-top:8px; display:flex; gap:16px; justify-content:center;">
-<a class="btn btn-primary" href="{% url 'index' %}" style="display:inline-block; background:#111; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700;">
+<div class="ip-row progress__flex-gap-f4f1">
+<a class="btn btn-primary progress__bg-dark-71ff" href="{% url 'index' %}">
             Go to Home
           </a>
-<a class="btn btn-outline" href="mailto:info@nextgenscholars.asia?subject=NGS%20Page%20Inquiry&amp;body=Hello%20NGS%20team," onclick="window.location.href=this.href;return false;" style="display:inline-block; background:#fff; color:#111; border:2px solid #111; padding:8px 16px; border-radius:8px; text-decoration:none; font-weight:700;">
+<a class="btn btn-outline progress__bg-white" href="mailto:info@nextgenscholars.asia?subject=NGS%20Page%20Inquiry&amp;body=Hello%20NGS%20team," onclick="window.location.href=this.href;return false;">
             Contact Us
           </a>
 </div>
 </div>
 <!-- Right: Illustration -->
-<div aria-hidden="true" class="ip-illust" style="
-             max-width:420px; width:100%;
-             height:100%;
-             display:flex; align-items:center; justify-content:center;
-             position:relative; overflow:hidden;"> <!-- prevents overflow beyond 66vh -->
-<img alt="" src="{% static 'img/work_in_progress.jpg' %}" style="display:block; width:100%; height:80%; object-fit:contain; margin:auto;"/>
+<div aria-hidden="true" class="ip-illust progress__flex-center-5877"> <!-- prevents overflow beyond 66vh -->
+<img alt="" src="{% static 'img/work_in_progress.jpg' %}" class="progress__style-11"/>
 <span class="blob b1"></span>
 <span class="blob b2"></span>
 </div>

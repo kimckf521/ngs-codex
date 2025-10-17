@@ -1,35 +1,21 @@
 {% load static %}
 
 <!-- NEXTGEN INSPIRES -->
-<section class="inspires" style="
-           width:100%;
-           height:66vh;                       /* fixed height */
-           padding:40px 24px;
-           box-sizing:border-box;
-           background:linear-gradient(135deg,#dce9ff 0%,#cfe8ff 30%,#b7f3d7 70%,#f8f2b9 100%);
-           border-radius:16px;
-           display:flex; align-items:center;">
-<div class="wrap" style="
-        max-width:1280px; margin:0 auto; width:100%;
-        height:100%; display:flex; flex-direction:column;">
+<section class="inspires inspires__flex">
+<div class="wrap inspires__flex-col">
 <!-- Title -->
-<h2 class="section_title" style="margin:0 0 16px; text-align:center; font-weight:900; line-height:1.05; color:#111;">
+<h2 class="section_title inspires__text-center">
       NextGen Inspires
     </h2>
 <!-- Four-column content -->
-<div style="
-        flex:1; min-height:0;                       /* allows grid to fit inside 66vh */
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:36px;
-        align-items:start;">
+<div class="inspires__grid-cols">
 <!-- Global Industry Leaders -->
-<div style="text-align:center;">
-<img alt="Global Industry Leaders" src="{% static 'img/globalindustry.jpg' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="Global Industry Leaders" src="{% static 'img/globalindustry.jpg' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           Global Industry Leaders
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           Connect with leaders at the forefront of innovation and excellence across diverse industries. Through
           expert-led webinars, mentorship programs, and career-focused workshops, students gain first-hand
           insights into emerging trends, career pathways, and the real-world skills required to succeed in a
@@ -37,35 +23,35 @@
         </p>
 </div>
 <!-- Global Universities -->
-<div style="text-align:center;">
-<img alt="Global Universities" src="{% static 'img/globaluniversities.png' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="Global Universities" src="{% static 'img/globaluniversities.png' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           Global Universities
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           Explore partnerships with renowned universities worldwide, offering students exclusive access to admissions
           guidance, campus tours, and networking opportunities.
         </p>
 </div>
 <!-- SPARK LAB -->
-<div style="text-align:center;">
-<img alt="SPARK LAB" src="{% static 'img/sparklab.jpg' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="SPARK LAB" src="{% static 'img/sparklab.jpg' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           SPARK LAB
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           The SPARK LAB is an interactive platform connecting Global K-12 students to collaborate, innovate, and
           create. By fostering a global network of young minds, the SPARK LAB inspires students to think boldly,
           develop a global perspective, and take the lead in shaping the future.
         </p>
 </div>
 <!-- Global Alumni -->
-<div style="text-align:center;">
-<img alt="Global Alumni" src="{% static 'img/globalalumni.png' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="Global Alumni" src="{% static 'img/globalalumni.png' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           Global Alumni
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           Leverage a thriving network of international alumni who have successfully pursued their academic and
           professional goals. This domain offers students opportunities to learn from the experiences of those who
           have walked similar paths, providing mentorship, guidance, and inspiration.
@@ -75,20 +61,17 @@
 </div>
 </section>
 
-{% comment %} <section class="inspires" style="
-    padding:60px 20px;
-    background:linear-gradient(135deg,#dce9ff 0%,#f7f4ff 30%,#f8fff2 70%,#fffbdc 100%);
-    border-radius:16px;margin:40px 0; min-height:66vh;">
+{% comment %} <section class="inspires inspires__gradient-bg">
 <div class="wrap">
-<h2 class="section_title" style="text-align:center; font-weight:900; margin-bottom:40px;">
+<h2 class="section_title inspires__text-center-6566">
         NextGen Inspires
         </h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;text-align:center">
+<div class="inspires__grid-cols-f56f">
 <!-- Global Industry Leaders -->
 <div>
-<img alt="Industry Leaders" src="{% static 'img/globalindustry.jpg' %}" style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:auto;margin-bottom:16px"/>
-<h3 class="section_subtitle" style="font-weight:800; margin-bottom:10px;">Global Industry Leaders</h3>
-<p class="section_paragraph" style="line-height:1.6; color:#444; text-align:left;">
+<img alt="Industry Leaders" src="{% static 'img/globalindustry.jpg' %}" class="inspires__circle-a8cc"/>
+<h3 class="section_subtitle inspires__style-3">Global Industry Leaders</h3>
+<p class="section_paragraph inspires__style-4">
             Connect with leaders at the forefront of innovation and excellence across diverse industries. 
             Through expert-led webinars, mentorship programs, and career-focused workshops, 
             students gain first-hand insights into emerging trends, career pathways, and the real-world skills 
@@ -97,18 +80,18 @@
 </div>
 <!-- Global Universities -->
 <div>
-<img alt="Global Universities" src="{% static 'img/globaluniversities.png' %}" style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:auto;margin-bottom:16px"/>
-<h3 class="section_subtitle" style="font-weight:800; margin-bottom:10px;">Global Universities</h3>
-<p class="section_paragraph" style="line-height:1.6; color:#444; text-align:left;">
+<img alt="Global Universities" src="{% static 'img/globaluniversities.png' %}" class="inspires__circle-a8cc"/>
+<h3 class="section_subtitle inspires__style-3">Global Universities</h3>
+<p class="section_paragraph inspires__style-4">
             Explore partnerships with renowned universities worldwide, offering students exclusive access 
             to admissions guidance, campus tours, and networking opportunities.
             </p>
 </div>
 <!-- SPARK LAB -->
 <div>
-<img alt="SPARK LAB" src="{% static 'img/sparklab.jpg' %}" style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:auto;margin-bottom:16px"/>
-<h3 class="section_subtitle" style="font-weight:800; margin-bottom:10px;">SPARK LAB</h3>
-<p class="section_paragraph" style="line-height:1.6; color:#444; text-align:left;">
+<img alt="SPARK LAB" src="{% static 'img/sparklab.jpg' %}" class="inspires__circle-a8cc"/>
+<h3 class="section_subtitle inspires__style-3">SPARK LAB</h3>
+<p class="section_paragraph inspires__style-4">
             The SPARK LAB is an interactive platform connecting Global K-12 students to collaborate, innovate, and create. 
             By fostering a global network of young minds, the SPARK LAB inspires students to think boldly, develop a global perspective, 
             and take the lead in shaping the future.
@@ -116,9 +99,9 @@
 </div>
 <!-- Global Alumni -->
 <div>
-<img alt="Global Alumni" src="{% static 'img/globalalumni.png' %}" style="width:120px;height:120px;object-fit:cover;border-radius:50%;margin:auto;margin-bottom:16px"/>
-<h3 class="section_subtitle" style="font-weight:800; margin-bottom:10px;">Global Alumni</h3>
-<p class="section_paragraph" style="line-height:1.6; color:#444; text-align:left;">
+<img alt="Global Alumni" src="{% static 'img/globalalumni.png' %}" class="inspires__circle-a8cc"/>
+<h3 class="section_subtitle inspires__style-3">Global Alumni</h3>
+<p class="section_paragraph inspires__style-4">
             Leverage a thriving network of international alumni who have successfully pursued their academic 
             and professional goals. This domain offers students opportunities to learn from the experiences 
             of those who have walked similar paths, providing mentorship, guidance, and inspiration.

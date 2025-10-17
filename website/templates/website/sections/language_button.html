@@ -1,23 +1,10 @@
 {% load static %}
 
 <!-- Language Switch Button -->
-<div style="
-    position:fixed;
-    bottom:20px;
-    left:20px;   /* ⬅️ moved to bottom-left */
-    background:#e84545;
-    color:#fff;
-    padding:12px 18px;
-    border-radius:30px;
-    font-weight:700;
-    font-size:14px;
-    text-decoration:none;
-    box-shadow:0 4px 12px rgba(0,0,0,.2);
-    z-index:9999;
-">
+<div class="language-button__pill">
     {% if request.LANGUAGE_CODE == "en" %}
-        <a href="/zh{{ request.path|slice:'3:' }}" style="color:#fff;text-decoration:none;">中文</a>
+        <a href="/zh{{ request.path|slice:'3:' }}" class="navbar__style-4">中文</a>
     {% else %}
-        <a href="/en{{ request.path|slice:'3:' }}" style="color:#fff;text-decoration:none;">English</a>
+        <a href="/en{{ request.path|slice:'3:' }}" class="navbar__style-4">English</a>
     {% endif %}
 </div>

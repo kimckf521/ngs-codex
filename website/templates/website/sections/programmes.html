@@ -1,42 +1,32 @@
 {% load static %}
 
-<section style="
-    height:66vh; 
-    padding:40px 20px; 
-    background:#fff; 
-    width:100%; 
-    box-sizing:border-box;
-    display:flex; align-items:center; justify-content:center;">
-<div style="
-    max-width:1180px; margin:auto; width:100%; 
-    height:100%; 
-    display:flex; flex-direction:column; justify-content:space-between; align-items:center; text-align:center;">
+<section class="programmes__flex-center">
+<div class="programmes__flex-col">
 <!-- Title -->
-<h2 class="section_title" style="font-weight:900; margin:0;">
+<h2 class="section_title programmes__style-1">
         PROGRAMMES
     </h2>
 <!-- Description -->
-<p class="section_paragraph" style="max-width:780px; margin:0 auto; line-height:1.6; color:#444; flex:0;">
+<p class="section_paragraph programmes__style-2">
         The class contents are closely aligned with the exam syllabus, systematically covering 90% of the key knowledge points. 
         It ensures that students can understand, learn effectively, and improve quickly.
     </p>
 <!-- Image -->
-<div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
-<img alt="Online class" src="{% static 'img/studying.jpg' %}" style="max-width:60%; max-height:100%; width:auto; height:auto;
-                    border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,.1); object-fit:cover;"/>
+<div class="programmes__flex-center-aff8">
+<img alt="Online class" src="{% static 'img/studying.jpg' %}" class="programmes__rounded"/>
 </div>
 <!-- Buttons -->
-<div style="display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-top:10px;">
-<span style="background:linear-gradient(90deg,#2ecc71,#27ae60); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
+<div class="programmes__flex-gap">
+<span class="programmes__gradient-bg">
         Foundation
         </span>
-<span style="background:linear-gradient(90deg,#56ccf2,#2f80ed); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
+<span class="programmes__gradient-bg-b687">
         Synchronization
         </span>
-<span style="background:linear-gradient(90deg,#f2994a,#f2c94c); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
+<span class="programmes__gradient-bg-06e7">
         Acceleration
         </span>
-<span style="background:linear-gradient(90deg,#eb5757,#ff0080); color:#000; font-weight:700; padding:12px 22px; border-radius:40px; font-size:15px;">
+<span class="programmes__gradient-bg-a514">
         Exam Prep
         </span>
 </div>

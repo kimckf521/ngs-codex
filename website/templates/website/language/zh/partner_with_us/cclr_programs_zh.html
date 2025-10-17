@@ -17,52 +17,31 @@
     </section>
 
     <!-- 成为 NextGen Scholars 合作伙伴 (exact 66vh) -->
-    <section style="
-        width:100%;
-        height:66vh;
-        background:#fff;
-        padding:60px 20px;
-        box-sizing:border-box;">
+    <section class="intro-connects__bg-white">
         
-        <div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+        <div class="intro-connects__flex-col">
 
         <!-- Title -->
-        <h2 style="text-align:center; margin:0 0 28px;" class="section_title">
+        <h2 class="section_title intro-cclr__text-center">
             成为 NextGen Scholars 合作伙伴
         </h2>
 
         <!-- Two-column layout (50/50 split) -->
-        <div style="
-            flex:1; 
-            display:grid; 
-            grid-template-columns:1fr 1fr;  
-            gap:36px; 
-            align-items:stretch; 
-            height:100%;">
+        <div class="cclr-programs-zh__grid-cols">
 
             <!-- Left: Card with bullets at bottom -->
-            <div style="
-            background:#fff;
-            border:1.5px solid #1a1a1a;
-            border-radius:26px;
-            padding:34px 28px;
-            width:80%;
-            height:100%;                 
-            box-sizing:border-box;
-            display:flex;
-            flex-direction:column;
-            justify-content:flex-start;">
+            <div class="intro-cclr-zh__flex-col">
 
             <!-- Title -->
-            <h3 class="section_subtitle" style="margin:6px 0 0; line-height:1.15; letter-spacing:.2px; color:#111;">
-                升学·职业·生活<br>准备课程
+            <h3 class="section_subtitle partner-with-us-cclr-programs__style-1">
+                升学·职业·生活 准备课程
             </h3>
 
             <!-- Spacer pushes list down -->
-            <div style="flex:1"></div>
+            <div class="intro-hybrid__style-2"></div>
 
             <!-- Bullets -->
-            <ul style="margin:0; padding-left:22px; list-style:disc; font-size:16px; line-height:1.9; color:#111;">
+            <ul class="intro-connects__style-2">
                 <li><a href="{% url 'cclr_programs_zh' %}" class="bullet-link active">职业准备</a></li>
                 <li><a>大学准备</a></li>
                 <li><a href="{% url 'ngs_inspires_zh' %}" class="bullet-link">生活准备</a></li>
@@ -72,14 +51,14 @@
             </div>
 
             <!-- Right: Copy -->
-            <div style="font-size:15px; line-height:1.8; color:#222; display:flex; flex-direction:column; justify-content:center;">
-              <p class="section_paragraph" style="margin-top:0; margin-bottom:16px;">
+            <div class="intro-connects__flex-col-34c8">
+              <p class="section_paragraph intro-connects__style-3">
                 NGS CCLR（升学、职业与生活准备）课程旨在为学生提供一个全面框架，用于界定、引导并评估学生在学业成功、职业发展和社会参与中所需的关键能力。
               </p>
-              <p class="section_paragraph" style="margin:0; margin-bottom:16px;">
+              <p class="section_paragraph head-cclr__style-1">
                 除了学术成就之外，CCLR 课程还帮助学生掌握大学申请、职业目标实现和社会发展所需的技能与知识。通过为学生、家庭、教育者与学校提供可靠的洞见，CCLR 确保关于学生的每一个决定都科学且明智，从而在教育和职业的每一个阶段助力成功。
               </p>
-              <p class="section_paragraph" style="margin:0;">
+              <p class="section_paragraph connect-to-parents__style-1">
                 聚焦大学准备、职业能力和生活技能，CCLR 课程帮助学生自信地衔接高等教育、职场与社会，实现全面发展。
               </p>
             </div>
@@ -89,13 +68,13 @@
     </section>
 
     <!-- CCLR Diagram — centered and fixed height -->
-    <section style="width:100%; height:66vh; background:#fff; display:flex; justify-content:center; align-items:center; padding:40px 16px; box-sizing:border-box;">
-      <div style="max-width:980px; width:100%; text-align:center;">
-        <h2 class="section_title" style="line-height:1.15; margin-bottom:30px;">
+    <section class="partner-with-us-cclr-programs__flex-center">
+      <div class="partner-with-us-cclr-programs__text-center">
+        <h2 class="section_title partner-with-us-cclr-programs__style-2">
           升学 · 职业 · 生活<br>准备课程
         </h2>
-        <div style="display:flex; justify-content:center; align-items:center; height:calc(66vh - 120px);">
-          <img src="{% static 'img/circles.jpg' %}" alt="CCLR 课程示意图" style="max-width:100%; max-height:100%; object-fit:contain;">
+        <div class="partner-with-us-cclr-programs__flex-center-78b2">
+          <img src="{% static 'img/circles.jpg' %}" alt="CCLR 课程示意图" class="partner-with-us-cclr-programs__full-size">
         </div>
       </div>
     </section>
@@ -110,91 +89,64 @@
     {% include "website/language/zh/sections/our_programs_zh.html" %}
 
     <!-- MEETING + FORM -->
-    <section style="padding:40px 50px 10px; margin-bottom:40px; height:66vh;">
-      <div class="ngs-enquiry"
-          style="display:grid;
-                grid-template-columns:1.1fr .9fr;
-                gap:20px;
-                align-items:stretch;
-                height:100%;
-                padding:0 50px"> <!-- ✅ grid fills 66vh -->
+    <section class="index__section">
+      <div class="ngs-enquiry index__grid-cols-452f"> <!-- ✅ grid fills 66vh -->
 
         <!-- 左侧：图片 -->
-        <div style="height:100%;">
+        <div class="index__style-9">
           <img src="{% static 'img/studying.jpg' %}"
               alt="线上会议"
-              style="width:100%; height:100%;
-                    object-fit:cover;
-                    border-radius:12px;
-                    box-shadow:0 6px 18px rgba(0,0,0,.08);">
+              class="index__rounded">
         </div>
 
         <!-- 右侧：表单 -->
         {% include "website/messages.html" %}
 
-        <form class="ngs-form" method="POST" action="{% url 'partner_with_us' %}"
-              style="border:1px solid #e4e4e4;
-                    border-radius:6px;
-                    overflow:hidden;
-                    background:#fff;
-                    display:flex;
-                    flex-direction:column;
-                    height:100%;"> <!-- ✅ form fills 66vh -->
+        <form class="ngs-form index__flex-col-621c" method="POST" action="{% url 'partner_with_us' %}"> <!-- ✅ form fills 66vh -->
           {% csrf_token %}
 
           <!-- 标题栏 -->
-          <div style="background:#000;
-                      color:#fff;
-                      font-weight:900;
-                      padding:12px 16px;
-                      letter-spacing:.3px;">
+          <div class="index__bg-dark">
             想与 NGS 合作？
           </div>
 
           <!-- 表单字段 -->
-          <div style="display:grid; gap:12px; padding:16px; flex:1; overflow:auto;">
+          <div class="index__grid">
             <div>
-              <label style="display:block; font-size:14px; color:#444;">您的全名</label>
+              <label class="index__style-10">您的全名</label>
               <input type="text" name="name" id="id_name" required placeholder="请输入您的姓名"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
             <div>
-              <label style="display:block; font-size:14px; color:#444;">学校 / 机构名称</label>
+              <label class="index__style-10">学校 / 机构名称</label>
               <input type="text" name="school_name" id="id_school" required placeholder="请输入学校或机构名称"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
             <div>
-              <label style="display:block; font-size:14px; color:#444;">电子邮箱</label>
+              <label class="index__style-10">电子邮箱</label>
               <input type="email" name="email" id="id_email" required placeholder="you@example.com"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
             <div>
-              <label style="display:block; font-size:14px; color:#444;">手机号 / 微信号</label>
+              <label class="index__style-10">手机号 / 微信号</label>
               <input type="text"  name="mobile_or_wechat" id="id_mobile_or_wechat" placeholder="+61… / 您的微信号"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
-            <div style="flex:1; display:flex; flex-direction:column;">
-              <label style="display:block; font-size:14px; color:#444;">我们能为您提供什么帮助？</label>
+            <div class="index__flex-col-d481">
+              <label class="index__style-10">我们能为您提供什么帮助？</label>
               <textarea rows="5" name="help_description" id="id_help_description" placeholder="请简单说明您的合作需求或目标…"
-                        style="flex:1; width:100%; padding:11px; border:1px solid #e0e0e0;
-                              border-radius:4px; background:#f5f5f5; resize:none;"></textarea>
+                        class="index__rounded-f54a"></textarea>
             </div>
           </div>
 
           <!-- 提交按钮 -->
-          <div style="padding:16px; border-top:1px solid #eee;">
+          <div class="index__style-11">
             <button type="submit"
-                    style="width:100%; background:#111; color:#fff;
-                          padding:14px 16px; border:0; border-radius:8px;
-                          font-weight:800; font-size:16px; cursor:pointer;">
+                    class="index__bg-dark-d1b8">
               发送
             </button>
           </div>

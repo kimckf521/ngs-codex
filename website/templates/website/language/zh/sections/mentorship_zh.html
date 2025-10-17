@@ -1,56 +1,26 @@
 {% load static %}
 
-<section style="
-    width:100%;
-    height:66vh;                 /* exact height */
-    background:#fff;
-    box-sizing:border-box;
-    position:relative;           /* prevent stacking overlap */
-    overflow:hidden;             /* clip any overflow (e.g., shadows) */
-    margin:0;"> <!-- space after this section -->
-  <div style="
-      display:grid; 
-      grid-template-columns:1fr 1fr; 
-      height:100%;"> <!-- grid fills 66vh -->
+<section class="mentorship__bg-white"> <!-- space after this section -->
+  <div class="mentorship__grid-cols"> <!-- grid fills 66vh -->
 
     <!-- Left: Image + Button -->
-    <div style="
-        display:flex; 
-        flex-direction:column; 
-        align-items:center; 
-        justify-content:center; 
-        padding:40px;">
-      <img alt="Bridge City" src="{% static 'img/bridgecity.png' %}" style="max-width:85%; max-height:60%; object-fit:cover;
-                    border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.15); margin-bottom:20px;"/>
-      <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" style="display:inline-block; 
-                background:linear-gradient(90deg,#6a11cb,#2575fc);
-                color:#fff; font-weight:700; 
-                padding:12px 28px; 
-                border-radius:40px; 
-                font-size:15px; 
-                text-decoration:none;
-                transition:all .2s ease-in-out;">
+    <div class="mentorship__flex-col">
+      <img alt="Bridge City" src="{% static 'img/bridgecity.png' %}" class="mentorship__rounded"/>
+      <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" class="mentorship__gradient-bg">
         免费咨询
       </a>
     </div>
 
     <!-- Right: Content -->
-    <div style="
-        background:#3ddad7; 
-        color:#000; 
-        padding:50px; 
-        display:flex; 
-        align-items:center; 
-        justify-content:center;
-        height:100%; box-sizing:border-box;">
-      <div style="max-width:520px;">
-        <h2 class="section_title" style="font-weight:900; margin:0 0 20px;">
+    <div class="mentorship__flex-center">
+      <div class="mentorship__style-1">
+        <h2 class="section_title mentorship__style-2">
           NGS 大学升学辅导项目
         </h2>
-        <p class="section_paragraph" style="line-height:1.7; margin:0 0 16px;">
+        <p class="section_paragraph mentorship__style-3">
           <strong>NGS 大学升学辅导项目</strong> 是一项个性化指导计划，旨在帮助学生应对复杂的大学申请之旅。通过 <strong>4 对 1</strong> 导师支持，学生将获得量身定制的辅导：发掘兴趣与热情、完善学术与课外履历，并为大学申请制定系统的策略规划。
         </p>
-        <p class="section_paragraph" style="line-height:1.7; margin:0;">
+        <p class="section_paragraph mentorship__style-4">
           本项目强调「基于信息的决策」，帮助学生选择合适的院校与专业，并满足各项申请要求与截止日期。在专家导师的指导下，学生将具备充足的能力与信心，迈向更高的教育目标，并在学术未来中脱颖而出。
         </p>
       </div>

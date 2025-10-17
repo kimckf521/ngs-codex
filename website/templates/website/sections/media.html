@@ -1,139 +1,91 @@
 {% load static %}
 
 <!-- CONTACT SECTION (exact 66vh) -->
-<section style="margin:0; width:100%; height:66vh; overflow:hidden; box-sizing:border-box;">
-  <div style="
-      display:grid; grid-template-columns:42% 58%;
-      width:100%; height:100%; min-height:0;">
+<section class="media__section">
+  <div class="media__grid-cols">
 
     <!-- LEFT: black contact panel -->
-    <div style="
-      background:#000; color:#fff;
-      display:flex; flex-direction:column;
-      height:100%; min-height:0;
-      padding:2.8vh 3.2vh; box-sizing:border-box;">
+    <div class="media__flex-col">
 
       <!-- N logo (top-left) -->
       <img src="{% static 'img/big_n.png' %}" alt="NextGen Scholars Logo"
-           style="height:15vh; width:15vh; display:block; ">
+           class="media__style-1">
 
       <!-- Title (stacked, very large, left-aligned) -->
-      <h1 style="
-          margin:1vh 0 0;
-          font-weight:900;
-          line-height:1.02;
-          letter-spacing:.02em;
-          font-size:clamp(48px, 10.2vh, 80px);
-          text-align:center;">
+      <h1 class="media__text-center">
         GET IN<br>TOUCH<br>WITH US
       </h1>
 
       <!-- Email -->
-      <p style="
-          margin:1.4vh 0 0;
-          font-size:clamp(14px, 2.4vh, 18px);
-          font-weight:600;
-          opacity:.95; text-align:center;">
+      <p class="media__text-center-93a7">
         info@nextgenscholars.asia
       </p>
 
       <!-- Spacer pushes icon row toward the bottom but stays inside 66vh -->
-      <div style="flex:1; min-height:0;"></div>
+      <div class="media__style-2"></div>
 
       <!-- Social / QR row -->
-      <div style="
-          display:flex;
-          gap:2vh;                /* keep some breathing space */
-          flex-wrap:wrap;
-          align-items:flex-start;
-          justify-content:space-between; /* ✅ evenly distribute items */
-          width:100%;             /* stretch full width for spacing */
-          box-sizing:border-box;
-          padding: 0 30px;
-      ">
+      <div class="media__flex-gap">
 
         <!-- WeChat -->
-        <div style="text-align:center; flex:1;">
+        <div class="media__text-center-e79f">
           <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" target="_blank" rel="noopener">
             <img src="{% static 'img/media_icons/WeChat.png' %}" alt="WeChat"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+                class="media__rounded">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#00e676;">@NextGenScholars</small>
+          <small class="media__style-3">@NextGenScholars</small>
         </div>
 
         <!-- WeChat Channels / 视频号 -->
-        <div style="text-align:center; flex:1;">
+        <div class="media__text-center-e79f">
           <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" target="_blank" rel="noopener">
             <img src="{% static 'img/media_icons/WeClass.png' %}" alt="视频号"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+                class="media__rounded">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#00b0ff;">@视频号</small>
+          <small class="media__style-4">@视频号</small>
         </div>
 
         <!-- XiaoHongShu -->
-        <div style="text-align:center; flex:1;">
+        <div class="media__text-center-e79f">
           <a href="https://xhslink.com/m/FqQfX14laH" target="_blank" rel="noopener">
             <img src="{% static 'img/media_icons/RedNote.png' %}" alt="小红书"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+                class="media__rounded">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#ff3d57;">@小红书</small>
+          <small class="media__style-5">@小红书</small>
         </div>
 
         <!-- LinkedIn -->
-        <div style="text-align:center; flex:1;">
+        <div class="media__text-center-e79f">
           <a href="https://www.linkedin.com/company/nextgenscholarsasia" target="_blank" rel="noopener">
             <img src="{% static 'img/media_icons/LinkedIn.png' %}" alt="LinkedIn"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+                class="media__rounded">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#80d8ff;">@LinkedIn</small>
+          <small class="media__style-6">@LinkedIn</small>
         </div>
       </div>
 
     </div>
 
     <!-- RIGHT: gradient + 4-petal graphic -->
-    <div style="
-      background:radial-gradient(120% 120% at 30% 15%, #2139ff 0%, #1f2e93 54%, #009881 100%);
-      display:flex; align-items:center; justify-content:center;
-      height:100%; min-height:0;">
+    <div class="media__flex-center">
 
       <!-- Petal group scales with viewport, never exceeds 66vh -->
-      <div style="
-          position:relative;
-          width:min(60vmin, 620px);
-          height:min(60vmin, 620px);">
+      <div class="media__relative">
 
         <!-- top petal -->
-        <div style="
-          position:absolute; top:0; left:50%; transform:translateX(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
+        <div class="media__radial-bg"></div>
 
         <!-- bottom petal -->
-        <div style="
-          position:absolute; bottom:0; left:50%; transform:translateX(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
+        <div class="media__radial-bg-aff0"></div>
 
         <!-- left petal -->
-        <div style="
-          position:absolute; top:50%; left:0; transform:translateY(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
+        <div class="media__radial-bg-b331"></div>
 
         <!-- right petal -->
-        <div style="
-          position:absolute; top:50%; right:0; transform:translateY(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
+        <div class="media__radial-bg-b67e"></div>
 
         <!-- center pill -->
-        <div style="
-          position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-          background:#fff; color:#000; font-weight:900;
-          border-radius:26px; padding:12px 22px;
-          font-size:clamp(15px, 2.1vw, 22px); text-align:center;
-          box-shadow:0 8px 22px rgba(0,0,0,.2);">
+        <div class="media__bg-white">
           NextGen<br>Scholars
         </div>
       </div>
@@ -142,74 +94,59 @@
   </div>
 </section>
 
-{% comment %} <section style="margin:0;width:100%;height:66vh;">
-    <div style="display:grid;grid-template-columns:50% 50%;width:100%;">
+{% comment %} <section class="media__section-abff">
+    <div class="media__grid-cols-f975">
 
         <!-- Left: Contact Info -->
-        <div style="background:#000;color:#fff;display:flex;flex-direction:column;
-                    justify-content:center;align-items:flex-start;padding:60px;gap:24px">
+        <div class="media__flex-col-ed9d">
         <!-- Logo -->
-        <div style="font-size:150px;font-weight:900;
-                    background:linear-gradient(135deg,#00f0ff,#ff2ea1);
-                    -webkit-background-clip:text;
-                    -webkit-text-fill-color:transparent;
-                    margin-bottom:20px">
+        <div class="media__gradient-bg">
             N
         </div>
         <!-- Title -->
-        <h2 style="font-size:70px;font-weight:900;line-height:1.1;margin:0; align-self:center">
+        <h2 class="media__style-7">
             GET IN<br>TOUCH<br>WITH US
         </h2>
         <!-- Email -->
-        <p style="margin:0;font-size:18px;align-self:center">info@nextgenscholars.asia</p>
+        <p class="media__style-8">info@nextgenscholars.asia</p>
         <!-- Social icons -->
-        <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:12px; align-self:center">
-        <div style="text-align:center">
+        <div class="media__flex-gap-2b6c">
+        <div class="index__text-center-1307">
         <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983">
-            <img src="{% static 'img/media_icons/WeChat.png' %}" alt="WeChat" style="width:60px;height:60px;border-radius:8px;margin-bottom:6px">
+            <img src="{% static 'img/media_icons/WeChat.png' %}" alt="WeChat" class="media__rounded-8b14">
         </a>
         </div>
 
-        <div style="text-align:center">
+        <div class="index__text-center-1307">
         <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983">
-            <img src="{% static 'img/media_icons/WeClass.png' %}" alt="视频号" style="width:60px;height:60px;border-radius:8px;margin-bottom:6px">
+            <img src="{% static 'img/media_icons/WeClass.png' %}" alt="视频号" class="media__rounded-8b14">
         </a>
         </div>
 
-        <div style="text-align:center">
+        <div class="index__text-center-1307">
         <a href="https://xhslink.com/m/ARVy7jFyzLd">
-            <img src="{% static 'img/media_icons/RedNote.png' %}" alt="小红书" style="width:60px;height:60px;border-radius:8px;margin-bottom:6px">
+            <img src="{% static 'img/media_icons/RedNote.png' %}" alt="小红书" class="media__rounded-8b14">
         </a>
         </div>
 
-        <div style="text-align:center">
+        <div class="index__text-center-1307">
         <a href="https://www.linkedin.com/company/nextgenscholarsasia">
-            <img src="{% static 'img/media_icons/LinkedIn.png' %}" alt="LinkedIn" style="width:60px;height:60px;border-radius:8px;margin-bottom:6px">
+            <img src="{% static 'img/media_icons/LinkedIn.png' %}" alt="LinkedIn" class="media__rounded-8b14">
         </a>
         </div>
         </div>
         </div>
 
         <!-- Right: Graphic -->
-        <div style="background:radial-gradient(circle at center,#3020ff 0%,#2b2a86 100%);
-                    display:flex;justify-content:center;align-items:center">
-        <div style="position:relative;width:340px;height:340px">
+        <div class="media__flex-center-0f9c">
+        <div class="media__relative-2e0f">
             <!-- Four blobs -->
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;top:0;left:55px;opacity:.85"></div>
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;bottom:0;left:55px;opacity:.85"></div>
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;top:55px;left:0;opacity:.85"></div>
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;top:55px;right:0;opacity:.85"></div>
+            <div class="media__radial-bg-9735"></div>
+            <div class="media__radial-bg-ea0e"></div>
+            <div class="media__radial-bg-5f18"></div>
+            <div class="media__radial-bg-97ab"></div>
             <!-- Center Label -->
-            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-                        background:#fff;padding:10px 20px;border-radius:24px;font-weight:900;color:#000;text-align:center">
+            <div class="media__bg-white-a086">
             NextGen<br>Scholars
             </div>
         </div>

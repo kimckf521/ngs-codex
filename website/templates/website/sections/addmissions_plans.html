@@ -2,134 +2,64 @@
 
 <!-- SELECT A TUTORING PLAN -->
 <section
-  style="
-    width: 100%;
-    height: 66vh;
-    background: #fff;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-  "
+  class="addmissions-plans__flex"
 >
   <div
-    style="
-      max-width: 1180px;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    "
+    class="addmissions-plans__flex-col"
   >
     <!-- Title -->
-    <h2 class="section_title" style="font-weight: 900; margin: 0 0 16px;">
+    <h2 class="section_title addmissions-plans__style-1">
       Select a Tutoring Plan
     </h2>
 
     <!-- Category chips -->
     <div
-      style="
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 0 20px;
-      "
+      class="addmissions-plans__flex-gap"
     >
       <span
-        style="
-          background: linear-gradient(90deg, #7ee8a2, #34c759);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg"
         >Foundation</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #56ccf2, #2f80ed);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-4820"
         >Synchronization</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #f2994a, #f2c94c);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-2138"
         >Acceleration</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #eb5757, #ff0080);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-b8b3"
         >Exam Prep</span
       >
     </div>
 
     <!-- Plans grid -->
     <div
-      style="
-        flex: 1;
-        min-height: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
-        text-align: left;
-        align-items: stretch;
-      "
+      class="addmissions-plans__grid-cols"
     >
       <!-- Trial Lesson -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-2">
             Trial Lesson
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             $40/Lesson
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>1 hour of 1-to-1 class</li>
             <li>Elite Tutors from Top 50 Global U</li>
             <li>Experienced in IB/A-Level/AP/HKDSE</li>
             <li>Customised study plan and advice</li>
           </ul>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <button
             id="trial-purchase-btn"
-            style="
-              width: 100%;
-              padding: 10px 16px;
-              background: #007bff;
-              color: #fff;
-              border: none;
-              border-radius: 6px;
-              cursor: pointer;
-              font-weight: 700;
-            "
+            class="addmissions-plans__rounded"
             type="button"
           >
             Purchase
@@ -139,23 +69,16 @@
 
       <!-- Lesson Packages -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-2">
             Lesson Packages
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             Package based
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>Personalised Study Plan</li>
             <li>4v1 Comprehensive Mentor Support</li>
             <li>Premium Study Materials</li>
@@ -164,20 +87,17 @@
             <li>IB/A-Level/AP/HKDSE</li>
           </ul>
 
+
+        </div>
+        <div class="addmissions-plans__style-5">
           <label
             for="package-order"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >Purchase Order:</label
           >
           <select
             id="package-order"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="10">Taster: 10 hours</option>
             <option value="20">Foundation: 20 hours</option>
@@ -185,65 +105,40 @@
             <option value="30-acc">Acceleration: 30 hours</option>
             <option value="40">Course Bundles: 40 hours</option>
           </select>
-        </div>
-        <div style="margin-top: auto;">
           <button
             id="packages-purchase-btn"
-            style="
-              width: 100%;
-              padding: 10px 16px;
-              background: #007bff;
-              color: #fff;
-              border: none;
-              border-radius: 6px;
-              cursor: pointer;
-              font-weight: 700;
-            "
+            class="addmissions-plans__rounded"
             type="button"
           >
             Purchase
           </button>
+
         </div>
+
       </div>
 
       <!-- Exam Preparation -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-2">
             Exam Preparation
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 8px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-7">
             Package: <strong>10 Lessons (1.5 hour/session)</strong>
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>Expert mentors in given disciplines</li>
             <li>Academic subjects across IB/A-Level/AP/HKDSE</li>
             <li>Standardised exams: IELTS/TOEFL/SAT</li>
             <li>University entrance exams (Ivy Leagues/G5)</li>
           </ul>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <button
             id="exam-purchase-btn"
-            style="
-              width: 100%;
-              padding: 10px 16px;
-              background: #007bff;
-              color: #fff;
-              border: none;
-              border-radius: 6px;
-              cursor: pointer;
-              font-weight: 700;
-            "
+            class="addmissions-plans__rounded"
             type="button"
           >
             Purchase
@@ -256,100 +151,55 @@
 
 <!-- CHOOSE A MENTORSHIP PROGRAM -->
 <section
-  style="
-    width: 100%;
-    height: 66vh;
-    background: #fff;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-  "
+  class="addmissions-plans__flex"
 >
   <div
-    style="
-      max-width: 1180px;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    "
+    class="addmissions-plans__flex-col-548e"
   >
     <h2
-      class="section_title"
-      style="font-weight: 900; margin: 0 0 12px; text-align: center;"
+      class="section_title addmissions-plans__style-8"
     >
       Choose a Mentorship Program
     </h2>
 
-    <div style="text-align: center; margin: 0 0 20px; font-size: 48px;">
+    <div class="addmissions-plans__style-9">
       🇺🇸 🇬🇧 🇨🇦 🇦🇺 🇭🇰 🇸🇬
     </div>
 
     <div
-      style="
-        flex: 1;
-        min-height: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
-        align-items: stretch;
-      "
+      class="addmissions-plans__grid-cols-fc0f"
     >
       <!-- Free Consultation -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             Free Consultation
           </h3>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>Free Online Chat with NGS mentors</li>
             <li>Personal Career Roadmap</li>
             <li>Book a time slot to suit you</li>
             <li>Parents are welcome</li>
           </ul>
         </div>
-        <div style="margin-top: auto; text-align: left;">
+        <div class="addmissions-plans__style-11">
           <label
             for="order-consult"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >Purchase Order</label
           >
           <select
             id="order-consult"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="free">1 Session (Free)</option>
             <option value="trial">Trial Lesson</option>
           </select>
           <a id="consult-link" href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" target="_blank" rel="noopener">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -360,23 +210,16 @@
 
       <!-- College Counseling -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             College Counseling
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             Annual Plan &amp; Comprehensive Plan
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>Academic Plan</li>
             <li>College List</li>
             <li>Personal Statement Writing</li>
@@ -386,21 +229,15 @@
             <li>Portfolio Preparing</li>
           </ul>
         </div>
-        <div style="margin-top: auto; text-align: left;">
+        <div class="addmissions-plans__style-11">
           <label
             for="order-college"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >Purchase Order</label
           >
           <select
             id="order-college"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="annual">Annual Plan</option>
             <option value="3yr">3-Year Plan</option>
@@ -408,16 +245,7 @@
           </select>
           <a id="college-link" href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" target="_blank" rel="noopener">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -428,23 +256,16 @@
 
       <!-- K12 Placement Service -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             K12 Placement Service
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             Per Case
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>Student Assessment &amp; Strategy</li>
             <li>School List</li>
             <li>School Visit Scheduling</li>
@@ -453,36 +274,21 @@
             <li>Entry Exams &amp; Interview</li>
           </ul>
         </div>
-        <div style="margin-top: auto; text-align: left;">
+        <div class="addmissions-plans__style-11">
           <label
             for="order-k12"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >Purchase Order</label
           >
           <select
             id="order-k12"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="1">1 Case</option>
           </select>
           <a id="k12-link" href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" target="_blank" rel="noopener">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -496,113 +302,52 @@
 
 <!-- SELECT A DIPLOMA PROGRAM -->
 <section
-  style="
-    width: 100%;
-    height: 66vh;
-    background: #fff;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-  "
+  class="addmissions-plans__flex"
 >
   <div
-    style="
-      max-width: 1180px;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    "
+    class="addmissions-plans__flex-col"
   >
     <!-- Title -->
-    <h2 class="section_title" style="font-weight: 900; margin: 0 0 14px;">
+    <h2 class="section_title addmissions-plans__style-12">
       Select a Diploma Program
     </h2>
 
     <!-- Program Tags -->
     <div
-      style="
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 0 20px;
-      "
+      class="addmissions-plans__flex-gap"
     >
       <span
-        style="
-          background: linear-gradient(90deg, #42e695, #3bb2b8);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 16px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-2f48"
         >IGCSE</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #56ccf2, #2f80ed);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 16px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-cc62"
         >A-Level</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #f7971e, #ffd200);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 16px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-b245"
         >AP</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #eb3349, #f45c43);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 16px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-c02f"
         >HKDSE</span
       >
     </div>
 
     <!-- Cards -->
     <div
-      style="
-        flex: 1;
-        min-height: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
-        align-items: stretch;
-        text-align: left;
-      "
+      class="addmissions-plans__grid-cols-0823"
     >
       <!-- Hybrid Program -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <!-- top content -->
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             Hybrid Program
           </h3>
-          <ul style="margin: 0; line-height: 1.7; color: #333; padding-left: 18px;">
+          <ul class="addmissions-plans__style-13">
             <li>Flexible Learning Pace</li>
             <li>Flexible Location: Online + On Campus</li>
             <li>Expanded Course Offerings</li>
@@ -611,21 +356,15 @@
         </div>
 
         <!-- spacer to push controls to the same vertical position -->
-        <div style="flex: 1;"></div>
+        <div class="addmissions-plans__style-14"></div>
 
         <!-- controls (aligned across cards) -->
         <div>
-          <label style="font-weight: 700; display: block; margin: 0 0 6px;"
+          <label class="addmissions-plans__style-15"
             >Choose a Program</label
           >
           <select
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 8px;
-            "
+            class="addmissions-plans__rounded-03a8"
           >
             <option>IGCSE</option>
             <option>A-Level</option>
@@ -633,17 +372,11 @@
             <option>HKDSE</option>
           </select>
 
-          <label style="font-weight: 700; display: block; margin: 6px 0;"
+          <label class="addmissions-plans__style-16"
             >Choose a Plan</label
           >
           <select
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 8px;
-            "
+            class="addmissions-plans__rounded-03a8"
           >
             <option>SY2025-2026</option>
             <option>Semester 1 SY2526</option>
@@ -653,19 +386,10 @@
         </div>
 
         <!-- button (already aligned) -->
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <a href="{% url 'in_progress' %}">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -676,20 +400,13 @@
 
       <!-- Dual-Track Program -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             Dual-Track Program
           </h3>
-          <ul style="margin: 0; line-height: 1.7; color: #333; padding-left: 18px;">
+          <ul class="addmissions-plans__style-13">
             <li>Gaokao + International Pathways</li>
             <li>Dual-track Enrollment</li>
             <li>Tailored pacing</li>
@@ -697,20 +414,14 @@
           </ul>
         </div>
 
-        <div style="flex: 1;"></div>
+        <div class="addmissions-plans__style-14"></div>
 
         <div>
-          <label style="font-weight: 700; display: block; margin: 0 0 6px;"
+          <label class="addmissions-plans__style-15"
             >Choose a Program</label
           >
           <select
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 8px;
-            "
+            class="addmissions-plans__rounded-03a8"
           >
             <option>IGCSE</option>
             <option>A-Level</option>
@@ -718,17 +429,11 @@
             <option>HKDSE</option>
           </select>
 
-          <label style="font-weight: 700; display: block; margin: 6px 0;"
+          <label class="addmissions-plans__style-16"
             >Choose a Plan</label
           >
           <select
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 8px;
-            "
+            class="addmissions-plans__rounded-03a8"
           >
             <option>SY2025-2026</option>
             <option>Semester 1 SY2526</option>
@@ -737,19 +442,10 @@
           </select>
         </div>
 
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <a href="{% url 'in_progress' %}">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -760,20 +456,13 @@
 
       <!-- Online Diploma Program -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             Online Diploma Program
           </h3>
-          <ul style="margin: 0; line-height: 1.7; color: #333; padding-left: 18px;">
+          <ul class="addmissions-plans__style-13">
             <li>Flexible Learning at your own pace</li>
             <li>Flexible Locations: Remote Learning</li>
             <li>School Enrolment &amp; Transcript</li>
@@ -781,20 +470,14 @@
           </ul>
         </div>
 
-        <div style="flex: 1;"></div>
+        <div class="addmissions-plans__style-14"></div>
 
         <div>
-          <label style="font-weight: 700; display: block; margin: 0 0 6px;"
+          <label class="addmissions-plans__style-15"
             >Choose a Program</label
           >
           <select
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 8px;
-            "
+            class="addmissions-plans__rounded-03a8"
           >
             <option>IGCSE</option>
             <option>A-Level</option>
@@ -802,17 +485,11 @@
             <option>HKDSE</option>
           </select>
 
-          <label style="font-weight: 700; display: block; margin: 6px 0;"
+          <label class="addmissions-plans__style-16"
             >Choose a Plan</label
           >
           <select
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 8px;
-            "
+            class="addmissions-plans__rounded-03a8"
           >
             <option>SY2025-2026</option>
             <option>Semester 1 SY2526</option>
@@ -821,19 +498,10 @@
           </select>
         </div>
 
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <a href="{% url 'in_progress' %}">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -847,111 +515,54 @@
 
 <!-- SUBSCRIPTION PLAN -->
 <section
-  style="
-    width: 100%;
-    height: 66vh;
-    background: #fff;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-  "
+  class="addmissions-plans__flex"
 >
   <div
-    style="
-      max-width: 1180px;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-    "
+    class="addmissions-plans__flex-col-2a57"
   >
-    <h2 class="section_title" style="font-weight: 900; margin: 0 0 14px;">
+    <h2 class="section_title addmissions-plans__style-12">
       Subscription Plan
     </h2>
 
     <!-- Product tags -->
     <div
-      style="
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        margin: 0 0 20px;
-        flex-wrap: wrap;
-      "
+      class="addmissions-plans__flex-gap-6cfc"
     >
       <span
-        style="
-          display: inline-block;
-          background: linear-gradient(90deg, #9b5cff, #ff7f66);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 16px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-7d20"
         >NextGen Inspires</span
       >
       <span
-        style="
-          display: inline-block;
-          background: linear-gradient(90deg, #42e695, #3bb2b8);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 16px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-42b7"
         >NextGen Connects</span
       >
     </div>
 
     <!-- Cards grid -->
     <div
-      style="
-        flex: 1;
-        min-height: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 24px;
-        text-align: left;
-        align-items: stretch;
-      "
+      class="addmissions-plans__grid-cols-e7af"
     >
       <!-- Family Plan -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             Family Plan
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 10px; color: #444; line-height: 1.6;">
+          <p class="section_paragraph addmissions-plans__style-17">
             Access to <strong>NextGen Connects</strong>
           </p>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <label
             for="family-plan"
-            style="font-size: 14px; color: #111; font-weight: 700; display: block; margin: 0 0 6px;"
+            class="addmissions-plans__style-18"
             >Choose a plan</label
           >
           <select
             id="family-plan"
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 10px;
-            "
+            class="addmissions-plans__rounded-485c"
           >
             <option value="monthly">Monthly</option>
             <option value="halfyear">Half Year</option>
@@ -959,16 +570,7 @@
           </select>
           <a href="{% url 'in_progress' %}">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -979,38 +581,25 @@
 
       <!-- Premium Plan -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             Premium Plan
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 10px; color: #444; line-height: 1.6;">
+          <p class="section_paragraph addmissions-plans__style-17">
             Access to <strong>NextGen Inspires</strong>
           </p>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <label
             for="premium-plan"
-            style="font-size: 14px; color: #111; font-weight: 700; display: block; margin: 0 0 6px;"
+            class="addmissions-plans__style-18"
             >Choose a plan</label
           >
           <select
             id="premium-plan"
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 10px;
-            "
+            class="addmissions-plans__rounded-485c"
           >
             <option value="monthly">Monthly</option>
             <option value="halfyear">Half Year</option>
@@ -1018,16 +607,7 @@
           </select>
           <a href="{% url 'in_progress' %}">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase
@@ -1038,42 +618,29 @@
 
       <!-- Elite Membership -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             Elite Membership
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 8px; color: #444; line-height: 1.6;">
+          <p class="section_paragraph addmissions-plans__style-19">
             Access to
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>NextGen Inspires</li>
             <li>NextGen Connects</li>
           </ul>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <label
             for="elite-plan"
-            style="font-size: 14px; color: #111; font-weight: 700; display: block; margin: 0 0 6px;"
+            class="addmissions-plans__style-18"
             >Choose a plan</label
           >
           <select
             id="elite-plan"
-            style="
-              width: 100%;
-              padding: 10px;
-              border-radius: 8px;
-              border: 1px solid #ccc;
-              margin: 0 0 10px;
-            "
+            class="addmissions-plans__rounded-485c"
           >
             <option value="monthly">Monthly</option>
             <option value="halfyear">Half Year</option>
@@ -1081,16 +648,7 @@
           </select>
           <a href="{% url 'in_progress' %}">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               Purchase

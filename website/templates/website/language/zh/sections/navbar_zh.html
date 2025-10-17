@@ -1,19 +1,26 @@
-{% load static %}      
-      
-<header style="background:#000;">
-  <div class="navwrap" style="display:flex;align-items:center;justify-content:space-between;">
-      
+{% load static %}
+
+<header class="navbar__bg-dark">
+  <div class="navwrap navbar__flex">
+
       <!-- Logo on far left -->
-      <a class="logo" href="{% url 'index_zh' %}" id="logo" style="margin-right:auto">
-        <img src="{% static 'img/newlogo.png' %}" alt="logo" style="height:50px">
+      <a class="logo navbar__style-1" href="{% url 'index_zh' %}" id="logo">
+        <img src="{% static 'img/newlogo.png' %}" alt="logo" class="navbar__style-2">
       </a>
 
+      <!-- Hamburger Menu Button (Mobile) -->
+      <button class="navbar__hamburger" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <!-- Nav links in the middle -->
-      <nav id="site-nav" style="margin-left:auto;margin-right:auto">
-        <ul style="display:flex;gap:20px;list-style:none;margin:0;padding:0;align-items:center">
-          <li>
-            <a href="{% url 'index_zh' %}" style="color:#fff;text-decoration:none">成为NGS伙伴 ▾</a>
-            <ul>
+      <nav id="site-nav" class="navbar__style-3">
+        <ul class="navbar__flex-gap">
+          <li class="navbar__dropdown">
+            <a href="{% url 'index_zh' %}" class="navbar__style-4">成为NGS伙伴 ▾</a>
+            <ul class="navbar__dropdown-menu">
               <li><a href="{% url 'index_zh' %}#founder_zh">创始人故事</a></li>
               <li><a href="{% url 'cclr_programs_zh' %}">升学探索课程</a></li>
               <li><a href="{% url 'hybrid_learning_zh' %}">NGS 未来全域学习计划</a></li>
@@ -21,36 +28,37 @@
               <li><a href="{% url 'online_diploma_program_zh' %}">NGS 未来无界文凭课程</a></li>
             </ul>
           </li>
-          <li>
-            <a href="{% url 'index_zh' %}" style="color:#fff;text-decoration:none">成为NGS学生 ▾</a>
-            <ul>
+          <li class="navbar__dropdown">
+            <a href="{% url 'index_zh' %}" class="navbar__style-4">成为NGS学生 ▾</a>
+            <ul class="navbar__dropdown-menu">
               <li><a href="{% url 'programs_zh' %}">国际课程</a></li>
               <li><a href="{% url 'college_mentorship_zh' %}">升学辅导课程</a></li>
               <li><a href="{% url 'highschool_mapping_zh' %}">K12国际高中规划</a></li>
               <li><a href="{% url 'faculty_zh' %}">教学团队</a></li>
             </ul>
           </li>
-          <li><a href="{% url 'admissions_zh' %}" style="color:#fff;text-decoration:none">课程与招生</a></li>
-          <li>
-            <a href="{% url 'index_zh' %}" style="color:#fff;text-decoration:none">加入NGS全球社区 ▾</a>
-            <ul>
+          <li><a href="{% url 'admissions_zh' %}" class="navbar__style-4">课程与招生</a></li>
+          <li class="navbar__dropdown">
+            <a href="{% url 'index_zh' %}" class="navbar__style-4">加入NGS全球社区 ▾</a>
+            <ul class="navbar__dropdown-menu">
               <li><a href="{% url 'ngs_inspires_zh' %}">NGS Inspires</a></li>
               <li><a href="{% url 'ngs_connects_zh' %}">NGS Connects</a></li>
               <li><a href="{% url 'in_progress_zh' %}">会员登录</a></li>
             </ul>
           </li>
+          <li class="navbar__mobile-only"><a href="https://www.classin.com/login/" class="navbar__style-4">登陆</a></li>
         </ul>
       </nav>
 
 
         <!-- Log In -->
-        <div style="margin-left:auto; display:flex; align-items:center; gap:12px;">
-            <a href="{% url 'index' %}" class="lang-btn">EN</a>
-            <a href="https://www.classin.com/login/" class="login-btn">
+        <div class="navbar__flex-gap-4ce3">
+            <a href="{% url 'index' %}" class="navbar__lang-btn">EN</a>
+            <a href="https://www.classin.com/login/" class="navbar__login-btn">
                 登陆
             </a>
         </div>
-        
+
   </div>
 </header>
 
@@ -58,37 +66,37 @@
 
 <script>
     // Mobile menu functionality
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const closeMenuButton = document.getElementById("close-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const body = document.body;
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+        const siteNav = document.getElementById("site-nav");
+        const body = document.body;
 
-    mobileMenuButton.addEventListener("click", function () {
-    mobileMenu.classList.toggle("hidden");
-    body.classList.toggle("overflow-hidden");
-    });
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener("click", function () {
+                siteNav.classList.toggle("navbar__nav-open");
+                mobileMenuToggle.classList.toggle("navbar__hamburger-active");
+                body.classList.toggle("navbar__body-lock");
+            });
 
-    closeMenuButton.addEventListener("click", function () {
-    mobileMenu.classList.add("hidden");
-    body.classList.remove("overflow-hidden");
-    });
+            // Close menu when clicking on links
+            const navLinks = siteNav.querySelectorAll("a");
+            navLinks.forEach((link) => {
+                link.addEventListener("click", function () {
+                    siteNav.classList.remove("navbar__nav-open");
+                    mobileMenuToggle.classList.remove("navbar__hamburger-active");
+                    body.classList.remove("navbar__body-lock");
+                });
+            });
+        }
 
-    // Close menu when clicking on links
-    const mobileLinks = mobileMenu.querySelectorAll("a");
-    mobileLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-        mobileMenu.classList.add("hidden");
-        body.classList.remove("overflow-hidden");
-    });
-    });
-
-    // Scroll behavior
-    window.addEventListener("scroll", function () {
-    const navbar = document.querySelector("nav");
-    if (window.scrollY > 10) {
-        navbar.classList.add("shadow-lg", "bg-primary/95");
-    } else {
-        navbar.classList.remove("shadow-lg", "bg-primary/95");
-    }
+        // Scroll behavior for navbar shadow
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 10) {
+                header.classList.add("navbar__scrolled");
+            } else {
+                header.classList.remove("navbar__scrolled");
+            }
+        });
     });
 </script>

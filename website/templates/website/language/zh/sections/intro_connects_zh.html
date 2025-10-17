@@ -1,50 +1,23 @@
 {% load static %}
 
-<section style="
-    width:100%;
-    height:66vh;
-    background:#fff;
-    padding:60px 20px;
-    box-sizing:border-box;">
-<div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+<section class="intro-connects__bg-white">
+<div class="intro-connects__flex-col">
 <!-- Title -->
-<h2 class="section_title" style="text-align:center; font-weight:900; margin:0 0 28px;">
+<h2 class="section_title intro-connects__text-center">
         NextGen Connects
     </h2>
 <!-- Two-column layout (50/50 split) -->
-<div style="
-        flex:1; 
-        display:grid; 
-        grid-template-columns:1fr 1fr;  /* 50% left, 50% right */
-        gap:36px; 
-        align-items:stretch; 
-        height:100%;">
+<div class="intro-connects__grid-cols">
 <!-- Left: Card with bullets at bottom -->
-<div style="
-        background:#fff;
-        border:1.5px solid #1a1a1a;
-        border-radius:26px;
-        padding:34px 28px;
-        width:80%;
-        height:100%;                 /* fills parent column/section */
-        box-sizing:border-box;
-        display:flex;
-        flex-direction:column;
-        justify-content:flex-start;">
+<div class="intro-connects__flex-col-3f57">
 <!-- Title -->
-<h3 class="section_subtitle" style="margin:6px 0 0; font-weight:900; line-height:1.15; letter-spacing:.2px; color:#111;">
+<h3 class="section_subtitle intro-connects__style-1">
             NextGen Global<br/>Community
         </h3>
 <!-- Spacer pushes list down -->
-<div style="flex:1"></div>
+<div class="intro-hybrid__style-2"></div>
 <!-- Bullets (anchored at bottom) -->
-<ul style="
-            margin:0;
-            padding-left:22px;
-            list-style:disc;
-            font-size:16px;
-            line-height:1.9;
-            color:#111;">
+<ul class="intro-connects__style-2">
 <li>
 <a class="bullet-link" href="{% url 'cclr_programs_zh' %}">
                     CCLR 课程
@@ -68,14 +41,8 @@
 </ul>
 </div>
 <!-- Right: Copy -->
-<div style="
-        font-size:15px; 
-        line-height:1.8; 
-        color:#222; 
-        display:flex; 
-        flex-direction:column; 
-        justify-content:center;">
-<p class="section_paragraph" style="margin-top:0; margin-bottom:16px;">
+<div class="intro-connects__flex-col-34c8">
+<p class="section_paragraph intro-connects__style-3">
 <strong>NextGen Connects</strong> 是一个深度项目，旨在支持家庭与学生顺利应对择校与过渡的复杂过程，帮助他们找到并融入最合适的教育环境。<br/><br/>
 
 通过整合专家洞见、定制化指导与实用准备，该项目为学生与家庭提供顺畅、充分知情且充满信心的决策体验。

@@ -17,63 +17,32 @@
     </section>
 
     <!-- PARTNER WITH NEXTGEN SCHOLARS (exact 66vh) -->
-    <section style="
-        width:100%;
-        height:66vh;
-        background:#fff;
-        padding:60px 20px;
-        box-sizing:border-box;">
+    <section class="intro-connects__bg-white">
         
-        <div style="max-width:1180px; margin:auto; height:100%; display:flex; flex-direction:column;">
+        <div class="intro-connects__flex-col">
 
         <!-- Title -->
-        <h2 style="text-align:center; margin:0 0 28px;" class="section_title">
+        <h2 class="section_title intro-cclr__text-center">
             PARTNER WITH NEXTGEN SCHOLARS
         </h2>
 
         <!-- Two-column layout (50/50 split) -->
-        <div style="
-            flex:1; 
-            display:grid; 
-            grid-template-columns:1fr 1fr;  /* 50% left, 50% right */
-            gap:36px; 
-            align-items:stretch; 
-            height:100%;">
+        <div class="intro-connects__grid-cols">
 
             <!-- Left: Card with bullets at bottom -->
-            <div style="
-            background:#fff;
-            border:1.5px solid #1a1a1a;
-            border-radius:26px;
-            padding:34px 28px;
-            width:80%;
-            height:100%;                 /* fills parent column/section */
-            box-sizing:border-box;
-            display:flex;
-            flex-direction:column;
-            justify-content:flex-start;">
+            <div class="intro-connects__flex-col-3f57">
 
             <!-- Title -->
-            <h3 style="
-                margin:6px 0 0;
-                line-height:1.15;
-                letter-spacing:.2px;
-                color:#111;"
-                class="section_subtitle">
+            <h3
+                class="section_subtitle partner-with-us-cclr-programs__style-1">
                 Career College<br>Life Readiness Programme
             </h3>
 
             <!-- Spacer pushes list down -->
-            <div style="flex:1"></div>
+            <div class="intro-hybrid__style-2"></div>
 
             <!-- Bullets (anchored at bottom) -->
-            <ul style="
-                margin:0;
-                padding-left:22px;
-                list-style:disc;
-                font-size:16px;
-                line-height:1.9;
-                color:#111;">
+            <ul class="intro-connects__style-2">
 
                 <li>
                     <a href="{% url 'cclr_programs' %}" class="bullet-link active">
@@ -103,21 +72,15 @@
             </div>
 
             <!-- Right: Copy -->
-            <div style="
-            font-size:15px; 
-            line-height:1.8; 
-            color:#222; 
-            display:flex; 
-            flex-direction:column; 
-            justify-content:center;">
+            <div class="intro-connects__flex-col-34c8">
             
-            <p style="margin-top:0; margin-bottom:16px;" class="section_paragraph">
+            <p class="section_paragraph intro-connects__style-3">
                 The NGS CCLR (College, Career, and Life Readiness) course is designed to provide a comprehensive framework for defining, guiding, and assessing students' critical competencies essential for academic success, career development, and social engagement.
             </p>
-            <p style="margin:0; margin-bottom:16px;" class="section_paragraph">
+            <p class="section_paragraph head-cclr__style-1">
                 Beyond academic achievements, the CCLR curriculum equips students with the skills and knowledge necessary to navigate university admissions, achieve career goals, and thrive in society. By empowering students, families, educators, and schools with reliable insights, CCLR ensures that every decision made for the student is well-informed, fostering success at every stage of their educational and professional journey.
             </p>
-            <p style="margin:0;" class="section_paragraph">
+            <p class="section_paragraph connect-to-parents__style-1">
                 Through its focus on college readiness, career competencies, and life skills, the CCLR course prepares students to seamlessly transition into higher education, the workforce, and society with confidence and capability.
             </p>
             </div>
@@ -127,18 +90,18 @@
     </section>
 
     <!-- CCLR Diagram — centered and fixed height -->
-    <section style="width:100%; height:66vh; background:#fff; display:flex; justify-content:center; align-items:center; padding:40px 16px; box-sizing:border-box;">
-    <div style="max-width:980px; width:100%; text-align:center;">
+    <section class="partner-with-us-cclr-programs__flex-center">
+    <div class="partner-with-us-cclr-programs__text-center">
         
         <!-- Title -->
-        <h2 style="line-height:1.15; margin-bottom:30px;" class="section_title">
+        <h2 class="section_title partner-with-us-cclr-programs__style-2">
         CAREER COLLEGE LIFE READINESS<br>PROGRAMME
         </h2>
 
         <!-- Image -->
-        <div style="display:flex; justify-content:center; align-items:center; height:calc(66vh - 120px);">
+        <div class="partner-with-us-cclr-programs__flex-center-78b2">
         <img src="{% static 'img/circles.jpg' %}" alt="CCLR Diagram"
-            style="max-width:100%; max-height:100%; object-fit:contain;">
+            class="partner-with-us-cclr-programs__full-size">
         </div>
 
     </div>
@@ -154,91 +117,64 @@
     {% include "website/sections/our_programs.html" %}
 
     <!-- MEETING + FORM -->
-    <section style="padding:40px 50px 10px; margin-bottom:40px; height:66vh;">
-      <div class="ngs-enquiry"
-          style="display:grid;
-                grid-template-columns:1.1fr .9fr;
-                gap:20px;
-                align-items:stretch;
-                height:100%;
-                padding:0 50px"> <!-- ✅ grid fills 66vh -->
+    <section class="index__section">
+      <div class="ngs-enquiry index__grid-cols-452f"> <!-- ✅ grid fills 66vh -->
 
         <!-- Left: Image -->
-        <div style="height:100%;">
+        <div class="index__style-9">
           <img src="{% static 'img/studying.jpg' %}"
               alt="Online meeting"
-              style="width:100%; height:100%;
-                    object-fit:cover;
-                    border-radius:12px;
-                    box-shadow:0 6px 18px rgba(0,0,0,.08);">
+              class="index__rounded">
         </div>
 
         <!-- Right: Form -->
         {% include "website/messages.html" %}
 
-        <form class="ngs-form" method="POST" action="{% url 'partner_with_us' %}"
-              style="border:1px solid #e4e4e4;
-                    border-radius:6px;
-                    overflow:hidden;
-                    background:#fff;
-                    display:flex;
-                    flex-direction:column;
-                    height:100%;"> <!-- ✅ form fills 66vh -->
+        <form class="ngs-form index__flex-col-621c" method="POST" action="{% url 'partner_with_us' %}"> <!-- ✅ form fills 66vh -->
           {% csrf_token %}
 
           <!-- Title bar -->
-          <div style="background:#000;
-                      color:#fff;
-                      font-weight:900;
-                      padding:12px 16px;
-                      letter-spacing:.3px;">
+          <div class="index__bg-dark">
             Looking to Partner with NGS
           </div>
 
           <!-- Fields -->
-          <div style="display:grid; gap:12px; padding:16px; flex:1; overflow:auto;">
+          <div class="index__grid">
             <div>
-              <label style="display:block; font-size:14px; color:#444;">Your Full Name</label>
+              <label class="index__style-10">Your Full Name</label>
               <input type="text" name="name" id="id_name" required placeholder="Your name"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
             <div>
-              <label style="display:block; font-size:14px; color:#444;">Name of Your School</label>
+              <label class="index__style-10">Name of Your School</label>
               <input type="text" name="school_name" id="id_school" required placeholder="School / Organization"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
             <div>
-              <label style="display:block; font-size:14px; color:#444;">Email</label>
+              <label class="index__style-10">Email</label>
               <input type="email" name="email" id="id_email" required placeholder="you@example.com"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
             <div>
-              <label style="display:block; font-size:14px; color:#444;">Mobile / WeChat</label>
+              <label class="index__style-10">Mobile / WeChat</label>
               <input type="text"  name="mobile_or_wechat" id="id_mobile_or_wechat" placeholder="+61 … / your WeChat ID"
-                    style="width:100%; padding:11px; border:1px solid #e0e0e0;
-                            border-radius:4px; background:#f5f5f5;">
+                    class="index__rounded-7873">
             </div>
 
-            <div style="flex:1; display:flex; flex-direction:column;">
-              <label style="display:block; font-size:14px; color:#444;">How Can We Help You?</label>
+            <div class="index__flex-col-d481">
+              <label class="index__style-10">How Can We Help You?</label>
               <textarea rows="5" name="help_description" id="id_help_description" placeholder="Tell us a bit about your goals…"
-                        style="flex:1; width:100%; padding:11px; border:1px solid #e0e0e0;
-                              border-radius:4px; background:#f5f5f5; resize:none;"></textarea>
+                        class="index__rounded-f54a"></textarea>
             </div>
           </div>
 
           <!-- Submit Button -->
-          <div style="padding:16px; border-top:1px solid #eee;">
+          <div class="index__style-11">
             <button type="submit"
-                    style="width:100%; background:#111; color:#fff;
-                          padding:14px 16px; border:0; border-radius:8px;
-                          font-weight:800; font-size:16px; cursor:pointer;">
+                    class="index__bg-dark-d1b8">
               Send
             </button>
           </div>

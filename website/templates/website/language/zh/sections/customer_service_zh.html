@@ -1,70 +1,9 @@
 {% load static %}
 
-<a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" 
-   class="customer-service-btn" id="customerServiceBtn">
-  <img src="{% static 'img/customer_service.png' %}" alt="Customer Service">
+<a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983"
+   class="customer-service__circular-btn"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="联系客服">
+  <img src="{% static 'img/customer_service.png' %}" alt="Customer Service" class="customer-service__circular-icon">
 </a>
-
-<script>
-  const btn = document.getElementById("customerServiceBtn");
-  const targetUrl = btn.getAttribute("href");
-  btn.removeAttribute("href"); // disable normal link behavior
-
-  let isDragging = false;
-  let moved = false;
-  let offsetX, offsetY;
-
-  // --- Single click to open link (only if not dragged) ---
-  btn.addEventListener("click", (e) => {
-    if (!moved) {
-      window.open(targetUrl, "_blank");
-    }
-    moved = false; // reset after each click
-  });
-
-  // --- Mouse drag ---
-  btn.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    moved = false;
-    offsetX = e.clientX - btn.getBoundingClientRect().left;
-    offsetY = e.clientY - btn.getBoundingClientRect().top;
-    btn.style.cursor = "grabbing";
-  });
-
-  document.addEventListener("mousemove", (e) => {
-    if (!isDragging) return;
-    moved = true;
-    btn.style.left = e.clientX - offsetX + "px";
-    btn.style.top = e.clientY - offsetY + "px";
-    btn.style.right = "auto";
-    btn.style.bottom = "auto";
-  });
-
-  document.addEventListener("mouseup", () => {
-    isDragging = false;
-    btn.style.cursor = "grab";
-  });
-
-  // --- Touch drag ---
-  btn.addEventListener("touchstart", (e) => {
-    isDragging = true;
-    moved = false;
-    const touch = e.touches[0];
-    offsetX = touch.clientX - btn.getBoundingClientRect().left;
-    offsetY = touch.clientY - btn.getBoundingClientRect().top;
-  });
-
-  document.addEventListener("touchmove", (e) => {
-    if (!isDragging) return;
-    moved = true;
-    const touch = e.touches[0];
-    btn.style.left = touch.clientX - offsetX + "px";
-    btn.style.top = touch.clientY - offsetY + "px";
-    btn.style.right = "auto";
-    btn.style.bottom = "auto";
-  });
-
-  document.addEventListener("touchend", () => {
-    isDragging = false;
-  });
-</script>

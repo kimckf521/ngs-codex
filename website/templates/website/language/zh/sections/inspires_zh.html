@@ -1,67 +1,53 @@
 {% load static %}
 
 <!-- NEXTGEN INSPIRES -->
-<section class="inspires" style="
-           width:100%;
-           height:66vh;                       /* fixed height */
-           padding:40px 24px;
-           box-sizing:border-box;
-           background:linear-gradient(135deg,#dce9ff 0%,#cfe8ff 30%,#b7f3d7 70%,#f8f2b9 100%);
-           border-radius:16px;
-           display:flex; align-items:center;">
-<div class="wrap" style="
-        max-width:1280px; margin:0 auto; width:100%;
-        height:100%; display:flex; flex-direction:column;">
+<section class="inspires inspires__flex">
+<div class="wrap inspires__flex-col">
 <!-- Title -->
-<h2 class="section_title" style="margin:0 0 16px; text-align:center; font-weight:900; line-height:1.05; color:#111;">
+<h2 class="section_title inspires__text-center">
       NextGen Inspires
     </h2>
 <!-- Four-column content -->
-<div style="
-        flex:1; min-height:0;                       
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:36px;
-        align-items:start;">
+<div class="inspires-zh__grid-cols">
 <!-- Global Industry Leaders -->
-<div style="text-align:center;">
-<img alt="Global Industry Leaders" src="{% static 'img/globalindustry.jpg' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="Global Industry Leaders" src="{% static 'img/globalindustry.jpg' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           全球产业领袖
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           与处于创新与卓越前沿的行业领袖建立联系。通过专家主导的线上讲座、导师计划和职业工作坊，
           学生能够第一时间掌握新兴趋势、职业路径，以及在竞争激烈的全球市场中成功所需的真实技能。
         </p>
 </div>
 <!-- Global Universities -->
-<div style="text-align:center;">
-<img alt="Global Universities" src="{% static 'img/globaluniversities.png' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="Global Universities" src="{% static 'img/globaluniversities.png' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           全球大学
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           与世界知名大学建立合作伙伴关系，为学生提供专属的升学指导、校园参访和人脉拓展机会。
         </p>
 </div>
 <!-- SPARK LAB -->
-<div style="text-align:center;">
-<img alt="SPARK LAB" src="{% static 'img/sparklab.jpg' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="SPARK LAB" src="{% static 'img/sparklab.jpg' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           SPARK LAB
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           SPARK LAB 是一个互动平台，连接全球 K-12 学生共同协作、创新与创造。通过打造一个年轻思维的全球网络，
           SPARK LAB 激励学生敢于大胆思考，培养全球视野，并引领塑造未来。
         </p>
 </div>
 <!-- Global Alumni -->
-<div style="text-align:center;">
-<img alt="Global Alumni" src="{% static 'img/globalalumni.png' %}" style="width:140px; height:140px; object-fit:cover; border-radius:50%; display:block; margin:0 auto 16px;"/>
-<h3 class="section_subtitle" style="margin:0 0 12px; font-weight:900; color:#111;">
+<div class="index__text-center-1307">
+<img alt="Global Alumni" src="{% static 'img/globalalumni.png' %}" class="inspires__circle"/>
+<h3 class="section_subtitle inspires__style-1">
           全球校友
         </h3>
-<p class="section_paragraph" style="margin:0 auto; max-width:320px; text-align:left; color:#222; line-height:1.8;">
+<p class="section_paragraph inspires__style-2">
           借助一个蓬勃发展的国际校友网络，他们成功实现了学术与职业目标。这个版块为学生提供了向前辈学习的机会，
           通过经验分享获得导师指导、实践建议与启发。
         </p>

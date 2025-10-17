@@ -2,134 +2,64 @@
 
 <!-- 选择辅导方案 -->
 <section
-  style="
-    width: 100%;
-    height: 66vh;
-    background: #fff;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-  "
+  class="addmissions-plans__flex"
 >
   <div
-    style="
-      max-width: 1180px;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    "
+    class="addmissions-plans__flex-col"
   >
     <!-- 标题 -->
-    <h2 class="section_title" style="font-weight: 900; margin: 0 0 16px;">
+    <h2 class="section_title addmissions-plans__style-1">
       选择辅导方案
     </h2>
 
     <!-- 分类标签 -->
     <div
-      style="
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 0 20px;
-      "
+      class="addmissions-plans__flex-gap"
     >
       <span
-        style="
-          background: linear-gradient(90deg, #7ee8a2, #34c759);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg"
         >基础</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #56ccf2, #2f80ed);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-4820"
         >同步</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #f2994a, #f2c94c);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-2138"
         >加速</span
       >
       <span
-        style="
-          background: linear-gradient(90deg, #eb5757, #ff0080);
-          color: #fff;
-          font-weight: 800;
-          padding: 8px 18px;
-          border-radius: 999px;
-        "
+        class="addmissions-plans__gradient-bg-b8b3"
         >考试冲刺</span
       >
     </div>
 
     <!-- 方案网格 -->
     <div
-      style="
-        flex: 1;
-        min-height: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
-        text-align: left;
-        align-items: stretch;
-      "
+      class="addmissions-plans__grid-cols"
     >
       <!-- 试听课 -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-2">
             试听课
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             ￥285/节
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>1小时一对一课程</li>
             <li>全球前50名校精英导师</li>
             <li>熟悉 IB/A-Level/AP/HKDSE</li>
             <li>定制学习规划与建议</li>
           </ul>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <button
             id="trial-purchase-btn"
-            style="
-              width: 100%;
-              padding: 10px 16px;
-              background: #007bff;
-              color: #fff;
-              border: none;
-              border-radius: 6px;
-              cursor: pointer;
-              font-weight: 700;
-            "
+            class="addmissions-plans__rounded"
             type="button"
           >
             购买
@@ -139,23 +69,16 @@
 
       <!-- 课时套餐 -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-2">
             课时套餐
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             按套餐
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>个性化学习规划</li>
             <li>4对1全方位导师支持</li>
             <li>优质学习资料</li>
@@ -166,18 +89,12 @@
 
           <label
             for="package-order"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >购买选项：</label
           >
           <select
             id="package-order"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="10">尝鲜：10小时</option>
             <option value="20">学科先修：20小时</option>
@@ -186,19 +103,10 @@
             <option value="40">跨科组合：40小时</option>
           </select>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <button
             id="packages-purchase-btn"
-            style="
-              width: 100%;
-              padding: 10px 16px;
-              background: #007bff;
-              color: #fff;
-              border: none;
-              border-radius: 6px;
-              cursor: pointer;
-              font-weight: 700;
-            "
+            class="addmissions-plans__rounded"
             type="button"
           >
             购买
@@ -208,42 +116,26 @@
 
       <!-- 考试备考 -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 6px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-2">
             考试备考
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 8px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-7">
             套餐：<strong>10节课（每节1.5小时）</strong>
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>相关学科资深导师</li>
             <li>覆盖 IB/A-Level/AP/HKDSE 科目</li>
             <li>标准化考试：IELTS/TOEFL/SAT</li>
             <li>大学入学考试（常春藤/G5）</li>
           </ul>
         </div>
-        <div style="margin-top: auto;">
+        <div class="addmissions-plans__style-5">
           <button
             id="exam-purchase-btn"
-            style="
-              width: 100%;
-              padding: 10px 16px;
-              background: #007bff;
-              color: #fff;
-              border: none;
-              border-radius: 6px;
-              cursor: pointer;
-              font-weight: 700;
-            "
+            class="addmissions-plans__rounded"
             type="button"
           >
             购买
@@ -256,100 +148,55 @@
 
 <!-- 选择导师计划 -->
 <section
-  style="
-    width: 100%;
-    height: 66vh;
-    background: #fff;
-    padding: 40px 20px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-  "
+  class="addmissions-plans__flex"
 >
   <div
-    style="
-      max-width: 1180px;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    "
+    class="addmissions-plans__flex-col-548e"
   >
     <h2
-      class="section_title"
-      style="font-weight: 900; margin: 0 0 12px; text-align: center;"
+      class="section_title addmissions-plans__style-8"
     >
       选择导师计划
     </h2>
 
-    <div style="text-align: center; margin: 0 0 20px; font-size: 48px;">
+    <div class="addmissions-plans__style-9">
       🇺🇸 🇬🇧 🇨🇦 🇦🇺 🇭🇰 🇸🇬
     </div>
 
     <div
-      style="
-        flex: 1;
-        min-height: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 24px;
-        align-items: stretch;
-      "
+      class="addmissions-plans__grid-cols-fc0f"
     >
       <!-- 免费咨询 -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             免费咨询
           </h3>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>与 NGS 导师免费线上沟通</li>
             <li>个性化职业路线图</li>
             <li>预约合适的时间段</li>
             <li>欢迎家长参与</li>
           </ul>
         </div>
-        <div style="margin-top: auto; text-align: left;">
+        <div class="addmissions-plans__style-11">
           <label
             for="order-consult"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >购买选项</label
           >
           <select
             id="order-consult"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="free">1次（免费）</option>
             <option value="trial">试听课</option>
           </select>
           <a id="consult-link" href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" target="_blank" rel="noopener">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               购买
@@ -360,23 +207,16 @@
 
       <!-- 升学规划（College Counseling） -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             升学规划
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             年度计划与综合计划
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>学术规划</li>
             <li>选校名单</li>
             <li>个人陈述写作</li>
@@ -386,21 +226,15 @@
             <li>作品集准备</li>
           </ul>
         </div>
-        <div style="margin-top: auto; text-align: left;">
+        <div class="addmissions-plans__style-11">
           <label
             for="order-college"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >购买选项</label
           >
           <select
             id="order-college"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="annual">年度计划</option>
             <option value="3yr">三年计划</option>
@@ -408,16 +242,7 @@
           </select>
           <a id="college-link" href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" target="_blank" rel="noopener">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               购买
@@ -428,23 +253,16 @@
 
       <!-- K12 升学安置服务 -->
       <div
-        style="
-          border: 1px solid #dcdcdc;
-          border-radius: 18px;
-          padding: 18px;
-          background: #fff;
-          display: flex;
-          flex-direction: column;
-        "
+        class="addmissions-plans__flex-col-2e0a"
       >
         <div>
-          <h3 class="section_subtitle" style="margin: 0 0 10px; font-weight: 900;">
+          <h3 class="section_subtitle addmissions-plans__style-10">
             K12 升学安置服务
           </h3>
-          <p class="section_paragraph" style="margin: 0 0 6px; color: #666;">
+          <p class="section_paragraph addmissions-plans__style-3">
             按个案
           </p>
-          <ul style="margin: 0 0 10px 18px; line-height: 1.7; color: #333;">
+          <ul class="addmissions-plans__style-4">
             <li>学生评估与策略</li>
             <li>学校名单</li>
             <li>学校参观预约</li>
@@ -453,36 +271,21 @@
             <li>入学考试与面试</li>
           </ul>
         </div>
-        <div style="margin-top: auto; text-align: left;">
+        <div class="addmissions-plans__style-11">
           <label
             for="order-k12"
-            style="font-weight: 700; display: block; margin-bottom: 6px;"
+            class="addmissions-plans__style-6"
             >购买选项</label
           >
           <select
             id="order-k12"
-            style="
-              width: 100%;
-              padding: 8px;
-              border-radius: 6px;
-              border: 1px solid #ccc;
-              margin-bottom: 10px;
-            "
+            class="addmissions-plans__rounded-b4a7"
           >
             <option value="1">1个案</option>
           </select>
           <a id="k12-link" href="https://buy.stripe.com/7sI6pH8Pc4U013O3cv" target="_blank" rel="noopener">
             <button
-              style="
-                width: 100%;
-                padding: 10px 16px;
-                background: #007bff;
-                color: #fff;
-                border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                font-weight: 700;
-              "
+              class="addmissions-plans__rounded"
               type="button"
             >
               购买
@@ -495,111 +298,106 @@
 </section>
 
 <!-- 选择文凭课程 -->
-<section style="
-    width:100%; min-height:66vh; background:#fff;
-    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
-  <div style="max-width:1180px; margin:auto; width:100%; height:100%; display:flex; flex-direction:column; text-align:center;">
+<section class="addmissions-plans-zh__flex">
+  <div class="addmissions-plans-zh__flex-col">
 
     <!-- Title -->
-    <h2 class="section_title" style="font-weight:900; margin:0 0 14px;">选择文凭课程</h2>
+    <h2 class="section_title highschool-mapping-sections__style-1">选择文凭课程</h2>
 
     <!-- Program Tags -->
-    <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin:0 0 20px;">
-      <span style="background:linear-gradient(90deg,#42e695,#3bb2b8);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">IGCSE</span>
-      <span style="background:linear-gradient(90deg,#56ccf2,#2f80ed);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">A-Level</span>
-      <span style="background:linear-gradient(90deg,#f7971e,#ffd200);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">AP</span>
-      <span style="background:linear-gradient(90deg,#eb3349,#f45c43);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">HKDSE</span>
+    <div class="addmissions-plans-zh__flex-gap">
+      <span class="addmissions-plans-zh__gradient-bg">IGCSE</span>
+      <span class="addmissions-plans-zh__gradient-bg-18a4">A-Level</span>
+      <span class="addmissions-plans-zh__gradient-bg-8da4">AP</span>
+      <span class="addmissions-plans-zh__gradient-bg-5099">HKDSE</span>
     </div>
 
     <!-- Cards -->
-    <div style="
-        flex:1; min-height:0;
-        display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-        gap:24px; align-items:stretch; text-align:left;">
+    <div class="addmissions-plans-zh__grid-cols">
 
       <!-- Hybrid Program -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <div class="addmissions-plans-zh__flex-col-baa7">
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">未来全域学习计划</h3>
-          <ul style="margin:0; line-height:1.7; color:#333; padding-left:18px;">
+          <h3 class="section_subtitle addmissions-plans-zh__style-1">未来全域学习计划</h3>
+          <ul class="addmissions-plans-zh__style-2">
             <li>学习进度灵活</li>
             <li>上课地点灵活：线上 + 校园</li>
             <li>课程选择更丰富</li>
             <li>量身定制课程体系</li>
           </ul>
         </div>
-        <div style="flex:1"></div>
+        <div class="intro-hybrid__style-2"></div>
         <div>
-          <label style="font-weight:700;display:block;margin:0 0 6px">选择课程体系</label>
-          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+          <label class="addmissions-plans-zh__style-3">选择课程体系</label>
+          <select class="addmissions-plans-zh__rounded">
             <option>IGCSE</option><option>A-Level</option><option>AP</option><option>HKDSE</option>
           </select>
-          <label style="font-weight:700;display:block;margin:6px 0">选择计划</label>
-          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+          <label class="addmissions-plans-zh__style-4">选择计划</label>
+          <select class="addmissions-plans-zh__rounded">
             <option>SY2025-2026</option><option>2025-26 上学期</option><option>2025-26 下学期</option><option>单科</option>
           </select>
         </div>
-        <div style="margin-top:auto">
+        <div class="addmissions-plans-zh__style-5">
           <a href="{% url 'in_progress_zh' %}">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+            <button class="addmissions-plans-zh__rounded-5f0d" type="button">购买</button>
           </a>
         </div>
       </div>
 
       <!-- Dual-Track Program -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <div class="addmissions-plans-zh__flex-col-baa7">
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">未来教育双轨计划</h3>
-          <ul style="margin:0; line-height:1.7; color:#333; padding-left:18px;">
+          <h3 class="section_subtitle addmissions-plans-zh__style-1">未来教育双轨计划</h3>
+          <ul class="addmissions-plans-zh__style-2">
             <li>高考 + 国际课程双通道</li>
             <li>双轨注册就读</li>
             <li>学习进度可个性化</li>
             <li>完成后可获双文凭</li>
           </ul>
         </div>
-        <div style="flex:1"></div>
+        <div class="intro-hybrid__style-2"></div>
         <div>
-          <label style="font-weight:700;display:block;margin:0 0 6px">选择课程体系</label>
-          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+          <label class="addmissions-plans-zh__style-3">选择课程体系</label>
+          <select class="addmissions-plans-zh__rounded">
             <option>IGCSE</option><option>A-Level</option><option>AP</option><option>HKDSE</option>
           </select>
-          <label style="font-weight:700;display:block;margin:6px 0">选择计划</label>
-          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+          <label class="addmissions-plans-zh__style-4">选择计划</label>
+          <select class="addmissions-plans-zh__rounded">
             <option>SY2025-2026</option><option>2025-26 上学期</option><option>2025-26 下学期</option><option>单科</option>
           </select>
         </div>
-        <div style="margin-top:auto">
+        <div class="addmissions-plans-zh__style-5">
           <a href="{% url 'in_progress_zh' %}">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+            <button class="addmissions-plans-zh__rounded-5f0d" type="button">购买</button>
           </a>
         </div>
       </div>
 
       <!-- Online Diploma Program -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <div class="addmissions-plans-zh__flex-col-baa7">
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">未来无界文凭课程</h3>
-          <ul style="margin:0; line-height:1.7; color:#333; padding-left:18px;">
+          <h3 class="section_subtitle addmissions-plans-zh__style-1">未来无界文凭课程</h3>
+          <ul class="addmissions-plans-zh__style-2">
             <li>按自己的节奏灵活学习</li>
             <li>远程学习，地点灵活</li>
             <li>学校注册与官方成绩单</li>
             <li>完成后获得高中毕业文凭</li>
           </ul>
         </div>
-        <div style="flex:1"></div>
+        <div class="intro-hybrid__style-2"></div>
         <div>
-          <label style="font-weight:700;display:block;margin:0 0 6px">选择课程体系</label>
-          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+          <label class="addmissions-plans-zh__style-3">选择课程体系</label>
+          <select class="addmissions-plans-zh__rounded">
             <option>IGCSE</option><option>A-Level</option><option>AP</option><option>HKDSE</option>
           </select>
-          <label style="font-weight:700;display:block;margin:6px 0">选择计划</label>
-          <select style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 8px">
+          <label class="addmissions-plans-zh__style-4">选择计划</label>
+          <select class="addmissions-plans-zh__rounded">
             <option>SY2025-2026</option><option>2025-26 上学期</option><option>2025-26 下学期</option><option>单科</option>
           </select>
         </div>
-        <div style="margin-top:auto">
+        <div class="addmissions-plans-zh__style-5">
           <a href="{% url 'in_progress_zh' %}">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+            <button class="addmissions-plans-zh__rounded-5f0d" type="button">购买</button>
           </a>
         </div>
       </div>
@@ -609,81 +407,76 @@
 </section>
 
 <!-- 订阅方案 -->
-<section style="
-    width:100%; height:66vh; background:#fff;
-    padding:40px 20px; box-sizing:border-box; display:flex; align-items:center;">
-  <div style="max-width:1180px; margin:auto; width:100%; height:100%; text-align:center; display:flex; flex-direction:column;">
-    <h2 class="section_title" style="font-weight:900; margin:0 0 14px;">订阅方案</h2>
+<section class="addmissions-plans-zh__flex-6aa4">
+  <div class="addmissions-plans-zh__flex-col-f265">
+    <h2 class="section_title highschool-mapping-sections__style-1">订阅方案</h2>
 
     <!-- Product tags -->
-    <div style="display:flex;gap:16px;justify-content:center;margin:0 0 20px;flex-wrap:wrap">
-      <span style="display:inline-block;background:linear-gradient(90deg,#9b5cff,#ff7f66);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">NextGen Inspires</span>
-      <span style="display:inline-block;background:linear-gradient(90deg,#42e695,#3bb2b8);color:#fff;font-weight:800;padding:8px 16px;border-radius:999px">NextGen Connects</span>
+    <div class="addmissions-plans-zh__flex-gap-ac69">
+      <span class="addmissions-plans-zh__gradient-bg-8323">NextGen Inspires</span>
+      <span class="addmissions-plans-zh__gradient-bg-09ae">NextGen Connects</span>
     </div>
 
     <!-- Cards grid -->
-    <div style="
-        flex:1; min-height:0;
-        display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-        gap:24px; text-align:left; align-items:stretch;">
+    <div class="addmissions-plans-zh__grid-cols-ddfa">
 
       <!-- Family Plan -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <div class="addmissions-plans-zh__flex-col-baa7">
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">家庭方案</h3>
-          <p class="section_paragraph" style="margin:0 0 10px; color:#444; line-height:1.6;">包含 <strong>NextGen Connects</strong> 权益</p>
+          <h3 class="section_subtitle addmissions-plans-zh__style-1">家庭方案</h3>
+          <p class="section_paragraph addmissions-plans-zh__style-6">包含 <strong>NextGen Connects</strong> 权益</p>
         </div>
-        <div style="margin-top:auto">
-          <label for="family-plan" style="font-size:14px;color:#111;font-weight:700;display:block;margin:0 0 6px">选择付费方式</label>
-          <select id="family-plan" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 10px">
+        <div class="addmissions-plans-zh__style-5">
+          <label for="family-plan" class="addmissions-plans-zh__style-7">选择付费方式</label>
+          <select id="family-plan" class="addmissions-plans-zh__rounded-280a">
             <option value="monthly">月付</option>
             <option value="halfyear">半年付</option>
             <option value="annual">年付</option>
           </select>
           <a href="{% url 'in_progress_zh' %}">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+            <button class="addmissions-plans-zh__rounded-5f0d" type="button">购买</button>
           </a>
         </div>
       </div>
 
       <!-- Premium Plan -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <div class="addmissions-plans-zh__flex-col-baa7">
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">高级方案</h3>
-          <p class="section_paragraph" style="margin:0 0 10px; color:#444; line-height:1.6;">包含 <strong>NextGen Inspires</strong> 权益</p>
+          <h3 class="section_subtitle addmissions-plans-zh__style-1">高级方案</h3>
+          <p class="section_paragraph addmissions-plans-zh__style-6">包含 <strong>NextGen Inspires</strong> 权益</p>
         </div>
-        <div style="margin-top:auto">
-          <label for="premium-plan" style="font-size:14px;color:#111;font-weight:700;display:block;margin:0 0 6px">选择付费方式</label>
-          <select id="premium-plan" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 10px">
+        <div class="addmissions-plans-zh__style-5">
+          <label for="premium-plan" class="addmissions-plans-zh__style-7">选择付费方式</label>
+          <select id="premium-plan" class="addmissions-plans-zh__rounded-280a">
             <option value="monthly">月付</option>
             <option value="halfyear">半年付</option>
             <option value="annual">年付</option>
           </select>
           <a href="{% url 'in_progress_zh' %}">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+            <button class="addmissions-plans-zh__rounded-5f0d" type="button">购买</button>
           </a>
         </div>
       </div>
 
       <!-- Elite Membership -->
-      <div style="border:1px solid #dcdcdc;border-radius:18px;padding:18px;background:#fff;display:flex;flex-direction:column">
+      <div class="addmissions-plans-zh__flex-col-baa7">
         <div>
-          <h3 class="section_subtitle" style="margin:0 0 10px; font-weight:900;">精英会员</h3>
-          <p class="section_paragraph" style="margin:0 0 8px; color:#444; line-height:1.6;">包含以下权益</p>
-          <ul style="margin:0 0 10px 18px;line-height:1.7;color:#333">
+          <h3 class="section_subtitle addmissions-plans-zh__style-1">精英会员</h3>
+          <p class="section_paragraph addmissions-plans-zh__style-8">包含以下权益</p>
+          <ul class="addmissions-plans-zh__style-9">
             <li>NextGen Inspires</li>
             <li>NextGen Connects</li>
           </ul>
         </div>
-        <div style="margin-top:auto">
-          <label for="elite-plan" style="font-size:14px;color:#111;font-weight:700;display:block;margin:0 0 6px">选择付费方式</label>
-          <select id="elite-plan" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;margin:0 0 10px">
+        <div class="addmissions-plans-zh__style-5">
+          <label for="elite-plan" class="addmissions-plans-zh__style-7">选择付费方式</label>
+          <select id="elite-plan" class="addmissions-plans-zh__rounded-280a">
             <option value="monthly">月付</option>
             <option value="halfyear">半年付</option>
             <option value="annual">年付</option>
           </select>
           <a href="{% url 'in_progress_zh' %}">
-            <button style="width:100%;padding:10px 16px;background:#007bff;color:#fff;border:none;border-radius:6px;cursor:pointer;font-weight:700" type="button">购买</button>
+            <button class="addmissions-plans-zh__rounded-5f0d" type="button">购买</button>
           </a>
         </div>
       </div>
