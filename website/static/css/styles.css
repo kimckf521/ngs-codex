@@ -207,7 +207,7 @@
 
 .addmissions-plans-zh__flex-6aa4 {
   width:100%;
-  height:66vh;
+  min-height:66vh;
   background:#fff;
   padding:40px 20px;
   box-sizing:border-box;
@@ -482,6 +482,7 @@
   .addmissions-plans-zh__flex,
   .addmissions-plans-zh__flex-6aa4 {
     min-height:auto;
+    height:auto;
     padding:40px 16px;
     margin-bottom:32px;
   }
@@ -509,11 +510,14 @@
   .addmissions-plans-zh__grid-cols-ddfa {
     grid-template-columns:1fr;
     gap:20px;
+    min-height:0;
   }
 
   .addmissions-plans__flex-col-2e0a,
   .addmissions-plans-zh__flex-col-baa7 {
     padding:18px;
+    min-height:0;
+    height:auto;
   }
 
   .addmissions-plans__flex-gap,
@@ -522,6 +526,7 @@
   .addmissions-plans-zh__flex-gap-ac69 {
     gap:12px;
     margin:0 0 20px;
+    flex-wrap:wrap;
   }
 
   .addmissions-plans__gradient-bg,
@@ -542,6 +547,7 @@
   .addmissions-plans-zh__gradient-bg-8da4 {
     padding:6px 14px;
     font-size:13px;
+    white-space:nowrap;
   }
 
   .addmissions-plans__style-1,
@@ -570,11 +576,7 @@
     font-size:15px;
     line-height:1.7;
     margin:0 0 12px 16px;
-  }
-
-  .addmissions-plans__style-9 {
-    font-size:36px;
-    margin:0 0 18px;
+    padding-left:0;
   }
 
   .addmissions-plans__rounded {
@@ -589,6 +591,31 @@
   .addmissions-plans-zh__rounded-280a {
     padding:10px;
     font-size:15px;
+    width:100%;
+  }
+
+  .addmissions-plans-zh__rounded-5f0d {
+    padding:12px 16px;
+    font-size:15px;
+    width:100%;
+  }
+
+  .addmissions-plans-zh__style-3,
+  .addmissions-plans-zh__style-4,
+  .addmissions-plans-zh__style-7 {
+    font-size:15px;
+    margin-bottom:8px;
+    display:block;
+  }
+
+  .addmissions-plans-zh__style-5 {
+    margin-top:16px;
+  }
+
+  .addmissions-plans-zh__style-6,
+  .addmissions-plans-zh__style-8 {
+    font-size:15px;
+    margin-bottom:10px;
   }
 }
 
@@ -599,6 +626,8 @@
   .addmissions-plans-zh__flex-6aa4 {
     padding:32px 12px;
     margin-bottom:24px;
+    height:auto;
+    min-height:auto;
   }
 
   .addmissions-plans__flex:last-of-type,
@@ -610,6 +639,7 @@
   .addmissions-plans__flex-col-2e0a,
   .addmissions-plans-zh__flex-col-baa7 {
     padding:16px;
+    height:auto;
   }
 
   .addmissions-plans__grid-cols,
@@ -619,6 +649,7 @@
   .addmissions-plans-zh__grid-cols,
   .addmissions-plans-zh__grid-cols-ddfa {
     gap:16px;
+    grid-template-columns:1fr;
   }
 
   .addmissions-plans__flex-gap,
@@ -626,6 +657,7 @@
   .addmissions-plans-zh__flex-gap,
   .addmissions-plans-zh__flex-gap-ac69 {
     gap:8px;
+    flex-wrap:wrap;
   }
 
   .addmissions-plans__gradient-bg,
@@ -646,6 +678,7 @@
   .addmissions-plans-zh__gradient-bg-8da4 {
     padding:5px 12px;
     font-size:12px;
+    white-space:nowrap;
   }
 
   .addmissions-plans__style-1,
@@ -672,6 +705,7 @@
     font-size:14px;
     line-height:1.6;
     margin:0 0 10px 14px;
+    padding-left:0;
   }
 
   .addmissions-plans__style-9 {
@@ -691,6 +725,24 @@
   .addmissions-plans-zh__rounded-5f0d {
     padding:9px;
     font-size:14px;
+    width:100%;
+  }
+
+  .addmissions-plans-zh__style-3,
+  .addmissions-plans-zh__style-4,
+  .addmissions-plans-zh__style-7 {
+    font-size:14px;
+    margin-bottom:6px;
+  }
+
+  .addmissions-plans-zh__style-5 {
+    margin-top:12px;
+  }
+
+  .addmissions-plans-zh__style-6,
+  .addmissions-plans-zh__style-8 {
+    font-size:14px;
+    margin-bottom:8px;
   }
 }
 
@@ -7632,7 +7684,8 @@
 
   .highschool-mapping-sections__style-1 {
     font-weight:900;
-    margin:0;
+    font-size:26px;
+    margin:0 0 18px;
   }
 
   .highschool-mapping-sections__flex-gap {
@@ -7763,6 +7816,10 @@
 
   .highschool-mapping-sections__flex-col {
     gap:18px;
+  }
+
+  .highschool-mapping-sections__style-1 {
+    font-size:24px;
   }
 
   .highschool-mapping-sections__flex-gap {
