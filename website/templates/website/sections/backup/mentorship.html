@@ -1,71 +1,62 @@
 {% load static %}
-
-<section style="
-    width:100%;
-    height:66vh;                 /* exact height */
-    background:#fff;
-    box-sizing:border-box;
-    position:relative;           /* prevent stacking overlap */
-    overflow:hidden;             /* clip any overflow (e.g., shadows) */
-    margin:0;">           <!-- space after this section -->
-    
-    <div style="
-    display:grid; 
-    grid-template-columns:1fr 1fr; 
-    height:100%;">             <!-- grid fills 66vh -->
-    
+<section style="width:100%;
+                height:66vh;
+                /* exact height */ background:#fff;
+                box-sizing:border-box;
+                position:relative;
+                /* prevent stacking overlap */ overflow:hidden;
+                /* clip any overflow (e.g., shadows) */ margin:0">
+  <!-- space after this section -->
+  <div style=" display:grid; grid-template-columns:1fr 1fr; height:100%;">
+    <!-- grid fills 66vh -->
     <!-- Left: Image + Button -->
-    <div style="
-        display:flex; 
-        flex-direction:column; 
-        align-items:center; 
-        justify-content:center; 
-        padding:40px;">
-        
-        <img src="{% static 'img/bridgecity.png' %}"
-            alt="Bridge City" 
-            style="max-width:85%; max-height:60%; object-fit:cover;
-                    border-radius:10px; box-shadow:0 6px 18px rgba(0,0,0,.15); margin-bottom:20px;">
-        
-        <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" 
-        style="display:inline-block; 
+    <div style="display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                padding:40px">
+      <img src="{% static 'img/bridgecity.png' %}"
+           alt="Bridge City"
+           style="max-width:85%;
+                  max-height:60%;
+                  object-fit:cover;
+                  border-radius:10px;
+                  box-shadow:0 6px 18px rgba(0,0,0,.15);
+                  margin-bottom:20px">
+      <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983"
+         style="display:inline-block;
                 background:linear-gradient(90deg,#6a11cb,#2575fc);
-                color:#fff; font-weight:700; 
-                padding:12px 28px; 
-                border-radius:40px; 
-                font-size:15px; 
+                color:#fff;
+                font-weight:700;
+                padding:12px 28px;
+                border-radius:40px;
+                font-size:15px;
                 text-decoration:none;
-                transition:all .2s ease-in-out;">
-        Free Consultation
-        </a>
+                transition:all .2s ease-in-out">Free Consultation</a>
     </div>
-
     <!-- Right: Content -->
-    <div style="
-        background:#3ddad7; 
-        color:#000; 
-        padding:50px; 
-        display:flex; 
-        align-items:center; 
-        justify-content:center;
-        height:100%; box-sizing:border-box;">
-        
-        <div style="max-width:520px;">
-        <h2 style="font-size:30px; font-weight:900; margin:0 0 20px;">
-            NGS College Mentorship Program
-        </h2>
+    <div style="background:#3ddad7;
+                color:#000;
+                padding:50px;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                height:100%;
+                box-sizing:border-box">
+      <div style="max-width:520px;">
+        <h2 style="font-size:30px; font-weight:900; margin:0 0 20px;">NGS College Mentorship Program</h2>
         <p style="line-height:1.7; margin:0 0 16px; font-size:15px;">
-            The <strong>NGS College Mentorship Program</strong> is a personalized guidance initiative designed 
-            to empower students in navigating the complex journey of college admissions. 
-            Through Four-on-one mentorship, students receive tailored support in identifying their passions, 
-            refining their academic and extracurricular profiles, and building a strategic plan for university applications.
+          The <strong>NGS College Mentorship Program</strong> is a personalized guidance initiative designed
+          to empower students in navigating the complex journey of college admissions.
+          Through Four-on-one mentorship, students receive tailored support in identifying their passions,
+          refining their academic and extracurricular profiles, and building a strategic plan for university applications.
         </p>
         <p style="line-height:1.7; margin:0; font-size:15px;">
-            The program emphasizes informed decision-making, helping students select the right colleges and programs 
-            while meeting application requirements and deadlines. With expert mentorship, students are equipped to 
-            confidently pursue their higher education goals and thrive in their academic future.
+          The program emphasizes informed decision-making, helping students select the right colleges and programs
+          while meeting application requirements and deadlines. With expert mentorship, students are equipped to
+          confidently pursue their higher education goals and thrive in their academic future.
         </p>
-        </div>
+      </div>
     </div>
-    </div>
+  </div>
 </section>

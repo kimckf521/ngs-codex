@@ -1,78 +1,67 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include "website/sections/head.html" %}
-  </head>
-
+  <head>{% include "website/sections/head.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/sections/navbar.html" %}
-
     <!-- HERO -->
     <section class="hero">
       <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
     </section>
-
     <!-- PARTNER INTRO -->
     <section class="index__flex-col">
-        <div class="index__style-1">
-            <h2 class="index__style-2">
-            PARTNER WITH<br>NEXTGEN SCHOLARS
-            </h2>
-            <p class="index__style-3">
-            We look forward to working with you to unlock the full potential of your students
-            and open gates to global university and career resources.
-            </p>
-        </div>
+      <div class="index__style-1">
+        <h2 class="index__style-2">
+          PARTNER WITH
+          <br>
+          NEXTGEN SCHOLARS
+        </h2>
+        <p class="index__style-3">
+          We look forward to working with you to unlock the full potential of your students
+          and open gates to global university and career resources.
+        </p>
+      </div>
     </section>
-
     <!-- OUR PROGRAMS -->
     {% include "website/sections/our_programs.html" %}
-
     <!-- FOUNDER STORY -->
-    <section id="founder"
-      class="index__flex-col-c73a">
-
+    <section id="founder" class="index__flex-col-c73a">
       <!-- Title -->
-      <h2 class="section_title index__text-center">
-        Founder Story
-      </h2>
-      
+      <h2 class="section_title index__text-center">Founder Story</h2>
       <!-- Content Grid -->
       <div class="wrap index__grid-cols">
-
         <!-- Left: Founders 2x2 -->
         <div class="index__grid-cols-c348">
-          
           <!-- Valerie -->
           <div class="index__text-center-1307">
-            <img src="{% static 'img/founders/HailanReal.jpg' %}" alt="Valerie Zhou"
-                class="index__circle">
+            <img src="{% static 'img/founders/HailanReal.jpg' %}"
+                 alt="Valerie Zhou"
+                 class="index__circle">
             <div class="index__style-4">Valerie Zhou</div>
           </div>
           <!-- Paul -->
           <div class="index__text-center-1307">
-            <img src="{% static 'img/founders/PaulReal.jpg' %}" alt="Paul Chiu"
-                class="index__circle">
+            <img src="{% static 'img/founders/PaulReal.jpg' %}"
+                 alt="Paul Chiu"
+                 class="index__circle">
             <div class="index__style-4">Paul Chiu</div>
           </div>
           <!-- Scarlett -->
           <div class="index__text-center-1307">
-            <img src="{% static 'img/founders/WeixinReal.png' %}" alt="Scarlett Sampson"
-                class="index__circle">
+            <img src="{% static 'img/founders/WeixinReal.png' %}"
+                 alt="Scarlett Sampson"
+                 class="index__circle">
             <div class="index__style-4">Scarlett Sampson</div>
           </div>
           <!-- Nancy -->
           <div class="index__text-center-1307">
-            <img src="{% static 'img/founders/NancyReal.jpeg' %}" alt="Nancy Wu"
-                class="index__circle">
+            <img src="{% static 'img/founders/NancyReal.jpeg' %}"
+                 alt="Nancy Wu"
+                 class="index__circle">
             <div class="index__style-4">Nancy Wu</div>
           </div>
         </div>
-
         <!-- Right: Story -->
         <div class="index__style-5">
           <p class="section_paragraph index__style-6">
@@ -97,35 +86,25 @@
         </div>
       </div>
     </section>
-
     <!-- HERO -->
     <section class="hero">
-        <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
+      <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
     </section>
-
     <!-- PARTNER WITH US -->
     {% include "website/sections/partner_with_us.html" %}
-
     <!-- INDEX FORM -->
     {% include "website/sections/index_form.html" %}
-    
     <!-- GLOBAL COMMUNITY -->
     {% include "website/sections/global_community.html" %}
-
     <!-- INSPIRES -->
     {% include "website/sections/inspires.html" %}
-
     <!-- Social Media-->
     {% include "website/sections/media.html" %}
-
     <!-- Customer Service Button -->
     {% include "website/sections/customer_service.html" %}
-
     <!-- Footer -->
     {% include "website/sections/footer.html" %}
-
     <!-- JavaScript -->
-     <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

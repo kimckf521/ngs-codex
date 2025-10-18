@@ -1,40 +1,34 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include "website/sections/head.html" %}
-  </head>
-
+  <head>{% include "website/sections/head.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/sections/navbar.html" %}
-
     <!-- HERO -->
     <section class="hero">
-    <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
+      <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
     </section>
-
     {% comment %} <!-- FACULTY MATH SCIENCE ECONOMY -->
-    <section class="study-with-us-faculty__bg-white">
-      <div class="study-with-us-faculty__style-1">
+        <section class="study-with-us-faculty__bg-white">
+          <div class="study-with-us-faculty__style-1">
 
-        <!-- Title -->
-        <h2 class="study-with-us-faculty__text-center">
-          Faculty · Math | Science | Economy
-        </h2>
+            <!-- Title -->
+            <h2 class="study-with-us-faculty__text-center">
+              Faculty · Math | Science | Economy
+          </h2>
 
-        <!-- Faculty Grid -->
-        <div class="study-with-us-faculty__grid-cols">
+          <!-- Faculty Grid -->
+          <div class="study-with-us-faculty__grid-cols">
 
-          <!-- Jayden -->
-          <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Jayden.jpg' %}" alt="Jayden" 
-                class="study-with-us-faculty__circle">
-            <div>
-              <h3 class="study-with-us-faculty__style-2">
-                Jaydon Park | AI @ Yonsei University | IB 43
+            <!-- Jayden -->
+            <div class="study-with-us-faculty__flex-gap">
+              <img src="{% static 'img/profiles/Jayden.jpg' %}"
+                   alt="Jayden"
+                   class="study-with-us-faculty__circle">
+              <div>
+                <h3 class="study-with-us-faculty__style-2">
+                  Jaydon Park | AI @ Yonsei University | IB 43
               </h3>
               <p class="study-with-us-faculty__style-3">
                 IB/A-Level/AP expert in Math, Physics, Chem, and CS<br>
@@ -46,8 +40,9 @@
 
           <!-- Daisy -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Daisy.jpg' %}" alt="Daisy" 
-                class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Daisy.jpg' %}"
+                 alt="Daisy"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">
                 Daisy Chung | Computer & Network Security @ Monash
@@ -62,8 +57,9 @@
 
           <!-- Leonore -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Leonore.jpg' %}" alt="Leonore" 
-                class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Leonore.jpg' %}"
+                 alt="Leonore"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">
                 Leonore Li | Biomedicine @ King’s College London | IB 39
@@ -78,8 +74,9 @@
 
           <!-- Paul -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Paul.jpg' %}" alt="Paul" 
-                class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Paul.jpg' %}"
+                 alt="Paul"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">
                 Paul Chiu | Masters in Double E @ Melbourne U
@@ -94,8 +91,9 @@
 
           <!-- Rayna -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Rayna.jpg' %}" alt="Rayna" 
-                class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Rayna.jpg' %}"
+                 alt="Rayna"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">
                 Rayna Chan | Finance + Actuarial Science @ Monash
@@ -110,8 +108,9 @@
 
           <!-- Philip -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Philip.jpg' %}" alt="Philip" 
-                class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Philip.jpg' %}"
+                 alt="Philip"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">
                 Philip Wong | Economics & Marketing @ Monash
@@ -141,7 +140,9 @@
 
           <!-- Jasmine Harris -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Jasmine.jpg' %}" alt="Jasmine" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Jasmine.jpg' %}"
+                 alt="Jasmine"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Jasmine Harris | English Lit @ Warwick | IB 40</h3>
               <p class="study-with-us-faculty__style-3">
@@ -154,7 +155,9 @@
 
           <!-- Alexa Meng -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Alexa.jpg' %}" alt="Alexa" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Alexa.jpg' %}"
+                 alt="Alexa"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Alexa Meng | Doctor of Music Arts @ Illinois University</h3>
               <p class="study-with-us-faculty__style-3">
@@ -167,7 +170,9 @@
 
           <!-- Hannah Harms -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Hannah.jpg' %}" alt="Hannah" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Hannah.jpg' %}"
+                 alt="Hannah"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">
                 Hannah Harms | Ancient History & Lit @ Melbourne — First Class Honours
@@ -182,7 +187,9 @@
 
           <!-- Sophie Beerens -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Sophie.jpg' %}" alt="Sophie" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Sophie.jpg' %}"
+                 alt="Sophie"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Sophie Beerens | Fine Arts @ Royal Academy (NL) | IB 39</h3>
               <p class="study-with-us-faculty__style-3">
@@ -195,7 +202,9 @@
 
           <!-- Nicole Wen -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Nicole.jpg' %}" alt="Nicole" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Nicole.jpg' %}"
+                 alt="Nicole"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Nicole Wen | Law @ University of Bristol | IB 40</h3>
               <p class="study-with-us-faculty__style-3">
@@ -208,7 +217,9 @@
 
           <!-- Valerie Zhou -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Valerie.jpg' %}" alt="Valerie" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Valerie.jpg' %}"
+                 alt="Valerie"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Valerie Zhou | Business Management @ Essex University</h3>
               <p class="study-with-us-faculty__style-3">
@@ -236,7 +247,9 @@
 
           <!-- Scarlett -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Scarlet.jpg' %}" alt="Scarlett" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Scarlet.jpg' %}"
+                 alt="Scarlett"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Scarlett Sampson | MBA @ University of Texas</h3>
               <p class="study-with-us-faculty__style-3">
@@ -251,7 +264,9 @@
 
           <!-- Alexa -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Alexa.jpg' %}" alt="Alexa" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Alexa.jpg' %}"
+                 alt="Alexa"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Alexa Meng | Doctor of Music Arts @ Illinois University</h3>
               <p class="study-with-us-faculty__style-3">
@@ -265,7 +280,9 @@
 
           <!-- Nancy -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Nancy.jpg' %}" alt="Nancy" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Nancy.jpg' %}"
+                 alt="Nancy"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Nancy Wu | Mechanical Engineering @ Melbourne U</h3>
               <p class="study-with-us-faculty__style-3">
@@ -279,7 +296,9 @@
 
           <!-- Nicole -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Nicole.jpg' %}" alt="Nicole" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Nicole.jpg' %}"
+                 alt="Nicole"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Nicole Wen | Law @ University of Bristol | IB 40</h3>
               <p class="study-with-us-faculty__style-3">
@@ -292,7 +311,9 @@
 
           <!-- Valerie -->
           <div class="study-with-us-faculty__flex-gap">
-            <img src="{% static 'img/profiles/Valerie.jpg' %}" alt="Valerie" class="study-with-us-faculty__circle">
+            <img src="{% static 'img/profiles/Valerie.jpg' %}"
+                 alt="Valerie"
+                 class="study-with-us-faculty__circle">
             <div>
               <h3 class="study-with-us-faculty__style-2">Valerie Zhou | Business Management @ Essex University</h3>
               <p class="study-with-us-faculty__style-3">
@@ -305,34 +326,24 @@
 
         </div>
       </div>
-    </section> {% endcomment %}
-
-    <!-- FACULTY -->
-    {% include "website/sections/faculties.html" %}
-
-    <!-- A COMPREHENSIVE AND TAILORED CURRICULUM -->
-    {% include "website/sections/comprehensive.html" %}
-
-    <!-- Student Reviews -->
-    {% include "website/sections/student_reviews.html" %}
-
-    <!-- GLOBAL COMMUNITY -->
-    {% include "website/sections/global_community.html" %}
-
-    <!-- Partner With US -->
-    {% include "website/sections/partner_with_ngs.html" %}
-
-    <!-- Social Media-->
-    {% include "website/sections/media.html" %}
-
-    <!-- Customer Service Button -->
-    {% include "website/sections/customer_service.html" %}
-
-    <!-- Footer -->
-    {% include "website/sections/footer.html" %}
-
-    <!-- JavaScript -->
-     <script src="{% static 'js/main.js' %}"></script>
-
-  </body>
+</section> {% endcomment %}
+<!-- FACULTY -->
+{% include "website/sections/faculties.html" %}
+<!-- A COMPREHENSIVE AND TAILORED CURRICULUM -->
+{% include "website/sections/comprehensive.html" %}
+<!-- Student Reviews -->
+{% include "website/sections/student_reviews.html" %}
+<!-- GLOBAL COMMUNITY -->
+{% include "website/sections/global_community.html" %}
+<!-- Partner With US -->
+{% include "website/sections/partner_with_ngs.html" %}
+<!-- Social Media-->
+{% include "website/sections/media.html" %}
+<!-- Customer Service Button -->
+{% include "website/sections/customer_service.html" %}
+<!-- Footer -->
+{% include "website/sections/footer.html" %}
+<!-- JavaScript -->
+<script src="{% static 'js/main.js' %}"></script>
+</body>
 </html>

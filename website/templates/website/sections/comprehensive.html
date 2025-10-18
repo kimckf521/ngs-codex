@@ -1,42 +1,39 @@
 {% load static %}
-
 <section class="comprehensive__flex-center">
-<div class="k12-school__flex-col">
-<!-- Title -->
-<h2 class="section_title comprehensive__text-center">
-      A Comprehensive and Tailored Curriculum
-    </h2>
-<!-- Content -->
-<div class="comprehensive__grid-cols">
-<!-- Left: Student image -->
-<div class="intro-hybrid__flex-center">
-<img alt="Student" src="{% static 'img/smilegirl.jpg' %}" class="comprehensive__rounded"/>
-</div>
-<!-- Right: Text Content -->
-<div class="comprehensive__flex-col">
-<div class="comprehensive__style-1">
-<h3 class="section_subtitle comprehensive__style-2">Personalize Tutoring</h3>
-<p class="section_paragraph comprehensive__style-3">
-            No cookie-cutter teaching or one-size-fits-all courses. Every student is a unique learner. 
-            At NGS, we provide an entry assessment, design a personalized study plan, offer real-time tracking, 
+  <div class="k12-school__flex-col">
+    <!-- Title -->
+    <h2 class="section_title comprehensive__text-center">A Comprehensive and Tailored Curriculum</h2>
+    <!-- Content -->
+    <div class="comprehensive__grid-cols">
+      <!-- Left: Student image -->
+      <div class="intro-hybrid__flex-center">
+        <img alt="Student"
+             src="{% static 'img/smilegirl.jpg' %}"
+             class="comprehensive__rounded" />
+      </div>
+      <!-- Right: Text Content -->
+      <div class="comprehensive__flex-col">
+        <div class="comprehensive__style-1">
+          <h3 class="section_subtitle comprehensive__style-2">Personalize Tutoring</h3>
+          <p class="section_paragraph comprehensive__style-3">
+            No cookie-cutter teaching or one-size-fits-all courses. Every student is a unique learner.
+            At NGS, we provide an entry assessment, design a personalized study plan, offer real-time tracking,
             and give periodic feedback to support your growth every step of the way.
           </p>
-<h3 class="section_subtitle comprehensive__style-2">Clear Learning Goals</h3>
-<p class="section_paragraph comprehensive__style-3">
-            Whether you aim to prepare in advance, achieve a short-term score boost, or excel in exam preparation, 
+          <h3 class="section_subtitle comprehensive__style-2">Clear Learning Goals</h3>
+          <p class="section_paragraph comprehensive__style-3">
+            Whether you aim to prepare in advance, achieve a short-term score boost, or excel in exam preparation,
             NGS tutors will create a study plan tailored to your specific goals.
           </p>
-<h3 class="section_subtitle comprehensive__style-2">Popular Subjects Covered</h3>
-<p class="section_paragraph comprehensive__style-4">
+          <h3 class="section_subtitle comprehensive__style-2">Popular Subjects Covered</h3>
+          <p class="section_paragraph comprehensive__style-4">
             NGS offers 1-on-1 tutoring for most subjects across IB, A-Level, AP, and IGCSE curriculums.
           </p>
-</div>
-<div class="comprehensive__text-center-c30c">
-<a href="{% url 'admissions' %}" class="comprehensive__bg-dark">
-            Book a Trial Class
-          </a>
-</div>
-</div>
-</div>
-</div>
+        </div>
+        <div class="comprehensive__text-center-c30c">
+          <a href="{% url 'admissions' %}" class="comprehensive__bg-dark">Book a Trial Class</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

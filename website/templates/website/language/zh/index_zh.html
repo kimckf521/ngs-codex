@@ -1,68 +1,44 @@
 {% load static %}
-
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    {% include "website/language/zh/sections/head_zh.html" %}
-  </head>
-
+  <head>{% include "website/language/zh/sections/head_zh.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/language/zh/sections/navbar_zh.html" %}
-
     <!-- HERO -->
     <section class="hero">
       <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
     </section>
-
     <!-- PARTNER INTRO -->
     <section class="index__flex-col">
-        <div class="index__style-1">
-            <h2 class="index__style-2">
-            携手NGS未来学者
-            </h2>
-            <p class="index__style-3">
-            NextGen期待与贵校携手-不负众望，同启未来！
-            </p>
-        </div>
+      <div class="index__style-1">
+        <h2 class="index__style-2">携手NGS未来学者</h2>
+        <p class="index__style-3">NextGen期待与贵校携手-不负众望，同启未来！</p>
+      </div>
     </section>
-
     <!-- OUR PROGRAMS -->
     {% include "website/language/zh/sections/our_programs_zh.html" %}
-
     <!-- FOUNDER STORY -->
     {% include "website/language/zh/sections/founder_story_zh.html" %}
-
     <!-- HERO -->
     <section class="hero">
-        <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
+      <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
     </section>
-
     <!-- PARTNER WITH US -->
     {% include "website/language/zh/sections/partner_with_us_zh.html" %}
-
     <!-- MEETING + FORM -->
     {% include "website/language/zh/sections/index_form_zh.html" %}
-    
     <!-- GLOBAL COMMUNITY -->
     {% include "website/language/zh/sections/global_community_zh.html" %}
-
     <!-- INSPIRES -->
     {% include "website/language/zh/sections/inspires_zh.html" %}
-
     <!-- Social Media-->
     {% include "website/language/zh/sections/media_zh.html" %}
-
     <!-- Customer Service Button -->
     {% include "website/language/zh/sections/customer_service_zh.html" %}
-
     <!-- Footer -->
     {% include "website/language/zh/sections/footer_zh.html" %}
-
     <!-- JavaScript -->
-     <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

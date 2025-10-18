@@ -1,173 +1,158 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include "website/language/zh/sections/head_zh.html" %}
-  </head>
-
+  <head>{% include "website/language/zh/sections/head_zh.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/language/zh/sections/navbar_zh.html" %}
-
     <!-- HERO -->
     <section class="hero">
-    <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
+      <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
     </section>
-
     <!-- 成为 NextGen Scholars 合作伙伴 (exact 66vh) -->
     <section class="intro-connects__bg-white">
-        
-        <div class="intro-connects__flex-col">
-
+      <div class="intro-connects__flex-col">
         <!-- Title -->
-        <h2 class="section_title intro-cclr__text-center">
-            成为 NextGen Scholars 合作伙伴
-        </h2>
-
+        <h2 class="section_title intro-cclr__text-center">成为 NextGen Scholars 合作伙伴</h2>
         <!-- Two-column layout (50/50 split) -->
         <div class="cclr-programs-zh__grid-cols">
-
-            <!-- Left: Card with bullets at bottom -->
-            <div class="intro-cclr-zh__flex-col">
-
+          <!-- Left: Card with bullets at bottom -->
+          <div class="intro-cclr-zh__flex-col">
             <!-- Title -->
-            <h3 class="section_subtitle partner-with-us-cclr-programs__style-1">
-                升学·职业·生活 准备课程
-            </h3>
-
+            <h3 class="section_subtitle partner-with-us-cclr-programs__style-1">升学·职业·生活 准备课程</h3>
             <!-- Spacer pushes list down -->
             <div class="intro-hybrid__style-2"></div>
-
             <!-- Bullets -->
             <ul class="intro-connects__style-2">
-                <li><a href="{% url 'cclr_programs_zh' %}" class="bullet-link active">职业准备</a></li>
-                <li><a>大学准备</a></li>
-                <li><a href="{% url 'ngs_inspires_zh' %}" class="bullet-link">生活准备</a></li>
-                <li><a href="{% url 'ngs_connects_zh' %}" class="bullet-link">全球胜任力</a></li>
+              <li>
+                <a href="{% url 'cclr_programs_zh' %}" class="bullet-link active">职业准备</a>
+              </li>
+              <li>
+                <a>大学准备</a>
+              </li>
+              <li>
+                <a href="{% url 'ngs_inspires_zh' %}" class="bullet-link">生活准备</a>
+              </li>
+              <li>
+                <a href="{% url 'ngs_connects_zh' %}" class="bullet-link">全球胜任力</a>
+              </li>
             </ul>
-
-            </div>
-
-            <!-- Right: Copy -->
-            <div class="intro-connects__flex-col-34c8">
-              <p class="section_paragraph intro-connects__style-3">
-                NGS CCLR（升学、职业与生活准备）课程旨在为学生提供一个全面框架，用于界定、引导并评估学生在学业成功、职业发展和社会参与中所需的关键能力。
-              </p>
-              <p class="section_paragraph head-cclr__style-1">
-                除了学术成就之外，CCLR 课程还帮助学生掌握大学申请、职业目标实现和社会发展所需的技能与知识。通过为学生、家庭、教育者与学校提供可靠的洞见，CCLR 确保关于学生的每一个决定都科学且明智，从而在教育和职业的每一个阶段助力成功。
-              </p>
-              <p class="section_paragraph connect-to-parents__style-1">
-                聚焦大学准备、职业能力和生活技能，CCLR 课程帮助学生自信地衔接高等教育、职场与社会，实现全面发展。
-              </p>
-            </div>
-
+          </div>
+          <!-- Right: Copy -->
+          <div class="intro-connects__flex-col-34c8">
+            <p class="section_paragraph intro-connects__style-3">
+              NGS CCLR（升学、职业与生活准备）课程旨在为学生提供一个全面框架，用于界定、引导并评估学生在学业成功、职业发展和社会参与中所需的关键能力。
+            </p>
+            <p class="section_paragraph head-cclr__style-1">
+              除了学术成就之外，CCLR 课程还帮助学生掌握大学申请、职业目标实现和社会发展所需的技能与知识。通过为学生、家庭、教育者与学校提供可靠的洞见，CCLR 确保关于学生的每一个决定都科学且明智，从而在教育和职业的每一个阶段助力成功。
+            </p>
+            <p class="section_paragraph connect-to-parents__style-1">聚焦大学准备、职业能力和生活技能，CCLR 课程帮助学生自信地衔接高等教育、职场与社会，实现全面发展。</p>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
-
     <!-- CCLR Diagram — centered and fixed height -->
     <section class="partner-with-us-cclr-programs__flex-center">
       <div class="partner-with-us-cclr-programs__text-center">
         <h2 class="section_title partner-with-us-cclr-programs__style-2">
-          升学 · 职业 · 生活<br>准备课程
+          升学 · 职业 · 生活
+          <br>
+          准备课程
         </h2>
         <div class="partner-with-us-cclr-programs__flex-center-78b2">
-          <img src="{% static 'img/circles.jpg' %}" alt="CCLR 课程示意图" class="partner-with-us-cclr-programs__full-size">
+          <img src="{% static 'img/circles.jpg' %}"
+               alt="CCLR 课程示意图"
+               class="partner-with-us-cclr-programs__full-size">
         </div>
       </div>
     </section>
-
     <!-- PARTNER WITH US -->
     {% include "website/language/zh/sections/partner_with_us_zh.html" %}
-
     <!-- PARTNER WITH NEXTGEN SCHOLARS -->
     {% include "website/language/zh/sections/intro_cclr_zh.html" %}
-
     <!-- OUR PROGRAMS -->
     {% include "website/language/zh/sections/our_programs_zh.html" %}
-
     <!-- MEETING + FORM -->
     <section class="index__section">
-      <div class="ngs-enquiry index__grid-cols-452f"> <!-- ✅ grid fills 66vh -->
-
+      <div class="ngs-enquiry index__grid-cols-452f">
+        <!-- ✅ grid fills 66vh -->
         <!-- 左侧：图片 -->
         <div class="index__style-9">
           <img src="{% static 'img/studying.jpg' %}"
-              alt="线上会议"
-              class="index__rounded">
+               alt="线上会议"
+               class="index__rounded">
         </div>
-
         <!-- 右侧：表单 -->
         {% include "website/messages.html" %}
-
-        <form class="ngs-form index__flex-col-621c" method="POST" action="{% url 'partner_with_us' %}"> <!-- ✅ form fills 66vh -->
+        <form class="ngs-form index__flex-col-621c"
+              method="POST"
+              action="{% url 'partner_with_us' %}">
+          <!-- ✅ form fills 66vh -->
           {% csrf_token %}
-
           <!-- 标题栏 -->
-          <div class="index__bg-dark">
-            想与 NGS 合作？
-          </div>
-
+          <div class="index__bg-dark">想与 NGS 合作？</div>
           <!-- 表单字段 -->
           <div class="index__grid">
             <div>
               <label class="index__style-10">您的全名</label>
-              <input type="text" name="name" id="id_name" required placeholder="请输入您的姓名"
-                    class="index__rounded-7873">
+              <input type="text"
+                     name="name"
+                     id="id_name"
+                     required
+                     placeholder="请输入您的姓名"
+                     class="index__rounded-7873">
             </div>
-
             <div>
               <label class="index__style-10">学校 / 机构名称</label>
-              <input type="text" name="school_name" id="id_school" required placeholder="请输入学校或机构名称"
-                    class="index__rounded-7873">
+              <input type="text"
+                     name="school_name"
+                     id="id_school"
+                     required
+                     placeholder="请输入学校或机构名称"
+                     class="index__rounded-7873">
             </div>
-
             <div>
               <label class="index__style-10">电子邮箱</label>
-              <input type="email" name="email" id="id_email" required placeholder="you@example.com"
-                    class="index__rounded-7873">
+              <input type="email"
+                     name="email"
+                     id="id_email"
+                     required
+                     placeholder="you@example.com"
+                     class="index__rounded-7873">
             </div>
-
             <div>
               <label class="index__style-10">手机号 / 微信号</label>
-              <input type="text"  name="mobile_or_wechat" id="id_mobile_or_wechat" placeholder="+61… / 您的微信号"
-                    class="index__rounded-7873">
+              <input type="text"
+                     name="mobile_or_wechat"
+                     id="id_mobile_or_wechat"
+                     placeholder="+61… / 您的微信号"
+                     class="index__rounded-7873">
             </div>
-
             <div class="index__flex-col-d481">
               <label class="index__style-10">我们能为您提供什么帮助？</label>
-              <textarea rows="5" name="help_description" id="id_help_description" placeholder="请简单说明您的合作需求或目标…"
+              <textarea rows="5"
+                        name="help_description"
+                        id="id_help_description"
+                        placeholder="请简单说明您的合作需求或目标…"
                         class="index__rounded-f54a"></textarea>
             </div>
           </div>
-
           <!-- 提交按钮 -->
           <div class="index__style-11">
-            <button type="submit"
-                    class="index__bg-dark-d1b8">
-              发送
-            </button>
+            <button type="submit" class="index__bg-dark-d1b8">发送</button>
           </div>
         </form>
       </div>
     </section>
-
     <!-- GLOBAL COMMUNITY -->
     {% include "website/language/zh/sections/global_community_zh.html" %}
-
     <!-- Social Media-->
     {% include "website/language/zh/sections/media_zh.html" %}
-
     <!-- Customer Service Button -->
     {% include "website/language/zh/sections/customer_service_zh.html" %}
-
     <!-- Footer -->
     {% include "website/language/zh/sections/footer_zh.html" %}
-
     <!-- JavaScript -->
     <script src="{% static 'js/main.js' %}"></script>
-
   </body>
 </html>

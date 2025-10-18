@@ -1,159 +1,209 @@
 {% load static %}
-
 <!-- CONTACT SECTION (exact 66vh) -->
-<section style="margin:0; width:100%; height:66vh; overflow:hidden; box-sizing:border-box;">
-  <div style="
-      display:grid; grid-template-columns:42% 58%;
-      width:100%; height:100%; min-height:0;">
-
+<section style="margin:0;
+                width:100%;
+                height:66vh;
+                overflow:hidden;
+                box-sizing:border-box">
+  <div style="display:grid;
+              grid-template-columns:42% 58%;
+              width:100%;
+              height:100%;
+              min-height:0">
     <!-- LEFT: black contact panel -->
-    <div style="
-      background:#000; color:#fff;
-      display:flex; flex-direction:column;
-      height:100%; min-height:0;
-      padding:2.8vh 3.2vh; box-sizing:border-box;">
-
+    <div style="background:#000;
+                color:#fff;
+                display:flex;
+                flex-direction:column;
+                height:100%;
+                min-height:0;
+                padding:2.8vh 3.2vh;
+                box-sizing:border-box">
       <!-- N logo (top-left) -->
-      <img src="{% static 'img/big_n.png' %}" alt="NextGen Scholars Logo"
-           style="height:15vh; width:15vh; display:block; ">
-
+      <img src="{% static 'img/big_n.png' %}"
+           alt="NextGen Scholars Logo"
+           style="height:15vh;
+                  width:15vh;
+                  display:block">
       <!-- Title (stacked, very large, left-aligned) -->
-      <h1 style="
-          margin:1vh 0 0;
-          font-weight:900;
-          line-height:1.02;
-          letter-spacing:.02em;
-          font-size:clamp(48px, 10.2vh, 80px);
-          text-align:center;">
-        GET IN<br>TOUCH<br>WITH US
+      <h1 style="margin:1vh 0 0;
+                 font-weight:900;
+                 line-height:1.02;
+                 letter-spacing:.02em;
+                 font-size:clamp(48px, 10.2vh, 80px);
+                 text-align:center">
+        GET IN
+        <br>
+        TOUCH
+        <br>
+        WITH US
       </h1>
-
       <!-- Email -->
-      <p style="
-          margin:1.4vh 0 0;
-          font-size:clamp(14px, 2.4vh, 18px);
-          font-weight:600;
-          opacity:.95; text-align:center;">
-        info@nextgenscholars.asia
-      </p>
-
+      <p style="margin:1.4vh 0 0;
+                font-size:clamp(14px, 2.4vh, 18px);
+                font-weight:600;
+                opacity:.95;
+                text-align:center">info@nextgenscholars.asia</p>
       <!-- Spacer pushes icon row toward the bottom but stays inside 66vh -->
       <div style="flex:1; min-height:0;"></div>
-
       <!-- Social / QR row -->
-      <div style="
-          display:flex;
-          gap:2vh;                /* keep some breathing space */
-          flex-wrap:wrap;
-          align-items:flex-start;
-          justify-content:space-between; /* ✅ evenly distribute items */
-          width:100%;             /* stretch full width for spacing */
-          box-sizing:border-box;
-          padding: 0 30px;
-      ">
-
+      <div style="display:flex;
+                  gap:2vh;
+                  /* keep some breathing space */ flex-wrap:wrap;
+                  align-items:flex-start;
+                  justify-content:space-between;
+                  /* ✅ evenly distribute items */ width:100%;
+                  /* stretch full width for spacing */ box-sizing:border-box;
+                  padding: 0 30px">
         <!-- WeChat -->
         <div style="text-align:center; flex:1;">
-          <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" target="_blank" rel="noopener">
-            <img src="{% static 'img/media_icons/WeChat.png' %}" alt="WeChat"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+          <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983"
+             target="_blank"
+             rel="noopener">
+            <img src="{% static 'img/media_icons/WeChat.png' %}"
+                 alt="WeChat"
+                 style="width:8vh;
+                        height:8vh;
+                        border-radius:1.2vh;
+                        display:block;
+                        margin:0 auto .6vh">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#00e676;">@NextGenScholars</small>
+          <small style="display:block;
+                        font-size:clamp(10px,1.4vh,12px);
+                        color:#00e676">@NextGenScholars</small>
         </div>
-
         <!-- WeChat Channels / 视频号 -->
         <div style="text-align:center; flex:1;">
-          <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983" target="_blank" rel="noopener">
-            <img src="{% static 'img/media_icons/WeClass.png' %}" alt="视频号"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+          <a href="https://work.weixin.qq.com/kfid/kfc86f854c023857983"
+             target="_blank"
+             rel="noopener">
+            <img src="{% static 'img/media_icons/WeClass.png' %}"
+                 alt="视频号"
+                 style="width:8vh;
+                        height:8vh;
+                        border-radius:1.2vh;
+                        display:block;
+                        margin:0 auto .6vh">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#00b0ff;">@视频号</small>
+          <small style="display:block;
+                        font-size:clamp(10px,1.4vh,12px);
+                        color:#00b0ff">@视频号</small>
         </div>
-
         <!-- XiaoHongShu -->
         <div style="text-align:center; flex:1;">
-          <a href="https://xhslink.com/m/ARVy7jFyzLd" target="_blank" rel="noopener">
-            <img src="{% static 'img/media_icons/RedNote.png' %}" alt="小红书"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+          <a href="https://xhslink.com/m/ARVy7jFyzLd"
+             target="_blank"
+             rel="noopener">
+            <img src="{% static 'img/media_icons/RedNote.png' %}"
+                 alt="小红书"
+                 style="width:8vh;
+                        height:8vh;
+                        border-radius:1.2vh;
+                        display:block;
+                        margin:0 auto .6vh">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#ff3d57;">@小红书</small>
+          <small style="display:block;
+                        font-size:clamp(10px,1.4vh,12px);
+                        color:#ff3d57">@小红书</small>
         </div>
-
         <!-- LinkedIn -->
         <div style="text-align:center; flex:1;">
-          <a href="https://www.linkedin.com/company/nextgenscholarsasia" target="_blank" rel="noopener">
-            <img src="{% static 'img/media_icons/LinkedIn.png' %}" alt="LinkedIn"
-                style="width:8vh; height:8vh; border-radius:1.2vh; display:block; margin:0 auto .6vh;">
+          <a href="https://www.linkedin.com/company/nextgenscholarsasia"
+             target="_blank"
+             rel="noopener">
+            <img src="{% static 'img/media_icons/LinkedIn.png' %}"
+                 alt="LinkedIn"
+                 style="width:8vh;
+                        height:8vh;
+                        border-radius:1.2vh;
+                        display:block;
+                        margin:0 auto .6vh">
           </a>
-          <small style="display:block; font-size:clamp(10px,1.4vh,12px); color:#80d8ff;">@LinkedIn</small>
+          <small style="display:block;
+                        font-size:clamp(10px,1.4vh,12px);
+                        color:#80d8ff">@LinkedIn</small>
         </div>
       </div>
-
     </div>
-
     <!-- RIGHT: gradient + 4-petal graphic -->
-    <div style="
-      background:radial-gradient(120% 120% at 30% 15%, #2139ff 0%, #1f2e93 54%, #009881 100%);
-      display:flex; align-items:center; justify-content:center;
-      height:100%; min-height:0;">
-
+    <div style="background:radial-gradient(120% 120% at 30% 15%, #2139ff 0%, #1f2e93 54%, #009881 100%);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                height:100%;
+                min-height:0">
       <!-- Petal group scales with viewport, never exceeds 66vh -->
-      <div style="
-          position:relative;
-          width:min(60vmin, 620px);
-          height:min(60vmin, 620px);">
-
+      <div style="position:relative;
+                  width:min(60vmin, 620px);
+                  height:min(60vmin, 620px)">
         <!-- top petal -->
-        <div style="
-          position:absolute; top:0; left:50%; transform:translateX(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
-
+        <div style="position:absolute;
+                    top:0;
+                    left:50%;
+                    transform:translateX(-50%);
+                    width:72%;
+                    height:72%;
+                    border-radius:50%;
+                    background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%)">
+        </div>
         <!-- bottom petal -->
-        <div style="
-          position:absolute; bottom:0; left:50%; transform:translateX(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
-
+        <div style="position:absolute;
+                    bottom:0;
+                    left:50%;
+                    transform:translateX(-50%);
+                    width:72%;
+                    height:72%;
+                    border-radius:50%;
+                    background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%)">
+        </div>
         <!-- left petal -->
-        <div style="
-          position:absolute; top:50%; left:0; transform:translateY(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
-
+        <div style="position:absolute;
+                    top:50%;
+                    left:0;
+                    transform:translateY(-50%);
+                    width:72%;
+                    height:72%;
+                    border-radius:50%;
+                    background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%)">
+        </div>
         <!-- right petal -->
-        <div style="
-          position:absolute; top:50%; right:0; transform:translateY(-50%);
-          width:72%; height:72%; border-radius:50%;
-          background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%);"></div>
-
+        <div style="position:absolute;
+                    top:50%;
+                    right:0;
+                    transform:translateY(-50%);
+                    width:72%;
+                    height:72%;
+                    border-radius:50%;
+                    background:radial-gradient(60% 60% at 50% 50%, rgba(255,172,189,.96), rgba(182,191,255,.32) 70%, rgba(182,191,255,0) 100%)">
+        </div>
         <!-- center pill -->
-        <div style="
-          position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-          background:#fff; color:#000; font-weight:900;
-          border-radius:26px; padding:12px 22px;
-          font-size:clamp(15px, 2.1vw, 22px); text-align:center;
-          box-shadow:0 8px 22px rgba(0,0,0,.2);">
-          NextGen<br>Scholars
+        <div style="position:absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    background:#fff;
+                    color:#000;
+                    font-weight:900;
+                    border-radius:26px;
+                    padding:12px 22px;
+                    font-size:clamp(15px, 2.1vw, 22px);
+                    text-align:center;
+                    box-shadow:0 8px 22px rgba(0,0,0,.2)">
+          NextGen
+          <br>
+          Scholars
         </div>
       </div>
     </div>
-
   </div>
 </section>
-
 {% comment %} <section style="margin:0;width:100%;height:66vh;">
     <div style="display:grid;grid-template-columns:50% 50%;width:100%;">
 
         <!-- Left: Contact Info -->
-        <div style="background:#000;color:#fff;display:flex;flex-direction:column;
-                    justify-content:center;align-items:flex-start;padding:60px;gap:24px">
+        <div style="background:#000;color:#fff;display:flex;flex-direction:column; justify-content:center;align-items:flex-start;padding:60px;gap:24px">
         <!-- Logo -->
-        <div style="font-size:150px;font-weight:900;
-                    background:linear-gradient(135deg,#00f0ff,#ff2ea1);
-                    -webkit-background-clip:text;
-                    -webkit-text-fill-color:transparent;
-                    margin-bottom:20px">
+        <div style="font-size:150px;font-weight:900; background:linear-gradient(135deg,#00f0ff,#ff2ea1); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:20px">
             N
         </div>
         <!-- Title -->
@@ -191,25 +241,15 @@
         </div>
 
         <!-- Right: Graphic -->
-        <div style="background:radial-gradient(circle at center,#3020ff 0%,#2b2a86 100%);
-                    display:flex;justify-content:center;align-items:center">
+        <div style="background:radial-gradient(circle at center,#3020ff 0%,#2b2a86 100%); display:flex;justify-content:center;align-items:center">
         <div style="position:relative;width:340px;height:340px">
             <!-- Four blobs -->
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;top:0;left:55px;opacity:.85"></div>
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;bottom:0;left:55px;opacity:.85"></div>
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;top:55px;left:0;opacity:.85"></div>
-            <div style="width:230px;height:230px;border-radius:50%;
-                        background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%);
-                        position:absolute;top:55px;right:0;opacity:.85"></div>
+            <div style="width:230px;height:230px;border-radius:50%; background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%); position:absolute;top:0;left:55px;opacity:.85"></div>
+            <div style="width:230px;height:230px;border-radius:50%; background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%); position:absolute;bottom:0;left:55px;opacity:.85"></div>
+            <div style="width:230px;height:230px;border-radius:50%; background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%); position:absolute;top:55px;left:0;opacity:.85"></div>
+            <div style="width:230px;height:230px;border-radius:50%; background:radial-gradient(circle,#ff8dc1 0%,#c068ff 100%); position:absolute;top:55px;right:0;opacity:.85"></div>
             <!-- Center Label -->
-            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-                        background:#fff;padding:10px 20px;border-radius:24px;font-weight:900;color:#000;text-align:center">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%); background:#fff;padding:10px 20px;border-radius:24px;font-weight:900;color:#000;text-align:center">
             NextGen<br>Scholars
             </div>
         </div>

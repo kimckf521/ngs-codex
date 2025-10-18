@@ -1,83 +1,62 @@
-{% load static %}   
-
+{% load static %}
 <script src="{% static 'js/main.js' %}"></script>
-
 {% comment %} {% include "website/sections/language_button.html" %} {% endcomment %}
-
 <footer class="footer__bg-dark">
-
-    <div class="footer__grid-cols">
-        
-        <!-- Column 1: Menu -->
-
-        <ul class="footer__style-1">
-            <li class="footer__style-2">
-                <a href="{% url 'cclr_programs' %}" class="footer__link-hover">
-                Partner with NGS
-                </a>
-            </li>
-            <li class="footer__style-2">
-                <a href="{% url 'programs' %}" class="footer__link-hover">
-                Study with US
-                </a>
-            </li>
-            <li class="footer__style-2">
-                <a href="{% url 'admissions' %}" class="footer__link-hover">
-                Admissions
-                </a>
-            </li>
-            <li class="footer__style-2">
-                <a href="{% url 'ngs_inspires' %}" class="footer__link-hover">
-                Join NGS Community
-                </a>
-            </li>
-        </ul>
-
-
-        <!-- Column 2: Locations 1 -->
-        <div>
-        <p class="footer__style-3">San Francisco</p>
-        <p class="footer__style-4">600 California St 11th floor, San Francisco, CA 94108</p>
-
-        <p class="footer__style-3">Melbourne</p>
-        <p class="connect-to-parents__style-1">262 Queen St, Melbourne VIC 3000</p>
-        </div>
-
-        <!-- Column 3: Locations 2 -->
-        <div>
-        <p class="footer__style-3">Hong Kong</p>
-        <p class="footer__style-4">27/F China Resources Bldg 26, Harbour RD Wanchai</p>
-
-        <p class="footer__style-3">深圳办公地址</p>
-        <p class="connect-to-parents__style-1">深圳市南山区望海路南<br>海玫瑰花园二期4栋4C</p>
-        </div>
-
-        <!-- Column 4: Contact -->
-        <div class="footer__text-right">
-        <p class="footer__style-5">info@nextgenscholars.asia</p>
-        <p class="footer__style-5">T: 400-806-1815</p>
-        </div>
-
+  <div class="footer__grid-cols">
+    <!-- Column 1: Menu -->
+    <ul class="footer__style-1">
+      <li class="footer__style-2">
+        <a href="{% url 'cclr_programs' %}" class="footer__link-hover">Partner with NGS</a>
+      </li>
+      <li class="footer__style-2">
+        <a href="{% url 'programs' %}" class="footer__link-hover">Study with US</a>
+      </li>
+      <li class="footer__style-2">
+        <a href="{% url 'admissions' %}" class="footer__link-hover">Admissions</a>
+      </li>
+      <li class="footer__style-2">
+        <a href="{% url 'ngs_inspires' %}" class="footer__link-hover">Join NGS Community</a>
+      </li>
+    </ul>
+    <!-- Column 2: Locations 1 -->
+    <div>
+      <p class="footer__style-3">San Francisco</p>
+      <p class="footer__style-4">600 California St 11th floor, San Francisco, CA 94108</p>
+      <p class="footer__style-3">Melbourne</p>
+      <p class="connect-to-parents__style-1">262 Queen St, Melbourne VIC 3000</p>
     </div>
-
-    <!-- Bottom bar -->
-    <div class="footer__grid-cols-065f">
-        <div class="footer__flex-gap">
-            <p class="connect-to-parents__style-1">粤ICP备2025400078号</p>  | 
-            <p class="connect-to-parents__style-1">增值电信业务许可证：粤B2-20252299</p>
-        </div>
-        
-        
-        <div class="index__text-center-1307">
-            <p class="footer__style-6">深圳市千瞳空间文化艺术有限公司版权所有 © 2025<p>
-        </div>
-        
-        <div class="footer__text-right">
-            <a href="{% url 'privacy' %}" class="footer__style-7">Privacy Policy</a> | 
-        <a href="{% url 'terms' %}" class="footer__style-7">Terms of Service</a>
-            
-        </div>
-        
+    <!-- Column 3: Locations 2 -->
+    <div>
+      <p class="footer__style-3">Hong Kong</p>
+      <p class="footer__style-4">27/F China Resources Bldg 26, Harbour RD Wanchai</p>
+      <p class="footer__style-3">深圳办公地址</p>
+      <p class="connect-to-parents__style-1">
+        深圳市南山区望海路南
+        <br>
+        海玫瑰花园二期4栋4C
+      </p>
     </div>
-
-</footer>
+    <!-- Column 4: Contact -->
+    <div class="footer__text-right">
+      <p class="footer__style-5">info@nextgenscholars.asia</p>
+      <p class="footer__style-5">T: 400-806-1815</p>
+    </div>
+  </div>
+  <!-- Bottom bar -->
+  <div class="footer__grid-cols-065f">
+    <div class="footer__flex-gap">
+      <p class="connect-to-parents__style-1">粤ICP备2025400078号</p>
+      |
+      <p class="connect-to-parents__style-1">增值电信业务许可证：粤B2-20252299</p>
+    </div>
+    <div class="index__text-center-1307">
+      <p class="footer__style-6">
+        深圳市千瞳空间文化艺术有限公司版权所有 © 2025
+        <p>
+        </div>
+        <div class="footer__text-right">
+          <a href="{% url 'privacy' %}" class="footer__style-7">Privacy Policy</a> |
+          <a href="{% url 'terms' %}" class="footer__style-7">Terms of Service</a>
+        </div>
+      </div>
+    </footer>

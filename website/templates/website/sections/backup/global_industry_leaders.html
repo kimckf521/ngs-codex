@@ -1,97 +1,152 @@
 {% load static %}
-
-<section style="padding:60px 20px;background:#fff;width:100%;height:66vh;box-sizing:border-box;">
-    <div style="max-width:1180px;margin:auto;height:100%;display:flex;flex-direction:column;">
-
+<section style="padding:60px 20px;
+                background:#fff;
+                width:100%;
+                height:66vh;
+                box-sizing:border-box">
+  <div style="max-width:1180px;
+              margin:auto;
+              height:100%;
+              display:flex;
+              flex-direction:column">
     <!-- Title -->
-    <h2 style="text-align:center;font-size:32px;font-weight:900;margin:0 0 16px;">
-        Global Industry Leaders
-    </h2>
-
+    <h2 style="text-align:center;
+               font-size:32px;
+               font-weight:900;
+               margin:0 0 16px">Global Industry Leaders</h2>
     <!-- Two-column layout -->
-    <div style="
-        flex:1;                     /* fill remaining height */
-        min-height:0;               /* allow children to shrink inside 66vh */
-        display:grid;
-        grid-template-columns:1.2fr 0.8fr;
-        gap:20px; align-items:stretch;">
-
-        <!-- Left: Carousel (image resized to fit) -->
-        <div id="carouselleaders" class="carousel slide" style="position:relative;height:100%;overflow:hidden;">
+    <div style="flex:1;
+                /* fill remaining height */ min-height:0;
+                /* allow children to shrink inside 66vh */ display:grid;
+                grid-template-columns:1.2fr 0.8fr;
+                gap:20px;
+                align-items:stretch">
+      <!-- Left: Carousel (image resized to fit) -->
+      <div id="carouselleaders"
+           class="carousel slide"
+           style="position:relative;
+                  height:100%;
+                  overflow:hidden">
         <div class="carousel-inner" style="height:100%;">
-            <div class="carousel-item active" style="height:100%;">
-            <img src="{% static 'img/inspires/leader1.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/inspires/leader2.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/inspires/leader3.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/inspires/leader4.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/inspires/leader5.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/inspires/leader6.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/inspires/leader7.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
-            <div class="carousel-item" style="height:100%;">
-            <img src="{% static 'img/inspires/leader8.jpg' %}" alt=""
-                style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;">
-            </div>
+          <div class="carousel-item active" style="height:100%;">
+            <img src="{% static 'img/inspires/leader1.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
+          <div class="carousel-item" style="height:100%;">
+            <img src="{% static 'img/inspires/leader2.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
+          <div class="carousel-item" style="height:100%;">
+            <img src="{% static 'img/inspires/leader3.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
+          <div class="carousel-item" style="height:100%;">
+            <img src="{% static 'img/inspires/leader4.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
+          <div class="carousel-item" style="height:100%;">
+            <img src="{% static 'img/inspires/leader5.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
+          <div class="carousel-item" style="height:100%;">
+            <img src="{% static 'img/inspires/leader6.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
+          <div class="carousel-item" style="height:100%;">
+            <img src="{% static 'img/inspires/leader7.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
+          <div class="carousel-item" style="height:100%;">
+            <img src="{% static 'img/inspires/leader8.jpg' %}"
+                 alt=""
+                 style="display:block;
+                        width:100%;
+                        height:100%;
+                        object-fit:cover;
+                        border-radius:8px">
+          </div>
         </div>
-
         <!-- Controls overlay (don’t affect height) -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselleaders" data-bs-slide="prev"
-                style="position:absolute;top:50%;transform:translateY(-50%);">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselleaders"
+                data-bs-slide="prev"
+                style="position:absolute;
+                       top:50%;
+                       transform:translateY(-50%)">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselleaders" data-bs-slide="next"
-                style="position:absolute;top:50%;transform:translateY(-50%);">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselleaders"
+                data-bs-slide="next"
+                style="position:absolute;
+                       top:50%;
+                       transform:translateY(-50%)">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
-        </div>
-
-        <!-- Right: Text (centered in column) -->
-        <div style="
-        display:flex; 
-        align-items:center; 
-        justify-content:center; 
-        height:100%;"> <!-- parent column is full height -->
-
-        <div style="
-            background:linear-gradient(135deg,#ff512f,#f09819);
-            color:#fff;
-            padding:24px;
-            border-radius:12px;
-            font-size:15px;
-            line-height:1.7;
-            width:100%; 
-            max-width:420px;   /* optional: keeps it from stretching too wide */
-            box-sizing:border-box;
-            display:flex;align-items:center;justify-content:center;">
-            
-            <p style="margin:0;text-align:center;">
-            <strong>Empower</strong> students and schools to achieve greater heights by fostering 
+      </div>
+      <!-- Right: Text (centered in column) -->
+      <div style="display:flex;
+                  align-items:center;
+                  justify-content:center;
+                  height:100%">
+        <!-- parent column is full height -->
+        <div style="background:linear-gradient(135deg,#ff512f,#f09819);
+                    color:#fff;
+                    padding:24px;
+                    border-radius:12px;
+                    font-size:15px;
+                    line-height:1.7;
+                    width:100%;
+                    max-width:420px;
+                    /* optional: keeps it from stretching too wide */ box-sizing:border-box;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center">
+          <p style="margin:0;text-align:center;">
+            <strong>Empower</strong> students and schools to achieve greater heights by fostering
             connections, offering bespoke learning opportunities, and cultivating a global perspective.
-            </p>
+          </p>
         </div>
-        </div>
-
+      </div>
     </div>
-    </div>
+  </div>
 </section>

@@ -1,50 +1,61 @@
 {% load static %}
-
-
-
 {% comment %} connect_to_schools.html {% endcomment %}
 <section class="connect-to-schools__bg-white">
-<div class="connect-to-parents__flex-col">
-<!-- Title -->
-<h2 class="section_title connect-to-parents__text-center">
-        连接学校
-    </h2>
-<!-- Two-column layout -->
-<div class="connect-to-parents__grid-cols">
-<!-- Left: Carousel (image resized to fit) -->
-<div class="carousel slide connect-to-parents__relative" id="carouselschools">
-<div class="carousel-inner index__style-9">
-<div class="carousel-item active index__style-9">
-<img alt="" src="{% static 'img/connects/school1.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'img/connects/school2.png' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'img/connects/school3.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'img/connects/school4.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-</div>
-<!-- Controls overlay (don’t affect height) -->
-<button class="carousel-control-prev connect-to-parents__absolute" data-bs-slide="prev" data-bs-target="#carouselschools" type="button">
-<span aria-hidden="true" class="carousel-control-prev-icon"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next connect-to-parents__absolute" data-bs-slide="next" data-bs-target="#carouselschools" type="button">
-<span aria-hidden="true" class="carousel-control-next-icon"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<!-- Right: Text (centered in column) -->
-<div class="connect-to-parents__flex-center"> <!-- parent column is full height -->
-<div class="connect-to-schools__flex-center">
-<p class="section_paragraph connect-to-schools__text-center">
-  <strong>赋能</strong> 学生与学校，通过建立联系、提供定制化学习机会，并培养全球视野，帮助他们迈向更高成就。
-</p>
-</div>
-</div>
-</div>
-</div>
+  <div class="connect-to-parents__flex-col">
+    <!-- Title -->
+    <h2 class="section_title connect-to-parents__text-center">连接学校</h2>
+    <!-- Two-column layout -->
+    <div class="connect-to-parents__grid-cols">
+      <!-- Left: Carousel (image resized to fit) -->
+      <div class="carousel slide connect-to-parents__relative"
+           id="carouselschools">
+        <div class="carousel-inner index__style-9">
+          <div class="carousel-item active index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/school1.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/school2.png' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/school3.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/school4.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+        </div>
+        <!-- Controls overlay (don’t affect height) -->
+        <button class="carousel-control-prev connect-to-parents__absolute"
+                data-bs-slide="prev"
+                data-bs-target="#carouselschools"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next connect-to-parents__absolute"
+                data-bs-slide="next"
+                data-bs-target="#carouselschools"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Right: Text (centered in column) -->
+      <div class="connect-to-parents__flex-center">
+        <!-- parent column is full height -->
+        <div class="connect-to-schools__flex-center">
+          <p class="section_paragraph connect-to-schools__text-center">
+            <strong>赋能</strong> 学生与学校，通过建立联系、提供定制化学习机会，并培养全球视野，帮助他们迈向更高成就。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

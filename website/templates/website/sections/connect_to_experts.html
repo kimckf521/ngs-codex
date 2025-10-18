@@ -1,51 +1,63 @@
 {% load static %}
-
-
-
 {% comment %} connect_to_experts.html {% endcomment %}
 <section class="connect-to-schools__bg-white">
-<div class="connect-to-parents__flex-col">
-<!-- Title -->
-<h2 class="section_title connect-to-parents__text-center">
-        Connect to Educational Experts
-    </h2>
-<!-- Two-column layout -->
-<div class="connect-to-parents__grid-cols">
-<!-- Left: Carousel (image resized to fit) -->
-<div class="carousel slide connect-to-parents__relative" id="carouselexperts">
-<div class="carousel-inner index__style-9">
-<div class="carousel-item active index__style-9">
-<img alt="" src="{% static 'img/connects/vanke.JPG' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'img/connects/expert.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'img/connects/expert2.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'img/connects/expert3.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-</div>
-<!-- Controls overlay (don’t affect height) -->
-<button class="carousel-control-prev connect-to-parents__absolute" data-bs-slide="prev" data-bs-target="#carouselexperts" type="button">
-<span aria-hidden="true" class="carousel-control-prev-icon"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next connect-to-parents__absolute" data-bs-slide="next" data-bs-target="#carouselexperts" type="button">
-<span aria-hidden="true" class="carousel-control-next-icon"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<!-- Right: Text (centered in column) -->
-<div class="connect-to-parents__flex-center"> <!-- parent column is full height -->
-<div class="connect-to-schools__flex-center">
-<p class="section_paragraph connect-to-schools__text-center">
-<strong>NGS Global Network of Educational Experts and Industry Leaders.</strong><br/>
+  <div class="connect-to-parents__flex-col">
+    <!-- Title -->
+    <h2 class="section_title connect-to-parents__text-center">Connect to Educational Experts</h2>
+    <!-- Two-column layout -->
+    <div class="connect-to-parents__grid-cols">
+      <!-- Left: Carousel (image resized to fit) -->
+      <div class="carousel slide connect-to-parents__relative"
+           id="carouselexperts">
+        <div class="carousel-inner index__style-9">
+          <div class="carousel-item active index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/vanke.JPG' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/expert.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/expert2.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/expert3.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+        </div>
+        <!-- Controls overlay (don’t affect height) -->
+        <button class="carousel-control-prev connect-to-parents__absolute"
+                data-bs-slide="prev"
+                data-bs-target="#carouselexperts"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next connect-to-parents__absolute"
+                data-bs-slide="next"
+                data-bs-target="#carouselexperts"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Right: Text (centered in column) -->
+      <div class="connect-to-parents__flex-center">
+        <!-- parent column is full height -->
+        <div class="connect-to-schools__flex-center">
+          <p class="section_paragraph connect-to-schools__text-center">
+            <strong>NGS Global Network of Educational Experts and Industry Leaders.</strong>
+            <br />
             Through our network, students and educators connect with thought leaders and practitioners in education and industry, enabling access to cutting-edge insights, mentorship, and global perspectives.
-            </p>
-</div>
-</div>
-</div>
-</div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

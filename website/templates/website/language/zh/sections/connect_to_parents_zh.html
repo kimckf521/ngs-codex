@@ -1,51 +1,62 @@
 {% load static %}
-
 {% comment %} connect_to_parents.html {% endcomment %}
-
-
 <section class="connect-to-parents__gradient-bg">
-<div class="connect-to-parents__flex-col">
-<!-- Title -->
-<h2 class="section_title connect-to-parents__text-center">
-        连接家长
-    </h2>
-<!-- Two-column layout -->
-<div class="connect-to-parents__grid-cols">
-<!-- Left: Carousel (image resized to fit) -->
-<div class="carousel slide connect-to-parents__relative" id="carouselparents">
-<div class="carousel-inner index__style-9">
-<div class="carousel-item active index__style-9">
-<img alt="" src="{% static 'img/connects/parent1.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'img/connects/parent2.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'iimg/connects/parent3.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-<div class="carousel-item index__style-9">
-<img alt="" src="{% static 'iimg/connects/parent4.jpg' %}" class="connect-to-parents__rounded"/>
-</div>
-</div>
-<!-- Controls overlay (don’t affect height) -->
-<button class="carousel-control-prev connect-to-parents__absolute" data-bs-slide="prev" data-bs-target="#carouselparents" type="button">
-<span aria-hidden="true" class="carousel-control-prev-icon"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next connect-to-parents__absolute" data-bs-slide="next" data-bs-target="#carouselparents" type="button">
-<span aria-hidden="true" class="carousel-control-next-icon"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<!-- Right: Text (centered in column) -->
-<div class="connect-to-parents__flex-center"> <!-- parent column is full height -->
-<div class="connect-to-parents__bg-white">
-<p class="section_paragraph connect-to-parents__style-1"><strong>NGS 全球家长网络</strong></p>
-<p class="section_paragraph connect-to-parents__style-2">
-  跨区域连接家庭，分享经验洞见，建立支持性社区，助力学生成功并强化学校合作。
-</p>
-</div>
-</div>
-</div>
-</div>
+  <div class="connect-to-parents__flex-col">
+    <!-- Title -->
+    <h2 class="section_title connect-to-parents__text-center">连接家长</h2>
+    <!-- Two-column layout -->
+    <div class="connect-to-parents__grid-cols">
+      <!-- Left: Carousel (image resized to fit) -->
+      <div class="carousel slide connect-to-parents__relative"
+           id="carouselparents">
+        <div class="carousel-inner index__style-9">
+          <div class="carousel-item active index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/parent1.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'img/connects/parent2.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'iimg/connects/parent3.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+          <div class="carousel-item index__style-9">
+            <img alt=""
+                 src="{% static 'iimg/connects/parent4.jpg' %}"
+                 class="connect-to-parents__rounded" />
+          </div>
+        </div>
+        <!-- Controls overlay (don’t affect height) -->
+        <button class="carousel-control-prev connect-to-parents__absolute"
+                data-bs-slide="prev"
+                data-bs-target="#carouselparents"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next connect-to-parents__absolute"
+                data-bs-slide="next"
+                data-bs-target="#carouselparents"
+                type="button">
+          <span aria-hidden="true" class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Right: Text (centered in column) -->
+      <div class="connect-to-parents__flex-center">
+        <!-- parent column is full height -->
+        <div class="connect-to-parents__bg-white">
+          <p class="section_paragraph connect-to-parents__style-1">
+            <strong>NGS 全球家长网络</strong>
+          </p>
+          <p class="section_paragraph connect-to-parents__style-2">跨区域连接家庭，分享经验洞见，建立支持性社区，助力学生成功并强化学校合作。</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

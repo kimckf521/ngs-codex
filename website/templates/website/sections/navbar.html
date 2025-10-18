@@ -1,69 +1,90 @@
 {% load static %}
-
 <header class="navbar__bg-dark">
   <div class="navwrap navbar__flex">
-
-      <!-- Logo on far left -->
-      <a class="logo navbar__style-1" href="{% url 'index' %}" id="logo">
-        <img src="{% static 'img/newlogo.png' %}" alt="logo" class="navbar__style-2">
-      </a>
-
-      <!-- Hamburger Menu Button (Mobile) -->
-      <button class="navbar__hamburger" id="mobile-menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <!-- Nav links in the middle -->
-      <nav id="site-nav" class="navbar__style-3">
-        <ul class="navbar__flex-gap">
-          <li class="navbar__dropdown">
-            <a href="{% url 'index' %}" class="navbar__style-4">Partner With NGS ▾</a>
-            <ul class="navbar__dropdown-menu">
-                <li><a href="{% url 'index' %}#founder">Founder Story</a></li>
-              <li><a href="{% url 'cclr_programs' %}">CCLR Program</a></li>
-              <li><a href="{% url 'hybrid_learning' %}">Hybrid Learning</a></li>
-              <li><a href="{% url 'dual_track_learning' %}">Dual-track Learning</a></li>
-              <li><a href="{% url 'online_diploma_program' %}">Online Diploma Program</a></li>
-            </ul>
-          </li>
-          <li class="navbar__dropdown">
-            <a href="{% url 'index' %}" class="navbar__style-4">Study With Us ▾</a>
-            <ul class="navbar__dropdown-menu">
-              <li><a href="{% url 'programs' %}">Programs</a></li>
-              <li><a href="{% url 'college_mentorship' %}">College Mentorship</a></li>
-              <li><a href="{% url 'highschool_mapping' %}">Highschool Mapping</a></li>
-              <li><a href="{% url 'faculty' %}">Faculty</a></li>
-            </ul>
-          </li>
-          <li><a href="{% url 'admissions' %}" class="navbar__style-4">Admissions</a></li>
-          <li class="navbar__dropdown">
-            <a href="{% url 'index' %}" class="navbar__style-4">Join NGS Community ▾</a>
-            <ul class="navbar__dropdown-menu">
-              <li><a href="{% url 'ngs_inspires' %}">NGS Inspires</a></li>
-              <li><a href="{% url 'ngs_connects' %}">NGS Connects</a></li>
-              <li><a href="{% url 'in_progress' %}">Membership SignIn</a></li>
-            </ul>
-          </li>
-          <li class="navbar__mobile-only"><a href="https://www.classin.com/login/" class="navbar__style-4">Log In</a></li>
-        </ul>
-      </nav>
-
-
-        <!-- Log In -->
-        <div class="navbar__flex-gap-4ce3">
-            <a href="{% url 'index_zh' %}" class="navbar__lang-btn">中</a>
-            <a href="https://www.classin.com/login/" class="navbar__login-btn">
-                Log In
-            </a>
-        </div>
-
+    <!-- Logo on far left -->
+    <a class="logo navbar__style-1" href="{% url 'index' %}" id="logo">
+      <img src="{% static 'img/newlogo.png' %}"
+           alt="logo"
+           class="navbar__style-2">
+    </a>
+    <!-- Hamburger Menu Button (Mobile) -->
+    <button class="navbar__hamburger"
+            id="mobile-menu-toggle"
+            aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <!-- Nav links in the middle -->
+    <nav id="site-nav" class="navbar__style-3">
+      <ul class="navbar__flex-gap">
+        <li class="navbar__dropdown">
+          <a href="{% url 'index' %}" class="navbar__style-4">Partner With NGS ▾</a>
+          <ul class="navbar__dropdown-menu">
+            <li>
+              <a href="{% url 'index' %}#founder">Founder Story</a>
+            </li>
+            <li>
+              <a href="{% url 'cclr_programs' %}">CCLR Program</a>
+            </li>
+            <li>
+              <a href="{% url 'hybrid_learning' %}">Hybrid Learning</a>
+            </li>
+            <li>
+              <a href="{% url 'dual_track_learning' %}">Dual-track Learning</a>
+            </li>
+            <li>
+              <a href="{% url 'online_diploma_program' %}">Online Diploma Program</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__dropdown">
+          <a href="{% url 'index' %}" class="navbar__style-4">Study With Us ▾</a>
+          <ul class="navbar__dropdown-menu">
+            <li>
+              <a href="{% url 'programs' %}">Programs</a>
+            </li>
+            <li>
+              <a href="{% url 'college_mentorship' %}">College Mentorship</a>
+            </li>
+            <li>
+              <a href="{% url 'highschool_mapping' %}">Highschool Mapping</a>
+            </li>
+            <li>
+              <a href="{% url 'faculty' %}">Faculty</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="{% url 'admissions' %}" class="navbar__style-4">Admissions</a>
+        </li>
+        <li class="navbar__dropdown">
+          <a href="{% url 'index' %}" class="navbar__style-4">Join NGS Community ▾</a>
+          <ul class="navbar__dropdown-menu">
+            <li>
+              <a href="{% url 'ngs_inspires' %}">NGS Inspires</a>
+            </li>
+            <li>
+              <a href="{% url 'ngs_connects' %}">NGS Connects</a>
+            </li>
+            <li>
+              <a href="{% url 'in_progress' %}">Membership SignIn</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__mobile-only">
+          <a href="https://www.classin.com/login/" class="navbar__style-4">Log In</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Log In -->
+    <div class="navbar__flex-gap-4ce3">
+      <a href="{% url 'index_zh' %}" class="navbar__lang-btn">中</a>
+      <a href="https://www.classin.com/login/" class="navbar__login-btn">Log In</a>
+    </div>
   </div>
 </header>
-
 <script src="{% static 'js/main.js' %}"></script>
-
 <script>
     // Mobile menu functionality
     document.addEventListener('DOMContentLoaded', function() {

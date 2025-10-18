@@ -1,53 +1,64 @@
 {% load static %}
-
 <!-- PARTNER WITH US -->
 <section class="partner-with-us"
-         style="
-           height:66vh;
-           padding:24px;
-           box-sizing:border-box;
-           background:linear-gradient(135deg,#dce9ff 0%,#f7f4ff 30%,#f8fff2 70%,#fffbdc 100%);
-           border-radius:16px;
-           display:flex; align-items:center; justify-content:center;">
-  
-  <div class="wrap" style="max-width:1280px; width:100%; height:100%; display:flex; flex-direction:column;">
-
+         style="height:66vh;
+                padding:24px;
+                box-sizing:border-box;
+                background:linear-gradient(135deg,#dce9ff 0%,#f7f4ff 30%,#f8fff2 70%,#fffbdc 100%);
+                border-radius:16px;
+                display:flex;
+                align-items:center;
+                justify-content:center">
+  <div class="wrap"
+       style="max-width:1280px;
+              width:100%;
+              height:100%;
+              display:flex;
+              flex-direction:column">
     <!-- Title -->
-    <h2 style="
-        margin:0 0 24px;
-        text-align:center;
-        font-size:56px;
-        font-weight:900;
-        line-height:1.1;
-        color:#111;">
-      Partner with Us
-    </h2>
-
+    <h2 style="margin:0 0 24px;
+               text-align:center;
+               font-size:56px;
+               font-weight:900;
+               line-height:1.1;
+               color:#111">Partner with Us</h2>
     <!-- Cards grid -->
-    <div style="
-        flex:1;
-        min-height:0;
-        display:grid;
-        grid-template-columns:repeat(4,1fr);
-        gap:26px;
-        align-items:stretch;">
-
+    <div style="flex:1;
+                min-height:0;
+                display:grid;
+                grid-template-columns:repeat(4,1fr);
+                gap:26px;
+                align-items:stretch">
       <!-- Card 1 -->
-      <a href="{% url 'cclr_programs' %}" style="text-decoration:none; color:inherit;">
-        <div style="
-            height:100%; box-sizing:border-box;
-            background:#fff;
-            border:1.5px solid rgba(0,0,0,.7);
-            border-radius:28px;
-            padding:60px 28px;          /* ✅ more top & bottom padding */
-            display:flex; flex-direction:column;">
-          <h3 style="margin:0 0 18px; font-size:24px; font-weight:900; color:#111; line-height:1.25;">
-            Career College<br>Life Readiness<br>Programme
+      <a href="{% url 'cclr_programs' %}"
+         style="text-decoration:none;
+                color:inherit">
+        <div style="height:100%;
+                    box-sizing:border-box;
+                    background:#fff;
+                    border:1.5px solid rgba(0,0,0,.7);
+                    border-radius:28px;
+                    padding:60px 28px;
+                    /* ✅ more top & bottom padding */ display:flex;
+                    flex-direction:column">
+          <h3 style="margin:0 0 18px;
+                     font-size:24px;
+                     font-weight:900;
+                     color:#111;
+                     line-height:1.25">
+            Career College
+            <br>
+            Life Readiness
+            <br>
+            Programme
           </h3>
-
           <div style="flex:1;"></div>
-
-          <ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.85; list-style:disc;">
+          <ul style="margin:0;
+                     padding-left:22px;
+                     color:#111;
+                     font-size:18px;
+                     line-height:1.85;
+                     list-style:disc">
             <li>Career Readiness</li>
             <li>College Readiness</li>
             <li>Life Readiness</li>
@@ -55,46 +66,68 @@
           </ul>
         </div>
       </a>
-
       <!-- Card 2 -->
-      <a href="{% url 'hybrid_learning' %}" style="text-decoration:none; color:inherit;">
-        <div style="
-            height:100%; box-sizing:border-box;
-            background:#fff;
-            border:1.5px solid rgba(0,0,0,.7);
-            border-radius:28px;
-            padding:60px 28px;          /* ✅ extra padding */
-            display:flex; flex-direction:column;">
-          <h3 style="margin:0 0 18px; font-size:24px; font-weight:900; color:#111; line-height:1.25;">
-            Partnership<br>Programmes
+      <a href="{% url 'hybrid_learning' %}"
+         style="text-decoration:none;
+                color:inherit">
+        <div style="height:100%;
+                    box-sizing:border-box;
+                    background:#fff;
+                    border:1.5px solid rgba(0,0,0,.7);
+                    border-radius:28px;
+                    padding:60px 28px;
+                    /* ✅ extra padding */ display:flex;
+                    flex-direction:column">
+          <h3 style="margin:0 0 18px;
+                     font-size:24px;
+                     font-weight:900;
+                     color:#111;
+                     line-height:1.25">
+            Partnership
+            <br>
+            Programmes
           </h3>
-
           <div style="flex:1;"></div>
-
-          <ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.85; list-style:disc;">
+          <ul style="margin:0;
+                     padding-left:22px;
+                     color:#111;
+                     font-size:18px;
+                     line-height:1.85;
+                     list-style:disc">
             <li>Hybrid Program</li>
             <li>Dual-track Program</li>
             <li>Online Diploma Program</li>
           </ul>
         </div>
       </a>
-
       <!-- Card 3 -->
-      <a href="{% url 'ngs_inspires' %}" style="text-decoration:none; color:inherit;">
-        <div style="
-            height:100%; box-sizing:border-box;
-            background:#fff;
-            border:1.5px solid rgba(0,0,0,.7);
-            border-radius:28px;
-            padding:60px 28px;          /* ✅ extra padding */
-            display:flex; flex-direction:column;">
-          <h3 style="margin:0 0 18px; font-size:24px; font-weight:900; color:#111; line-height:1.25;">
-            NextGen<br>Inspires
+      <a href="{% url 'ngs_inspires' %}"
+         style="text-decoration:none;
+                color:inherit">
+        <div style="height:100%;
+                    box-sizing:border-box;
+                    background:#fff;
+                    border:1.5px solid rgba(0,0,0,.7);
+                    border-radius:28px;
+                    padding:60px 28px;
+                    /* ✅ extra padding */ display:flex;
+                    flex-direction:column">
+          <h3 style="margin:0 0 18px;
+                     font-size:24px;
+                     font-weight:900;
+                     color:#111;
+                     line-height:1.25">
+            NextGen
+            <br>
+            Inspires
           </h3>
-
           <div style="flex:1;"></div>
-
-          <ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.85; list-style:disc;">
+          <ul style="margin:0;
+                     padding-left:22px;
+                     color:#111;
+                     font-size:18px;
+                     line-height:1.85;
+                     list-style:disc">
             <li>Global Industry Leaders</li>
             <li>Global Universities</li>
             <li>SPARK LAB</li>
@@ -102,23 +135,34 @@
           </ul>
         </div>
       </a>
-
       <!-- Card 4 -->
-      <a href="{% url 'ngs_connects' %}" style="text-decoration:none; color:inherit;">
-        <div style="
-            height:100%; box-sizing:border-box;
-            background:#fff;
-            border:1.5px solid rgba(0,0,0,.7);
-            border-radius:28px;
-            padding:60px 28px;          /* ✅ extra padding */
-            display:flex; flex-direction:column;">
-          <h3 style="margin:0 0 18px; font-size:24px; font-weight:900; color:#111; line-height:1.25;">
-            NextGen<br>Connects
+      <a href="{% url 'ngs_connects' %}"
+         style="text-decoration:none;
+                color:inherit">
+        <div style="height:100%;
+                    box-sizing:border-box;
+                    background:#fff;
+                    border:1.5px solid rgba(0,0,0,.7);
+                    border-radius:28px;
+                    padding:60px 28px;
+                    /* ✅ extra padding */ display:flex;
+                    flex-direction:column">
+          <h3 style="margin:0 0 18px;
+                     font-size:24px;
+                     font-weight:900;
+                     color:#111;
+                     line-height:1.25">
+            NextGen
+            <br>
+            Connects
           </h3>
-
           <div style="flex:1;"></div>
-
-          <ul style="margin:0; padding-left:22px; color:#111; font-size:18px; line-height:1.85; list-style:disc;">
+          <ul style="margin:0;
+                     padding-left:22px;
+                     color:#111;
+                     font-size:18px;
+                     line-height:1.85;
+                     list-style:disc">
             <li>School Visits</li>
             <li>School Reports</li>
             <li>Growth Mapping</li>
@@ -126,7 +170,6 @@
           </ul>
         </div>
       </a>
-
     </div>
   </div>
 </section>

@@ -1,10 +1,9 @@
 {% load static %}
-
 <!-- Language Switch Button -->
 <div class="language-button__pill">
-    {% if request.LANGUAGE_CODE == "en" %}
-        <a href="/zh{{ request.path|slice:'3:' }}" class="navbar__style-4">中文</a>
-    {% else %}
-        <a href="/en{{ request.path|slice:'3:' }}" class="navbar__style-4">English</a>
-    {% endif %}
+  {% if request.LANGUAGE_CODE == "en" %}
+    <a href="/zh{{ request.path|slice:'3:' }}" class="navbar__style-4">中文</a>
+  {% else %}
+    <a href="/en{{ request.path|slice:'3:' }}" class="navbar__style-4">English</a>
+  {% endif %}
 </div>

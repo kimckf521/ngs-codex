@@ -1,66 +1,72 @@
 {% load static %}
-
 <section class="index__section">
-    <div class="ngs-enquiry index__grid-cols-452f"> <!-- ✅ grid fills 66vh -->
-
+  <div class="ngs-enquiry index__grid-cols-452f">
+    <!-- ✅ grid fills 66vh -->
     <!-- Left: Image -->
     <div class="index__style-9">
-        <img src="{% static 'img/studying.jpg' %}"
-            alt="线上会议"
-            class="index__rounded">
+      <img src="{% static 'img/studying.jpg' %}"
+           alt="线上会议"
+           class="index__rounded">
     </div>
-
     <!-- Right: Form -->
     {% include "website/messages.html" %}
-
-    <form class="ngs-form index__flex-col-621c" method="POST" action="{% url 'partner_with_us' %}"> <!-- ✅ form fills 66vh -->
-        {% csrf_token %}
-
-        <!-- Title bar -->
-        <div class="index__bg-dark">
-        想要与 NGS 合作
-        </div>
-
-        <!-- Fields -->
-        <div class="index__grid">
+    <form class="ngs-form index__flex-col-621c"
+          method="POST"
+          action="{% url 'partner_with_us' %}">
+      <!-- ✅ form fills 66vh -->
+      {% csrf_token %}
+      <!-- Title bar -->
+      <div class="index__bg-dark">想要与 NGS 合作</div>
+      <!-- Fields -->
+      <div class="index__grid">
         <div>
-            <label class="index__style-10">姓名</label>
-            <input type="text" name="name" id="id_name" required placeholder="请输入您的姓名"
-                class="index__rounded-7873">
+          <label class="index__style-10">姓名</label>
+          <input type="text"
+                 name="name"
+                 id="id_name"
+                 required
+                 placeholder="请输入您的姓名"
+                 class="index__rounded-7873">
         </div>
-
         <div>
-            <label class="index__style-10">学校 / 机构</label>
-            <input type="text" name="school_name" id="id_school" required placeholder="学校 / 机构名称"
-                class="index__rounded-7873">
+          <label class="index__style-10">学校 / 机构</label>
+          <input type="text"
+                 name="school_name"
+                 id="id_school"
+                 required
+                 placeholder="学校 / 机构名称"
+                 class="index__rounded-7873">
         </div>
-
         <div>
-            <label class="index__style-10">邮箱</label>
-            <input type="email" name="email" id="id_email" required placeholder="you@example.com"
-                class="index__rounded-7873">
+          <label class="index__style-10">邮箱</label>
+          <input type="email"
+                 name="email"
+                 id="id_email"
+                 required
+                 placeholder="you@example.com"
+                 class="index__rounded-7873">
         </div>
-
         <div>
-            <label class="index__style-10">手机 / 微信</label>
-            <input type="text"  name="mobile_or_wechat" id="id_mobile_or_wechat" placeholder="+61 … / 您的微信号"
-                class="index__rounded-7873">
+          <label class="index__style-10">手机 / 微信</label>
+          <input type="text"
+                 name="mobile_or_wechat"
+                 id="id_mobile_or_wechat"
+                 placeholder="+61 … / 您的微信号"
+                 class="index__rounded-7873">
         </div>
-
         <div class="index__flex-col-d481">
-            <label class="index__style-10">咨询内容</label>
-            <textarea rows="5" name="help_description" id="id_help_description" placeholder="请简单描述您的目标…"
+          <label class="index__style-10">咨询内容</label>
+          <textarea rows="5"
+                    name="help_description"
+                    id="id_help_description"
+                    placeholder="请简单描述您的目标…"
                     class="index__rounded-f54a"></textarea>
         </div>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="index__style-11">
-        <button type="submit"
-                class="index__bg-dark-d1b8">
-            提交
-        </button>
-        </div>
+      </div>
+      <!-- Submit Button -->
+      <div class="index__style-11">
+        <button type="submit" class="index__bg-dark-d1b8">提交</button>
+      </div>
     </form>
-    </div>
+  </div>
 </section>

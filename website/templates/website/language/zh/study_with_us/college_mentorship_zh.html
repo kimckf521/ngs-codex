@@ -1,47 +1,31 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include "website/language/zh/sections/head_zh.html" %}
-  </head>
-
+  <head>{% include "website/language/zh/sections/head_zh.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/language/zh/sections/navbar_zh.html" %}
-
     <!-- HERO -->
     <section class="hero">
-        <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
+      <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
     </section>
-
     <!-- NGS COLLEGE COUNSELING TEAM -->
     {% include "website/language/zh/sections/college_counseling_zh.html" %}
-
     <!-- NGS COLLEGE MENTORSHIP PROGRAM -->
     {% include "website/language/zh/sections/mentorship_zh.html" %}
-
     <!-- GLOBAL APPLICATION -->
     {% include "website/language/zh/sections/global_application_zh.html" %}
-
     <!-- GLOBAL COMMUNITY -->
     {% include "website/language/zh/sections/global_community_zh.html" %}
-
     <!-- INSPIRES -->
     {% include "website/language/zh/sections/inspires_zh.html" %}
-
     <!-- Social Media-->
     {% include "website/language/zh/sections/media_zh.html" %}
-
     <!-- Customer Service Button -->
     {% include "website/language/zh/sections/customer_service_zh.html" %}
-
     <!-- Footer -->
     {% include "website/language/zh/sections/footer_zh.html" %}
-
     <!-- JavaScript -->
-     <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

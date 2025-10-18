@@ -1,30 +1,16 @@
 {% load static %}
-
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    {% include "website/language/zh/sections/head_zh.html" %}
-  </head>
-
+  <head>{% include "website/language/zh/sections/head_zh.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/language/zh/sections/navbar_zh.html" %}
-
     <!-- 服务条款 -->
     <div class="p-6 bg-white rounded-lg overflow-y-auto">
       <h2 class="text-3xl font-bold mb-6 text-center">服务协议</h2>
-
-      <p class="mb-4 text-center">
-        双方本着自愿、平等、诚信的原则，委托 NextGenScholars 提供线上教学服务。
-      </p>
-
+      <p class="mb-4 text-center">双方本着自愿、平等、诚信的原则，委托 NextGenScholars 提供线上教学服务。</p>
       <h3 class="text-2xl font-semibold mb-2">服务费用和付款方式</h3>
-      <p class="mb-4">
-        服务费用以委托人在 nextgenscholars.asia 网站（以下简称 “NGS”）选购的课程包为准。委托人身份联系方式以付款时留下的邮箱地址为准。
-      </p>
-
+      <p class="mb-4">服务费用以委托人在 nextgenscholars.asia 网站（以下简称 “NGS”）选购的课程包为准。委托人身份联系方式以付款时留下的邮箱地址为准。</p>
       <h3 class="text-2xl font-semibold mb-2">委托人权利义务</h3>
       <ul class="list-disc pl-6 mb-4 space-y-1">
         <li>委托人及学员有权根据本合同及双方约定的时间表获得相应课程及配套服务。</li>
@@ -37,7 +23,6 @@
         <li>委托人及学员不得向 NGS 及其服务人员提出违反学术诚信的要求。</li>
         <li>委托人及学员应对本协议内容、知识产权、服务内容、数据、课程资料、报告、其他文件及 NGS 服务人员个人信息等严格保密。</li>
       </ul>
-
       <h3 class="text-2xl font-semibold mb-2">NGS 的权利与义务</h3>
       <ul class="list-disc pl-6 mb-4 space-y-1">
         <li>NGS 按时、按质、勤勉、尽责地履行本协议约定服务。</li>
@@ -48,7 +33,6 @@
         <li>辅导课程的知识产权及其他权益归 NGS 所有。未经授权，不得复制、翻录、共享、牟利或从事其他侵权活动。</li>
         <li>服务期间，非 NGS 主观意图造成的任何人身或财务损失、损害或伤害，NGS 不承担相关责任。</li>
       </ul>
-
       <h3 class="text-2xl font-semibold mb-2">退费政策</h3>
       <ul class="list-disc pl-6 mb-4 space-y-1">
         <li>课程开始前提出退费或解约的，委托人有权要求全额退费；NGS 在收到书面申请后 15 个工作日内原路径退款，退款完成后协议终止。</li>
@@ -65,7 +49,6 @@
         </li>
         <li>退费上限为委托人已支付的服务费（不含利息）；NGS 有权扣除交易合理税费及向第三方已缴费用（如学习账户使用费等）。</li>
       </ul>
-
       <h3 class="text-2xl font-semibold mb-2">违约责任</h3>
       <ul class="list-disc pl-6 mb-4 space-y-1">
         <li>任一方违约导致合同无法继续履行的，守约方有权解除并要求违约方承担相应责任。</li>
@@ -84,7 +67,6 @@
           </ol>
         </li>
       </ul>
-
       <h3 class="text-2xl font-semibold mb-2">生效及其他</h3>
       <ul class="list-disc pl-6 mb-4 space-y-1">
         <li>本协议于委托人付款时成立生效；课时有效期为 365 天。</li>
@@ -94,18 +76,13 @@
         <li>本电子协议一式两份，双方各执一份，具有同等法律效力。</li>
       </ul>
     </div>
-
     <!-- Social Media-->
     {% include "website/language/zh/sections/media_zh.html" %}
-
     <!-- Customer Service Button -->
     {% include "website/language/zh/sections/customer_service_zh.html" %}
-
     <!-- Footer -->
     {% include "website/language/zh/sections/footer_zh.html" %}
-
     <!-- JavaScript -->
-     <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

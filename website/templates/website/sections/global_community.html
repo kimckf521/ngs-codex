@@ -1,29 +1,32 @@
 {% load static %}
-
 <!-- NEXTGEN GLOBAL COMMUNITY (2 columns, exact 66vh) -->
 <section class="global-community__flex">
-<div class="global-community__grid-cols">
-<!-- LEFT COLUMN: Title + Map + Locations -->
-<div class="global-community__grid">
-<!-- Title -->
-<h2 class="section_title global-community__text-center">
-        NextGen Global Community
-      </h2>
-<!-- Map (fills available space, never overflows) -->
-<div class="global-community__flex-0260">
-<img alt="World Map" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" class="global-community__style-1"/> <!-- white map -->
-</div>
-<!-- Locations -->
-<p class="section_paragraph global-community__text-center-9d48">
-        San Francisco · Melbourne<br/>
+  <div class="global-community__grid-cols">
+    <!-- LEFT COLUMN: Title + Map + Locations -->
+    <div class="global-community__grid">
+      <!-- Title -->
+      <h2 class="section_title global-community__text-center">NextGen Global Community</h2>
+      <!-- Map (fills available space, never overflows) -->
+      <div class="global-community__flex-0260">
+        <img alt="World Map"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png"
+             class="global-community__style-1" />
+        <!-- white map -->
+      </div>
+      <!-- Locations -->
+      <p class="section_paragraph global-community__text-center-9d48">
+        San Francisco · Melbourne
+        <br />
         Hong Kong · Taiwan · Greater Bay Area China
       </p>
-</div>
-<!-- RIGHT COLUMN: Image -->
-<div class="global-community__flex-center">
-<img alt="NGS Global Community" src="{% static 'img/harvard.png' %}" class="global-community__rounded"/>
-</div>
-</div>
+    </div>
+    <!-- RIGHT COLUMN: Image -->
+    <div class="global-community__flex-center">
+      <img alt="NGS Global Community"
+           src="{% static 'img/harvard.png' %}"
+           class="global-community__rounded" />
+    </div>
+  </div>
 </section>
 <!-- NEXTGEN GLOBAL COMMUNITY (66vh exact) -->
 {% comment %} <section class="global-community__flex-2440">
@@ -32,21 +35,21 @@
 <div class="global-community__grid-fbe9">
 <!-- Title (kept compact so it never overflows) -->
 <h2 class="section_title global-community__style-2">
-        NextGen Global<br/>Community
+        NextGen Global<br />Community
       </h2>
 <!-- Map area (fills available space) -->
 <div class="global-community__flex-center-1f82">
-<img alt="World Map" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" class="global-community__rounded-1394"/>
+<img alt="World Map" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" class="global-community__rounded-1394" />
 </div>
 <!-- Caption -->
 <p class="section_paragraph global-community__style-3">
-        San Francisco · Melbourne<br/>
+        San Francisco · Melbourne<br />
         Hong Kong · Taiwan · Greater Bay Area China
       </p>
 </div>
 <!-- Right: Photo (fills remaining space) -->
 <div class="global-community__flex-center">
-<img alt="NGS Global Community" src="{% static 'img/Harvard.jpg' %}" class="global-community__rounded-d2d9"/>
+<img alt="NGS Global Community" src="{% static 'img/Harvard.jpg' %}" class="global-community__rounded-d2d9" />
 </div>
 </div>
 </section> {% endcomment %}

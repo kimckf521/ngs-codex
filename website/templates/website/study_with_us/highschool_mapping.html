@@ -1,47 +1,32 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include "website/sections/head.html" %}
-  </head>
-
+  <head>{% include "website/sections/head.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/sections/navbar.html" %}
-
     <!-- HERO -->
     <section class="hero">
-    <img src="{% static 'img/NGSConnects.jpg' %}" alt="Graduates throwing caps">
+      <img src="{% static 'img/NGSConnects.jpg' %}"
+           alt="Graduates throwing caps">
     </section>
-
     <!-- NGS K-12 SCHOOL SPECIALISTS -->
     {% include "website/sections/k12_school.html" %}
-
     <!-- NGS HIGH-SCHOOL MAPPING PROGRAM -->
     {% include "website/sections/highschool_mapping_program.html" %}
-
     <!-- HIGH-SCHOOL MAPPING -->
     {% include "website/sections/highschool_mapping_sections.html" %}
-
     <!-- GLOBAL COMMUNITY -->
     {% include "website/sections/global_community.html" %}
-
     <!-- NEXTGEN INSPIRES -->
     {% include "website/sections/inspires.html" %}
-
     <!-- Social Media-->
     {% include "website/sections/media.html" %}
-
     <!-- Customer Service Button -->
     {% include "website/sections/customer_service.html" %}
-
     <!-- Footer -->
     {% include "website/sections/footer.html" %}
-
     <!-- JavaScript -->
-     <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

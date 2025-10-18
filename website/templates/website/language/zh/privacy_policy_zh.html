@@ -1,63 +1,42 @@
 {% load static %}
-
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    {% include "website/language/zh/sections/head_zh.html" %}
-  </head>
-
+  <head>{% include "website/language/zh/sections/head_zh.html" %}</head>
   <body class="font-sans text-gray-800 antialiased bg-gray-50">
-    
     <!-- Header with Navigation -->
     {% include "website/language/zh/sections/navbar_zh.html" %}
-
     <!-- Privacy -->
     <div class="p-6 bg-white rounded-lg overflow-y-auto">
-        <h2 class="text-3xl font-bold mb-6 text-center">隐私政策</h2>
-
-        <p class="mb-4">生效日期：2015年5月1日</p>
-
-        <h3 class="text-2xl font-semibold mb-2">1. 我们收集的信息</h3>
-        <p class="mb-4">我们会收集您主动提供的个人信息（例如：姓名、电子邮箱地址），以及您使用我们网站时自动收集的技术信息（例如：IP地址、浏览器类型）。</p>
-
-        <h3 class="text-2xl font-semibold mb-2">2. 我们如何使用您的信息</h3>
-        <p class="mb-4">我们使用您的信息来提供和改进我们的服务，与您进行沟通，并在您选择订阅的情况下向您发送更新或推广内容。</p>
-
-        <h3 class="text-2xl font-semibold mb-2">3. 信息的共享</h3>
-        <p class="mb-4">我们不会出售或交换您的信息。我们可能会与值得信赖的合作伙伴共享信息，以帮助我们运营服务，或在法律要求的情况下披露您的信息。</p>
-
-        <h3 class="text-2xl font-semibold mb-2">4. 数据安全</h3>
-        <p class="mb-4">我们采取技术和管理措施，以防止您的个人信息被未经授权访问或泄露。</p>
-
-        <h3 class="text-2xl font-semibold mb-2">5. 您的权利</h3>
-        <p class="mb-4">您有权访问、更正或删除您的个人数据，也可以随时选择退出接收我们的营销通讯。</p>
-
-        <h3 class="text-2xl font-semibold mb-2">6. 第三方链接</h3>
-        <p class="mb-4">我们的网站可能包含指向其他网站的链接，我们不对这些网站的隐私做法负责。</p>
-
-        <h3 class="text-2xl font-semibold mb-2">7. 政策的变更</h3>
-        <p class="mb-4">我们可能会不时更新本隐私政策，并会通过更新本页面的方式通知您变更。</p>
-
-        <h3 class="text-2xl font-semibold mb-2">8. 联系我们</h3>
-        <p>如您有任何问题，请通过以下方式联系我们：
-            <a href="mailto:admission@nextgenscholars.asia" class="text-blue-600 hover:underline">
-                admission@nextgenscholars.asia
-            </a>
-        </p>
+      <h2 class="text-3xl font-bold mb-6 text-center">隐私政策</h2>
+      <p class="mb-4">生效日期：2015年5月1日</p>
+      <h3 class="text-2xl font-semibold mb-2">1. 我们收集的信息</h3>
+      <p class="mb-4">我们会收集您主动提供的个人信息（例如：姓名、电子邮箱地址），以及您使用我们网站时自动收集的技术信息（例如：IP地址、浏览器类型）。</p>
+      <h3 class="text-2xl font-semibold mb-2">2. 我们如何使用您的信息</h3>
+      <p class="mb-4">我们使用您的信息来提供和改进我们的服务，与您进行沟通，并在您选择订阅的情况下向您发送更新或推广内容。</p>
+      <h3 class="text-2xl font-semibold mb-2">3. 信息的共享</h3>
+      <p class="mb-4">我们不会出售或交换您的信息。我们可能会与值得信赖的合作伙伴共享信息，以帮助我们运营服务，或在法律要求的情况下披露您的信息。</p>
+      <h3 class="text-2xl font-semibold mb-2">4. 数据安全</h3>
+      <p class="mb-4">我们采取技术和管理措施，以防止您的个人信息被未经授权访问或泄露。</p>
+      <h3 class="text-2xl font-semibold mb-2">5. 您的权利</h3>
+      <p class="mb-4">您有权访问、更正或删除您的个人数据，也可以随时选择退出接收我们的营销通讯。</p>
+      <h3 class="text-2xl font-semibold mb-2">6. 第三方链接</h3>
+      <p class="mb-4">我们的网站可能包含指向其他网站的链接，我们不对这些网站的隐私做法负责。</p>
+      <h3 class="text-2xl font-semibold mb-2">7. 政策的变更</h3>
+      <p class="mb-4">我们可能会不时更新本隐私政策，并会通过更新本页面的方式通知您变更。</p>
+      <h3 class="text-2xl font-semibold mb-2">8. 联系我们</h3>
+      <p>
+        如您有任何问题，请通过以下方式联系我们：
+        <a href="mailto:admission@nextgenscholars.asia"
+           class="text-blue-600 hover:underline">admission@nextgenscholars.asia</a>
+      </p>
     </div>
-
     <!-- Social Media-->
     {% include "website/language/zh/sections/media_zh.html" %}
-
     <!-- Customer Service Button -->
     {% include "website/language/zh/sections/customer_service_zh.html" %}
-
     <!-- Footer -->
     {% include "website/language/zh/sections/footer_zh.html" %}
-
     <!-- JavaScript -->
-     <script src="{% static 'js/main.js' %}"></script>
-
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>
