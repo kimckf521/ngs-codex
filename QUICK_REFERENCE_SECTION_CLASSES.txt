@@ -1,0 +1,149 @@
+================================================================================
+QUICK REFERENCE: MAIN CONTENT SECTION CLASSES
+================================================================================
+For applying max-height: 600px to laptop (≥1024px) and tablet (768-1023px)
+
+================================================================================
+TOP 20 PRIMARY WRAPPER CLASSES (APPLY MAX-HEIGHT HERE FIRST)
+================================================================================
+
+1.  .form-dual-track__section         - Form section wrapper
+2.  .form-hybrid__section              - Hybrid form section
+3.  .index__section                    - Homepage/landing section
+4.  .media__section                    - Media/gallery section
+5.  .our-programs__section             - Programs showcase section
+6.  .addmissions-requirement__bg-white - Requirements (white bg)
+7.  .comprehensive__bg-dark            - Comprehensive program (dark)
+8.  .connect-to-parents__bg-white      - Parent connection (white)
+9.  .connect-to-schools__bg-white      - School connection (white)
+10. .global-universities__bg-white     - Global universities (white)
+11. .index__bg-dark                    - Index section (dark)
+12. .intro-connects__bg-white          - Intro connects (white)
+13. .media__bg-white                   - Media section (white)
+14. .mentorship__bg-white              - Mentorship (white)
+15. .progress__bg-dark                 - Progress (dark)
+16. .progress__bg-white                - Progress (white)
+17. .study-with-us-faculty__bg-white   - Faculty section (white)
+18. .our-programs__full-size           - Full-size programs
+19. .partner-with-us-cclr-programs__full-size - CCLR programs
+20. .program-options__full-size        - Program options
+
+================================================================================
+SECONDARY PRIORITY FLEX WRAPPERS (NESTED CONTAINERS)
+================================================================================
+
+Layout containers within the primary sections:
+
+.addmissions-plans__flex
+.comprehensive__flex-center
+.comprehensive__flex-col
+.connects-cards__flex-col
+.form-hybrid__flex-col
+.global-application__flex-center
+.global-application__flex-col
+.inspires__flex
+.inspires__flex-col
+.intro-connects__flex-col
+.intro-hybrid__flex
+.intro-hybrid__flex-center
+.intro-hybrid__flex-col
+.k12-school__flex-center
+.k12-school__flex-col
+.media__flex-center
+.media__flex-col
+.mentorship__flex-center
+.mentorship__flex-col
+.partner-with-us__flex-center
+.partner-with-us__flex-col
+.program-options__flex
+.program-options__flex-col
+.programmes__flex-center
+.programmes__flex-col
+.student-reviews__flex-center
+.student-reviews__flex-col
+.take-charge__flex-center
+
+================================================================================
+CSS MEDIA QUERY TEMPLATE
+================================================================================
+
+@media (min-width: 1024px) {
+  /* Laptop - 1024px and above */
+  .form-dual-track__section,
+  .form-hybrid__section,
+  .index__section,
+  .media__section,
+  .our-programs__section,
+  .addmissions-requirement__bg-white,
+  .comprehensive__bg-dark,
+  .connect-to-parents__bg-white,
+  .connect-to-schools__bg-white,
+  .global-universities__bg-white,
+  .index__bg-dark,
+  .intro-connects__bg-white,
+  .media__bg-white,
+  .mentorship__bg-white,
+  .progress__bg-dark,
+  .progress__bg-white,
+  .study-with-us-faculty__bg-white,
+  .our-programs__full-size,
+  .partner-with-us-cclr-programs__full-size,
+  .program-options__full-size {
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  /* Tablet - 768px to 1023px */
+  .form-dual-track__section,
+  .form-hybrid__section,
+  .index__section,
+  .media__section,
+  .our-programs__section,
+  .addmissions-requirement__bg-white,
+  .comprehensive__bg-dark,
+  .connect-to-parents__bg-white,
+  .connect-to-schools__bg-white,
+  .global-universities__bg-white,
+  .index__bg-dark,
+  .intro-connects__bg-white,
+  .media__bg-white,
+  .mentorship__bg-white,
+  .progress__bg-dark,
+  .progress__bg-white,
+  .study-with-us-faculty__bg-white,
+  .our-programs__full-size,
+  .partner-with-us-cclr-programs__full-size,
+  .program-options__full-size {
+    max-height: 600px;
+  }
+}
+
+================================================================================
+CLASSES TO EXCLUDE
+================================================================================
+
+Do NOT apply max-height to these:
+
+Navbar Classes (110+): All .navbar__* patterns
+Footer Classes (20+): All .footer__* patterns
+Customer Service: .customer-service__circular-btn, .customer-service__circular-icon
+UI Buttons: .language-button__pill
+Hero/Splash: .hero__content
+
+================================================================================
+KEY STATISTICS
+================================================================================
+
+Total Section Modules Analyzed: 42
+Total BEM Classes Found: 410 (excluding navbar/footer)
+Primary Section Wrappers: 20 classes
+Secondary Flex Containers: 30+ classes
+Tertiary Grid/Layout: 25+ classes
+
+Responsive Breakpoints:
+- Laptop: @media (min-width: 1024px)
+- Tablet: @media (max-width: 1023px) and (min-width: 768px)
+- Mobile: @media (max-width: 768px)
+
+================================================================================

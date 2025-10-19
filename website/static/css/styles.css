@@ -10459,3 +10459,62 @@
     height:30px;
   }
 }
+
+
+/* ========================================
+   GLOBAL MAX-HEIGHT CONSTRAINT
+   ======================================== */
+
+/* Laptop (≥1024px) and Tablet (768-1023px) - Max-height for all main content sections */
+@media (min-width: 768px) {
+  /* Section containers */
+  .form-dual-track__section,
+  .form-hybrid__section,
+  .index__section,
+  .media__section,
+  .our-programs__section,
+
+  /* Background container classes */
+  .addmissions-requirement__bg-white,
+  .comprehensive__bg-dark,
+  .connect-to-parents__bg-white,
+  .connect-to-schools__bg-white,
+  .global-universities__bg-white,
+  .index__bg-dark,
+  .index__bg-dark-d1b8,
+  .intro-connects__bg-white,
+  .media__bg-white,
+  .media__bg-white-a086,
+  .mentorship__bg-white,
+  .progress__bg-dark,
+  .progress__bg-white,
+  .study-with-us-faculty__bg-white,
+
+  /* Full-size container classes */
+  .our-programs__full-size,
+  .partner-with-us-cclr-programs__full-size,
+  .program-options__full-size,
+
+  /* Additional flex-center containers */
+  .addmissions-plans__flex,
+  .addmissions-plans-zh__flex,
+  .addmissions-plans-zh__flex-6aa4,
+  .college-counseling__flex-center,
+  .comprehensive__flex-center,
+  .connects-cards__flex,
+  .connects-cards-zh__flex,
+  .form-hybrid__flex-col,
+  .global-application__flex-center,
+  .highschool-mapping-sections__flex,
+  .inspires__flex,
+  .intro-hybrid__flex,
+  .k12-school__flex-center,
+  .media__flex-center,
+  .partner-with-us__flex-center,
+  .programme__flex-center,
+  .student-reviews__flex-center,
+  .take-charge__flex-center {
+    max-height: 800px;
+    overflow-y: auto;
+  }
+}

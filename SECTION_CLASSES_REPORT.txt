@@ -1,0 +1,342 @@
+================================================================================
+COMPLETE LIST OF MAIN CONTENT SECTION WRAPPER CLASSES
+================================================================================
+CSS File: /Users/kim/Desktop/VS Code/ngs-cn/ngs/website/static/css/styles.css
+Search Criteria: All BEM classes excluding navbar__, footer__, customer-service__, language-button__, hero__
+Thoroughness Level: VERY THOROUGH
+
+================================================================================
+PRIMARY SECTION WRAPPERS - DIRECT TARGETS FOR MAX-HEIGHT: 600px
+================================================================================
+
+SECTION CONTAINERS (5 classes):
+.form-dual-track__section
+.form-hybrid__section
+.index__section
+.media__section
+.our-programs__section
+
+BACKGROUND CONTAINER CLASSES (12 classes):
+.addmissions-requirement__bg-white
+.comprehensive__bg-dark
+.connect-to-parents__bg-white
+.connect-to-schools__bg-white
+.global-universities__bg-white
+.index__bg-dark
+.index__bg-dark-d1b8
+.intro-connects__bg-white
+.media__bg-white
+.media__bg-white-a086
+.mentorship__bg-white
+.progress__bg-dark
+.progress__bg-dark-1ca4
+.progress__bg-dark-71ff
+.progress__bg-white
+.study-with-us-faculty__bg-white
+
+FULL-SIZE CONTAINER CLASSES (3 classes):
+.our-programs__full-size
+.partner-with-us-cclr-programs__full-size
+.program-options__full-size
+
+================================================================================
+SECONDARY FLEX/LAYOUT WRAPPER CLASSES (35+ classes)
+================================================================================
+
+ADDMISSIONS PLANS MODULE:
+.addmissions-plans__flex
+.addmissions-plans__flex-col
+.addmissions-plans__flex-col-2a57
+.addmissions-plans__flex-col-2e0a
+.addmissions-plans__flex-col-548e
+.addmissions-plans__flex-gap
+.addmissions-plans__flex-gap-6cfc
+
+ADDMISSIONS PLANS CHINESE:
+.addmissions-plans-zh__flex
+.addmissions-plans-zh__flex-6aa4
+.addmissions-plans-zh__flex-col
+.addmissions-plans-zh__flex-col-baa7
+.addmissions-plans-zh__flex-col-f265
+.addmissions-plans-zh__flex-gap
+.addmissions-plans-zh__flex-gap-ac69
+
+ADDMISSIONS REQUIREMENT:
+.addmissions-requirement__flex-col
+.addmissions-requirement__flex-col-fbdb
+
+COLLEGE COUNSELING:
+.college-counseling__flex-center
+
+COMPREHENSIVE:
+.comprehensive__flex-center
+.comprehensive__flex-col
+
+CONNECT TO PARENTS:
+.connect-to-parents__flex-center
+.connect-to-parents__flex-col
+
+CONNECT TO SCHOOLS:
+.connect-to-schools__flex-center
+
+CONNECTS CARDS:
+.connects-cards__circle
+.connects-cards__flex
+.connects-cards__flex-col
+.connects-cards__flex-col-9b69
+.connects-cards-zh__flex
+
+FORM HYBRID:
+.form-hybrid__flex-col
+.form-hybrid__flex-col-cbed
+.form-hybrid__flex-col-e0d5
+
+GLOBAL APPLICATION:
+.global-application__flex-center
+.global-application__flex-col
+
+GLOBAL COMMUNITY:
+.global-community__flex
+.global-community__flex-0260
+.global-community__flex-2440
+.global-community__flex-center
+.global-community__flex-center-1f82
+.global-community__grid
+.global-community__grid-cols
+.global-community__grid-cols-29dd
+.global-community__grid-fbe9
+
+GLOBAL UNIVERSITIES:
+.global-universities__flex-col
+
+HIGHSCHOOL MAPPING PROGRAM:
+.highschool-mapping-program__flex-center
+.highschool-mapping-program__flex-col
+.highschool-mapping-program__flex-col-6d6b
+
+HIGHSCHOOL MAPPING SECTIONS:
+.highschool-mapping-sections__flex-col
+.highschool-mapping-sections__flex-col-f295
+.highschool-mapping-sections__flex-gap
+
+INDEX:
+.index__flex-col
+.index__flex-col-621c
+.index__flex-col-c73a
+.index__flex-col-d481
+
+INSPIRES:
+.inspires__flex
+.inspires__flex-col
+
+INTRO CONNECTS:
+.intro-connects__flex-col
+.intro-connects__flex-col-34c8
+.intro-connects__flex-col-3f57
+
+INTRO HYBRID:
+.intro-hybrid__flex
+.intro-hybrid__flex-center
+.intro-hybrid__flex-col
+.intro-hybrid__flex-col-2dab
+.intro-hybrid__flex-col-7cc8
+
+K12 SCHOOL:
+.k12-school__flex-center
+.k12-school__flex-col
+.k12-school__flex-gap
+
+MEDIA:
+.media__flex-center
+.media__flex-center-0f9c
+.media__flex-col
+.media__flex-col-ed9d
+.media__flex-gap
+.media__flex-gap-2b6c
+
+MENTORSHIP:
+.mentorship__flex-center
+.mentorship__flex-col
+
+PARTNER WITH US:
+.partner-with-us__flex-center
+.partner-with-us__flex-col
+.partner-with-us__flex-col-5afc
+.partner-with-us__flex-col-c672
+
+PARTNER WITH US CCLR PROGRAMS:
+.partner-with-us-cclr-programs__flex-center
+.partner-with-us-cclr-programs__flex-center-78b2
+
+PARTNER WITH US CHINESE:
+.partner-with-us-zh__flex-col
+
+PROGRAM OPTIONS:
+.program-options__flex
+.program-options__flex-col
+
+PROGRAMMES:
+.programmes__flex-center
+.programmes__flex-center-aff8
+.programmes__flex-col
+.programmes__flex-gap
+
+PROGRESS:
+.progress__flex-center
+.progress__flex-center-5877
+.progress__flex-center-a53f
+.progress__flex-col
+.progress__flex-col-aba9
+.progress__flex-gap
+.progress__flex-gap-f4f1
+
+STUDENT REVIEWS:
+.student-reviews__flex-center
+.student-reviews__flex-col
+.student-reviews__flex-col-a612
+
+STUDY WITH US FACULTY:
+.study-with-us-faculty__flex-gap
+
+SUBSCRIBE:
+.subscribe__flex-center
+
+TAKE CHARGE:
+.take-charge__flex-center
+
+================================================================================
+ADDITIONAL CONTAINER CLASSES (with background/styling properties)
+================================================================================
+
+BACKGROUND/GRADIENT CLASSES:
+.addmissions-plans__gradient-bg (+ 8 color variants)
+.addmissions-plans-zh__gradient-bg (+ 5 color variants)
+.connects-cards__gradient-bg
+.highschool-mapping-sections__gradient-bg
+.mentorship__gradient-bg
+.programmes__gradient-bg (+ 3 color variants)
+.take-charge__gradient-bg
+
+GRID CONTAINER CLASSES:
+.addmissions-plans__grid-cols (+ 3 variants)
+.addmissions-requirement__grid-cols
+.comprehensive__grid-cols
+.connect-to-parents__grid-cols
+.connects-cards__grid-cols
+.form-hybrid__grid-cols
+.global-application__grid-cols
+.global-community__grid-cols (+ 2 variants)
+.highschool-mapping-program__grid-cols
+.highschool-mapping-sections__grid-cols
+.inspires__grid-cols (+ 1 variant)
+.intro-connects__grid-cols
+.intro-hybrid__grid-cols
+.k12-school__grid-cols
+.media__grid-cols (+ 1 variant)
+.mentorship__grid-cols
+.our-programs__grid-cols
+.partner-with-us__grid-cols
+.partner-with-us-cclr-programs__full-size
+.program-options__grid-cols
+.programmes__rounded
+.progress__grid-cols
+.student-reviews__grid-cols
+.study-with-us-faculty__grid-cols
+
+================================================================================
+EXCLUDED CLASSES (As Requested)
+================================================================================
+
+NAVBAR CLASSES: 110+ classes (all .navbar__* patterns)
+- .navbar__bg-dark
+- .navbar__flex
+- .navbar__flex-gap
+- .navbar__dropdown
+- .navbar__dropdown-menu
+- .navbar__login-btn
+- .navbar__hamburger
+- etc.
+
+FOOTER CLASSES: 20+ classes (all .footer__* patterns)
+- .footer__bg-dark
+- .footer__flex-gap
+- .footer__grid-cols
+- .footer__style-*
+- .footer__text-right
+- .footer__link-hover
+- etc.
+
+CUSTOMER SERVICE BUTTON CLASSES:
+- .customer-service__circular-btn
+- .customer-service__circular-icon
+
+LANGUAGE/UI BUTTON CLASSES:
+- .language-button__pill
+
+HERO/SPLASH CLASSES:
+- .hero__content
+
+================================================================================
+SUMMARY STATISTICS
+================================================================================
+
+Total Section Modules: 42
+Total BEM Classes (main content only): 410
+Total Classes Analyzed: 520+
+Primary Section Wrapper Classes: 20 classes
+Secondary Flex Container Classes: 35+ classes
+Tertiary Grid/Layout Classes: 25+ classes
+Total Excluded (navbar/footer/etc): 130+ classes
+
+RESPONSIVE BREAKPOINTS FOUND:
+- Laptop: @media (min-width: 1024px)
+- Tablet: @media (max-width: 1023px) and (min-width: 768px)
+- Mobile: @media (max-width: 768px)
+
+================================================================================
+RECOMMENDED APPLICATION FOR MAX-HEIGHT: 600px
+================================================================================
+
+These are the TOP PRIORITY classes for applying max-height: 600px 
+for laptop (≥1024px) and tablet (768-1023px) layouts:
+
+.form-dual-track__section
+.form-hybrid__section
+.index__section
+.media__section
+.our-programs__section
+.addmissions-requirement__bg-white
+.comprehensive__bg-dark
+.connect-to-parents__bg-white
+.connect-to-schools__bg-white
+.global-universities__bg-white
+.index__bg-dark
+.intro-connects__bg-white
+.media__bg-white
+.mentorship__bg-white
+.progress__bg-dark
+.progress__bg-white
+.study-with-us-faculty__bg-white
+.our-programs__full-size
+.partner-with-us-cclr-programs__full-size
+.program-options__full-size
+
+SECONDARY PRIORITY (flex/layout wrappers within sections):
+.addmissions-plans__flex
+.comprehensive__flex-center
+.connects-cards__flex-col
+.form-hybrid__flex-col
+.global-application__flex-center
+.inspires__flex
+.intro-connects__flex-col
+.intro-hybrid__flex
+.k12-school__flex-center
+.media__flex-center
+.mentorship__flex-center
+.partner-with-us__flex-center
+.program-options__flex
+.programmes__flex-center
+.student-reviews__flex-center
+.take-charge__flex-center
+
+================================================================================
