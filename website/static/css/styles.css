@@ -6678,6 +6678,11 @@
     font-size:14px;
     color:#333;
     line-height:1.6;
+    text-align: center;
+    justify-content: center;
+
+
+
   }
 }
 
@@ -6707,6 +6712,8 @@
   .program-options__style-1 {
     font-size:13px;
     padding-left:16px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
