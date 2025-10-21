@@ -1,51 +1,15 @@
 {% load static %}
-{% comment %} <section class="inprog section-font-style">
-<div class="ip-card">
-<div class="ip-grid progress__text-center">
-<!-- Left: Copy -->
-<div class="ip-copy progress__style-1">
-<span class="ip-badge">IN PROGRESS</span>
-<h1 class="ip-title progress__style-2">此页面建设中</h1>
-<p class="ip-lead section_paragraph progress__style-3">
-          感谢您的访问 —— 本部分内容正在建设中。
-          We’re polishing content and wiring things up so it’s useful for you.
-        </p>
-<!-- progress row -->
-<div class="ip-row progress__style-4">
-<span aria-hidden="true" class="ip-spinner"></span>
-<div aria-hidden="true" class="ip-bar"><span></span></div>
-</div>
-<div class="ip-row progress__style-5">
-          实时更新即将上线
-        </div>
-<!-- actions -->
-<div class="ip-row progress__style-6">
-<a class="btn btn-primary" href="{% url 'index' %}">返回首页</a>
-<!-- 联系我们 as mailto -->
-<a class="btn btn-outline" href="mailto:info@nextgenscholars.asia?subject=NGS%20Page%20Inquiry&amp;body=Hello%20NGS%20team," onclick="window.location.href=this.href;return false;">
-            联系我们
-          </a>
-</div>
-</div>
-<!-- Right: Illustration -->
-<div aria-hidden="true" class="ip-illust progress__style-7">
-<img alt="" src="{% static 'img/work_in_progress.jpg' %}" class="progress__style-8" />
-<span class="blob b1"></span>
-<span class="blob b2"></span>
-</div>
-</div>
-</div>
-</section> {% endcomment %}
+
 <!-- IN PROGRESS (66vh, polished) -->
-<section class="inprog progress__flex-center section-font-style">
+<section class="inprog progress__flex-center section-font-style_zh">
   <div class="ip-card progress__flex-col">
     <div class="ip-grid progress__grid-cols">
       <!-- allow children to shrink within 66vh -->
       <!-- Left: Copy -->
-      <div class="ip-copy progress__flex-col-aba9">
-        <span class="ip-badge progress__bg-dark">IN PROGRESS</span>
-        <h1 class="ip-title progress__style-9">此页面建设中</h1>
-        <p class="ip-lead section_paragraph progress__style-10">
+      <div class="ip-copy progress__flex-col-aba9 section-font-style_zh">
+        <span class="progress__bg-dark"><h2>IN PROGRESS</h2></span>
+        <h2 class="ip-title progress__style-9">此页面建设中</h2>
+        <p class="">
           感谢您的访问 —— 本部分内容正在建设中。
           We’re polishing content and wiring things up so it’s useful for you.
         </p>
@@ -56,7 +20,7 @@
             <span class="progress__bg-dark-1ca4"></span>
           </div>
         </div>
-        <div class="ip-row progress__flex-center-a53f">实时更新即将上线</div>
+        <div class="ip-row progress__flex-center-a53f"><p>实时更新即将上线</p></div>
         <!-- actions -->
         <div class="ip-row progress__flex-gap-f4f1">
           <a class="btn btn-primary progress__bg-dark-71ff"

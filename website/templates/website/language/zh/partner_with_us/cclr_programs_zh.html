@@ -6,20 +6,21 @@
     <!-- Header with Navigation -->
     {% include "website/language/zh/sections/navbar_zh.html" %}
     <!-- HERO -->
-    <section class="hero section-font-style">
+    <section class="hero section-font-style_zh">
       <img src="{% static 'img/brian.jpg' %}" alt="Graduates throwing caps">
     </section>
     <!-- 成为 NextGen Scholars 合作伙伴 (exact 66vh) -->
-    <section class="intro-connects__bg-white section-font-style">
+    <section class="intro-connects__bg-white section-font-style_zh">
       <div class="intro-connects__flex-col">
         <!-- Title -->
-        <h2 class="section_title intro-cclr__text-center">成为 NextGen Scholars 合作伙伴</h2>
+        <h2 class="section_title intro-cclr__text-center">NGS升学探索课程</h2>
         <!-- Two-column layout (50/50 split) -->
         <div class="cclr-programs-zh__grid-cols">
           <!-- Left: Card with bullets at bottom -->
-          <div class="intro-cclr-zh__flex-col">
+           
+          <div class="intro-connects__flex-col-3f57">
             <!-- Title -->
-            <h3 class="section_subtitle partner-with-us-cclr-programs__style-1">升学·职业·生活 准备课程</h3>
+            <h3 class="section_subtitle partner-with-us-cclr-programs__style-1">升学探索系列课程</h3>
             <!-- Spacer pushes list down -->
             <div class="intro-hybrid__style-2"></div>
             <!-- Bullets -->
@@ -51,13 +52,12 @@
         </div>
       </div>
     </section>
+    
     <!-- CCLR Diagram — centered and fixed height -->
-    <section class="partner-with-us-cclr-programs__flex-center section-font-style">
+    <section class="partner-with-us-cclr-programs__flex-center section-font-style_zh">
       <div class="partner-with-us-cclr-programs__text-center">
         <h2 class="section_title partner-with-us-cclr-programs__style-2">
-          升学 · 职业 · 生活
-          <br>
-          准备课程
+          NGS升学探索课程
         </h2>
         <div class="partner-with-us-cclr-programs__flex-center-78b2">
           <img src="{% static 'img/circles.jpg' %}"
@@ -73,7 +73,7 @@
     <!-- OUR PROGRAMS -->
     {% include "website/language/zh/sections/our_programs_zh.html" %}
     <!-- MEETING + FORM -->
-    <section class="index__section section-font-style">
+    <section class="index__section section-font-style_zh">
       <div class="ngs-enquiry index__grid-cols-452f">
         <!-- ✅ grid fills 66vh -->
         <!-- 左侧：图片 -->
@@ -90,11 +90,11 @@
           <!-- ✅ form fills 66vh -->
           {% csrf_token %}
           <!-- 标题栏 -->
-          <div class="index__bg-dark">想与 NGS 合作？</div>
+          <div class="index__bg-dark section-font-style_zh"><h3>成为NGS伙伴</h3></div>
           <!-- 表单字段 -->
           <div class="index__grid">
             <div>
-              <label class="index__style-10">您的全名</label>
+              <label class="index__style-10 section-font-style_zh"><p>您的全名</p></label>
               <input type="text"
                      name="name"
                      id="id_name"
@@ -103,7 +103,7 @@
                      class="index__rounded-7873">
             </div>
             <div>
-              <label class="index__style-10">学校 / 机构名称</label>
+              <label class="index__style-10 section-font-style_zh"><p>学校 / 机构名称</p></label>
               <input type="text"
                      name="school_name"
                      id="id_school"
@@ -112,7 +112,7 @@
                      class="index__rounded-7873">
             </div>
             <div>
-              <label class="index__style-10">电子邮箱</label>
+              <label class="index__style-10 section-font-style_zh"><p>电子邮箱</p></label>
               <input type="email"
                      name="email"
                      id="id_email"
@@ -121,7 +121,7 @@
                      class="index__rounded-7873">
             </div>
             <div>
-              <label class="index__style-10">手机号 / 微信号</label>
+              <label class="index__style-10 section-font-style_zh"><p>手机号 / 微信号</p></label>
               <input type="text"
                      name="mobile_or_wechat"
                      id="id_mobile_or_wechat"
@@ -129,7 +129,7 @@
                      class="index__rounded-7873">
             </div>
             <div class="index__flex-col-d481">
-              <label class="index__style-10">我们能为您提供什么帮助？</label>
+              <label class="index__style-10 section-font-style_zh"><p>我们能为您提供什么帮助？</p></label>
               <textarea rows="5"
                         name="help_description"
                         id="id_help_description"
