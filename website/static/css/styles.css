@@ -8955,7 +8955,7 @@
   .k12-school__grid-cols {
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:32px;
+    gap:60px; /* 32 */
     align-items:start;
     margin-bottom:20px;
   }
