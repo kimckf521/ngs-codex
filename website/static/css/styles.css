@@ -3681,6 +3681,7 @@
 .navbar__style-2 {
   height:60px;
   display:block;
+  /* mix-blend-mode: multiply; */
 }
 
 .navbar__style-3 {
