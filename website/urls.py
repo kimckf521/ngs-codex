@@ -34,6 +34,9 @@ urlpatterns = [
     path('in_progress/', views.in_progress,
          name='in_progress'),
 
+    # Tetsing
+    path('test/', views.test, name='test'),
+
     # CHINESE PAGES
     path('', views.index_zh, name='index_zh'),
     path('privacy_zh/', views.privacy_zh, name='privacy_zh'),

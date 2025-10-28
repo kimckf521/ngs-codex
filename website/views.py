@@ -75,6 +75,12 @@ def ngs_connects(request):
 def in_progress(request):
     return render(request, 'website/in_progress.html')
 
+# Testing
+
+
+def test(request):
+    return render(request, 'website/test.html')
+
 # CHINESE PAGES
 
 # index.html
