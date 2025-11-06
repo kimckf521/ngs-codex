@@ -5617,45 +5617,45 @@
   .programmes__flex-gap {
     display:flex;
     justify-content:center;
-    gap:18px;
+    gap:20px;
     flex-wrap:wrap;
-    margin-top:10px;
+    margin-bottom:10px;
+    padding:0 20px;
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .programmes__gradient-bg,
+  .programmes__gradient-bg-b687,
+  .programmes__gradient-bg-06e7,
+  .programmes__gradient-bg-a514 {
+    font-weight:700;
+    padding:12px 24px;
+    border-radius:40px;
+    font-size:15px;
+    white-space:nowrap;
+    text-align:center;
+    box-sizing:border-box;
   }
 
   .programmes__gradient-bg {
     background:linear-gradient(90deg,#2ecc71,#27ae60);
     color:#000;
-    font-weight:700;
-    padding:12px 22px;
-    border-radius:40px;
-    font-size:15px;
   }
 
   .programmes__gradient-bg-b687 {
     background:linear-gradient(90deg,#56ccf2,#2f80ed);
     color:#000;
-    font-weight:700;
-    padding:12px 22px;
-    border-radius:40px;
-    font-size:15px;
   }
 
   .programmes__gradient-bg-06e7 {
     background:linear-gradient(90deg,#f2994a,#f2c94c);
     color:#000;
-    font-weight:700;
-    padding:12px 22px;
-    border-radius:40px;
-    font-size:15px;
   }
 
   .programmes__gradient-bg-a514 {
     background:linear-gradient(90deg,#eb5757,#ff0080);
     color:#000;
-    font-weight:700;
-    padding:12px 22px;
-    border-radius:40px;
-    font-size:15px;
   }
 
   /* TAKE CHARGE */
@@ -5912,16 +5912,23 @@
     justify-content:center;
     gap:16px;
     flex-wrap:wrap;
+    padding:0 16px;
+    width:100%;
+    box-sizing:border-box;
+    margin-bottom:10px;
   }
 
   .programmes__gradient-bg,
   .programmes__gradient-bg-b687,
   .programmes__gradient-bg-06e7,
   .programmes__gradient-bg-a514 {
-    padding:12px 20px;
+    padding:11px 20px;
     border-radius:40px;
     font-size:14px;
     font-weight:700;
+    white-space:nowrap;
+    text-align:center;
+    box-sizing:border-box;
   }
 
   .programmes__gradient-bg {
@@ -6187,18 +6194,26 @@
   .programmes__flex-gap {
     display:flex;
     justify-content:center;
-    gap:12px;
+    gap:10px;
     flex-wrap:wrap;
+    padding:0 12px;
+    width:100%;
+    box-sizing:border-box;
+    margin-bottom:10px;
   }
 
   .programmes__gradient-bg,
   .programmes__gradient-bg-b687,
   .programmes__gradient-bg-06e7,
   .programmes__gradient-bg-a514 {
-    padding:10px 18px;
+    padding:10px 16px;
     border-radius:40px;
     font-size:13px;
     font-weight:700;
+    white-space:nowrap;
+    text-align:center;
+    box-sizing:border-box;
+    flex:0 1 auto;
   }
 
   .programmes__gradient-bg {
@@ -6421,15 +6436,18 @@
   }
 
   .programmes__flex-gap {
-    gap:10px;
+    gap:8px;
+    padding:0 10px;
+    margin-bottom:10px;
   }
 
   .programmes__gradient-bg,
   .programmes__gradient-bg-b687,
   .programmes__gradient-bg-06e7,
   .programmes__gradient-bg-a514 {
-    padding:9px 16px;
+    padding:9px 14px;
     font-size:12px;
+    flex:0 1 auto;
   }
 
   /* TAKE CHARGE */
