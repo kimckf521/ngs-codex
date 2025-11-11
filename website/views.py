@@ -6,82 +6,82 @@ from django.views.decorators.csrf import csrf_protect
 from django.contrib import messages
 
 
-def index(request):
+def index_en(request):
     return render(request, 'website/index.html')
 
 
-def privacy(request):
+def privacy_en(request):
     return render(request, 'website/privacy_policy.html')
 
 
-def terms(request):
+def terms_en(request):
     return render(request, 'website/terms_of_service.html')
 
 # Partner With Us
 
 
-def cclr_programs(request):
+def cclr_programs_en(request):
     return render(request, 'website/partner_with_us/cclr_programs.html')
 
 
-def hybrid_learning(request):
+def hybrid_learning_en(request):
     return render(request, 'website/partner_with_us/hybrid_learning.html')
 
 
-def dual_track_learning(request):
+def dual_track_learning_en(request):
     return render(request, 'website/partner_with_us/dual_track_learning.html')
 
 
-def online_diploma_program(request):
+def online_diploma_program_en(request):
     return render(request, 'website/partner_with_us/online_diploma_program.html')
 
 # Study With Us
 
 
-def programs(request):
+def programs_en(request):
     return render(request, 'website/study_with_us/programs.html')
 
 
-def college_mentorship(request):
+def college_mentorship_en(request):
     return render(request, 'website/study_with_us/college_mentorship.html')
 
 
-def highschool_mapping(request):
+def highschool_mapping_en(request):
     return render(request, 'website/study_with_us/highschool_mapping.html')
 
 
-def faculty(request):
+def faculty_en(request):
     return render(request, 'website/study_with_us/faculty.html')
 
 
 # Admissions
 
-def admissions(request):
+def admissions_en(request):
     return render(request, 'website/admissions/admissions.html')
 
 
 # Join Ngs Commmunity
 
-def ngs_inspires(request):
+def ngs_inspires_en(request):
     return render(request, 'website/join_ngs_commmunity/ngs_inspires.html')
 
 
-def ngs_connects(request):
+def ngs_connects_en(request):
     return render(request, 'website/join_ngs_commmunity/ngs_connects.html')
 
 # In Progress
 
 
-def in_progress(request):
+def in_progress_en(request):
     return render(request, 'website/in_progress.html')
 
 
 # Partners
-def YCSOnline(request):
+def YCSOnline_en(request):
     return render(request, 'website/partners_lists/ycs/YCSOnline.html')
 
 
-def ib_heros(request):
+def ib_heros_en(request):
     return render(request, 'website/partners_lists/ib_heros/ib_heros.html')
 
 
