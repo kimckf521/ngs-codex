@@ -128,8 +128,8 @@
     width: 145px;
     height: 145px;
     border-radius: 50%;
-    background-color: #2c4f6f;
-    border: 6px solid #4d6b85;
+    /* background-color: #2c4f6f; */
+    /* border: 6px solid #4d6b85; */
     display: flex;
     align-items: center;
     justify-content: center;
