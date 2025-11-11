@@ -75,11 +75,22 @@ def ngs_connects(request):
 def in_progress(request):
     return render(request, 'website/in_progress.html')
 
+
+# Partners
+def YCSOnline(request):
+    return render(request, 'website/partners_lists/ycs/YCSOnline.html')
+
+
+def ib_heros(request):
+    return render(request, 'website/partners_lists/ib_heros/ib_heros.html')
+
+
 # Testing
 
 
 def test(request):
     return render(request, 'website/test.html')
+
 
 # CHINESE PAGES
 
@@ -154,6 +165,16 @@ def ngs_connects_zh(request):
 
 def in_progress_zh(request):
     return render(request, 'website/language/zh/in_progress_zh.html')
+
+# Partners
+
+
+def YCSOnline_zh(request):
+    return render(request, 'website/language/zh/partners_lists/ycs/YCSOnline_zh.html')
+
+
+def ib_heros_zh(request):
+    return render(request, 'website/language/zh/partners_lists/ib_heros/ib_heros_zh.html')
 
 # Email views
 

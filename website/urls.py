@@ -37,6 +37,10 @@ urlpatterns = [
     # Tetsing
     path('test/', views.test, name='test'),
 
+    # Partners
+    path('YCSOnline/', views.YCSOnline, name='YCSOnline'),
+    path('ib_heros/', views.ib_heros, name='ib_heros'),
+
     # CHINESE PAGES
     path('', views.index_zh, name='index_zh'),
     path('privacy_zh/', views.privacy_zh, name='privacy_zh'),
@@ -76,5 +80,9 @@ urlpatterns = [
 
     # Partner Form Submission (Email)
     path('partner_with_us/', views.partner_with_us, name='partner_with_us'),
+
+    # Partners
+    path('YCSOnline_zh/', views.YCSOnline_zh, name='YCSOnline_zh'),
+    path('ib_heros_zh/', views.ib_heros_zh, name='ib_heros_zh'),
 
 ]

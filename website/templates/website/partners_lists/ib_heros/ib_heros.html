@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+ib heros
+<html lang="en">
+  <head>{% include "website/language/zh/sections/head_zh.html" %}</head>
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    <!-- Header with Navigation -->
+    {% include "website/language/zh/sections/navbar_zh.html" %}
+    <!-- In Progress -->
+    {% include "website/language/zh/sections/progress_zh.html" %}
+    <!-- Social Media-->
+    {% include "website/language/zh/sections/media_zh.html" %}
+    <!-- Customer Service Button -->
+    {% include "website/language/zh/sections/customer_service_zh.html" %}
+    <!-- Footer -->
+    {% include "website/language/zh/sections/footer_zh.html" %}
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>{% include "website/language/zh/sections/head_zh.html" %}</head>
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    <!-- Header with Navigation -->
+    {% include "website/language/zh/sections/navbar_zh.html" %}
+    <!-- HERO -->
+    <section class="hero section-font-style_zh">
+      <img src="{% static 'img/ycs/ycs_banner.jpg' %}" alt="YCS Online Banner">
+    </section>
+    <!-- YCS INTRO -->
+    {% include "website/language/zh/partners_lists/ycs/ycs_intro_zh.html" %}
+    <!-- 三大课程选择 -->
+    {% include "website/language/zh/partners_lists/ycs/ycs_programs_zh.html" %}
+    <!-- 高中国际文凭课程 -->
+    {% include "website/language/zh/sections/diploma_program_zh.html" %}
+    <!-- YCS INTRO -->
+     {% include "website/language/zh/partners_lists/ycs/ycs_teams_zh.html" %}
+    <!-- FACULTY -->
+    {% include "website/language/zh/sections/faculties_zh.html" %}
+    <!-- Customer Service Button -->
+    {% include "website/language/zh/sections/customer_service_zh.html" %}
+    <!-- Footer -->
+    {% include "website/language/zh/sections/footer_zh.html" %}
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
