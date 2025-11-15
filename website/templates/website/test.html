@@ -23,9 +23,10 @@
             <br>
             🏅 AMC12 1st Place | AP CS A: 5/5 | 3+ years tutoring experience
           </p>
+          <button class="tutor-demo-btn">Watch Tutor Demo</button>
         </div>
         <div class="popup_video section-font-style">
-          <video controls autoplay>
+          <video controls loop>
             <source src="{% static 'videos/cat.mp4' %}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -47,19 +48,12 @@
             <br>
             🤝 Builds strong student trust and learning confidence
           </p>
+          <button class="tutor-demo-btn">Watch Tutor Demo</button>
         </div>
-        
         <div class="popup_video section-font-style">
-            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115537237578766&bvid=BV1A1CJBiEY7&cid=33952434068&p=1&autoplay=1&loop=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loop="true"></iframe>
-
-            <div class="video-title"><p>Daisy Chung - Real-World Learning</p></div>
-            <div class="video-description"><p>See Daisy's unique approach to making complex IT concepts accessible and fun</p></div>
-          {% comment %} <video controls muted loop>
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115537237578766&bvid=BV1A1CJBiEY7&cid=33952434068&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
           <div class="video-title"><p>Daisy Chung - Real-World Learning</p></div>
-          <div class="video-description"><p>See Daisy's unique approach to making complex IT concepts accessible and fun</p></div> {% endcomment %}
+          <div class="video-description"><p>See Daisy's unique approach to making complex IT concepts accessible and fun</p></div>
         </div>
       </div>
       <!-- Leonore -->
@@ -76,6 +70,7 @@
             <br>
             🏅 AMC12 1st Place | AP CS A: 5/5 | 3+ years tutoring experience
           </p>
+          <button class="tutor-demo-btn">Watch Tutor Demo</button>
         </div>
         <div class="popup_video section-font-style">
           <video controls loop>
@@ -94,15 +89,16 @@
         <div>
           <h3 class="tutors_profile__style-1">Paul Chiu | Masters in Double E @ Melbourne U</h3>
           <p class="tutors_profile__style-2">
-            IB/A-Level/AP expert in Math, Physics, Chem, and CS
+            IB/A-Level/AP expert in Math, Physics, Chem
             <br>
-            Super responsive – answers all questions and researches tough ones
+            Effectively explain progress and goals to students and parents
             <br>
-            🏅 AMC12 1st Place | AP CS A: 5/5 | 3+ years tutoring experience
+            Adapt lessons to fit each student’s level and learning style
           </p>
+          <button class="tutor-demo-btn">Watch Tutor Demo</button>
         </div>
         <div class="popup_video section-font-style">
-          <video controls muted loop>
+          <video controls loop>
             <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -124,9 +120,10 @@
             <br>
             💼 Treasurer experience = real leadership + money management skills
           </p>
+          <button class="tutor-demo-btn">Watch Tutor Demo</button>
         </div>
         <div class="popup_video section-font-style">
-          <video controls muted loop>
+          <video controls loop>
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -148,9 +145,10 @@
             <br>
             🌍 Experienced with global students | Adapts teaching to fit your pace
           </p>
+          <button class="tutor-demo-btn">Watch Tutor Demo</button>
         </div>
         <div class="popup_video section-font-style">
-          <video controls muted loop>
+          <video controls loop>
             <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -162,22 +160,169 @@
   </div>
 </section>
 
-{% comment %} <script>
-  // Video control on hover
+<script>
+  // Function to check if device is mobile/tablet (max-width: 1024px)
+  function isMobileOrTablet() {
+    return window.innerWidth <= 1024;
+  }
+
   document.querySelectorAll('.tutors_profile__flex-gap').forEach(card => {
     const video = card.querySelector('video');
+    const iframe = card.querySelector('iframe');
+    const popup = card.querySelector('.popup_video');
+    const button = card.querySelector('.tutor-demo-btn');
+    const mediaElement = video || iframe;
+    let hideTimeout = null;
+
+    // Button click handler for mobile/tablet
+    if (button) {
+      button.addEventListener('click', function(e) {
+        e.stopPropagation();
+        
+        // Close all other popups
+        document.querySelectorAll('.popup_video').forEach(otherPopup => {
+          if (otherPopup !== popup) {
+            otherPopup.classList.remove('active');
+            const otherVideo = otherPopup.querySelector('video');
+            if (otherVideo) {
+              otherVideo.pause();
+              otherVideo.currentTime = 0;
+            }
+          }
+        });
+
+        // Toggle current popup
+        popup.classList.toggle('active');
+        
+        if (popup.classList.contains('active')) {
+          button.textContent = 'Hide Demo';
+          // Play video when showing
+          if (video) {
+            video.currentTime = 0;
+            video.play().catch(err => console.log('Autoplay prevented:', err));
+          }
+        } else {
+          button.textContent = 'Watch Tutor Demo';
+          // Pause video when hiding
+          if (video) {
+            video.pause();
+            video.currentTime = 0;
+          }
+        }
+      });
+    }
+
+    // Desktop hover handlers (only active when NOT mobile/tablet)
+    let showTimeout = null;
     
     card.addEventListener('mouseenter', () => {
-      if (video) {
-        video.play();
+      if (!isMobileOrTablet()) {
+        // Add a small delay before showing popup to prevent accidental triggers
+        showTimeout = setTimeout(() => {
+          // Immediately close all other popups and reset their z-index
+          document.querySelectorAll('.tutors_profile__flex-gap').forEach(otherCard => {
+            if (otherCard !== card) {
+              const otherPopup = otherCard.querySelector('.popup_video');
+              const otherVideo = otherCard.querySelector('video');
+              
+              // Force immediate hide by removing hover state
+              if (otherPopup) {
+                // Add a class to force hide
+                otherPopup.classList.add('force-hide');
+                
+                // Remove the force-hide class after animation
+                setTimeout(() => {
+                  otherPopup.classList.remove('force-hide');
+                }, 50);
+              }
+              
+              // Pause and reset other videos
+              if (otherVideo) {
+                otherVideo.pause();
+                otherVideo.currentTime = 0;
+              }
+              
+              // Reset z-index of other cards
+              otherCard.style.zIndex = '';
+            }
+          });
+          
+          // Clear any pending hide timeout
+          if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+          }
+          
+          // Set high z-index immediately for current card
+          card.style.zIndex = '9999';
+          
+          if (video) {
+            // Reset and play video from start on hover
+            video.currentTime = 0;
+            video.play().catch(err => console.log('Autoplay prevented:', err));
+          }
+        }, 300); // 300ms delay before showing popup
       }
     });
-    
+
     card.addEventListener('mouseleave', () => {
-      if (video) {
-        video.pause();
-        video.currentTime = 0;
+      if (!isMobileOrTablet()) {
+        // Clear the show timeout if leaving before popup appears
+        if (showTimeout) {
+          clearTimeout(showTimeout);
+          showTimeout = null;
+        }
+        
+        // Check after a short delay if mouse is still outside both card and popup
+        setTimeout(() => {
+          if (!card.matches(':hover') && !popup.matches(':hover')) {
+            // Start the 1.5s countdown to reset z-index
+            hideTimeout = setTimeout(() => {
+              card.style.zIndex = '';
+            }, 1500);
+          }
+        }, 10);
+      }
+    });
+
+    // Handle popup hover
+    if (popup) {
+      popup.addEventListener('mouseenter', () => {
+        if (!isMobileOrTablet()) {
+          // Clear any pending hide timeout when hovering popup
+          if (hideTimeout) {
+            clearTimeout(hideTimeout);
+            hideTimeout = null;
+          }
+          card.style.zIndex = '9999';
+        }
+      });
+
+      popup.addEventListener('mouseleave', () => {
+        if (!isMobileOrTablet()) {
+          // Check if mouse is outside both card and popup
+          setTimeout(() => {
+            if (!card.matches(':hover') && !popup.matches(':hover')) {
+              // Start the 1.5s countdown
+              hideTimeout = setTimeout(() => {
+                card.style.zIndex = '';
+              }, 1500);
+            }
+          }, 10);
+        }
+      });
+    }
+  });
+
+  // Update button text on window resize
+  window.addEventListener('resize', () => {
+    document.querySelectorAll('.tutor-demo-btn').forEach(btn => {
+      const popup = btn.closest('.tutors_profile__flex-gap').querySelector('.popup_video');
+      if (popup && popup.classList.contains('active')) {
+        btn.textContent = 'Hide Demo';
+      } else {
+        btn.textContent = 'Watch Tutor Demo';
       }
     });
   });
-</script> {% endcomment %}
+</script>

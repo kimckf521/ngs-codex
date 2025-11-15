@@ -53,10 +53,6 @@
 }
 
 .tutors_profile__flex-gap:hover {
-    z-index: 9999;
-}
-
-.tutors_profile__flex-gap:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -94,11 +90,34 @@
     margin: 0;
 }
 
+/* Tutor Demo Button - Hidden on Desktop */
+.tutor-demo-btn {
+    display: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tutor-demo-btn:hover {
+    background-color: #357abd;
+}
+
+.tutor-demo-btn:active {
+    background-color: #2868a8;
+}
+
 /* Video Popup */
 .popup_video {
     position: absolute;
     right: -520px;
-    top: 0;
+    top: -20px; /* Extend upward to cover more area */
     width: 480px;
     max-width: 90vw;
     background: white;
@@ -108,7 +127,8 @@
     opacity: 0;
     visibility: hidden;
     transform: translateX(-20px);
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    /* transition-delay: 1.5s, 1.5s, 1.5s; */
     z-index: 10000;
     pointer-events: none;
 }
@@ -118,13 +138,45 @@
     visibility: visible;
     transform: translateX(0);
     pointer-events: auto;
+    transition-delay: 0.3s, 0.3s, 0.3s; /* 300ms delay before showing */
 }
 
-.popup_video video {
-    height: 270px;
+.popup_video:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: auto;
+    transition-delay: 0s, 0s, 0s; /* No delay when hovering popup itself */
+}
+
+/* Add an invisible overlay behind the popup to block hover events */
+.popup_video::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: -50px;
+    bottom: -50px;
+    width: 200px; /* Wide enough to cover gap between popup and other cards */
+    z-index: 9999;
+    pointer-events: auto; /* Block hover events from reaching cards behind */
+}
+
+/* Force hide class for immediate closing when switching profiles */
+.popup_video.force-hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition-delay: 0s !important;
+    transition: opacity 0.1s ease, visibility 0.1s ease, transform 0.1s ease !important;
+}
+
+.popup_video video,
+.popup_video iframe {
     width: 100%;
+    height: 270px;
     border-radius: 8px;
     background: #000;
+    border: none;
+    display: block;
 }
 
 .video-title {
@@ -152,7 +204,8 @@
         width: 380px;
     }
 
-    .popup_video video {
+    .popup_video video,
+    .popup_video iframe {
         height: 250px;
     }
 }
@@ -164,21 +217,51 @@
         gap: 30px;
     }
 
+    /* Show Tutor Demo button on tablet */
+    .tutor-demo-btn {
+        display: inline-block;
+    }
+
+    /* Disable hover effect, use button instead */
     .popup_video {
+        position: relative;
         right: auto;
-        left: 50%;
-        transform: translateX(-50%) translateY(-20px);
+        left: 0;
+        transform: none;
         top: auto;
-        bottom: -320px;
-        width: 90%;
-        max-width: 450px;
+        bottom: auto;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 15px;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.3s ease;
+        padding: 0;
+        transition-delay: 0s;
     }
 
+    .popup_video.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 1000px;
+        padding: 20px;
+    }
+
+    /* Disable hover on tablet */
     .tutors_profile__flex-gap:hover .popup_video {
-        transform: translateX(-50%) translateY(0);
+        opacity: 0;
+        visibility: hidden;
     }
 
-    .popup_video video {
+    .tutors_profile__flex-gap:hover .popup_video.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .popup_video video,
+    .popup_video iframe {
         height: 250px;
     }
 }
@@ -219,23 +302,46 @@
         font-size: 13px;
     }
 
-    /* Video appears below profile on mobile */
+    /* Show Tutor Demo button on mobile */
+    .tutor-demo-btn {
+        display: inline-block;
+    }
+
+    /* Video appears below profile on mobile with button control */
     .popup_video {
         position: relative;
         left: 0;
         right: 0;
         bottom: 0;
         top: 0;
-        transform: translateY(-10px);
+        transform: none;
         width: 100%;
         max-width: 100%;
         margin-top: 15px;
-        display: none;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.3s ease;
+        padding: 0;
     }
 
+    .popup_video.active {
+        opacity: 1;
+        visibility: visible;
+        max-height: 1000px;
+        padding: 15px;
+    }
+
+    /* Disable hover on mobile */
     .tutors_profile__flex-gap:hover .popup_video {
-        transform: translateY(0);
-        display: block;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .tutors_profile__flex-gap:hover .popup_video.active {
+        opacity: 1;
+        visibility: visible;
     }
 
     .video-title {
@@ -247,7 +353,8 @@
         font-size: 13px;
     }
 
-    .popup_video video {
+    .popup_video video,
+    .popup_video iframe {
         height: 200px;
     }
 }
@@ -281,10 +388,6 @@
         line-height: 1.5;
     }
 
-    .popup_video {
-        padding: 15px;
-    }
-
     .video-title {
         font-size: 14px;
         margin-top: 10px;
@@ -294,7 +397,8 @@
         font-size: 12px;
     }
 
-    .popup_video video {
+    .popup_video video,
+    .popup_video iframe {
         height: 180px;
     }
 }
@@ -310,6 +414,11 @@
         width: 500px;
     }
 
+    .popup_video video,
+    .popup_video iframe {
+        height: 280px;
+    }
+
     /* For cards in the right column, show video on the left */
     .tutors_profile__grid-cols > .tutors_profile__flex-gap:nth-child(even) .popup_video {
         right: auto;
@@ -319,43 +428,10 @@
     .tutors_profile__grid-cols > .tutors_profile__flex-gap:nth-child(even):hover .popup_video {
         transform: translateX(0);
     }
-}
 
-/* Iframe specific styles for popup_video */
-
-.popup_video iframe {
-    width: 100%;
-    height: 270px;
-    border-radius: 8px;
-    background: #000;
-    border: none;
-    display: block;
-}
-
-/* Tablet Styles */
-@media (max-width: 1024px) {
-    .popup_video iframe {
-        height: 250px;
-    }
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .popup_video iframe {
-        height: 200px;
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-    .popup_video iframe {
-        height: 180px;
-    }
-}
-
-/* Large Desktop */
-@media (min-width: 1400px) {
-    .popup_video iframe {
-        height: 280px;
+    /* Adjust blocking overlay for left-side popups */
+    .tutors_profile__grid-cols > .tutors_profile__flex-gap:nth-child(even) .popup_video::before {
+        right: auto;
+        left: 100%;
     }
 }
