@@ -29,6 +29,15 @@
     font-family: Arial, sans-serif;
 }
 
+/* Flags styling for college counseling section */
+.college-counseling__flags {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+    line-height: 1.5;
+}
+
 /* Grid Layout */
 .tutors_profile__grid-cols {
     display: grid;
@@ -129,7 +138,7 @@
     transform: translateX(-20px);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
     /* transition-delay: 1.5s, 1.5s, 1.5s; */
-    z-index: 10000;
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -157,7 +166,7 @@
     top: -50px;
     bottom: -50px;
     width: 200px; /* Wide enough to cover gap between popup and other cards */
-    z-index: 9999;
+    z-index: 2;
     pointer-events: auto; /* Block hover events from reaching cards behind */
 }
 
@@ -208,6 +217,12 @@
     .popup_video iframe {
         height: 250px;
     }
+
+    .college-counseling__flags {
+        font-size: 3rem;
+        letter-spacing: 8px;
+        margin-bottom: 35px;
+    }
 }
 
 /* Small Tablet */
@@ -220,6 +235,12 @@
     /* Show Tutor Demo button on tablet */
     .tutor-demo-btn {
         display: inline-block;
+    }
+
+    .college-counseling__flags {
+        font-size: 2rem;
+        letter-spacing: 7px;
+        margin-bottom: 30px;
     }
 
     /* Disable hover effect, use button instead */
@@ -278,6 +299,12 @@
 
     .tutors_profile__grid-cols {
         gap: 25px;
+    }
+
+    .college-counseling__flags {
+        font-size: 3rem;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
     }
 
     .tutors_profile__flex-gap {
@@ -369,6 +396,12 @@
         gap: 20px;
     }
 
+    .college-counseling__flags {
+        font-size: 3rem;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+
     .tutors_profile__flex-gap {
         padding: 15px 10px;
     }
@@ -407,6 +440,12 @@
 @media (min-width: 1400px) {
     .tutors_profile__grid-cols {
         gap: 50px;
+    }
+
+    .college-counseling__flags {
+        font-size: 5rem;
+        letter-spacing: 12px;
+        margin-bottom: 45px;
     }
 
     .popup_video {
