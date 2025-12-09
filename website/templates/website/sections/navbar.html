@@ -19,6 +19,23 @@
     <nav id="site-nav" class="navbar__style-3">
       <ul class="navbar__flex-gap">
         <li class="navbar__dropdown">
+          <a href="{% url 'index_en' %}" class="navbar__style-4">Study With Us ▾</a>
+          <ul class="navbar__dropdown-menu">
+            <li>
+              <a href="{% url 'programs_en' %}">Programs</a>
+            </li>
+            <li>
+              <a href="{% url 'college_mentorship_en' %}">College Mentorship</a>
+            </li>
+            <li>
+              <a href="{% url 'highschool_mapping_en' %}">Highschool Mapping</a>
+            </li>
+            <li>
+              <a href="{% url 'faculty_en' %}">Faculty</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__dropdown">
           <a href="{% url 'index_en' %}" class="navbar__style-4">Partner With NGS ▾</a>
           <ul class="navbar__dropdown-menu">
             <li>
@@ -35,23 +52,6 @@
             </li>
             <li>
               <a href="{% url 'online_diploma_program_en' %}">Online Diploma Program</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navbar__dropdown">
-          <a href="{% url 'index_en' %}" class="navbar__style-4">Study With Us ▾</a>
-          <ul class="navbar__dropdown-menu">
-            <li>
-              <a href="{% url 'programs_en' %}">Programs</a>
-            </li>
-            <li>
-              <a href="{% url 'college_mentorship_en' %}">College Mentorship</a>
-            </li>
-            <li>
-              <a href="{% url 'highschool_mapping_en' %}">Highschool Mapping</a>
-            </li>
-            <li>
-              <a href="{% url 'faculty_en' %}">Faculty</a>
             </li>
           </ul>
         </li>

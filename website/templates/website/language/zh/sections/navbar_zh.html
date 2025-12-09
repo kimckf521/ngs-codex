@@ -19,6 +19,23 @@
     <nav id="site-nav" class="navbar__style-3">
       <ul class="navbar__flex-gap">
         <li class="navbar__dropdown">
+          <a href="{% url 'index_zh' %}" class="navbar__style-4">成为NGS学生 ▾</a>
+          <ul class="navbar__dropdown-menu">
+            <li>
+              <a href="{% url 'programs_zh' %}">国际课程</a>
+            </li>
+            <li>
+              <a href="{% url 'college_mentorship_zh' %}">升学辅导课程</a>
+            </li>
+            <li>
+              <a href="{% url 'highschool_mapping_zh' %}">K12国际高中规划</a>
+            </li>
+            <li>
+              <a href="{% url 'faculty_zh' %}">教学团队</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__dropdown">
           <a href="{% url 'index_zh' %}" class="navbar__style-4">成为NGS伙伴 ▾</a>
           <ul class="navbar__dropdown-menu">
             <li>
@@ -35,23 +52,6 @@
             </li>
             <li>
               <a href="{% url 'online_diploma_program_zh' %}">NGS 未来无界文凭课程</a>
-            </li>
-          </ul>
-        </li>
-        <li class="navbar__dropdown">
-          <a href="{% url 'index_zh' %}" class="navbar__style-4">成为NGS学生 ▾</a>
-          <ul class="navbar__dropdown-menu">
-            <li>
-              <a href="{% url 'programs_zh' %}">国际课程</a>
-            </li>
-            <li>
-              <a href="{% url 'college_mentorship_zh' %}">升学辅导课程</a>
-            </li>
-            <li>
-              <a href="{% url 'highschool_mapping_zh' %}">K12国际高中规划</a>
-            </li>
-            <li>
-              <a href="{% url 'faculty_zh' %}">教学团队</a>
             </li>
           </ul>
         </li>
