@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>{% include "website/language/en/sections/head.html" %}</head>
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    <!-- Header with Navigation -->
+    {% include "website/language/en/sections/navbar.html" %}
+    <!-- HERO -->
+    <section class="hero section-font-style">
+      <img src="{% static 'img/painting.jpg' %}" alt="Graduates throwing caps">
+    </section>
+    <!-- NEXTGEN CONNECTS CARDS-->
+    {% include "website/language/en/sections/connects_cards.html" %}
+    <!-- NEXTGEN CONNECTS (overview) -->
+    {% include "website/language/en/sections/intro_connects.html" %}
+    <!-- HIGH-SCHOOL MAPPING -->
+    {% include "website/language/en/sections/highschool_mapping_sections.html" %}
+    <!-- CONNECT TO SCHOOLS -->
+    {% include "website/language/en/sections/connect_to_schools.html" %}
+    <!-- CONNECT TO PARENTS -->
+    {% include "website/language/en/sections/connect_to_parents.html" %}
+    <!-- CONNECT TO EDUCATIONAL EXPERTS -->
+    {% include "website/language/en/sections/connect_to_experts.html" %}
+    <!-- SUBSCRIBE TODAY -->
+    {% include "website/language/en/sections/subscribe.html" %}
+    <!-- Social Media-->
+    {% include "website/language/en/sections/media.html" %}
+    <!-- Customer Service Button -->
+    {% include "website/language/en/sections/customer_service.html" %}
+    <!-- Footer -->
+    {% include "website/language/en/sections/footer.html" %}
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+  </body>
+</html>

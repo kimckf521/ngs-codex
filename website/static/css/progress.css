@@ -122,3 +122,86 @@
   .inprog .ip-lead{ max-width:unset }
   .inprog .ip-bar{ width:100% }
 }
+
+/* Responsive overrides for progress section (tablet + mobile) */
+@media (max-width: 1024px){
+  .inprog.progress__flex-center{
+    height:auto;
+    min-height:0;
+    align-items:stretch;
+    padding:48px 20px;
+  }
+
+  .inprog .progress__flex-col{
+    height:auto;
+  }
+
+  .inprog .progress__grid-cols{
+    grid-template-columns:1fr;
+    gap:28px;
+    height:auto;
+    text-align:center;
+  }
+
+  .inprog .progress__flex-col-aba9{
+    max-width:100%;
+    margin:0;
+  }
+
+  .inprog .progress__flex-center-5877{
+    height:auto;
+    max-width:100%;
+  }
+
+  .inprog .progress__style-11{
+    height:auto;
+    max-height:360px;
+  }
+
+  .inprog .progress__flex-gap,
+  .inprog .progress__flex-gap-f4f1{
+    flex-wrap:wrap;
+  }
+}
+
+@media (max-width: 768px){
+  .inprog.progress__flex-center{
+    padding:36px 16px;
+  }
+
+  .inprog .progress__style-9{
+    font-size:32px;
+    line-height:1.2;
+  }
+
+  .inprog .progress__flex-center-a53f{
+    font-size:14px;
+  }
+
+  .inprog .ip-row{
+    flex-wrap:wrap;
+  }
+
+  .inprog .ip-bar{
+    max-width:240px;
+  }
+
+  .inprog .btn{
+    min-height:44px;
+  }
+}
+
+@media (max-width: 480px){
+  .inprog.progress__flex-center{
+    padding:28px 12px;
+  }
+
+  .inprog .progress__style-9{
+    font-size:28px;
+  }
+
+  .inprog .btn{
+    width:100%;
+    text-align:center;
+  }
+}

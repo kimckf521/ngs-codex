@@ -35,12 +35,14 @@
     gap: 70px;
     justify-content: center;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 /* Card Base */
 .partnership_lists__card {
     flex: 1;
-    width: 200%;
+    width: 100%;
+    min-width: 0;
     padding: 40px 35px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }

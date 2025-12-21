@@ -474,3 +474,83 @@
         left: 100%;
     }
 }
+
+/* ============================================
+   Global Responsive Safeguards
+   ============================================ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* Prevent layout overflow around fixed-width card grids on small desktops */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .addmissions-plans__grid-cols,
+    .addmissions-plans__grid-cols-0823,
+    .addmissions-plans__grid-cols-e7af,
+    .addmissions-plans__grid-cols-fc0f {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .addmissions-plans__flex-col-2e0a {
+        width: 100%;
+        max-width: 340px;
+        flex: 1 1 320px;
+    }
+}
+
+/* Tap targets and controls on mobile */
+@media (max-width: 768px) {
+    .navbar__hamburger {
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+    }
+
+    .navbar__lang-btn,
+    .navbar__login-btn {
+        min-height: 44px;
+        padding: 10px 14px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .index__bg-dark-d1b8,
+    .connects-cards__gradient-bg,
+    .partnership_lists__cta-button,
+    .addmissions-plans__rounded,
+    .addmissions-plans__rounded-b4a7,
+    .addmissions-plans__rounded-03a8 {
+        min-height: 44px;
+    }
+
+    .ngs-form input,
+    .ngs-form textarea,
+    .ngs-form button {
+        min-height: 44px;
+    }
+
+    .ngs-form textarea {
+        min-height: 120px;
+    }
+}

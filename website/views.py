@@ -7,89 +7,89 @@ from django.contrib import messages
 
 
 def index_en(request):
-    return render(request, 'website/index.html')
+    return render(request, 'website/language/en/index.html')
 
 
 def privacy_en(request):
-    return render(request, 'website/privacy_policy.html')
+    return render(request, 'website/language/en/privacy_policy.html')
 
 
 def terms_en(request):
-    return render(request, 'website/terms_of_service.html')
+    return render(request, 'website/language/en/terms_of_service.html')
 
 # Partner With Us
 
 
 def cclr_programs_en(request):
-    return render(request, 'website/partner_with_us/cclr_programs.html')
+    return render(request, 'website/language/en/partner_with_us/cclr_programs.html')
 
 
 def hybrid_learning_en(request):
-    return render(request, 'website/partner_with_us/hybrid_learning.html')
+    return render(request, 'website/language/en/partner_with_us/hybrid_learning.html')
 
 
 def dual_track_learning_en(request):
-    return render(request, 'website/partner_with_us/dual_track_learning.html')
+    return render(request, 'website/language/en/partner_with_us/dual_track_learning.html')
 
 
 def online_diploma_program_en(request):
-    return render(request, 'website/partner_with_us/online_diploma_program.html')
+    return render(request, 'website/language/en/partner_with_us/online_diploma_program.html')
 
 # Study With Us
 
 
 def programs_en(request):
-    return render(request, 'website/study_with_us/programs.html')
+    return render(request, 'website/language/en/study_with_us/programs.html')
 
 
 def college_mentorship_en(request):
-    return render(request, 'website/study_with_us/college_mentorship.html')
+    return render(request, 'website/language/en/study_with_us/college_mentorship.html')
 
 
 def highschool_mapping_en(request):
-    return render(request, 'website/study_with_us/highschool_mapping.html')
+    return render(request, 'website/language/en/study_with_us/highschool_mapping.html')
 
 
 def faculty_en(request):
-    return render(request, 'website/study_with_us/faculty.html')
+    return render(request, 'website/language/en/study_with_us/faculty.html')
 
 
 # Admissions
 
 def admissions_en(request):
-    return render(request, 'website/admissions/admissions.html')
+    return render(request, 'website/language/en/admissions/admissions.html')
 
 
 # Join Ngs Commmunity
 
 def ngs_inspires_en(request):
-    return render(request, 'website/join_ngs_commmunity/ngs_inspires.html')
+    return render(request, 'website/language/en/join_ngs_commmunity/ngs_inspires.html')
 
 
 def ngs_connects_en(request):
-    return render(request, 'website/join_ngs_commmunity/ngs_connects.html')
+    return render(request, 'website/language/en/join_ngs_commmunity/ngs_connects.html')
 
 # In Progress
 
 
 def in_progress_en(request):
-    return render(request, 'website/in_progress.html')
+    return render(request, 'website/language/en/in_progress.html')
 
 
 # Partners
 def YCSOnline_en(request):
-    return render(request, 'website/partners_lists/ycs/YCSOnline.html')
+    return render(request, 'website/language/en/partners_lists/ycs/YCSOnline.html')
 
 
 def ib_heros_en(request):
-    return render(request, 'website/partners_lists/ib_heros/ib_heros.html')
+    return render(request, 'website/language/en/partners_lists/ib_heros/ib_heros.html')
 
 
 # Testing
 
 
 def test(request):
-    return render(request, 'website/test.html')
+    return render(request, 'website/language/en/test.html')
 
 
 # CHINESE PAGES
@@ -224,4 +224,4 @@ def partner_with_us(request):
     else:
         form = PartnerForm()
 
-    return render(request, 'website/index.html', {'form': form})
+    return render(request, 'website/language/en/index.html', {'form': form})

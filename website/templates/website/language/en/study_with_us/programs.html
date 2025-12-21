@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>{% include "website/language/en/sections/head.html" %}</head>
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    <!-- Header with Navigation -->
+    {% include "website/language/en/sections/navbar.html" %}
+    <!-- HERO -->
+    <section class="hero section-font-style">
+      <img src="{% static 'img/Graduation.jpg' %}" alt="Graduates throwing caps">
+    </section>
+    <!-- PROGRAMMES -->
+    {% include "website/language/en/sections/programmes.html" %}
+    <!-- PROGRAM OPTIONS: IB / A-LEVEL IGCSE / AP -->
+    {% include "website/language/en/sections/program_options.html" %}
+    <!-- TAKE CHARGE SECTION -->
+    {% include "website/language/en/sections/take_charge.html" %}
+    <!-- A COMPREHENSIVE AND TAILORED CURRICULUM -->
+    {% include "website/language/en/sections/comprehensive.html" %}
+    <!-- Student Reviews -->
+    {% include "website/language/en/sections/student_reviews.html" %}
+    <!-- GLOBAL COMMUNITY -->
+    {% include "website/language/en/sections/global_community.html" %}
+    <!-- PARTNER WITH NGS -->
+    {% include "website/language/en/sections/partner_with_ngs.html" %}
+    <!-- Social Media-->
+    {% include "website/language/en/sections/media.html" %}
+    <!-- Customer Service Button -->
+    {% include "website/language/en/sections/customer_service.html" %}
+    <!-- Footer -->
+    {% include "website/language/en/sections/footer.html" %}
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>{% include "website/language/en/sections/head.html" %}</head>
+  <body class="font-sans text-gray-800 antialiased bg-gray-50">
+    <!-- Header with Navigation -->
+    {% include "website/language/en/sections/navbar.html" %}
+    <!-- In Progress -->
+    {% include "website/language/en/sections/progress.html" %}
+    <!-- Social Media-->
+    {% include "website/language/en/sections/media.html" %}
+    <!-- Customer Service Button -->
+    {% include "website/language/en/sections/customer_service.html" %}
+    <!-- Footer -->
+    {% include "website/language/en/sections/footer.html" %}
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
