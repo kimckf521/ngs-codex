@@ -1,18 +1,19 @@
-/* Global design system and layout overrides */
+/* Enhanced design system with modern improvements */
 
 :root {
-  --page-bg:#f6f7fb;
-  --surface:#ffffff;
-  --text:#0f172a;
-  --muted:#475569;
-  --border:#e2e8f0;
-  --brand:#2563eb;
-  --brand-dark:#1d4ed8;
-  --shadow-sm:0 10px 24px rgba(15, 23, 42, 0.08);
-  --shadow-lg:0 24px 60px rgba(15, 23, 42, 0.12);
-  --radius-lg:18px;
-  --radius-md:12px;
-  --max-w:1280px;
+  --page-bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --brand: #2563eb;
+  --brand-dark: #1e40af;
+  --shadow-sm: 0 4px 16px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.12);
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --max-w: 1280px;
+  --transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
