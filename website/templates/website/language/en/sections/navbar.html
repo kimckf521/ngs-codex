@@ -1,22 +1,23 @@
 {% load static %}
-<header class="navbar__bg-dark">
+<header class="navbar__bg-dark" role="banner">
   <div class="navwrap navbar__flex">
     <!-- Logo on far left -->
-    <a class="logo navbar__style-1" href="{% url 'index_en' %}" id="logo">
+    <a class="logo navbar__style-1" href="{% url 'index_en' %}" id="logo" aria-label="NextGen Scholars Home">
       <img src="{% static 'img/logo.png' %}"
-           alt="logo"
+           alt="NextGen Scholars logo"
            class="navbar__style-2">
     </a>
     <!-- Hamburger Menu Button (Mobile) -->
     <button class="navbar__hamburger"
             id="mobile-menu-toggle"
-            aria-label="Toggle menu">
+            aria-label="Toggle navigation menu"
+            aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
     <!-- Nav links in the middle -->
-    <nav id="site-nav" class="navbar__style-3">
+    <nav id="site-nav" class="navbar__style-3" role="navigation" aria-label="Main navigation">
       <ul class="navbar__flex-gap">
         <li class="navbar__dropdown">
           <a href="{% url 'index_en' %}" class="navbar__style-4">Study With Us ▾</a>
